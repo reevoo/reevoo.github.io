@@ -1,6 +1,6 @@
 # Site settings
 title: Reevoo Engineering
-email: engineer@reevoo.com
+email: engineering@reevoo.com
 description: "Reevoo Engineering blog, documentation and open sourced projects."
 baseurl: ""
 url: "http://reevoo.github.io"

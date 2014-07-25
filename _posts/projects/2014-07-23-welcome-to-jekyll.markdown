@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Projects Template!"
 date:   2014-07-25 10:58:44
 categories: projects
+navId: projects
 ---
 
 You'll find this post in your `_posts/projects` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

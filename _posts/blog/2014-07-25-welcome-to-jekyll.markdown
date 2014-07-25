@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Blog template!"
 date:   2014-07-25 10:58:44
 categories: blog
+navId: blog
 ---
 
 You'll find this post in your `_posts/blog` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

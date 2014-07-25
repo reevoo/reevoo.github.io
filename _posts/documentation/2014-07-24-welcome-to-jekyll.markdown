@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Documentation Template!"
 date:   2014-07-25 10:58:44
 categories: documentation
+navId: documentation
 ---
 
 You'll find this post in your `_posts/documentation` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

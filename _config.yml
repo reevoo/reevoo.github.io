@@ -3,7 +3,7 @@ title: Reevoo Engineering
 email: engineering@reevoo.com
 description: "Reevoo Engineering blog, documentation and open sourced projects."
 baseurl: ""
-url: "http://reevoo.github.io"
+url: http://reevoo.github.io
 twitter_username: DevAtReevoo
 github_username:  reevoo
 
@@ -14,8 +14,9 @@ exclude:
 - .travis.yml
 - .gitignore
 - LICENSE
+- vendor
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-exclude: [vendor]
+highlighter: pygments

@@ -1,0 +1,7 @@
+table.documentation { width: 100%; }
+
+table.documentation tr td             { text-align: right; }
+table.documentation tr td:first-child { text-align: left; }
+
+table.documentation span.indent-1 { margin-left: 20px; }
+table.documentation span.indent-2 { margin-left: 40px; }

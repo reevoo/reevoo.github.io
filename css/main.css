@@ -180,6 +180,21 @@ a:visited { color: #205caa; }
   color: #818181;
 }
 
+/* Home page styles */
+/* ----------------------------------------------------------*/
+
+.tile-container {
+  margin: 50px 65px;
+}
+
+.tile-container .tile {
+  border: 1px solid #e8e8e8;
+  width: 250px;
+  height: 300px;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+}
 
 /* Post styles */
 /* ----------------------------------------------------------*/

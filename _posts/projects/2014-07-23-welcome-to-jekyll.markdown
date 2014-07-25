@@ -5,8 +5,8 @@ date:   2014-07-25 10:58:44
 categories: projects
 ---
 
-You'll find this post in your `_posts/documentation` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts/documentation` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+You'll find this post in your `_posts/projects` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
+To add new posts, simply add a file in the `_posts/projects` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
 Jekyll also offers powerful support for code snippets:
 

@@ -4,7 +4,7 @@ email: engineer@reevoo.com
 description: "Reevoo Engineering blog, documentation and open sourced projects."
 baseurl: ""
 url: "http://reevoo.github.io"
-twitter_username: DevsAtReevoo
+twitter_username: DevAtReevoo
 github_username:  reevoo
 
 # Build settings

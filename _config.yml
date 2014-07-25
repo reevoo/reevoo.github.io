@@ -7,6 +7,14 @@ url: "http://reevoo.github.io"
 twitter_username: DevAtReevoo
 github_username:  reevoo
 
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- .travis.yml
+- .gitignore
+- LICENSE
+
 # Build settings
 markdown: kramdown
 permalink: pretty

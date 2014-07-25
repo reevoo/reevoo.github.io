@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.1
-script: ./script/cibuild
+script: ./script/travisbuild
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true

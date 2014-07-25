@@ -1,7 +1,12 @@
 language: ruby
+
 rvm:
-- 2.1
-script: ./script/travisbuild
+  - 2.1.2
+
+before_script:
+ - chmod +x script/travisbuild
+
+script: script/travisbuild
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true

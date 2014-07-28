@@ -12,9 +12,9 @@ One of the provocative arguments regularly undertaken when staffing R&D teams is
 
 It's always entertaining to hear project management entrenching themselves with a pre-ordained view that it should be 3:1 or 5:1 or 1:1 or 1:2 or whatever!
 
-It's a balance that's difficult to get right and carving off designated roles inevitably creates a bottleneck of some sort. You either can't get the software out because there aren't enough testers to verify it all. More rarely, it's the development group that are understaffed and the roadmap is getting serviced too slowly to the QA pipeline for a timely delivery. 
+It's a balance that's difficult to get right and carving off designated roles inevitably creates a bottleneck of some sort. You either can't get the software out because there aren't enough testers to verify it all. More rarely, it's the development group that are understaffed and the roadmap is getting serviced too slowly to the QA pipeline for a timely delivery.
 
-Maybe it would be a more pragmatic approach to think of QA as a distributed role, which is undertaken by Business Analysts / Product Management, Developers and indeed even software testers! 
+Maybe it would be a more pragmatic approach to think of QA as a distributed role, which is undertaken by Business Analysts / Product Management, Developers and indeed even software testers!
 
 At Reevoo, the success and stability of the product has been built on a few key principles. Using Continuous Delivery to provide fast, incremental change is one of the key factors. To achieve this, there is a real onus on the development team to focus strong attention on levering the practices of test driven development, pair programming, peer code review and continued investment in multi-level automated testing infrastructure.
 

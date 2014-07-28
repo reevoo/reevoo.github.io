@@ -78,6 +78,19 @@ a:visited { color: #205caa; }
   padding-left: 10px;
 }
 
+.top-banner {
+  background-color: #2C63B1;
+}
+
+.top-banner .banner-container {
+  max-width: 940px;
+  margin: auto;
+}
+
+.top-banner .banner-container #top-banner {
+  width: 940px;
+}
+
 .site-nav {
   float: right;
   line-height: 56px;

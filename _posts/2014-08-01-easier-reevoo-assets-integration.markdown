@@ -51,8 +51,8 @@ As an example, looking at the current technical documentation being handed to cu
 {% endhighlight %}
 
 
-* Now most will not realize that both the javascript blocks above are almost identical, and only change the declaration of the "afterReevooMarkLoaded" variable. Most clients will just include both blocks in the page resulting on double import of the reevoo_mark.js and on overwriting of the "afterReevooMarkLoaded" array, which will result on either badges or tracking not happening.
-What they should have included in the page in thisinstance if they wanted both badges and tracking "in the same page" is:
+* Now most will not realize that both the javascript blocks above are almost identical, and only change the declaration of the "afterReevooMarkLoaded" variable. Most clients will just include both blocks in the page resulting on double import of the reevoo_mark.js and the overwriting of the "afterReevooMarkLoaded" array, which will result on either badges or tracking not happening.
+What they should have included in the page in this instance if they wanted both badges and tracking "in the same page" is:
 
 {% highlight javascript %}
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
@@ -79,10 +79,10 @@ What they should have included in the page in thisinstance if they wanted both b
 </script>
 {% endhighlight %}
 
-But nowhere in the documentation this is indicated so it would require clients to have a certain knowlege of javascript and even of the internal implementation of our reevoo_mark.js javascript in order to be successful implementing this without support from our technical team.
+But nowhere in the documentation this is indicated, so it would require clients to have a certain knowledge of javascript, and even of the internal implementation of our reevoo_mark.js javascript in order to be successful implementing this without support from our technical team.
 
 
-In order to make integration easier for customes using the java client, we've abstracted all this technical details through a couple extra tracking tags:
+In order to make integration easier for customers using the java client, we've abstracted all this technical details through a couple of extra tracking tags:
 
 
 {% highlight jsp %}
@@ -90,7 +90,7 @@ In order to make integration easier for customes using the java client, we've ab
 <reevoo:propensityToBuyTrackingEvent trkref="REV" action="Requested_Brochure" sku="234"/>
 {% endhighlight %}
 
-Which you can find documentation about in our reevoo-mark java client github documentation at https://github.com/reevoo/reevoomark-java-api.
+Which you can find documentation about in our reevoo-mark java client github documentation at <a href="https://github.com/reevoo/reevoomark-java-api" target="_blank">https://github.com/reevoo/reevoomark-java-api</a>.
 
-Now clients wanting to have any type of content in their pages don't have to worry about duplicated import of reevoo_mark.js or overriding the "afterReevooMarkLoaded" variable, etc... They just need to have in their page the  <reevoo:javascriptAssets/> tag once, and then they can mix and match as many tracking, badge or embedded reviews tags as they wish.
+Now clients wanting to have any type of content in their pages don't have to worry about duplicated import of reevoo_mark.js or overriding the "afterReevooMarkLoaded" variable, etc... They just need to have in their page the  &lt;reevoo:javascriptAssets/&gt; tag once, and then they can mix and match as many tracking, badge or embedded reviews tags as they wish.
 

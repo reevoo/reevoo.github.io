@@ -70,3 +70,5 @@ Every little code optimisation/restructure will allow your application to be rob
 [refactoring1]: /images/refactoring1.png
 [refactoring2]: /images/refactoring2.png
 [newrelic]: https://github.com/newrelic/rpm
+[shadow]: /blog/2014/08/02/shadow-stress-test/
+

@@ -4,6 +4,8 @@ title:  "Git Bisect For Great Good"
 date:   2014-07-28 09:44:44
 categories: blog
 navId: blog
+author: Ed Robinson
+github: errm
 ---
 
 Git bisect is an awesome way to quickly find a regression that might have found its way into your code.  While benchmarking ruby HTTP libraries I found that at some point a performance regression had been introduced into [excon](https://github.com/excon/excon/issues).

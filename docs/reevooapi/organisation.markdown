@@ -1,3 +1,9 @@
+---
+id: organisation
+layout: docs
+title: Platform API v4 / Organisation
+---
+
 # Organisation
 Allow a user to retrieve information for a specific organisation.Users are only allow to
 retrieve information for organisations that their API key is assigned to.
@@ -14,18 +20,18 @@ retrieve information for organisations that their API key is assigned to.
 ## Attribute(s)
 
 {: .documentation}
-|trkref                                                       |identifier for the organisation    |
-|locale                                                       |default locale for the organisation|
-|name                                                         |                                   |
-|reviewables_path                                             |path to reviewables                |
-|customer_experience_reviews_path                             |path to customer experience reviews|
-|customer_experience_scores                                   |                                   |
-|<span class="indent-1">percentage_who_would_recommend        |                                   |
-|<span class="indent-1">number_of_retailer_rating_reviews     |                                   |
-|<span class="indent-1">percentage_happy_with_delivery        |                                   |
-|<span class="indent-1">number_of_retailer_delivery_reviews	  |                                   |
-|<span class="indent-1">percentage_happy_with_customer_service|                                   |
-|<span class="indent-1">number_of_retailer_service_reviews    |                                   |
+|trkref                                                              |identifier for the organisation    |
+|locale                                                              |default locale for the organisation|
+|name                                                                |                                   |
+|reviewables_path                                                    |path to reviewables                |
+|customer_experience_reviews_path                                    |path to customer experience reviews|
+|customer_experience_scores                                          |                                   |
+|<span class="indent-1">percentage_who_would_recommend</span>        |                                   |
+|<span class="indent-1">number_of_retailer_rating_reviews</span>     |                                   |
+|<span class="indent-1">percentage_happy_with_delivery</span>        |                                   |
+|<span class="indent-1">number_of_retailer_delivery_reviews</span>   |                                   |
+|<span class="indent-1">percentage_happy_with_customer_service</span>|                                   |
+|<span class="indent-1">number_of_retailer_service_reviews</span>    |                                   |
 
 ## JSON Example
 {% highlight json %}

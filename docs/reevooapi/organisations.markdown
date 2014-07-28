@@ -1,5 +1,6 @@
 ---
-layout: page
+id: organisations
+layout: docs
 title: Platform API v4 / Organisations
 ---
 

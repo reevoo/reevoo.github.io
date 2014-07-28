@@ -1,11 +1,17 @@
 ---
-layout: default
+layout: wide
 ---
 
 <div class="docs">
-  {% include nav_docs.html %}
+  <div class="docs-wrap">
+    <div class="left-nav">
+      {% include nav_docs.html %}
+    </div>
 
-  <article class="docs-content">
-    {{ content }}
-  </article>
+    <div class="content-container">
+      <article class="docs-content">
+        {{ content }}
+      </article>
+    </div>
+  </div>
 </div>

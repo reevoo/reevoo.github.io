@@ -76,7 +76,9 @@ $ bundle exec ruby benchmarks/excon_vs.rb
 ~~~
 Well things went south there quite quickly, let's use git bisect to find the culprit.
 
-To get going we need a `git bisect start`. Now we need to tell git where we know the code is good `git bisect good v0.28.0` and bad `git bisect bad v0.29.0`.
+To get going we need to run `git bisect start`. 
+
+Next we need to tell git the last known good commit `git bisect good v0.28.0` and the first bad commit we know about `git bisect bad v0.29.0`.
 
 Git now checks out the first commit for us to test.
 
@@ -98,7 +100,7 @@ $ bundle exec ruby benchmarks/excon.rb
   +--------------------+----------+
 ~~~
 
-These results seem good let's tell git `git bisect good`
+These results seem good let's tell git - `git bisect good`
 
 ~~~ bash
 Bisecting: 3 revisions left to test after this (roughly 2 steps)
@@ -118,7 +120,7 @@ $ bundle exec ruby benchmarks/excon.rb
   +--------------------+----------+
 ~~~
 
-Things went south there, looks like a bad revision `git bisect bad`
+Things went south there, looks like a bad revision - `git bisect bad`
 
 ~~~ bash
 Bisecting: 0 revisions left to test after this (roughly 1 step)
@@ -173,14 +175,14 @@ Date:   Thu Oct 31 20:40:17 2013 -0400
 :040000 040000 e0c9cafab1f78e85999157673df033dd8e114d75 efba95d94ed3d61def9ce6a2bd6a16027c6bd2da M      lib
 ~~~
 
-Git bisect is performing a binary search, rather than testing every revision in turn, git held our hand and
+Git bisect is performing a binary search, rather than testing every revision in turn. Git held our hand and
 led us down a path that meant we only had to test four times to be sure what caused the bug, sure here we only
 had seven revisions to test, but this would certainly save some time with a bigger list to wade through.
 
 ## More fun with bisect
 Git Bisect has a few more nice features that might be useful to you.
 
-The first are a couple of commands that can help you to see what is going on as git leads you though the 
+There are a couple of commands that can help you to see what is going on as git leads you though the 
 commit history. `git bisect view --stat` will show you a git log style list of candidate revisions remaining, 
 you should see this shrink as you start to test and narrow the search down. If you want to see what 
 you have done in your bisect session so far, `git bisect log` will show you a list of the revisions 

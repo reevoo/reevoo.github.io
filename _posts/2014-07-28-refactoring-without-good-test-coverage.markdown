@@ -45,7 +45,7 @@ Apart from improving internal test coverage, we decided to focus on two external
 
 **System Test** is a full life cycle testing process that checks that all modules and applications interconnect correctly.
 
-**Shadow Stress Test** is a real time stress testing system running live mirrored traffic (More details in the coming blog post).
+**[Shadow Stress Test][shadow]** is a real time stress testing under live mirrored traffic.
 
 System Test's are unable to cover all known edge cases, however they give you a good taste of new code. It covers the standard flow and as a result covers most our customers.
 

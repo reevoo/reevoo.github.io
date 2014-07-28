@@ -12,5 +12,7 @@
   title: Reevoo API
   url: reevooapi
   items:
-  - id: getting-started
-    title: Getting started
+  - id: organisations
+    title: Organisations
+  - id: organisation
+    title: Organisation

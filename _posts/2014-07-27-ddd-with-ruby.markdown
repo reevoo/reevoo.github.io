@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Domain-driven design on Rails - Part 1"
-date:   2014-08-01 10:58:44
+date:   2014-07-28 16:58:44
 categories: blog
 author: David Sevcik
 github: davidsevcik
+navId: blog
 ---
 
 

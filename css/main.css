@@ -28,6 +28,8 @@ a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
 a:visited { color: #205caa; }
 
+li { list-style-position: inside; }
+
 /* Utility */
 
 .wrap:before,

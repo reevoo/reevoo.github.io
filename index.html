@@ -3,7 +3,22 @@ layout: wide
 ---
 <div class="home">
   <div class="header-section">
+    <div class="top-banner">
+      <div class="banner-container">
+        <img id="top-banner" src="/images/banner.jpg"/>
+      </div>
+    </div>
     <div class="tile-container">
+      <a href="/about">
+        <div id="projects" class="tile">
+          <div class="title">
+            <h3>About us</h3>
+          </div>
+          <p>
+            Bacon ipsum dolor sit amet beef brisket tenderloin, strip steak tongue flank pork loin shankle meatball. Jerky pork belly bresaola shank bacon porchetta.
+          </p>
+        </div>
+      </a>
       <a href="/docs">
         <div id="documentation" class="tile">
           <div class="title">
@@ -32,12 +47,22 @@ layout: wide
         {% for post in site.categories.blog %}
         <li>
           <div class="post">
-            <header class="post-header">
-              <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-              <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-            </header>
-
             <article class="post-content">
+              <header class="post-header">
+                <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+                <p class="meta">{{ post.date | date: "%b %-d, %Y" }}
+                  {% if post.author %}
+                    -
+                    {% if post.github %}
+                      <a target="_blank" href="//github.com/{{ post.github }}">
+                        {{ post.author }}
+                      </a>
+                    {% else %}
+                      {{ post.author }}
+                    {% endif %}
+                  {% endif %}
+                </p>
+              </header>
               {{ post.content | strip_html | truncatewords:75}}<br/>
               <a class="read-more" href="{{ post.url }}">read more...</a>
             </article>

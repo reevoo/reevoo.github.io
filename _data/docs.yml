@@ -6,8 +6,8 @@
     title: Getting started
   - id: javascript-library
     title: JavaScript library
-  - id: rating-and-reviews
-    title: 'Rating & reviews'
+  - id: retailer-specific-configuration
+    title: Retailer specific configuration
 - id: reevooapi
   title: Reevoo API
   url: reevooapi

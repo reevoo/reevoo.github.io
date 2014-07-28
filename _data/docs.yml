@@ -1,10 +1,10 @@
 - title: Reevoo Mark
   url: reevoomark/home
-  docs:
+  items:
   - id: getting-started
     title: Getting started
 - title: Reevoo API
   url: reevooapi/home
-  docs:
+  items:
   - id: getting-started
     title: Getting started

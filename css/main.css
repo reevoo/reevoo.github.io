@@ -210,8 +210,6 @@ a:visited { color: #205caa; }
 
 .tile-container .tile .title {
   text-decoration: none;
-  /*width: 110px;*/
-  /*margin: auto;*/
   font-size: 22px;
 }
 

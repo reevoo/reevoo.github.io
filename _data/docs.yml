@@ -4,6 +4,10 @@
   items:
   - id: getting-started
     title: Getting started
+  - id: javascript-library
+    title: JavaScript library
+  - id: rating-and-reviews
+    title: 'Rating & reviews'
 - id: reevooapi
   title: Reevoo API
   url: reevooapi

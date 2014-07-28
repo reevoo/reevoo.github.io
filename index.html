@@ -34,9 +34,19 @@ layout: wide
           <div class="post">
             <header class="post-header">
               <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-              <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+              <p class="meta">{{ post.date | date: "%b %-d, %Y" }}
+                {% if post.author %}
+                  -
+                  {% if post.github %}
+                    <a target="_blank" href="//github.com/{{ post.github }}">
+                      {{ post.author }}
+                    </a>
+                  {% else %}
+                    {{ post.author }}
+                  {% endif %}
+                {% endif %}
+              </p>
             </header>
-
             <article class="post-content">
               {{ post.content | strip_html | truncatewords:75}}<br/>
               <a class="read-more" href="{{ post.url }}">read more...</a>

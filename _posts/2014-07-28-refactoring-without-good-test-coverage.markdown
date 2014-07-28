@@ -3,11 +3,9 @@ layout: post
 title:  "Refactoring without good test coverage"
 date:   2014-07-28 10:10:10
 categories: blog
-navId: blog
 author: Alex Malkov
 github: amalkov
 ---
-
 
 Any system will degrade eventually - new practices, software updates, new requirements, number of implemented features, number of people working on the application etc. In fact, with every single line of the code you make your system more complex and therefore the system ultimately degrades.
 

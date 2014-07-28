@@ -244,6 +244,16 @@ a:visited { color: #205caa; }
   float: left;
 }
 
+.left-nav li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.left-nav li li {
+  list-style: none;
+  margin-left: 20px;
+}
+
 /* Post styles */
 /* ----------------------------------------------------------*/
 

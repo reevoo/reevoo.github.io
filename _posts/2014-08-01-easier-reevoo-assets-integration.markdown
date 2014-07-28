@@ -13,7 +13,7 @@ As an example, looking at the current technical documentation being handed to cu
 
 * They decide they want to add badges to their page, so following the current documentation they add the following in their page:
 
-{% highlight javascript %}
+{% highlight html %}
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
 	(function() {
 		var script = document.createElement('script');
@@ -33,7 +33,7 @@ As an example, looking at the current technical documentation being handed to cu
 
 * Later on they decide they want to add purchase tracking to their page, and going by the documentation they find they need to add the following to their page:
 
-{% highlight javascript %}
+{% highlight html %}
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
 	(function() {
    		var script = document.createElement('script');
@@ -54,7 +54,7 @@ As an example, looking at the current technical documentation being handed to cu
 * Now most will not realize that both the javascript blocks above are almost identical, and only change the declaration of the "afterReevooMarkLoaded" variable. Most clients will just include both blocks in the page resulting on double import of the reevoo_mark.js and the overwriting of the "afterReevooMarkLoaded" array, which will result on either badges or tracking not happening.
 What they should have included in the page in this instance if they wanted both badges and tracking "in the same page" is:
 
-{% highlight javascript %}
+{% highlight html %}
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
 	(function() {
 		var script = document.createElement('script');

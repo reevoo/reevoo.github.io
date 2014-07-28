@@ -5,7 +5,6 @@ layout: docs
 navId: docs
 group: reevoomark
 prev: javascript-library
-next: reviews-and-ratings
 ---
 
 Retailer specific configuration

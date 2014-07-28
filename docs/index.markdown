@@ -13,3 +13,4 @@ These guides provide technical advice on how to implement the Reevoo solution on
 [Reevoo API](reevooapi/index.html)
 ==========
 
+The Reevoo Platform API is a simple read only API that returns product scores and published reviews as json. It can be used to power a clients own ratings and review solution, or power analysis of customer ratings.

@@ -3,6 +3,7 @@ id: reevoomark-javascript-library
 title: JavaScript Library
 layout: docs
 group: reevoomark
+navId: docs
 prev: getting-started
 next: rating-and-reviews
 ---

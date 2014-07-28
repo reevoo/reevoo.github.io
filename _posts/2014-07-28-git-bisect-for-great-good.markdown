@@ -8,6 +8,8 @@ author: Ed Robinson
 github: errm
 ---
 
+![Git Bisect](/assets/git-bisect.jpg)
+
 Git bisect is an awesome way to quickly find a regression that might have found its way into your code.  While benchmarking ruby HTTP libraries I found that at some point a performance regression had been introduced into [excon](https://github.com/excon/excon).
 That bugged me and I wanted to find out what had caused the issue.
 
@@ -204,3 +206,12 @@ anything in the 1-127 range except for 125 will mark the revision as bad just li
 And anything above 127 will end the bisect session.
 
 This feature of bisect is a really great reason to keep your code (and tests) runnable at every commit.
+
+### Further Reading
+
+1. [Official Git Documentation](http://git-scm.com/docs/git-bisect)
+2. [Finding Failure: Git Bisect - Hashrocket Blog](http://hashrocket.com/blog/posts/finding-failure-git-bisect)
+2. [git bisect - giant robots smashing into other giant robots](http://robots.thoughtbot.com/git-bisect)
+
+### Image Attribution
+1. [Antarctica: Backflow Preventer](https://flic.kr/p/7oLUqM) by [Eli Duke](https://www.flickr.com/photos/elisfanclub/)

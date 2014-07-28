@@ -11,16 +11,17 @@ layout: wide
       <div class="post">
         <article class="post-content">
           {{ content }}
-        </article>
 
-        <div class="docs-prevnext">
-          {% if page.prev %}
-          <a class="docs-prev" href="/docs/{{page.group}}/{{ page.prev }}/">&larr; Prev</a>
-          {% endif %}
-          {% if page.next %}
-          <a class="docs-next" href="/docs/{{page.group}}/{{ page.next }}/">Next &rarr;</a>
-          {% endif %}
-        </div>
+          <div class="docs-prevnext">
+            {% if page.prev %}
+            <a class="docs-prev" href="/docs/{{page.group}}/{{ page.prev }}/">&larr; Prev</a>
+            {% endif %}
+            &nbsp;
+            {% if page.next %}
+            <a class="docs-next" href="/docs/{{page.group}}/{{ page.next }}/">Next &rarr;</a>
+            {% endif %}
+          </div>
+        </article>
       </div>
     </div>
   </div>

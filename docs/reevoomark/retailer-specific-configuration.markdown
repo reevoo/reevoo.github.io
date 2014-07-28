@@ -1,11 +1,11 @@
 ---
 id: reevoomark-rating-and-reviews
-title: Rating & Reviews
+title: Retailer specific configuration
 layout: docs
 navId: docs
 group: reevoomark
 prev: javascript-library
-next: conversation
+next: reviews-and-ratings
 ---
 
 Retailer specific configuration
@@ -19,8 +19,10 @@ The JavaScript to use to load your configuration is as follows:
 {% highlight javascript %}
 afterReevooMarkLoaded = [function() {
   ReevooApi.load('TRKREF', function(retailer) {
-    // retailer.COMMAND
+    // retailer.command();
     retailer.init_badges();
   });
 }];
 {% endhighlight %}
+
+This section and further sections will continue to be given attention and updates. Please come back later for updated content.

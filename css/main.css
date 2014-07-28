@@ -183,30 +183,45 @@ a:visited { color: #205caa; }
 /* Home page styles */
 /* ----------------------------------------------------------*/
 
+.header-section {
+  background-color: #fdfdfd;
+}
+
 .tile-container {
-  margin: 50px 65px;
+  width: 670px;
+  margin: auto;
+}
+
+.tile-container a {
+  color: #727272;
+}
+
+.tile-container a:hover {
+  color: #000;
 }
 
 .tile-container .tile {
-  border: 1px solid #e8e8e8;
   width: 250px;
-  height: 300px;
+  height: 200px;
   display: inline-block;
   padding: 20px;
   margin: 20px;
 }
 
-.tile-container .tile:hover {
-  background-color: #F6F6F6;
-  border-bottom: 2px solid #ff7911;
+.tile-container .tile .title {
+  text-decoration: none;
+  /*width: 110px;*/
+  /*margin: auto;*/
+  font-size: 22px;
 }
 
-.tile-container .tile .title {
-  color: #727272;
-  text-decoration: none;
-  width: 110px;
-  margin: auto;
-  font-size: 22px;
+.tile-container .tile p {
+  font-size: 14px;
+}
+
+.blog-summary {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
 }
 
 /* Post styles */

@@ -1,7 +1,8 @@
 ---
 id: documentation
-title: ReevooMark Documentation
+title: Documentation
 layout: docs
+navId: docs
 ---
 
 ReevooMark

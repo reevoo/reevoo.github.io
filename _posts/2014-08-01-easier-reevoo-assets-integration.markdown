@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Easier Reevoo Assets Integration"
-date:   2014-08-01 10:58:44
+date:   2014-07-28 10:58:44
 categories: blog
 ---
 

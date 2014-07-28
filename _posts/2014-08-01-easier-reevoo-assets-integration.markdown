@@ -3,9 +3,11 @@ layout: post
 title:  "Easier Reevoo Assets Integration"
 date:   2014-07-28 10:58:44
 categories: blog
+author: Jesus Lara
+github: jesuslarareevoo
 ---
 
-Adding Reevoo content into customer sites (badges, embedded reviews and purchase tracking), can sometimes become challengin for the less technical customers, which can result in delay of integration and increased support time devoted by the development team to help troubleshoot this integration.
+Adding Reevoo content into customer sites (badges, embedded reviews and purchase tracking), can sometimes become challenging for the less technical customers, which can result in delay of integration and increased support time devoted by the development team to help troubleshoot this integration.
 
 As an example, looking at the current technical documentation being handed to customers, they could end up in situations like the one described in the following steps:
 
@@ -49,7 +51,7 @@ As an example, looking at the current technical documentation being handed to cu
 {% endhighlight %}
 
 
-* Now most will not realize that both the javascript blocks above are almost identical, and only change the declaration of the "afterReevooMarkLoaded" variable. Most clients will just include both blocks in the page resulting on double import of the reevoo_mark.js and on overriting of the "afterReevooMarkLoaded" array, which will result on either badges or tracking not happening.
+* Now most will not realize that both the javascript blocks above are almost identical, and only change the declaration of the "afterReevooMarkLoaded" variable. Most clients will just include both blocks in the page resulting on double import of the reevoo_mark.js and on overwriting of the "afterReevooMarkLoaded" array, which will result on either badges or tracking not happening.
 What they should have included in the page in thisinstance if they wanted both badges and tracking "in the same page" is:
 
 {% highlight javascript %}

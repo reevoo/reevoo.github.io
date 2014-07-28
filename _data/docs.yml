@@ -1,14 +1,16 @@
 - id: reevoomark
   title: Reevoo Mark
-  url: reevoomark/home
+  url: reevoomark
   items:
   - id: getting-started
     title: Getting started
+  - id: javascript-library
+    title: JavaScript Library
   - id: rating-and-reviews
     title: "Rating & Reviews"
 - id: reevooapi
   title: Reevoo API
-  url: reevooapi/home
+  url: reevooapi
   items:
   - id: getting-started
     title: Getting started

@@ -221,8 +221,16 @@ a:visited { color: #205caa; }
   padding: 30px 0;
 }
 
+.home .post .post-header a {
+  color: #000;
+}
+
 /* Post styles */
 /* ----------------------------------------------------------*/
+
+.post a         { color: #2a7ae2; text-decoration: none; }
+.post a:hover   { color: #000; text-decoration: underline; }
+.post a:visited { color: #205caa; }
 
 .post-header { margin: 20px 0 30px; }
 

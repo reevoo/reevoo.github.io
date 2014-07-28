@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Bisect For Great Good"
-date:   2014-07-28 09:44:44
+date:   2014-07-30 09:44:44
 categories: blog
 navId: blog
 author: Ed Robinson

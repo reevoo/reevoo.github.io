@@ -173,6 +173,11 @@ a:visited { color: #205caa; }
   top: 3px;
 }
 
+#footer-description {
+  position: relative;
+  bottom: 30px;
+}
+
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/

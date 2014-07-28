@@ -29,7 +29,7 @@ The strongest pillar of Reevoo in my opinion is its transparency, because good o
 There is a really nice feature that we call Ask An Owner, that allows any consumer that is interested in the project to ask questions to the persons that actually bought the products.
 
 
-I was impressed by how willing people are to share their honest opinions about the products they buy, because the number of reviews is quite impressive. I believe that this is happening because people actually realise (consciously or subconsciously) Barry’s: how much of a burden is to have too much choice. Therefore they want to help and to be helped. 
+I was impressed by how willing people are to share their honest opinions about the products they buy, because the number of reviews is quite impressive. I believe that this is happening because people actually realise (consciously or subconsciously) Barry’s point: how much of a burden is to have too much choice. Therefore they want to help and to be helped. 
 
 
 Barry Schwartz Ted Talk: [The paradox of choice][Barry].

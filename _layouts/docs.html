@@ -1,0 +1,28 @@
+---
+layout: wide
+---
+
+<div class="docs">
+  <div class="docs-wrap">
+    <div class="left-nav">
+      {% include nav_docs.html %}
+    </div>
+
+    <div class="content-container">
+      <div class="post">
+        <article class="post-content">
+          {{ content }}
+        </article>
+
+        <div class="docs-prevnext">
+          {% if page.prev %}
+          <a class="docs-prev" href="/docs/{{page.group}}/{{ page.prev }}/">&larr; Prev</a>
+          {% endif %}
+          {% if page.next %}
+          <a class="docs-next" href="/docs/{{page.group}}/{{ page.next }}/">Next &rarr;</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

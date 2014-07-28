@@ -1,5 +1,5 @@
 # Site settings
-title: Reevoo Engineering
+title: Engineering
 email: engineering@reevoo.com
 description: "Reevoo Engineering blog, documentation and open sourced projects."
 baseurl: ""
@@ -15,6 +15,7 @@ exclude:
 - .gitignore
 - LICENSE
 - vendor
+- script
 
 # Build settings
 markdown: kramdown

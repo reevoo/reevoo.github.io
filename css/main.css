@@ -1,3 +1,9 @@
+/* Imports */
+/* ----------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+
 /* Base */
 /* ----------------------------------------------------------*/
 
@@ -9,7 +15,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -28,7 +34,7 @@ a:visited { color: #205caa; }
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-  max-width: 800px;
+  max-width: 960px;
   padding: 0 30px;
   margin: 0 auto;
   zoom: 1;
@@ -41,7 +47,7 @@ a:visited { color: #205caa; }
 /* Site header */
 
 .site-header {
-  border-top: 2px solid #ff7911;
+  border-top: 4px solid #ff7911;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
   background-color: white;
@@ -51,13 +57,25 @@ a:visited { color: #205caa; }
 .site-title:hover,
 .site-title:visited {
   display: block;
-  color: #333;
-  font-size: 26px;
-  letter-spacing: -1px;
+  color: #B1B1B1;
+  font-size: 22px;
   float: left;
-  line-height: 56px;
+  font-style: italic;
+  line-height: 70px;
   position: relative;
   z-index: 1;
+  text-decoration: none;
+}
+
+.site-title img {
+  position: relative;
+  bottom: -5px;
+}
+
+.site-title span.title {
+  bottom: 1px;
+  position: relative;
+  padding-left: 10px;
 }
 
 .site-nav {
@@ -68,12 +86,12 @@ a:visited { color: #205caa; }
 .site-nav .menu-icon { display: none; }
 
 .site-nav .page-link {
-  padding: 0 10px;
-  color: #727272;
-  letter-spacing: -.5px;
-  line-height: 56px;
-  height: 54px;
+  padding: 0 17px;
+  color: #000;
+  line-height: 70px;
+  height: 68px;
   display: inline-block;
+  font-weight: bold;
 }
 
 .site-nav .page-link:hover {
@@ -93,6 +111,7 @@ a:visited { color: #205caa; }
 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 30px 0;
+  clear: both;
 }
 
 .footer-heading {
@@ -183,34 +202,82 @@ a:visited { color: #205caa; }
 /* Home page styles */
 /* ----------------------------------------------------------*/
 
+.header-section {
+  background-color: #fdfdfd;
+}
+
 .tile-container {
-  margin: 50px 65px;
+  max-width: 960px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.tile-container a {
+  color: #727272;
+}
+
+.tile-container a:hover {
+  color: #000;
 }
 
 .tile-container .tile {
-  border: 1px solid #e8e8e8;
-  width: 250px;
-  height: 300px;
+  width: 400px;
   display: inline-block;
-  padding: 20px;
-  margin: 20px;
-}
-
-.tile-container .tile:hover {
-  background-color: #F6F6F6;
-  border-bottom: 2px solid #ff7911;
+  padding: 40px 40px 50px 0;
 }
 
 .tile-container .tile .title {
-  color: #727272;
   text-decoration: none;
-  width: 110px;
-  margin: auto;
   font-size: 22px;
+}
+
+.tile-container .tile p {
+  font-size: 14px;
+}
+
+.blog-summary {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
+}
+
+.home .post .post-header a {
+  color: #000;
+}
+
+/* Documentation page styles */
+/* ----------------------------------------------------------*/
+
+.docs-wrap {
+  max-width: 950px;
+  margin: auto;
+}
+
+.content-container {
+  max-width: 700px;
+  float: right;
+}
+
+.left-nav {
+  max-width: 200px;
+  float: left;
+}
+
+.left-nav li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.left-nav li li {
+  list-style: none;
+  margin-left: 20px;
 }
 
 /* Post styles */
 /* ----------------------------------------------------------*/
+
+.post a         { color: #2a7ae2; text-decoration: none; }
+.post a:hover   { color: #000; text-decoration: underline; }
+.post a:visited { color: #205caa; }
 
 .post-header { margin: 20px 0 30px; }
 
@@ -257,6 +324,10 @@ a:visited { color: #205caa; }
 .post-content h4 {
   font-size: 20px;
   letter-spacing: -1px;
+}
+
+.post-content img {
+  max-width: 960px;
 }
 
 .post-content blockquote {

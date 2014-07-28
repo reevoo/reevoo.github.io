@@ -239,26 +239,37 @@ a:visited { color: #205caa; }
 }
 
 .tile-container a {
-  color: #727272;
-}
-
-.tile-container a:hover {
   color: #000;
 }
 
+.tile-container a:hover {
+  color: #727272;
+}
+
 .tile-container .tile {
-  width: 400px;
+  width: 250px;
   display: inline-block;
-  padding: 40px 40px 50px 0;
+  padding: 40px 68px 50px 0;
+  text-align: center;
 }
 
 .tile-container .tile .title {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 26px;
+}
+
+.tile-container .tile .title h3 {
+  padding: 10px 0;
+  font-weight: bold;
+
 }
 
 .tile-container .tile p {
   font-size: 14px;
+}
+
+.tile-container .tile .title img.three-svg {
+  width: 200px;
 }
 
 .blog-summary {

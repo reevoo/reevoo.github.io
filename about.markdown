@@ -1,8 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /about/
-navId: about
 ---
 
 # About Reevoo Engineering.

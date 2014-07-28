@@ -1,6 +1,6 @@
 ---
 id: documentation
-title: ReevooMark Documentation
+title: Documentation
 layout: docs
 ---
 

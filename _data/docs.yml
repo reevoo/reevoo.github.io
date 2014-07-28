@@ -1,9 +1,13 @@
-- title: Reevoo Mark
+- id: reevoomark
+  title: Reevoo Mark
   url: reevoomark/home
   items:
   - id: getting-started
     title: Getting started
-- title: Reevoo API
+  - id: rating-and-reviews
+    title: "Rating & Reviews"
+- id: reevooapi
+  title: Reevoo API
   url: reevooapi/home
   items:
   - id: getting-started

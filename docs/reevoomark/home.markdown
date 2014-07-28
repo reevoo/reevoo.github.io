@@ -1,5 +1,7 @@
 ---
-layout: page
-title: Home
+id: reevoomark
+layout: docs
+title: Reevoo Mark
 ---
 
+This is a documentation page

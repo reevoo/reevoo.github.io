@@ -233,6 +233,8 @@ li { list-style-position: inside; }
 
 .header-section {
   background-color: #F7F7F7;
+  bottom: 1px;
+  position: relative;
 }
 
 .tile-container {

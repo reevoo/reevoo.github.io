@@ -412,6 +412,8 @@ li { list-style-position: inside; }
   padding-left: 0;
 }
 
+p > code { white-space: nowrap; }
+
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;

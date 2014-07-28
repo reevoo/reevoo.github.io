@@ -10,3 +10,23 @@
   items:
   - id: getting-started
     title: Getting started
+  - id: organisations
+    title: Organisations
+  - id: organisation
+    title: Organisation
+  - id: reviewables
+    title: Reviewables
+  - id: reviewables-short-format
+    title: Reviewables Short Format
+  - id: reviewable
+    title: Reviewable
+  - id: reviewable-short-format
+    title: Reviewable Short Format
+  - id: reviews
+    title: Reviews
+  - id: review
+    title: Review
+  - id: customer-experience-reviews
+    title: Customer Experience Reviews
+  - id: customer-experience-review
+    title: Customer Experience Review

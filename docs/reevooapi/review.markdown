@@ -3,6 +3,9 @@ id: review
 layout: docs
 title: Platform API v4 / Review
 navId: docs
+group: reevooapi
+prev: reviews
+next: customer-experience-reviews
 ---
 
 # Review
@@ -34,7 +37,7 @@ Details for a single review.
 
 ## JSON Example
 {% highlight json %}
-{  
+{
    "id":5996122,
    "overall_score":9,
    "helpful":0,
@@ -42,33 +45,33 @@ Details for a single review.
    "good_points":"For the money excellent value.",
    "bad_points":"Still too early for a proper evaluation\r\nNone as yet",
    "general_comments":null,
-   "reviewer":{  
+   "reviewer":{
       "first_name":"Robert",
       "location":"Catford, London",
       "segment":"Home user",
       "facebook_avatar_url":null
    },
-   "facets":[  
-      {  
+   "facets":[
+      {
          "question_id":30,
          "translation_key":"questionnaire.question_texts.performance.question_text",
          "display_text":"Performance",
          "is_active":true,
          "is_public":true,
          "tag":null,
-         "statistics":{  
+         "statistics":{
             "summation":9.0,
             "respondents":1
          }
       },
-      {  
+      {
          "question_id":37,
          "translation_key":"questionnaire.question_texts.reliability.question_text",
          "display_text":"Reliability",
          "is_active":true,
          "is_public":true,
          "tag":null,
-         "statistics":{  
+         "statistics":{
             "summation":9.0,
             "respondents":1
          }

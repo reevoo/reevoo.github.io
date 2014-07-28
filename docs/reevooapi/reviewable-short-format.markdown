@@ -3,6 +3,9 @@ id: reviewable-short-format
 layout: docs
 title: Platform API v4 / Reviewable Short Format
 navId: docs
+group: reevooapi
+prev: reviewable
+next: reviews
 ---
 
 # Reviewable - Short Format
@@ -30,7 +33,7 @@ a short set of key values for the reviewable, including the review count and ave
 
 ## JSON Example
 {% highlight json %}
-{  
+{
    "sku":"393828",
    "review_count":0,
    "average_score":"0"

@@ -3,6 +3,9 @@ id: reviewables
 layout: docs
 title: Platform API v4 / Reviewables
 navId: docs
+group: reevooapi
+prev: organisation
+next: reviewables-short-format
 ---
 
 # Reviewables
@@ -35,9 +38,9 @@ organisation.
 
 ## JSON Example
 {% highlight json %}
-{  
-   "summary":{  
-      "pagination":{  
+{
+   "summary":{
+      "pagination":{
          "total_entries":177920,
          "total_pages":5931,
          "current_page":1,
@@ -46,24 +49,24 @@ organisation.
          "next_page":2
       }
    },
-   "reviewables":[  
-      {  
+   "reviewables":[
+      {
          "name":"Hp 342 Tricolou Hp 342 Tri Colour 5ml Ink",
          "has_reviews":true,
          "has_image":true,
          "image_url":"//images.reevoo.com/retailer_products/1016283/1016283672/90x90.jpg?timestamp=1379547582",
-         "finder_options":{  
+         "finder_options":{
             "sku":"100000",
             "locale":"en-GB"
          },
          "reviews_path":"/v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=100000/reviews"
       },
-      {  
+      {
          "name":"Hauppauge Win TV Nova-S Plus Digital Satellite Card TV And Radio Card PCI",
          "has_reviews":false,
          "has_image":true,
          "image_url":"//images.reevoo.com/retailer_products/1006735/1006735219/90x90.jpg?timestamp=1379287067",
-         "finder_options":{  
+         "finder_options":{
             "sku":"100017",
             "locale":"en-GB"
          },

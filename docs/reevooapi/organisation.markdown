@@ -3,6 +3,9 @@ id: organisation
 layout: docs
 title: Platform API v4 / Organisation
 navId: docs
+group: reevooapi
+prev: organisations
+next: reviewables
 ---
 
 # Organisation
@@ -36,13 +39,13 @@ retrieve information for organisations that their API key is assigned to.
 
 ## JSON Example
 {% highlight json %}
-{  
+{
    "trkref":"D10",
    "locale":"en-GB",
    "name":"Demo Organisation",
    "reviewables_path":"/v4/organisations;trkref=D10",
    "customer_experience_reviews_path":"/v4/organisations;trkref=D10/customer_experience_reviews",
-   "customer_experience_scores":{  
+   "customer_experience_scores":{
       "percentage_who_would_recommend":97,
       "number_of_retailer_rating_reviews":2020,
       "percentage_happy_with_delivery":96,

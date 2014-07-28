@@ -3,6 +3,8 @@ id: customer-experience-review
 layout: docs
 title: Platform API v4 / Customer Experience Review
 navId: docs
+group: reevooapi
+prev: customer-experience-reviews
 ---
 
 # Customer Experience Review
@@ -31,37 +33,37 @@ Details for a single customer experience review.
 
 ## JSON Example
 {% highlight json %}
-{  
+{
    "branch_attribution":null,
    "purchase_date":"2014-03-28",
-   "reviewer":{  
+   "reviewer":{
       "first_name":"Robert",
       "location":"Catford, London",
       "segment":"Home user",
       "facebook_avatar_url":null
    },
-   "responses":[  
-      {  
+   "responses":[
+      {
          "display_key":"good_points",
          "answer":null
       },
-      {  
+      {
          "display_key":"bad_points",
          "answer":null
       },
-      {  
+      {
          "display_key":"general_comments",
          "answer":"Ordered 3pm arrived 9.20 am next day."
       },
-      {  
+      {
          "display_key":"would_buy_again",
          "answer":true
       },
-      {  
+      {
          "display_key":"happy_with_delivery",
          "answer":true
       },
-      {  
+      {
          "display_key":"happy_with_customer_service",
          "answer":null
       }

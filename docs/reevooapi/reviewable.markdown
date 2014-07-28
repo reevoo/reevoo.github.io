@@ -3,6 +3,9 @@ id: reviewable
 layout: docs
 title: Platform API v4 / Reviewable
 navId: docs
+group: reevooapi
+prev: reviewables-short-format
+next: reviewable-short-format
 ---
 
 # Reviewable
@@ -37,12 +40,12 @@ reviews will only be returned for the organisation's locale.
 
 ## JSON Example
 {% highlight json %}
-{  
+{
    "name":"Toshiba DT01ACA0100 1TB",
    "has_reviews":true,
    "has_image":true,
    "image_url":"//images.reevoo.com/retailer_products/1006883/1006883996/90x90.jpg?timestamp=1367698589",
-   "finder_options":{  
+   "finder_options":{
       "sku":"393828",
       "locale":"en-GB"
    },

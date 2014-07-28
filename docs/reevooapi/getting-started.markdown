@@ -3,6 +3,8 @@ id: getting-started
 layout: docs
 title:  "Platform API v4"
 navId: docs
+group: reevooapi
+next: organisations
 ---
 
 # Reevoo Platform API v4

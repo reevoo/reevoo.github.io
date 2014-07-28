@@ -3,6 +3,9 @@ id: organisations
 layout: docs
 title: Platform API v4 / Organisations
 navId: docs
+group: reevooapi
+prev: getting-started
+next: organisation
 ---
 
 # Organisations
@@ -29,9 +32,9 @@ N / A
 
 ## JSON Example
 {% highlight json %}
-{  
-   "summary":{  
-      "pagination":{  
+{
+   "summary":{
+      "pagination":{
          "total_entries":1,
          "total_pages":1,
          "current_page":1,
@@ -40,8 +43,8 @@ N / A
          "next_page":null
       }
    },
-   "organisations":[  
-      {  
+   "organisations":[
+      {
          "trkref":"D10",
          "locale":"en-GB",
          "name":"Demo Organisation",

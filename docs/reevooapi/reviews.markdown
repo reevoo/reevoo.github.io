@@ -3,6 +3,9 @@ id: reviews
 layout: docs
 title: Platform API v4 / Reviews
 navId: docs
+group: reevooapi
+prev: reviewable-short-format
+next: review
 ---
 
 # Reviews
@@ -37,71 +40,71 @@ be included.
 
 ## JSON Example
 {% highlight json %}
-{  
-   "summary":{  
-      "facets":[  
-         {  
+{
+   "summary":{
+      "facets":[
+         {
             "question_id":30,
             "translation_key":"questionnaire.question_texts.performance.question_text",
             "display_text":"Performance",
             "is_active":true,
             "is_public":true,
             "tag":null,
-            "statistics":{  
+            "statistics":{
                "summation":786.0,
                "respondents":88
             }
          },
-         {  
+         {
             "question_id":37,
             "translation_key":"questionnaire.question_texts.reliability.question_text",
             "display_text":"Reliability",
             "is_active":true,
             "is_public":true,
             "tag":null,
-            "statistics":{  
+            "statistics":{
                "summation":742.0,
                "respondents":84
             }
          },
-         {  
+         {
             "question_id":38,
             "translation_key":"questionnaire.question_texts.capacity.question_text",
             "display_text":"Capacity",
             "is_active":true,
             "is_public":true,
             "tag":null,
-            "statistics":{  
+            "statistics":{
                "summation":804.0,
                "respondents":88
             }
          },
-         {  
+         {
             "question_id":7,
             "translation_key":"questionnaire.question_texts.value_for_money.question_text",
             "display_text":"Value for money",
             "is_active":true,
             "is_public":true,
             "tag":"value-for-money",
-            "statistics":{  
+            "statistics":{
                "summation":961.0,
                "respondents":105
             }
          },
-         {  
+         {
             "question_id":8,
             "translation_key":"questionnaire.question_texts.overall_rating.question_text",
             "display_text":"Overall rating",
             "is_active":true,
             "is_public":true,
             "tag":"overall",
-            "statistics":{  
+            "statistics":{
                "summation":960.0,
                "respondents":106
             }
          }
       ],
-      "pagination":{  
+      "pagination":{
          "total_entries":106,
          "total_entries_with_content":73,
          "total_pages":8,
@@ -111,8 +114,8 @@ be included.
          "next_page":2
       }
    },
-   "reviews":[  
-      {  
+   "reviews":[
+      {
          "id":5996122,
          "overall_score":9,
          "helpful":0,
@@ -120,33 +123,33 @@ be included.
          "good_points":"For the money excellent value.",
          "bad_points":"Still too early for a proper evaluation\r\nNone as yet",
          "general_comments":null,
-         "reviewer":{  
+         "reviewer":{
             "first_name":"Robert",
             "location":"Catford, London",
             "segment":"Home user",
             "facebook_avatar_url":null
          },
-         "facets":[  
-            {  
+         "facets":[
+            {
                "question_id":30,
                "translation_key":"questionnaire.question_texts.performance.question_text",
                "display_text":"Performance",
                "is_active":true,
                "is_public":true,
                "tag":null,
-               "statistics":{  
+               "statistics":{
                   "summation":9.0,
                   "respondents":1
                }
             },
-            {  
+            {
                "question_id":37,
                "translation_key":"questionnaire.question_texts.reliability.question_text",
                "display_text":"Reliability",
                "is_active":true,
                "is_public":true,
                "tag":null,
-               "statistics":{  
+               "statistics":{
                   "summation":9.0,
                   "respondents":1
                }

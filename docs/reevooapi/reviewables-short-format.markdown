@@ -3,15 +3,18 @@ id: reviewables-short-format
 layout: docs
 title: Platform API v4 / Reviewables Short Format
 navId: docs
+group: reevooapi
+prev: reviewables
+next: reviewable
 ---
 
 # Reviewables - Short Format
 If you pass the parameter format=short to the reviewables endpoint you will be provided with
-a short format version of all the reviewables associated to the specified organisation. 
+a short format version of all the reviewables associated to the specified organisation.
 
 This functionality is enabled only for some organisations and can be quite large, so is cached
 server side and refreshed on a daily basis. The attribute "date_time_created" shows the
-date/time when the list was last generated. 
+date/time when the list was last generated.
 
 Note: The server will return { status: 406 } if the specified organisation is not supported
 by this endpoint.
@@ -40,23 +43,23 @@ by this endpoint.
 
 ## JSON Example
 {% highlight json %}
-{  
-   "summary":{  
+{
+   "summary":{
       "date_time_created":"2014-07-10T13:38:22+01:00",
       "product_count":3
    },
-   "reviewables":[  
-      {  
+   "reviewables":[
+      {
          "sku":"000016",
          "review_count":1,
          "average_score":10.0
       },
-      {  
+      {
          "sku":"000025",
          "review_count":0,
          "average_score":0.0
       },
-      {  
+      {
          "sku":"000033",
          "review_count":0,
          "average_score":0.0

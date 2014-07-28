@@ -31,6 +31,8 @@ There is a really nice feature, called Ask An Owner, that allows any consumer wh
 
 I was impressed by how willing people are to share their honest opinions about the products they buy, because the number of reviews is quite impressive. I believe that this is happening because people actually realise (consciously or subconsciously) Barry’s point: how much of a burden is to have too much choice. Therefore they want to help and to be helped. 
 
+Reevoo built a bridge between these users seeking for mutual support and enhanced the experience of each one of us. 
+
 
 Barry Schwartz Ted Talk: [The paradox of choice][Barry].
 

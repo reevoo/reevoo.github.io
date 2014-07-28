@@ -3,6 +3,8 @@ layout: post
 title: "The quest for our best personal match!"
 date:  2014-07-25 10:58:44
 categories: blog
+author: Diana Bicazan
+github: nazabic
 navId: blog
 ---
 

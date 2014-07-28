@@ -160,8 +160,13 @@ a:visited { color: #205caa; }
   font-style: italic;
 }
 
+.site-footer .icon {
+  padding-right: 5px;
+}
+
 .github-icon-svg,
-.twitter-icon-svg {
+.twitter-icon-svg,
+.email-icon-svg {
   display: inline-block;
   width: 16px;
   height: 16px;

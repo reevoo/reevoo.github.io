@@ -24,8 +24,9 @@ It means you cannot defer your architecture decisions any more, you definitely n
 First of all, you need to make a decision what the best for you will be either start from scratch or refactor a legacy application.
 In most cases, refactoring will be more preferable. Constant improvements and slow pace - happy customers.
 
-
 Also, keep in mind that legacy code is not completely broken / unuseful / unpleasant, it was created at some point in time for particular requirements within particular time frame. Don’t blame, people were doing their best. Everyone’s code will be blamed for sooner or later, even yours.
+
+## Testing tools
 
 At Reevoo, we decided to follow Service Oriented Architecture strategy. It means that some monolith applications will be split into smaller functional applications with single responsibly.
 
@@ -40,12 +41,13 @@ Refactoring is the process of changing/improving internal structure of software 
 
 Apart from improving internal test coverage, we decided to focus on two external ways of verification: “System Test" and "Shadow Stress Test”.
 
-System Test is a full life cycle testing process that checks that all modules and applications interconnect correctly.
-Shadow Stress Test is a real time stress testing under live mirrored traffic (More details in the coming blog post).
+**System Test** is a full life cycle testing process that checks that all modules and applications interconnect correctly.
+
+**Shadow Stress Test** is a real time stress testing under live mirrored traffic (More details in the coming blog post).
 
 System Test is unable to cover all known edge cases, however it gives you a good taste of a new code. It covers standard flow and as a result most customers.
 
-For performance testing we have chosen [New Relic][newrelic] and it has proven itself as a strong tool. Memory or CPU consumption, database query performance, slowest average response time and much more available to compare after new code has being deployed.
+For performance testing we have chosen **[New Relic][newrelic]** and it has proven itself as a strong tool. Memory or CPU consumption, database query performance, slowest average response time and much more available to compare after new code has being deployed.
 
 Also it was a valuable way to visualise benefits or disadvantages of code refactoring.
 

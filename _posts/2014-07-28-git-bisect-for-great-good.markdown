@@ -8,7 +8,7 @@ author: Ed Robinson
 github: errm
 ---
 
-Git bisect is an awesome way to quickly find a regression that might have found its way into your code.  While benchmarking ruby HTTP libraries I found that at some point a performance regression had been introduced into [excon](https://github.com/excon/excon/issues).
+Git bisect is an awesome way to quickly find a regression that might have found its way into your code.  While benchmarking ruby HTTP libraries I found that at some point a performance regression had been introduced into [excon](https://github.com/excon/excon).
 That bugged me and I wanted to find out what had caused the issue.
 
 Luckily the authors of excon had included a benchmarking suite to test the performance of the library. With a bit of fiddling I quickly found that while the 0.28.0 release was quite performant:

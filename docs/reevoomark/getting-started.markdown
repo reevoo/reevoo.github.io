@@ -10,7 +10,7 @@ next: javascript-library
 Getting Started
 ===============
 
-Reevoo used a JavaScript to provide our solutions to you. We have strived to keep this as clean and simple as possible for you.
+Reevoo uses a JavaScript to provide access to our ratings and reviews solution directly to browsers. We have strived to keep this as clean and simple as possible to implement and use.
 
 Please note that all of these examples use capitalized words such as ```TRKREF``` or ```SKU``` to indicate values you should provide.
 

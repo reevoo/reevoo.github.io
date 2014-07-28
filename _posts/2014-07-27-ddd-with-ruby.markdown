@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Domain-driven design on Rails - Part 1"
-date:   2014-07-28 16:58:44
+date:   2014-07-28 15:33:44
 categories: blog
 author: David Sevcik
 github: davidsevcik
@@ -40,7 +40,7 @@ Because of that I have decided to build a new proof of concept application. It s
 
 ![Delivery service domain](/images/delivery_service_ddd.png)
 
-The initial source code is available on [https://github.com/davidsevcik/dddelivery-domain](https://github.com/davidsevcik/dddelivery-domain) and is going to be enhanced over the time together with next articles focused on concrete challenges with writing the application.
+The initial source code is available on [https://github.com/davidsevcik/dddelivery-domain](https://github.com/davidsevcik/dddelivery-domain) and is going to be enhanced over the time together with following articles focused on concrete challenges with writing the application. Stay tuned.
 
 
 

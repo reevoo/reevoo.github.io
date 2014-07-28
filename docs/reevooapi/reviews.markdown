@@ -2,6 +2,7 @@
 id: reviews
 layout: docs
 title: Platform API v4 / Reviews
+navId: docs
 ---
 
 # Reviews

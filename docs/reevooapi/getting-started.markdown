@@ -2,6 +2,7 @@
 id: getting-started
 layout: docs
 title:  "Platform API v4"
+navId: docs
 ---
 
 # Reevoo Platform API v4

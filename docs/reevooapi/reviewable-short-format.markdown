@@ -2,6 +2,7 @@
 id: reviewable-short-format
 layout: docs
 title: Platform API v4 / Reviewable Short Format
+navId: docs
 ---
 
 # Reviewable - Short Format

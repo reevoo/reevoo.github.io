@@ -2,6 +2,7 @@
 id: reviewable
 layout: docs
 title: Platform API v4 / Reviewable
+navId: docs
 ---
 
 # Reviewable

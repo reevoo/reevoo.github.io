@@ -2,6 +2,7 @@
 id: customer-experience-reviews
 layout: docs
 title: Platform API v4 / Customer Experience Reviews
+navId: docs
 ---
 
 # Customer Experience Reviews

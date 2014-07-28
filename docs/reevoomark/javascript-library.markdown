@@ -7,8 +7,6 @@ prev: getting-started
 next: rating-and-reviews
 ---
 
-EXPLAIN HOW THIS LIBRARY IS LOADED, what is changeable (PROTOCOL) and suggest that customers do not change it, as it is async, does not block loading of pages or interact with anything but itself
-
 JavaScript Library
 =============================
 

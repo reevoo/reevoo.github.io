@@ -8,8 +8,6 @@ prev: javascript-library
 next: conversation
 ---
 
-EXPLANATION OF THE FINER POINTS OF THE REEVOO MARK RETAILER SPECIFIC CONFIGURATION SETTINGS (LINK TO?)
-
 Retailer specific configuration
 ===============================
 

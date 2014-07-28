@@ -7,12 +7,10 @@ group: reevoomark
 next: javascript-library
 ---
 
-All pages that you wish to display ratings and reviews, or make use of our library, requires you to include our library.
-
-EXAMPLE OF THE STANDARD WAY and how we provide many different possibilites of how to use
-
 Getting Started
 ===============
+
+All pages that you wish to display ratings and reviews, or make use of our library, requires you to include our library.
 
 {% highlight html %}
 <!-- protocol-relative URL -->

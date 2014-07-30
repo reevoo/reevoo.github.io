@@ -1,3 +1,7 @@
+- title: Stratocumulus
+  url: stratocumulus
+- title: coreos-rabbitmq
+  url: coreos_rabbitmq
 - title: ReevooMark Java API
   url: reevoomark_java_api
 - title: ReevooMark Dotnet API

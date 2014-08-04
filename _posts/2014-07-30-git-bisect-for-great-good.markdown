@@ -6,6 +6,7 @@ categories: blog
 navId: blog
 author: Ed Robinson
 github: errm
+excerpt: Git bisect is an awesome way to quickly find a regression that might have found its way into your code. Here I walkthrough using it to find performance regressions in an open source project.
 ---
 
 ![Git Bisect](/assets/git-bisect.jpg)

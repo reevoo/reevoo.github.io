@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stress driven development"
-date:   2014-08-01 10:58:44
+date:   2014-08-04 10:58:44
 categories: blog
 navId: blog
 author: Philip Stevens

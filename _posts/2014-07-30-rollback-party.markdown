@@ -6,6 +6,7 @@ categories: blog
 navId: blog
 author: Ed Robinson
 github: errm
+excerpt: Some pictures from our party to celebrate the (failed) final deploy in our epic 6 month refactoring project
 ---
 
 ![Lunch](/assets/lunch.jpg)

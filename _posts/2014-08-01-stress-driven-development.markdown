@@ -3,6 +3,9 @@ layout: post
 title:  "Stress driven development"
 date:   2014-08-01 10:58:44
 categories: blog
+navId: blog
+author: Philip Stevens
+github: plcstevens
 ---
 
 Grady Booch wrote about this [a long time ago](http://web.archive.org/web/20050203010041/http://www.manamplified.org/archives/000203.html). It was written as a response to __Test Driven Development__ (TDD). He spoke about architecture decisions, language choices, and library choices. He talked of the importance of prototyping your system, stress testing alpha builds, and making decisions on scale vs power early on and throughout the lifecycle.

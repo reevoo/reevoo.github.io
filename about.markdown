@@ -4,6 +4,8 @@ title: About
 navId: about
 ---
 
+![The Team](/images/the-team-july-2014.jpg)
+
 # About Reevoo Engineering.
 
 We love [TTD](http://en.wikipedia.org/wiki/Test-driven_development) and [Continuous delivery](http://en.wikipedia.org/wiki/Continuous_delivery). We write in Ruby, NodeJS, Java, PHP, C# and use languages such as Chef for deployment onto AWS.

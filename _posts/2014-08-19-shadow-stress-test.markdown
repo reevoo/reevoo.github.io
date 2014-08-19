@@ -1,15 +1,12 @@
 ---
 layout: post
-title:  "Shadow Stress Test"
-date:   2014-19-02 14:31:39
+title:  Shadow Stress Test
+date:   2014-08-19 14:31:39
 categories: blog
 navId: blog
 ---
 
-
-
 In my previous blog post "[Refactoring without good test coverage][refactoring]” I mentioned using Shadow Stress Test at Reevoo - real time stress testing under live mirrored traffic. Therefore we are able to test new code with real clients traffic without affecting clients.
-
 
 Our production servers hosted at Amazon S3 allow us to create a snapshot of server instance.
 One of our live instances configured to send a copy of live traffic into copied (shadow) instance.
@@ -83,11 +80,6 @@ For example you can see on the graph - response code breakdown.
 Later you can filter traffic with response code 200 from production and not 200 from shadow to identify the difference, especially if you legacy application does not have a good test coverage.
 
 ![Shadow/Production comparison][shadow1]
-
-
-
-
-
 
 [refactoring]: /blog/2014/07/28/refactoring-without-good-test-coverage/
 [shadow1]: /images/shadow1.png

@@ -8,7 +8,7 @@ navId: blog
 
 In my previous blog post "[Refactoring without good test coverage][refactoring]” I mentioned using Shadow Stress Test at Reevoo - real time stress testing under live mirrored traffic. Therefore we are able to test new code with real clients traffic without affecting clients.
 
-Our production servers hosted at Amazon S3 allow us to create a snapshot of server instance.
+Our production servers hosted at Amazon EC2 allow us to create a snapshot of server instance.
 One of our live instances configured to send a copy of live traffic into copied (shadow) instance.
 
 To do this, we decided to use [EM-Proxy][em-proxy] gem (EventMachine Proxy DSL).

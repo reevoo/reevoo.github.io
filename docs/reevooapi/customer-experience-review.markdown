@@ -30,12 +30,16 @@ Details for a single customer experience review.
 |responses                                |array of responses                         |
 |<span class="indent-1">display_key</span>|                                           |
 |<span class="indent-1">answer</span>     |                                           |
+|customer_ref                             |retailer's customer reference  (enabled only for some organisations)            |
+|order_ref                                |retailer's order reference     (enabled only for some organisations)            |
 
 ## JSON Example
 {% highlight json %}
 {
    "branch_attribution":null,
    "purchase_date":"2014-03-28",
+   "customer_ref": "12345678",
+   "order_ref": "87654321",
    "reviewer":{
       "first_name":"Robert",
       "location":"Catford, London",

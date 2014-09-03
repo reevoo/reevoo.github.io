@@ -34,6 +34,8 @@ Details for a single review.
 |general_comments|general comments text                                  |
 |reviewer        |reviewer object                                        |
 |facets          |facets object                                          |
+|customer_ref    |retailer's customer reference   (enabled only for some organisations) |
+|order_ref       |retailer's order reference      (enabled only for some organisations) |
 
 ## JSON Example
 {% highlight json %}
@@ -45,6 +47,8 @@ Details for a single review.
    "good_points":"For the money excellent value.",
    "bad_points":"Still too early for a proper evaluation\r\nNone as yet",
    "general_comments":null,
+   "customer_ref": "12345678",
+   "order_ref": "87654321",
    "reviewer":{
       "first_name":"Robert",
       "location":"Catford, London",

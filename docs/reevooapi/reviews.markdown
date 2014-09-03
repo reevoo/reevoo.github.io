@@ -123,6 +123,8 @@ be included.
          "good_points":"For the money excellent value.",
          "bad_points":"Still too early for a proper evaluation\r\nNone as yet",
          "general_comments":null,
+         "customer_ref": "12345678",
+         "order_ref": "87654321",
          "reviewer":{
             "first_name":"Robert",
             "location":"Catford, London",

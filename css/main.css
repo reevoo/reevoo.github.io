@@ -252,7 +252,7 @@ li { list-style-position: inside; }
 }
 
 .tile-container .tile {
-  width: 250px;
+  width: 249px;
   display: inline-block;
   padding: 40px 68px 50px 0;
   text-align: center;

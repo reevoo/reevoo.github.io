@@ -11,7 +11,13 @@ prev: customer-experience-reviews
 Details for a single customer experience review.
 
 ## URL Example(s)
-/v4/organisations;trkref=D10/customer_experience_reviews/2774063
+/v4/customer_experience_reviews/2774063?trkref=D10
+
+<div class="warning">
+  <strong>This URL: </strong> 
+  /v4/organisations;trkref=D10/customer_experience_reviews/2774063 
+  <strong> will soon no longer be supported. Please switch to the current URL above.</strong><br/>
+</div>
 
 ## Parameter(s)
 

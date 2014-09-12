@@ -14,7 +14,13 @@ from this end point will all relate directly to products and services supplied b
 organisation.
 
 ## URL Example(s)
-/v4/organisations;trkref=D10/reviewables
+/v4/reviewables?trkref=D10
+
+<div class="warning">
+  <strong>This URL: </strong> 
+  /v4/organisations;trkref=D10/reviewables
+  <strong> will soon no longer be supported. Please switch to the current URL above.</strong><br/>
+</div>
 
 ## Parameter(s)
 

@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "HTTP Shooting Party"
-date:   2014-07-28 12:09:17
+date:   2014-09-12 12:09:17
 categories: blog
 navId: blog
+excerpt: Here at reevoo we have been busy building an API for our data, part of this process involved a large refactoring of our core front end app reevoomark to use the new API.
 ---
 
 ![HTTP Shooting Party](/assets/http-shooting-party.jpg)
@@ -81,7 +82,7 @@ Enabling Keepalive on your server makes a big differnce when using a client that
 On Ubuntu these dependencies can be installed with `sudo apt-get install libcurl3 libcurl3-gnutls libcurl4-openssl-dev`
 
 
-## Further Reading 
+## Further Reading
 
 * [ruby HTTP client performance shootout redux](http://bibwild.wordpress.com/2012/04/30/ruby-http-performance-shootout-redux/)
 * [Ruby HTTP clients comparison](http://bit.ly/RubyHTTPClients)

@@ -18,7 +18,7 @@ a short set of key values for the reviewable, including the review count and ave
 <div class="warning">
   <strong>This URL: </strong> 
   /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=393828?format=short
-  <strong> will soon no longer be supported. Please switch to the current URL above.</strong><br/>
+  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
 ## Parameter(s)

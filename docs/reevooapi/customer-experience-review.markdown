@@ -16,7 +16,7 @@ Details for a single customer experience review.
 <div class="warning">
   <strong>This URL: </strong> 
   /v4/organisations;trkref=D10/customer_experience_reviews/2774063 
-  <strong> will soon no longer be supported. Please switch to the current URL above.</strong><br/>
+  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
 ## Parameter(s)

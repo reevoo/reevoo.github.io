@@ -13,7 +13,13 @@ Allow a user to retrieve information for a specific organisation.Users are only 
 retrieve information for organisations that their API key is assigned to.
 
 ## URL Example(s)
-/v4/organisations;trkref=D10
+/v4/organisations/D10
+
+<div class="warning">
+  <strong>This URL: </strong> 
+  /v4/organisations;trkref=D10
+  <strong> will soon no longer be supported. Please switch to the current URL above.</strong><br/>
+</div>
 
 ## Parameter(s)
 

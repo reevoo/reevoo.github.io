@@ -1,7 +1,22 @@
 table.documentation { width: 100%; }
 
-table.documentation tr td             { text-align: right; }
+table.documentation tr td             {
+    text-align: right;
+    border-bottom: 1px dotted grey;
+}
 table.documentation tr td:first-child { text-align: left; }
 
 table.documentation span.indent-1 { margin-left: 20px; }
 table.documentation span.indent-2 { margin-left: 40px; }
+
+.warning {
+    /*margin-left: -3px !important;*/
+    border: 1px dotted red;
+    padding: 10px 10px;
+    background-color: #E5E5E5;
+    font: #9D9D9D;
+}
+
+strong {
+    font-weight: bold;
+}

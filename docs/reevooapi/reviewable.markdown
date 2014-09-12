@@ -21,7 +21,7 @@ reviews will only be returned for the organisation's locale.
 <div class="warning">
   <strong>This URL: </strong> 
   /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=393828 
-  <strong> will soon no longer be supported. Please switch to the current URL above.</strong><br/>
+  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
 ## Parameter(s)

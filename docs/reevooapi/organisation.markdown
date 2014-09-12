@@ -18,7 +18,7 @@ retrieve information for organisations that their API key is assigned to.
 <div class="warning">
   <strong>This URL: </strong> 
   /v4/organisations;trkref=D10
-  <strong> will soon no longer be supported. Please switch to the current URL above.</strong><br/>
+  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
 ## Parameter(s)

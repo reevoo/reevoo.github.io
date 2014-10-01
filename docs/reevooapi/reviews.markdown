@@ -125,6 +125,7 @@ be included.
          "general_comments":null,
          "customer_ref": "12345678",
          "order_ref": "87654321",
+         "embeddable": false,
          "reviewer":{
             "first_name":"Robert",
             "location":"Catford, London",

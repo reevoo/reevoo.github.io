@@ -12,7 +12,7 @@ next: customer-experience-reviews
 Details for a single review.
 
 ## URL Example(s)
-/v4/reviews/5996122?trkref=D10
+/v4/reviews/310946?trkref=D10
 
 <div class="warning">
   <strong>This URL: </strong> 

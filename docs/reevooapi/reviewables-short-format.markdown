@@ -20,7 +20,7 @@ Note: The server will return { status: 406 } if the specified organisation is no
 by this endpoint.
 
 ## URL Example(s)
-/v4/reviewables?trkref=D10&format=short
+/v4/organisations/D10/reviewables?format=short
 
 <div class="warning">
   <strong>This URL: </strong> 

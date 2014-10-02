@@ -16,7 +16,7 @@ has international aggregation turned on, reviews will be returned for all locale
 reviews will only be returned for the organisation's locale.
 
 ## URL Example(s)
-/v4/reviewables/search?trkref=D10&locale=en-GB&sku=393828
+/v4/organisations/D10/reviewable?locale=en-GB&sku=AIPTPDV5700
 
 <div class="warning">
   <strong>This URL: </strong> 

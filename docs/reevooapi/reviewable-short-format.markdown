@@ -13,7 +13,7 @@ If you pass the parameter format=short to the reviewable endpoint you will be pr
 a short set of key values for the reviewable, including the review count and average score.
 
 ## URL Example(s)
-/v4/reviewables?trkref=D10&locale=en-GB&sku=393828&format=short
+/v4/organisations/D10/reviewable?locale=en-GB&sku=AIPTPDV5700&format=short
 
 <div class="warning">
   <strong>This URL: </strong> 

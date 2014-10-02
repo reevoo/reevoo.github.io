@@ -15,7 +15,7 @@ Only published customer experience reviews will be included.
 
 
 ## URL Example(s)
-/v4/customer_experience_reviews?trkref=D10
+/v4/organisations/D10/customer_experience_reviews
 
 <div class="warning">
   <strong>This URL: </strong> 

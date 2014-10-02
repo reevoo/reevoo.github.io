@@ -14,7 +14,7 @@ that have been collected for other organisations may be included.Only published 
 be included.
 
 ## URL Example(s)
-/v4/reviews?trkref=D10&locale=en-GB&sku=393828
+/v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700
 
 <div class="warning">
   <strong>This URL: </strong> 

@@ -14,7 +14,7 @@ from this end point will all relate directly to products and services supplied b
 organisation.
 
 ## URL Example(s)
-/v4/reviewables?trkref=D10
+/v4/organisations/D10/reviewables
 
 <div class="warning">
   <strong>This URL: </strong> 

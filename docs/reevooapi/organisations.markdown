@@ -48,8 +48,8 @@ N / A
          "trkref":"D10",
          "locale":"en-GB",
          "name":"Demo Organisation",
-         "reviewables_path":"/v4/organisations;trkref=D10",
-         "customer_experience_reviews_path":"/v4/organisations;trkref=D10/customer_experience_reviews"
+         "reviewables_path":"/v4/organisations/D10",
+         "customer_experience_reviews_path":"/v4/organisations/D10/customer_experience_reviews"
       }
    ]
 }

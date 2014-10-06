@@ -18,7 +18,7 @@ be included.
 
 <div class="warning">
   <strong>This URL: </strong> 
-  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=393828/reviews
+  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700/reviews
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 

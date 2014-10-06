@@ -49,8 +49,8 @@ retrieve information for organisations that their API key is assigned to.
    "trkref":"D10",
    "locale":"en-GB",
    "name":"Demo Organisation",
-   "reviewables_path":"/v4/organisations;trkref=D10",
-   "customer_experience_reviews_path":"/v4/organisations;trkref=D10/customer_experience_reviews",
+   "reviewables_path":"/v4/organisations/D10",
+   "customer_experience_reviews_path":"/v4/organisations/D10/customer_experience_reviews",
    "customer_experience_scores":{
       "percentage_who_would_recommend":97,
       "number_of_retailer_rating_reviews":2020,

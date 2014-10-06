@@ -17,7 +17,7 @@ a short set of key values for the reviewable, including the review count and ave
 
 <div class="warning">
   <strong>This URL: </strong> 
-  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=393828?format=short
+  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700?format=short
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
@@ -40,7 +40,7 @@ a short set of key values for the reviewable, including the review count and ave
 ## JSON Example
 {% highlight json %}
 {
-   "sku":"393828",
+   "sku":"AIPTPDV5700",
    "review_count":0,
    "average_score":"0"
 }

@@ -65,7 +65,7 @@ organisation.
             "sku":"100000",
             "locale":"en-GB"
          },
-         "reviews_path":"/v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=100000/reviews"
+         "reviews_path":"/v4/organisations/D10/reviews?locale=en-GB&sku=100000"
       },
       {
          "name":"Hauppauge Win TV Nova-S Plus Digital Satellite Card TV And Radio Card PCI",
@@ -76,7 +76,7 @@ organisation.
             "sku":"100017",
             "locale":"en-GB"
          },
-         "reviews_path":"/v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=100017/reviews"
+         "reviews_path":"/v4/organisations/D10/reviews?locale=en-GB&sku=100017"
       },
       ...
    ]

@@ -15,19 +15,19 @@ As an example, looking at the current technical documentation being handed to cu
 
 {% highlight html %}
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
-	(function() {
-		var script = document.createElement('script');
-    		script.type = 'text/javascript';
-    		script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
-    		var s = document.getElementById('reevoomark-loader');
-    		s.parentNode.insertBefore(script, s);
-  	})();
+  (function() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
+    var s = document.getElementById('reevoomark-loader');
+    s.parentNode.insertBefore(script, s);
+  })();
   
-  	afterReevooMarkLoaded = [function() {
-    		ReevooApi.load('TRKREF', function(retailer) {
-   			retailer.init_badges();
-    		});
-  	}];
+  afterReevooMarkLoaded = [function() {
+    ReevooApi.load('TRKREF', function(retailer) {
+   	  retailer.init_badges();
+    });
+  }];
 </script>
 {% endhighlight %}
 
@@ -35,18 +35,19 @@ As an example, looking at the current technical documentation being handed to cu
 
 {% highlight html %}
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
-	(function() {
-   		var script = document.createElement('script');
-   		script.type = 'text/javascript';
-   		script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
-   		var s = document.getElementById('reevoomark-loader');
-   		s.parentNode.insertBefore(script, s);
-  	})();
-	afterReevooMarkLoaded = [function(){
-    		ReevooApi.load('TRKREF', function(retailer){
-      			retailer.track_purchase(["SKU1", "SKU2"], orderValue);
-    		});
-  	}];
+  (function() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
+    var s = document.getElementById('reevoomark-loader');
+    s.parentNode.insertBefore(script, s);
+  })();
+  
+  afterReevooMarkLoaded = [function(){
+    ReevooApi.load('TRKREF', function(retailer){
+      retailer.track_purchase(["SKU1", "SKU2"], orderValue);
+    });
+  }];
 </script>
 {% endhighlight %}
 
@@ -56,26 +57,27 @@ What they should have included in the page in this instance if they wanted both 
 
 {% highlight html %}
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
-	(function() {
-		var script = document.createElement('script');
-    		script.type = 'text/javascript';
-    		script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
-    		var s = document.getElementById('reevoomark-loader');
-    		s.parentNode.insertBefore(script, s);
-  	})();
+  (function() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
+    var s = document.getElementById('reevoomark-loader');
+    s.parentNode.insertBefore(script, s);
+  })();
   
-  	afterReevooMarkLoaded = [
-  	  function() {
-    		ReevooApi.load('TRKREF', function(retailer) {
-   			retailer.init_badges();
-    		});
-  	  },
-  	  function(){
-    		ReevooApi.load('TRKREF', function(retailer){
-      			retailer.track_purchase(["SKU1", "SKU2"], orderValue);
-    		});
-  	  }
-  	];
+  afterReevooMarkLoaded = [
+    function() {
+      ReevooApi.load('TRKREF', function(retailer) {
+        retailer.init_badges();
+      });
+    },
+    
+    function(){
+      ReevooApi.load('TRKREF', function(retailer){
+        retailer.track_purchase(["SKU1", "SKU2"], orderValue);
+      });
+    }
+  ];
 </script>
 {% endhighlight %}
 

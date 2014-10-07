@@ -14,7 +14,13 @@ that have been collected for other organisations may be included.Only published 
 be included.
 
 ## URL Example(s)
-/v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=393828/reviews
+/v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700
+
+<div class="warning">
+  <strong>This URL: </strong> 
+  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700/reviews
+  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
+</div>
 
 ## Parameter(s)
 

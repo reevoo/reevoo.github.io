@@ -4,20 +4,19 @@ title: Blog
 navId: blog
 ---
 
-<div class="home">
-  <h1>Blog</h1>
+<div>
   <ul class="posts">
     {% for post in site.categories.blog %}
-    <li>
+    <li class="blog-item">
       <header class="post-header">
-        <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+        <h1>{{ post.title }}</h1>
         <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
       </header>
 
       <article class="post-content">
         {{ post.content | strip_html | truncatewords:75}}<br/>
-        <a class="read-more" href="{{ post.url }}">read more...</a>
       </article>
+      <a class="read-more" href="{{ post.url }}">Read more</a>
     </li>
     {% endfor %}
   </ul>

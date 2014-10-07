@@ -16,7 +16,13 @@ has international aggregation turned on, reviews will be returned for all locale
 reviews will only be returned for the organisation's locale.
 
 ## URL Example(s)
-/v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=393828
+/v4/organisations/D10/reviewable?locale=en-GB&sku=AIPTPDV5700
+
+<div class="warning">
+  <strong>This URL: </strong> 
+  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700 
+  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
+</div>
 
 ## Parameter(s)
 
@@ -46,9 +52,9 @@ reviews will only be returned for the organisation's locale.
    "has_image":true,
    "image_url":"//images.reevoo.com/retailer_products/1006883/1006883996/90x90.jpg?timestamp=1367698589",
    "finder_options":{
-      "sku":"393828",
+      "sku":"AIPTPDV5700",
       "locale":"en-GB"
    },
-   "reviews_path":"/v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=393828/reviews"
+   "reviews_path":"/v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700"
 }
 {% endhighlight %}

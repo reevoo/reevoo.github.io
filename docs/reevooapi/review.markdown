@@ -12,7 +12,13 @@ next: customer-experience-reviews
 Details for a single review.
 
 ## URL Example(s)
-/v4/organisations;trkref=D10/reviews/5996122
+/v4/reviews/310946?trkref=D10
+
+<div class="warning">
+  <strong>This URL: </strong> 
+  /v4/organisations;trkref=D10/reviews/5996122
+  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
+</div>
 
 ## Parameter(s)
 

@@ -15,7 +15,13 @@ Only published customer experience reviews will be included.
 
 
 ## URL Example(s)
-/v4/organisations;trkref=D10/customer_experience_reviews
+/v4/organisations/D10/customer_experience_reviews
+
+<div class="warning">
+  <strong>This URL: </strong> 
+  /v4/organisations;trkref=D10/customer_experience_reviews
+  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
+</div>
 
 ## Parameter(s)
 

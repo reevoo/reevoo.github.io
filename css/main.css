@@ -50,7 +50,6 @@ li { list-style-position: inside; }
 
 .site-header {
   border-top: 5px solid #ff7911;
-  /*border-bottom: 1px solid #e8e8e8;*/
   min-height: 80px;
   background-color: white;
 }

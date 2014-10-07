@@ -10,7 +10,6 @@ table.documentation span.indent-1 { margin-left: 20px; }
 table.documentation span.indent-2 { margin-left: 40px; }
 
 .warning {
-    /*margin-left: -3px !important;*/
     border: 1px dotted red;
     padding: 10px 10px;
     background-color: #E5E5E5;

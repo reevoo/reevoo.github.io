@@ -65,7 +65,9 @@ organisation.
             "sku":"100000",
             "locale":"en-GB"
          },
-         "reviews_path":"/v4/organisations/D10/reviews?locale=en-GB&sku=100000"
+         "reviews_path":"/v4/organisations/D10/reviews?locale=en-GB&sku=100000",
+         "organisation_url": "http://www.reevoo.com/p/hp-342-tricolou-hp-342-tri-colour-5ml-ink",
+         "organisation_url_with_reviews": "http://c.mark.reevoo.com/g/D10/QUlQVFBEVjU3MDA=/aHR0cDovL21hcmsucmVldm9vLmNvbS9wYXJ0bmVyL0QxMC9BSVBUUERWNTcwMA==/L3JlZXZvb21hcmsvZW4tR0IvcHJvZHVjdD90cmtyZWY9RDEwJnNrdT1BSVBUUERWNTcwMA=="
       },
       {
          "name":"Hauppauge Win TV Nova-S Plus Digital Satellite Card TV And Radio Card PCI",
@@ -76,7 +78,9 @@ organisation.
             "sku":"100017",
             "locale":"en-GB"
          },
-         "reviews_path":"/v4/organisations/D10/reviews?locale=en-GB&sku=100017"
+         "reviews_path":"/v4/organisations/D10/reviews?locale=en-GB&sku=100017",
+         "organisation_url": "http://www.reevoo.com/p/hauppauge-wintv-nov-t-500",
+         "organisation_url_with_reviews": "http://c.mark.reevoo.com/g/D10/QUlQVFBEVjU3MDA=/aHR0cDovL21hcmsucmVldm9vLmNvbS9wYXJ0bmVyL0QxMC9BSVBUUERWNTcwMA==/L3JlZXZvb21hcmsvZW4tR0IvcHJvZHVjdD90cmtyZWY9RDEwJnNrdT1BSVBUUERWNTcwMA=="
       },
       ...
    ]

@@ -40,7 +40,7 @@ organisation.
 |<span class="indent-2">per_page</span>     |                           |
 |<span class="indent-2">previous_page</span>|                           |
 |<span class="indent-2">next_page</span>    |                           |
-|organisations                              |array of reviewable objects|
+|reviewables                                |array of reviewable objects|
 
 ## JSON Example
 {% highlight json %}

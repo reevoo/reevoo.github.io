@@ -37,12 +37,14 @@ reviews will only be returned for the organisation's locale.
 ## Attribute(s)
 
 {: .documentation}
-|name          |identifier for the organisation                               |
-|has_reviews   |flag for presence of reviews for organisation and reviewable  |
-|has_image     |flag for presence of image url for organisation and reviewable|
-|image_url     |                                                              |
-|finder_options|parameters used to find the reviewable object                 |
-|reviews_path  |path to reviews                                               |
+|name                          |identifier for the organisation                               |
+|has_reviews                   |flag for presence of reviews for organisation and reviewable  |
+|has_image                     |flag for presence of image url for organisation and reviewable|
+|image_url                     |                                                              |
+|finder_options                |parameters used to find the reviewable object                 |
+|reviews_path                  |path to reviews                                               |
+|organisation_url              |link to this reviewable on the organisation's website         |
+|organisation_url_with_reviews |link to open reviews in a lightbox on the organisation’s website| 
 
 ## JSON Example
 {% highlight json %}
@@ -55,6 +57,8 @@ reviews will only be returned for the organisation's locale.
       "sku":"AIPTPDV5700",
       "locale":"en-GB"
    },
-   "reviews_path":"/v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700"
+   "reviews_path":"/v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700",
+   "organisation_url": "http://www.reevoo.com/p/toshiba-dt01aca0100-1tb",
+   "organisation_url_with_reviews": "http://c.mark.reevoo.com/g/D10/QUlQVFBEVjU3MDA=/aHR0cDovL21hcmsucmVldm9vLmNvbS9wYXJ0bmVyL0QxMC9BSVBUUERWNTcwMA==/L3JlZXZvb21hcmsvZW4tR0IvcHJvZHVjdD90cmtyZWY9RDEwJnNrdT1BSVBUUERWNTcwMA=="
 }
 {% endhighlight %}

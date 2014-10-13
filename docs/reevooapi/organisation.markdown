@@ -35,6 +35,7 @@ retrieve information for organisations that their API key is assigned to.
 |name                                                                |                                   |
 |reviewables_path                                                    |path to reviewables                |
 |customer_experience_reviews_path                                    |path to customer experience reviews|
+|organisation_url_with_reviews                                       |link to open customer experience reviews in a lightbox on the organisation's website|
 |customer_experience_scores                                          |                                   |
 |<span class="indent-1">percentage_who_would_recommend</span>        |                                   |
 |<span class="indent-1">number_of_retailer_rating_reviews</span>     |                                   |
@@ -51,6 +52,7 @@ retrieve information for organisations that their API key is assigned to.
    "name":"Demo Organisation",
    "reviewables_path":"/v4/organisations/D10",
    "customer_experience_reviews_path":"/v4/organisations/D10/customer_experience_reviews",
+   "organisation_url_with_reviews": "http://www.reevoo.com/#/reevoomark/en-GB/retailer_reviews/D10",
    "customer_experience_scores":{
       "percentage_who_would_recommend":97,
       "number_of_retailer_rating_reviews":2020,

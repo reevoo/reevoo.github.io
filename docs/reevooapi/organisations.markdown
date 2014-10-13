@@ -49,7 +49,8 @@ N / A
          "locale":"en-GB",
          "name":"Demo Organisation",
          "reviewables_path":"/v4/organisations/D10",
-         "customer_experience_reviews_path":"/v4/organisations/D10/customer_experience_reviews"
+         "customer_experience_reviews_path":"/v4/organisations/D10/customer_experience_reviews",
+         "organisation_url_with_reviews": "http://www.reevoo.com/#/reevoomark/en-GB/retailer_reviews/D10"
       }
    ]
 }

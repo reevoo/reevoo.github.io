@@ -1,3 +1,11 @@
+---
+layout: post
+title:  Putting Quality Reviews First
+date:   2014-10-27 11:44:39
+categories: blog
+navId: blog
+---
+
 # Putting Quality Reviews First
 
 At Reevoo we get thousands of reviews a day for many different products. Some reviews are better than others, in terms of quality rather than score. How can we make sure that our users see reviews that will help them make the right decision? Can we create an algorithm that sorts our reviews in such a way that high quality reviews are shown first?

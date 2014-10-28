@@ -6,8 +6,6 @@ categories: blog
 navId: blog
 ---
 
-# Putting Quality Reviews First
-
 At Reevoo we get thousands of reviews a day for many different products. Some reviews are better than others, in terms of quality rather than score. How can we make sure that our users see reviews that will help them make the right decision? Can we create an algorithm that sorts our reviews in such a way that high quality reviews are shown first?
 
 This article hopes to identify what needs to go into this algorithm.
@@ -56,25 +54,20 @@ Moderators could be a useful input to our algorithm. We could get moderators to 
 
 One option would be to get the moderator to rate the quality of the review. For example:
 
-```
-How would you rate the quality of this review?
-A good quality review:
-- Has good spelling and grammar.
-- Is specific about features of the product.
-- Is reasoned (it mentions both good and bad).
-
-[Good] [Indifferent] [Bad]
-```
+    How would you rate the quality of this review?
+    A good quality review:
+    - Has good spelling and grammar.
+    - Is specific about features of the product.
+    - Is reasoned (it mentions both good and bad).
+    [Good] [Indifferent] [Bad]
 
 We can then input this into our Helpfulness algorithm. Alternatively, we could ask about individual properties of the review:
 
-```
-Please answer the following questions about this review:
+    Please answer the following questions about this review:
 
-Does the review have good spelling and grammar? [Yes] [No]
-Does the review mention specific features of the product? [Yes] [No]
-Does the review mention good and bad points? [Yes] [No]
-```
+    Does the review have good spelling and grammar? [Yes] [No]
+    Does the review mention specific features of the product? [Yes] [No]
+    Does the review mention good and bad points? [Yes] [No]
 
 This provides more information about the review and allows us to weight each feature differently in the algorithm. Also, the questions are more specific, which is likely to lead to less variation between moderators. However, these questions may take longer to answer than the single question suggested earlier.
 

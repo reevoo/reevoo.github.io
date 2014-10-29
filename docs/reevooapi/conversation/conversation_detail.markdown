@@ -1,30 +1,31 @@
 ---
-id: conversation
+id: conversation_detail
 layout: docs
-title: Platform API v4 / Reviewable
+title: Platform API v4 / Conversation / Detail
 navId: docs
 group: reevooapi
-prev: conversations
 ---
 
+# Conversation Detail
 
-# Conversation
 <div class="warning">
   <strong>Currently this is just an experimental endpoint. If you would like to use it please contact us. </strong>
 </div>
-Details for a single conversation.
+Returns details for a single conversation.
 
-## URL Example(s)
-/v4/conversations/223049
+## URL Format
+GET /v4/conversations/{id}
 
+## URL Example
+GET /v4/conversations/223049
 
-## Parameter(s)
+## Parameters
 
 {: .documentation}
 |id         |conversation id|
 
 
-## Attribute(s)
+## Attributes
 
 {: .documentation}
 |id              |identifier for the conversation                              |

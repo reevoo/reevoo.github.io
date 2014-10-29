@@ -34,3 +34,17 @@
     title: Customer Experience Reviews
   - id: customer-experience-review
     title: Customer Experience Review
+
+  - id: conversation
+    title: Conversation
+    subitems:
+      - id: conversation_list
+        title: list
+      - id: conversation_detail
+        title: detail
+      - id: conversation_create
+        title: create
+      - id: conversation_increment_helpful
+        title: increment helpful
+      - id: conversation_increment_unhelpful
+        title: increment unhelpful

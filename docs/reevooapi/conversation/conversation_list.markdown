@@ -1,24 +1,26 @@
 ---
-id: conversations
+id: conversation_list
 layout: docs
-title: Platform API v4 / Reviewable
+title: Platform API v4 / Conversation / List
 navId: docs
 group: reevooapi
-prev: customer-experience-review
-next: conversation
 ---
 
-# Conversations
+# Conversation List
+
 <div class="warning">
   <strong>Currently this is just an experimental endpoint. If you would like to use it please contact us. </strong>
 </div>
-Allow a user to retrieve all the conversations that are associated with a specific product.
+Returns all the conversations that are associated with a specific product.
 
-## URL Example(s)
-v4/organisations/D10/conversations?locale=en-GB&sku=AIPTPDV5700
+## URL Format 
+GET v4/organisations/{trkref}/conversations?locale={locale}&sku={sku}
+
+## URL Example
+GET v4/organisations/D10/conversations?locale=en-GB&sku=AIPTPDV5700
 
 
-## Parameter(s)
+## Parameters
 
 {: .documentation}
 |trkref     |         |
@@ -26,7 +28,7 @@ v4/organisations/D10/conversations?locale=en-GB&sku=AIPTPDV5700
 |sku        |         |
 
 
-## Attribute(s)
+## Attributes
 
 {: .documentation}
 |summary                                                 |                                                                |

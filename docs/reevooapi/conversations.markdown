@@ -7,7 +7,10 @@ group: reevooapi
 prev: conversation
 ---
 
-# Review
+# Conversations
+<div class="warning">
+  <strong>Currently this is just an experimental endpoint. If you would like to use it please contact us. </strong> 
+</div>
 Allow a user to retrieve all the conversations that are associated with a specific product.
 
 ## URL Example(s)
@@ -39,18 +42,17 @@ v4/organisations/D10/conversations?locale=en-GB&sku=AIPTPDV5700
       {
          "id":223049,
          "first_name":"A shopper",
-         "question":"",
+         "question":"How is this product?",
          "vetted_at":"2014-10-07T14:38:57Z",
          "created_at":"2014-10-07T14:17:56Z",
          "helpful":0,
          "unhelpful":0,
          "embeddable":false,
          "retailer_locale":"en-GB",
-         "product_group_id":610606,
          "answers":[
             {
                "id":259010,
-               "response":" ",
+               "response":"It is great.",
                "created_at":"2014-10-09T20:33:08Z",
                "first_name":"Ann",
                "job_title":null,

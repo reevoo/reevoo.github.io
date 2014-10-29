@@ -9,7 +9,10 @@ next: conversations
 ---
 
 
-# Review
+# Conversation
+<div class="warning">
+  <strong>Currently this is just an experimental endpoint. If you would like to use it please contact us. </strong> 
+</div>
 Details for a single conversation.
 
 ## URL Example(s)
@@ -43,18 +46,17 @@ Details for a single conversation.
 {
    "id":223049,
    "first_name":"A shopper",
-   "question":"",
+   "question":"How is this product?",
    "vetted_at":"2014-10-07T14:38:57Z",
    "created_at":"2014-10-07T14:17:56Z",
    "helpful":0,
    "unhelpful":0,
    "embeddable":false,
    "retailer_locale":"en-GB",
-   "product_group_id":610606,
    "answers":[
       {
          "id":259010,
-         "response":"There are screw holes drilled underneath ready to attach the chromed base. We think the black gloss section could work well on its own. The two pieces are sold together for the customer to assemble.\n ",
+         "response":"Not very good.",
          "created_at":"2014-10-09T20:33:08Z",
          "first_name":"Ann",
          "job_title":null,

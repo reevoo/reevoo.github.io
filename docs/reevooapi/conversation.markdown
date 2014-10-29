@@ -4,26 +4,23 @@ layout: docs
 title: Platform API v4 / Reviewable
 navId: docs
 group: reevooapi
-prev: customer-experience-review
-next: conversations
+prev: conversations
 ---
 
 
 # Conversation
 <div class="warning">
-  <strong>Currently this is just an experimental endpoint. If you would like to use it please contact us. </strong> 
+  <strong>Currently this is just an experimental endpoint. If you would like to use it please contact us. </strong>
 </div>
 Details for a single conversation.
 
 ## URL Example(s)
-/v4/conversations/223049?trkref=T35
+/v4/conversations/223049
 
 
 ## Parameter(s)
 
 {: .documentation}
-|trkref     |         |
-|locale     |         |
 |id         |conversation id|
 
 
@@ -33,11 +30,10 @@ Details for a single conversation.
 |id              |identifier for the conversation                              |
 |first_name      |name of the person that asked the question                   |
 |question        |the question asked in this conversation                      |
-|vetted_at       |the time at which the question was vetted                    |
 |created_at      |the time at which the question was asked                     |
 |helpful         |count of users who have flagged this question helpful        |
 |unhelpful       |count of users who have flagged this question not helpful    |
-|embeddable      |if this conversation is embeddable for SEO usage|                          
+|embeddable      |if this conversation is embeddable for SEO usage|
 |retailer_locale |the locale of the retailer                                   |
 |answers         |an array of answers to the question|
 
@@ -47,7 +43,6 @@ Details for a single conversation.
    "id":223049,
    "first_name":"A shopper",
    "question":"How is this product?",
-   "vetted_at":"2014-10-07T14:38:57Z",
    "created_at":"2014-10-07T14:17:56Z",
    "helpful":0,
    "unhelpful":0,
@@ -60,6 +55,7 @@ Details for a single conversation.
          "created_at":"2014-10-09T20:33:08Z",
          "first_name":"Ann",
          "job_title":null,
+         "reviewer_segment":"Family",
          "helpful":0,
          "unhelpful":0,
          "review_locale":"en-GB",

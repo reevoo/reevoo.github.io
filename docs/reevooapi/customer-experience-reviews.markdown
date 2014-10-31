@@ -28,6 +28,8 @@ Only published customer experience reviews will be included.
 {: .documentation}
 |trkref     |        |
 |branch_code|optional|
+|page       |optional|
+|per_page   |optional|
 
 ## Attribute(s)
 

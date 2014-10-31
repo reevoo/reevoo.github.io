@@ -15,7 +15,9 @@ Allow a user to retrieve information for all organisations associated with their
 /v4/organisations
 
 ## Parameter(s)
-N / A
+
+{: .documentation}
+|page       |optional|
 
 ## Attribute(s)
 

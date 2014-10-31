@@ -29,6 +29,8 @@ be included.
 |branch_code|optional|
 |locale     |        |
 |sku        |        |
+|page       |optional|
+|per_page   |optional|
 
 ## Attribute(s)
 

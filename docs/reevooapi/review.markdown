@@ -31,18 +31,19 @@ Details for a single review.
 ## Attribute(s)
 
 {: .documentation}
-|id              |identifier for the review                              |
-|overall_score   |default locale for the organisation                    |
-|helpful         |count of users who have flagged this review helpful    |
-|not_helpful     |count of users who have flagged this review not helpful|
-|good_points     |good points text                                       |
-|bad_points      |bad points text                                        |
-|general_comments|general comments text                                  |
-|reviewer        |reviewer object                                        |
-|facets          |facets object                                          |
-|customer_ref    |retailer's customer reference   (enabled only for some organisations) |
-|order_ref       |retailer's order reference      (enabled only for some organisations) |
-|embeddable      |if this review is embeddable for SEO usage|
+|id                       |identifier for the review                              |
+|overall_score            |default locale for the organisation                    |
+|helpful                  |count of users who have flagged this review helpful    |
+|not_helpful              |count of users who have flagged this review not helpful|
+|good_points              |good points text                                       |
+|bad_points               |bad points text                                        |
+|general_comments         |general comments text                                  |
+|reviewer                 |reviewer object                                        |
+|facets                   |facets object                                          |
+|customer_ref             |retailer's customer reference   (enabled only for some organisations) |
+|order_ref                |retailer's order reference      (enabled only for some organisations) |
+|embeddable               |if this review is embeddable for SEO usage|
+|confirmed_purchaser_text |the text to use, showing the user is a confirmed purchaser |
 
 ## JSON Example
 {% highlight json %}
@@ -57,6 +58,7 @@ Details for a single review.
    "customer_ref": "12345678",
    "order_ref": "87654321",
    "embeddable": true,
+   "confirmed_purchaser_text": "Confirmed purchaser",
    "reviewer":{
       "first_name":"Robert",
       "location":"Catford, London",

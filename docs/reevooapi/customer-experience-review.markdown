@@ -38,6 +38,7 @@ Details for a single customer experience review.
 |<span class="indent-1">answer</span>     |                                           |
 |customer_ref                             |retailer's customer reference  (enabled only for some organisations)            |
 |order_ref                                |retailer's order reference     (enabled only for some organisations)            |
+|confirmed_purchaser_text |the text to use, showing the user is a confirmed purchaser |
 
 ## JSON Example
 {% highlight json %}
@@ -46,6 +47,7 @@ Details for a single customer experience review.
    "purchase_date":"2014-03-28",
    "customer_ref": "12345678",
    "order_ref": "87654321",
+   "confirmed_purchaser_text": "Confirmed purchaser",
    "reviewer":{
       "first_name":"Robert",
       "location":"Catford, London",

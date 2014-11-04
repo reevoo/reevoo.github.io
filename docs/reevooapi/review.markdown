@@ -43,7 +43,7 @@ Details for a single review.
 |customer_ref             |retailer's customer reference   (enabled only for some organisations) |
 |order_ref                |retailer's order reference      (enabled only for some organisations) |
 |embeddable               |if this review is embeddable for SEO usage|
-|confirmed_purchaser_text |the text to use, showing the user is a confirmed purchaser |
+|confirmed_purchaser_text |product-specific purchaser type, e.g. "Confirmed holidaymaker" |
 
 ## JSON Example
 {% highlight json %}

@@ -38,7 +38,7 @@ Details for a single customer experience review.
 |<span class="indent-1">answer</span>     |                                           |
 |customer_ref                             |retailer's customer reference  (enabled only for some organisations)            |
 |order_ref                                |retailer's order reference     (enabled only for some organisations)            |
-|confirmed_purchaser_text |the text to use, showing the user is a confirmed purchaser |
+|confirmed_purchaser_text |product-specific purchaser type, e.g. "Confirmed holidaymaker"|
 
 ## JSON Example
 {% highlight json %}

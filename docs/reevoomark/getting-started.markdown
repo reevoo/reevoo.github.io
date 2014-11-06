@@ -37,7 +37,7 @@ For this example you need to replace ```TRKREF``` with the account code provided
 
   afterReevooMarkLoaded = [function() {
     ReevooApi.load('TRKREF', function(retailer) {
-      retailer.init_badges
+      retailer.init_badges();
     });
   }];
 </script>

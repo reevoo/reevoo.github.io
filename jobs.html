@@ -1,0 +1,23 @@
+---
+layout: default
+title: Jobs
+navId: jobs
+---
+
+<img id="jobs-page-banner" src="/images/jobs_page_banner.png" alt="banner">
+  
+<div class="arrow-list">
+
+  <article class="post-content">
+    <div class="home">
+      <ul class="posts">
+        {% for job in site.data.jobs %}
+        <li class="arrow-list-item">
+          <a class="post-link" href="{{ job.url | prepend: site.baseurl }}">{{ job.title }}</a><span class="arrow">></span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </article>
+
+</div>

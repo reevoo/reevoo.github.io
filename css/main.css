@@ -220,7 +220,11 @@ li { list-style-position: inside; }
 /* ----------------------------------------------------------*/
 
 .page-content {
-  /*padding: 30px 0;*/
+  padding: 30px 0;
+}
+
+.page-content.no-padding {
+  padding: 0;
 }
 
 
@@ -310,7 +314,6 @@ li { list-style-position: inside; }
   font-size: 18px;
   background-color: white;
   padding: 50px;
-  margin-top: 40px;
 }
 
 .go-to-blog {
@@ -325,7 +328,6 @@ li { list-style-position: inside; }
   font-size: 18px;
   background-color: white;
   padding: 30px;
-  margin-top: 30px;
 }
 
 .about #team-photo {
@@ -339,6 +341,15 @@ li { list-style-position: inside; }
 
 .about .post-content {
   margin: 0;
+}
+
+/* Jobs page styles */
+/* ----------------------------------------------------------*/
+
+#jobs-page-banner {
+  background-color: #fff;
+  border: solid 1px #AAAAAA;
+  margin-bottom: 10px;
 }
 
 /* Documentation page styles */
@@ -400,6 +411,32 @@ li { list-style-position: inside; }
 
 .blog-item .post-content{
     margin: 30px 0 15px 0;
+}
+
+.arrow-list {
+  font-size: 18px;
+  background-color: white;
+  padding: 10px;
+}
+
+.arrow-list .post-content > * {
+  margin: 0;
+}
+
+li.arrow-list-item {
+  border-bottom: 1px solid #727272;
+  margin-bottom: 0;
+  padding: 30px 0 30px 20px;
+}
+
+.arrow-list-item .post-link{
+  color: #000;
+}
+
+.arrow-list-item span.arrow {
+  padding-left: 20px;
+  font-size: 35px;
+  color: #FD7922;
 }
 
 .post-content { margin: 0 0 30px; }

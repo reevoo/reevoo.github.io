@@ -92,6 +92,10 @@ li { list-style-position: inside; }
   width: 940px;
 }
 
+.top-banner .banner-container #recruitment-video {
+  padding-bottom: 73px;
+}
+
 .site-nav {
   float: right;
   line-height: 78px;

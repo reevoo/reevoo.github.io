@@ -318,6 +318,29 @@ li { list-style-position: inside; }
   font-size: 28px;
 }
 
+/* About page styles */
+/* ----------------------------------------------------------*/
+
+.about {
+  font-size: 18px;
+  background-color: white;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.about #team-photo {
+  margin: 0;
+}
+
+.about .post-content #reevoo-engineering {
+  font-weight: 600;
+  margin-top: 13px;
+}
+
+.about .post-content {
+  margin: 0;
+}
+
 /* Documentation page styles */
 /* ----------------------------------------------------------*/
 

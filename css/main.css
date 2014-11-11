@@ -612,6 +612,10 @@ p > code { white-space: nowrap; }
   #jobs-page-banner {
     width: 706px;
   }
+
+  .content-container {
+    max-width: 500px;
+  }
 }
 
 @media screen and (max-width: 750px) {

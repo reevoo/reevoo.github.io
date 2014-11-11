@@ -1,17 +1,35 @@
 ---
-layout: page
+layout: home
 title: Projects
 navId: projects
 ---
-<div class="home">
-  <p>We have always been a big fan of open source and will be open sourcing a lot more of our code in the near future.</p>
-  <p>All our public projects can be seen at <a href="https://github.com/reevoo">https://github.com/reevoo</a> but our main projects are:</p>
-  <ul class="posts">
-    {% for project in site.data.projects %}
-    <li class="arrow-list-item">
-      <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a><span class="arrow">></span>
-    </li>
-    {% endfor %}
-  </ul>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="blog-summary">
+  <div class="tile-container">
+    <div class="home">
+      <div class="summary-blurb">
+        <p>We have always been a big fan of open source and will be open sourcing a lot more of our code in the near
+          future.</p>
+
+        <p>All our public projects can be seen at <a href="https://github.com/reevoo">https://github.com/reevoo</a> but
+          our main projects are:</p>
+      </div>
+      <ul class="posts">
+        {% for project in site.data.projects %}
+        <li class="arrow-list-item">
+          <div class="post">
+            <header class="post-header">
+              <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a><span
+              class="arrow">></span>
+            </header>
+
+            <article class="post-content">
+              {{ project.summary }}
+            </article>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
+  </div>
 </div>

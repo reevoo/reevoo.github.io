@@ -1,12 +1,18 @@
 - title: Stratocumulus
   url: stratocumulus
+  summary: Backup Databases to Cloud Storage
 - title: coreos-rabbitmq
   url: coreos_rabbitmq
+  summary: RabbitMQ Cluster For CoreOS
 - title: ReevooMark Java API
   url: reevoomark_java_api
+  summary: Java tag library for ReevooMark
 - title: ReevooMark Dotnet API
   url: reevoomark_dotnet_api
+  summary: .NET tag library for ReevooMark
 - title: ReevooMark Ruby API
   url: reevoomark_ruby_api
+  summary: Ruby gem for ReevooMark
 - title: ReevooMark PHP API
   url: reevoomark_php_api
+  summary: PHP tag library for ReevooMark

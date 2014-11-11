@@ -1,11 +1,15 @@
 - title: Senior Developer
   id: senior-dev
+  summary: Recommended for experienced players - you're a veteran, you enjoy the challenge and you reap the rewards.
 - title: Mid Developer
   id: mid-dev
+  summary: Recommended for players with some experience - you've done this before, you're read to take on tougher challenges and excell in them.
 - title: Junior Developer
   id: junior-dev
-- title: Principle Engineer
-  id: princinple-engineer
+  summary: Recommended for beginners - you're new to the game but are keen to learn and progress quickly.
+- title: Principal Engineer
+  id: princinpal-engineer
+  summary: Recommended for the most experienced player - you don't need God mode, you are God mode. Enemies cower in your presence. Your colleagues look to you for leadership.
 - title: Product Analyst
   id: product-analyst
-
+  summary: Recommended for supporting players - you support the engineering team via your in depth knowledge of product. The team is nothing without you.

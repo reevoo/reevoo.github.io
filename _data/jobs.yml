@@ -1,4 +1,11 @@
 - title: Senior Developer
   id: senior-dev
+- title: Mid Developer
+  id: mid-dev
 - title: Junior Developer
   id: junior-dev
+- title: Principle Engineer
+  id: princinple-engineer
+- title: Product Analyst
+  id: product-analyst
+

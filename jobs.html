@@ -13,7 +13,7 @@ navId: jobs
       <ul class="posts">
         {% for job in site.data.jobs %}
         <li class="arrow-list-item">
-          <a class="post-link" href="{{ job.url | prepend: site.baseurl }}">{{ job.title }}</a><span class="arrow">></span>
+          <a class="post-link" href="/jobs/{{ job.id }}">{{ job.title }}</a><span class="arrow">></span>
         </li>
         {% endfor %}
       </ul>

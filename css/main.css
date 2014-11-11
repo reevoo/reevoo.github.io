@@ -210,7 +210,7 @@ li { list-style-position: inside; }
     position: absolute;
 }
 
-.post a.read-more, .post a.read-more:visited {
+.post a.read-more {
     color: #FF9304;
     font-size: 1.6em;
     font-style: italic;
@@ -348,7 +348,7 @@ li { list-style-position: inside; }
 
 #jobs-page-banner {
   background-color: #fff;
-  border: solid 1px #AAAAAA;
+  border: solid 1px #DADADA;
   margin-bottom: 10px;
 }
 
@@ -386,7 +386,6 @@ li { list-style-position: inside; }
 
 .post a         { color: #2a7ae2; text-decoration: none; }
 .post a:hover   { color: #000; text-decoration: underline; }
-.post a:visited { color: #205caa; }
 
 .post-header { margin: 20px 0 30px; }
 

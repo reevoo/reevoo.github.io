@@ -592,6 +592,28 @@ p > code { white-space: nowrap; }
 /* ----------------------------------------------------------*/
 
 
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #recruitment-video {
+    width: 700px;
+    height: 394px;
+    margin: auto;
+    display: block;
+  }
+  .tile-container .tile {
+    width: 200px;
+    padding: 40px 30px 50px 0;
+  }
+
+  #team-photo {
+    width: 650px;
+  }
+
+  #jobs-page-banner {
+    width: 706px;
+  }
+}
+
 @media screen and (max-width: 750px) {
 
   .footer-col-1 { width: 50%; }

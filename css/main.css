@@ -329,6 +329,11 @@ li { list-style-position: inside; }
   font-size: 28px;
 }
 
+#recruitment-video {
+  width: 940px;
+  height: 529px;
+}
+
 /* About page styles */
 /* ----------------------------------------------------------*/
 

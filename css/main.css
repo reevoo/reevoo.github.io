@@ -189,6 +189,7 @@ li { list-style-position: inside; }
 #footer-description {
   position: relative;
   bottom: 30px;
+  max-width: 390px;
 }
 
 .page-title {

@@ -32,7 +32,7 @@ Details for a single review.
 
 {: .documentation}
 |id                       |identifier for the review                              |
-|overall_score            |default locale for the organisation                    |
+|overall_score            |the score (out of 10) given by the reviewer for the product|
 |helpful                  |count of users who have flagged this review helpful    |
 |not_helpful              |count of users who have flagged this review not helpful|
 |good_points              |good points text                                       |

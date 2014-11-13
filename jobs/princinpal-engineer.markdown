@@ -1,6 +1,6 @@
 ---
 id: principal-engineer
-layout: page
+layout: job
 title: Principal Engineer
 navId: jobs
 ---

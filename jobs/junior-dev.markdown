@@ -1,6 +1,6 @@
 ---
 id: junior-dev
-layout: page
+layout: job
 title: Junior Developer
 navId: jobs
 ---

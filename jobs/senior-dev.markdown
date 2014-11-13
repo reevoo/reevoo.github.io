@@ -1,6 +1,6 @@
 ---
 id: senior-dev
-layout: page
+layout: job
 title: Senior Developer
 navId: jobs
 ---

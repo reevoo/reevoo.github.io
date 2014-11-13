@@ -1,6 +1,6 @@
 ---
 id: product-analyst
-layout: page
+layout: job
 title: Product Analyst
 navId: jobs
 ---

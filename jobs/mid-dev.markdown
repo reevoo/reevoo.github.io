@@ -1,6 +1,6 @@
 ---
 id: mid-dev
-layout: page
+layout: job
 title: Mid Developer
 navId: jobs
 ---

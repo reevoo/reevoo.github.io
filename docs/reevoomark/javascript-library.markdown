@@ -1,5 +1,5 @@
 ---
-id: reevoomark-javascript-library
+id: javascript-library
 title: JavaScript Library
 layout: docs
 group: reevoomark

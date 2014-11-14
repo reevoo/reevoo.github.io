@@ -1,5 +1,5 @@
 ---
-id: reevoomark-rating-and-reviews
+id: retailer-specific-configuration
 title: Retailer specific configuration
 layout: docs
 navId: docs

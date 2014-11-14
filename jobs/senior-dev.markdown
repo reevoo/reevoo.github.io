@@ -17,7 +17,7 @@ We are looking for a senior Ruby developer to join our growing team in London. A
 + We are focused on helping shoppers make the best choice whilst boosting sales for our clients.
 
 ## Getting to know the Reevoo engineering team…
-+ We care a lot about producing good quality code that solve the most important problems.
++ We care a lot about producing good quality code that solves the most important problems.
 + We use an agile development process along with test-driven development and continuous deployment and have invested heavily in tools to make this work seamlessly.
 + We support an architecture that handles 30m unique hits a day and growing.
 + We believe that knowledge gained is best shared and encourage pairing. To make this work we have the best possible pairing stations and desk arrangements.

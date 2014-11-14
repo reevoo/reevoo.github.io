@@ -8,7 +8,7 @@ navId: jobs
 # Join Reevoo Engineering.
 
 ## Who are we looking for?
-We are looking for a Ruby developer to join our growing team in London. Above all, we are looking for someone who is passionate about technology, a good problem solver and team player and loves writing code to help us solve complex problems. 
+We are looking for a Ruby developer to join our growing team in London. Above all, we are looking for someone who is passionate about technology, a good problem solver and team player and loves writing code to help us solve complex problems.
 
 ## A little bit about us…
 + We are a high growth start-up in the Ratings & Reviews space with a nice office in Southwark.
@@ -17,7 +17,7 @@ We are looking for a Ruby developer to join our growing team in London. Above al
 + We are focused on helping shoppers make the best choice whilst boosting sales for our clients.
 
 ## Getting to know the Reevoo engineering team…
-+ We care a lot about producing good quality code that solve the most important problems.
++ We care a lot about producing good quality code that solves the most important problems.
 + We use an agile development process along with test-driven development and continuous deployment and have invested heavily in tools to make this work seamlessly.
 + We support an architecture that handles 30m unique hits a day and growing.
 + We believe that knowledge gained is best shared and encourage pairing. To make this work we have the best possible pairing stations and desk arrangements.
@@ -25,7 +25,7 @@ We are looking for a Ruby developer to join our growing team in London. Above al
 
 ## What will you do?
 + Participate in the design, development and maintenance of Reevoo’s flagship Ratings and Reviews platform and APIs.
-+ Evolve and maintain existing product functionality to improve usability, flexibility and performance. 
++ Evolve and maintain existing product functionality to improve usability, flexibility and performance.
 + Work closely with teams around the business such as sales, client services, professional services etc. to deliver customer requirements.
 + Provide thought & architecture leadership in the evolution of the next generation of products for the Reevoo platform.
 
@@ -42,3 +42,4 @@ We are looking for a Ruby developer to join our growing team in London. Above al
 + Search technologies (particularly Elasticsearch).
 + RabbitMQ or other broker frameworks.
 + Experience with data analysis, ETL, and data mining.
+

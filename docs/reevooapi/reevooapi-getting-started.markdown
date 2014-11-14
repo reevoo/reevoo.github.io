@@ -1,5 +1,5 @@
 ---
-id: getting-started
+id: reevooapi-getting-started
 layout: docs
 title:  "Platform API v4"
 navId: docs

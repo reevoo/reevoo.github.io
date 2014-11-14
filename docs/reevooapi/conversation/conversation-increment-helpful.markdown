@@ -1,23 +1,20 @@
 ---
-id: conversation_increment_unhelpful
+id: conversation_increment_helpful
 layout: docs
-title: Platform API v4 / Conversation / increment / unhelpful
+title: Platform API v4 / Conversation / increment / helpful
 navId: docs
 group: reevooapi
 ---
 
-# Conversation Increment Unhelpful
+# Conversation Increment Helpful
 
-<div class="warning">
-  <strong>Currently this is just an experimental endpoint. If you would like to use it please contact us. </strong>
-</div>
-Increments by 1 the unhelpful attribute of the question.
+Increments by 1 the helpful attribute of the question.
 
 ## URL Format
-PUT /v4/conversations/{id}/increment_unhelpful
+PUT /v4/conversations/{id}/increment_helpful
 
 ### Example
-PUT /v4/conversations/38373/increment_unhelpful
+PUT /v4/conversations/38373/increment_helpful
 
 ### Parameters
 
@@ -46,8 +43,8 @@ PUT /v4/conversations/38373/increment_unhelpful
    "first_name":"A shopper",
    "question":"How is this product?",
    "created_at":"2014-10-07T14:17:56Z",
-   "helpful":0,
-   "unhelpful":1,
+   "helpful":1,
+   "unhelpful":0,
    "embeddable":false,
    "retailer_locale":"en-GB",
    "answers":[]

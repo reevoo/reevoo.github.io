@@ -1,12 +1,12 @@
 ---
-id: conversation_list
+id: conversation-list
 layout: docs
 title: Platform API v4 / Conversation / List
 navId: docs
 group: reevooapi
 ---
 
-# Conversation List
+# Conversations
 
 Returns all the conversations that are associated with a specific product.
 

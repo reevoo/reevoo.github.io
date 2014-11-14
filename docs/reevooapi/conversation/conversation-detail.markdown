@@ -1,12 +1,12 @@
 ---
-id: conversation_detail
+id: conversation-detail
 layout: docs
 title: Platform API v4 / Conversation / Detail
 navId: docs
 group: reevooapi
 ---
 
-# Conversation Detail
+# Conversation
 
 Returns details for a single conversation.
 

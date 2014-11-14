@@ -119,6 +119,10 @@ li { list-style-position: inside; }
   color: black;
 }
 
+.docs .left-nav .active {
+    font-weight: bold;
+}
+
 /* Site footer */
 
 .site-footer {

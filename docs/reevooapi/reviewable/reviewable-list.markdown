@@ -1,5 +1,5 @@
 ---
-id: reviewables
+id: reviewable-list
 layout: docs
 title: Platform API v4 / Reviewables
 navId: docs

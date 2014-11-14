@@ -1,5 +1,5 @@
 ---
-id: customer-experience-review
+id: customer-experience-review-detail
 layout: docs
 title: Platform API v4 / Customer Experience Review
 navId: docs

@@ -1,5 +1,5 @@
 ---
-id: review
+id: review-detail
 layout: docs
 title: Platform API v4 / Review
 navId: docs

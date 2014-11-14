@@ -1,5 +1,5 @@
 ---
-id: reviewable-short-format
+id: reviewable-short-format-detail
 layout: docs
 title: Platform API v4 / Reviewable Short Format
 navId: docs

@@ -1,30 +1,49 @@
 ---
-id: conversation
+id: conversation_create
 layout: docs
-title: Platform API v4 / Reviewable
+title: Platform API v4 / Conversation / Create
 navId: docs
 group: reevooapi
-prev: conversations
 ---
 
+# Conversation Create
 
-# Conversation
-<div class="warning">
-  <strong>Currently this is just an experimental endpoint. If you would like to use it please contact us. </strong>
-</div>
-Details for a single conversation.
+Creates new conversation question.
 
-## URL Example(s)
-/v4/conversations/223049
+## URL Format
+POST /v4/organisations/{trkref}/conversations
 
+### Example
+POST /v4/organisations/D10/conversations
 
-## Parameter(s)
+### Parameters
 
 {: .documentation}
-|id         |conversation id|
+|trkref     |retailer identifier         |
 
+## Request Body
 
-## Attribute(s)
+### JSON Attributes
+
+{: .documentation}
+|first_name      |name of the person that asked the question                   |
+|question        |the question asked in this conversation                      |
+|locale          |locale of question text (optional)                           |
+|sku             |product sku                                                  |
+
+### Example
+{% highlight json %}
+{
+   "first_name":"A shopper",
+   "question":"How is this product?",
+   "locale":"en-GB",
+   "sku":"AIPTPDV5700"
+}
+{% endhighlight %}
+
+## Response Body
+
+### JSON Attributes
 
 {: .documentation}
 |id              |identifier for the conversation                              |
@@ -37,7 +56,7 @@ Details for a single conversation.
 |retailer_locale |the locale of the retailer                                   |
 |answers         |an array of answers to the question|
 
-## JSON Example
+### Example
 {% highlight json %}
 {
    "id":223049,
@@ -48,22 +67,6 @@ Details for a single conversation.
    "unhelpful":0,
    "embeddable":false,
    "retailer_locale":"en-GB",
-   "answers":[
-      {
-         "id":259010,
-         "response":"Not very good.",
-         "created_at":"2014-10-09T20:33:08Z",
-         "first_name":"Ann",
-         "job_title":null,
-         "reviewer_segment":"Family",
-         "helpful":0,
-         "unhelpful":0,
-         "review_locale":"en-GB",
-         "reviewer_facebook_url":null,
-         "response_type":"owner",
-         "retailer_name":null,
-         "retailer_image_url":null
-      }
-   ]
+   "answers":[]
 }
 {% endhighlight %}

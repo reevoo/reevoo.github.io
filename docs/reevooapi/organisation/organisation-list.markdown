@@ -1,5 +1,5 @@
 ---
-id: organisations
+id: organisation-list
 layout: docs
 title: Platform API v4 / Organisations
 navId: docs

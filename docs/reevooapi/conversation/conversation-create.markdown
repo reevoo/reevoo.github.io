@@ -46,6 +46,6 @@ POST /v4/organisations/D10/conversations
 
 By HTTP status:
 
- * 202 Accepted - action was successful and question will be processes asynchronously
+ * 202 Accepted - action was successful and question will be processed asynchronously
  * 404 Not Found - TRKREF or SKU does no exist or you are not authorised to access it
  * 422 Unprocessable Entity - there are some missing mandatory attributes (specified in response JSON)

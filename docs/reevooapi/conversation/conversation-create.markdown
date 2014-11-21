@@ -1,5 +1,5 @@
 ---
-id: conversation_create
+id: conversation-create
 layout: docs
 title: Platform API v4 / Conversation / Create
 navId: docs

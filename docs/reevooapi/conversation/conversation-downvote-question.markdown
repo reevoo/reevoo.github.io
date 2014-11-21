@@ -1,5 +1,5 @@
 ---
-id: conversation_downvote_question
+id: conversation-downvote-question
 layout: docs
 title: Platform API v4 / Conversation / Downvote question
 navId: docs

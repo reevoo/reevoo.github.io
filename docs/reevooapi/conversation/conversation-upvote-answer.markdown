@@ -11,7 +11,7 @@ group: reevooapi
 Increments the helpful attribute of the answer by 1.
 
 <div class="warning">
-  Is your responsibility to restrict user of your website from sending multiple requests for the same aswer.
+  It is your responsibility to restrict user of your website from sending multiple requests for the same aswer.
 </div>
 
 ## URL Format

@@ -53,9 +53,13 @@
         title: list
       - id: conversation-detail
         title: detail
-#      - id: conversation-create
-#        title: create
-#      - id: conversation-increment-helpful
-#        title: increment helpful
-#      - id: conversation-increment-unhelpful
-#        title: increment unhelpful
+      - id: conversation-create
+        title: create
+      - id: conversation-upvote-question
+        title: upvote question
+      - id: conversation-downvote-question
+        title: downvote question
+      - id: conversation-upvote-answer
+        title: upvote answer
+      - id: conversation-downvote-answer
+        title: downvote answer

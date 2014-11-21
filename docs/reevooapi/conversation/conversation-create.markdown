@@ -10,6 +10,7 @@ group: reevooapi
 
 Creates new conversation question.
 
+
 ## URL Format
 POST /v4/organisations/{trkref}/conversations
 
@@ -41,32 +42,10 @@ POST /v4/organisations/D10/conversations
 }
 {% endhighlight %}
 
-## Response Body
+## Possible responses
 
-### JSON Attributes
+By HTTP status:
 
-{: .documentation}
-|id              |identifier for the conversation                              |
-|first_name      |name of the person that asked the question                   |
-|question        |the question asked in this conversation                      |
-|created_at      |the time at which the question was asked                     |
-|helpful         |count of users who have flagged this question helpful        |
-|unhelpful       |count of users who have flagged this question not helpful    |
-|embeddable      |if this conversation is embeddable for SEO usage|
-|retailer_locale |the locale of the retailer                                   |
-|answers         |an array of answers to the question|
-
-### Example
-{% highlight json %}
-{
-   "id":223049,
-   "first_name":"A shopper",
-   "question":"How is this product?",
-   "created_at":"2014-10-07T14:17:56Z",
-   "helpful":0,
-   "unhelpful":0,
-   "embeddable":false,
-   "retailer_locale":"en-GB",
-   "answers":[]
-}
-{% endhighlight %}
+ * 202 Accepted - action was successful and question will be processes asynchronously
+ * 404 Not Found - TRKREF or SKU does no exist or you are not authorised to access it
+ * 422 Unprocessable Entity - there are some missing mandatory attributes (specified in response JSON)

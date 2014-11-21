@@ -8,7 +8,7 @@ group: reevooapi
 
 # Conversation - Upvote question
 
-Increments by 1 the helpful attribute of the question.
+Increments the helpful attribute of the question by 1.
 
 <div class="warning">
   Is your responsibility to restrict user of your website from sending multiple requests for the same question.
@@ -29,5 +29,5 @@ POST /v4/conversations/38373/increment_helpful
 
 By HTTP status:
 
- * 202 Accepted - action was successful and will be processes asynchronously
+ * 202 Accepted - action was successful and will be processed asynchronously
  * 404 Not Found - conversation question with given ID does no exist or you are not authorised to access it

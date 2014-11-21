@@ -11,7 +11,7 @@ group: reevooapi
 Increments the unhelpful attribute of the question by 1.
 
 <div class="warning">
-  Is your responsibility to restrict user of your website from sending multiple requests for the same question.
+  It is your responsibility to restrict users of your website from sending multiple requests for the same question.
 </div>
 
 ## URL Format

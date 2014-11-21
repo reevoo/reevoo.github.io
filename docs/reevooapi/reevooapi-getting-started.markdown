@@ -9,7 +9,7 @@ next: organisations
 
 # Reevoo Platform API v4
 
-> The **Reevoo Platform API** is a simple read only API that returns product scores and published reviews as json.
+> The **Reevoo Platform API** is a read only API, with write-access for some endpoints, that returns product scores and published reviews as JSON.
 
 ## Access
 Our Client Services team can provide a key and secret to access the API, there is also a

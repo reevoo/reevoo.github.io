@@ -1,5 +1,5 @@
 ---
-id: conversation_upvote_answer
+id: conversation-upvote-answer
 layout: docs
 title: Platform API v4 / Conversation / Upvote answer
 navId: docs

@@ -4,8 +4,8 @@ layout: docs
 title: Platform API v4 / Reviews
 navId: docs
 group: reevooapi
-prev: reviewable-short-format
-next: review
+prev: reviewable/reviewable-short-format-detail
+next: review/review-detail
 ---
 
 # Reviews

@@ -2,8 +2,8 @@
 layout: page
 ---
 
-<a href="mailto:engineering@reevoo.com?subject=Application for {{ page.title }} Position&body=Please send us your cover letter and CV." class="apply-cta top">Apply Now</a>
+<a href="mailto:engineering@reevoo.com?subject=Application%20for%20{{ page.title | cgi_escape }}%20Position&body=Please%20send%20us%20your%20cover%20letter%20and%20CV." class="apply-cta top">Apply Now</a>
 
 {{ content }}
 
-<a href="mailto:engineering@reevoo.com?subject=Application for {{ page.title }} Position&body=Please send us your cover letter and CV." class="apply-cta bottom">Apply Now</a>
+<a href="mailto:engineering@reevoo.com?subject=Application%20for%20{{ page.title | cgi_escape }}%20Position&body=Please%20send%20us%20your%20cover%20letter%20and%20CV." class="apply-cta bottom">Apply Now</a>

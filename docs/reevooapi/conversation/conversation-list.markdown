@@ -4,6 +4,8 @@ layout: docs
 title: Platform API v4 / Conversation / List
 navId: docs
 group: reevooapi
+prev: customer-experience-review/customer-experience-review-detail
+next: conversation/conversation-detail
 ---
 
 # Conversations

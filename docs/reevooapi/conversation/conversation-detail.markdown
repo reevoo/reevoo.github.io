@@ -4,6 +4,8 @@ layout: docs
 title: Platform API v4 / Conversation / Detail
 navId: docs
 group: reevooapi
+prev: conversation/conversation-list
+next: conversation/conversation-create
 ---
 
 # Conversation

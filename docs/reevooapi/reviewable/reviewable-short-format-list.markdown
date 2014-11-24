@@ -4,8 +4,8 @@ layout: docs
 title: Platform API v4 / Reviewables Short Format
 navId: docs
 group: reevooapi
-prev: reviewables
-next: reviewable
+prev: reviewable/reviewable-list
+next: reviewable/reviewable-detail
 ---
 
 # Reviewables - Short Format

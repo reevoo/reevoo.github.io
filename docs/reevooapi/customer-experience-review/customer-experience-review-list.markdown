@@ -4,8 +4,8 @@ layout: docs
 title: Platform API v4 / Customer Experience Reviews
 navId: docs
 group: reevooapi
-next: customer-experience-review
-prev: review
+next: review/review-detail
+prev: customer-experience-review/customer-experience-review-detail
 ---
 
 # Customer Experience Reviews

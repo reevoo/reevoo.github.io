@@ -4,8 +4,8 @@ layout: docs
 title: Platform API v4 / Organisations
 navId: docs
 group: reevooapi
-prev: getting-started
-next: organisation
+prev: reevooapi-getting-started
+next: organisation/organisation-detail
 ---
 
 # Organisations

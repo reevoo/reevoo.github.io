@@ -4,7 +4,7 @@ layout: docs
 title:  "Platform API v4"
 navId: docs
 group: reevooapi
-next: organisations
+next: organisation/organisation-list
 ---
 
 # Reevoo Platform API v4

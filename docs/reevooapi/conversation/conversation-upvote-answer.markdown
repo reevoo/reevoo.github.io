@@ -4,6 +4,8 @@ layout: docs
 title: Platform API v4 / Conversation / Upvote answer
 navId: docs
 group: reevooapi
+prev: conversation/conversation-downvote-question
+next: conversation/conversation-downvote-answer
 ---
 
 # Conversation - Upvote answer

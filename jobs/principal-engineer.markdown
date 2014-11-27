@@ -41,6 +41,6 @@ We are looking for a Principal Ruby developer to join our growing team in London
 + Comfortable working with MySQL, Postgres.
 + Familiarity with search technologies (particularly Elasticsearchsearch).
 + Familiarity with RabbitMQ or other broker frameworks.
-+ Exertperience with data analysis, ETL, and data mining.
++ Experience with data analysis, ETL, and data mining.
 + Strong communication and collaboration skills.
 

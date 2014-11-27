@@ -27,7 +27,7 @@ We are looking for a Principal Ruby developer to join our growing team in London
 + Serve as a technical lead on all major projects. Pair with developers on features in the sprint.
 + Define the long term architecture roadmap for the business (which includes how we reduce  Tech debt)
 + Champion performance, scalability, enterprise system architecturechitecture, and engineering best practices.
-+ Exert technical influence over the development team and be the tie breaker on major tech Championhoices and decisions.
++ Exert technical influence over the development team and be the tie breaker on major tech choices and decisions.
 + Attend customer meetings to talk about the security, scalability and performance of the Reevoo platform.
 + Mentor members of the development team on advanced technical issues.
 + Provide thought & architecture leadership in the evolution of the next generation of products for the Reevoo platform.

@@ -29,18 +29,21 @@ POST /v4/organisations/D10/conversations
 ### JSON Attributes
 
 {: .documentation}
-|first_name      |name of the person that asked the question                   |
+|sku             |product sku                                                  |
+|first_name      |first name of the person that asked the question (optional)  |
+|email           |email of the person that asked the question                  |
 |question        |the question asked in this conversation                      |
 |locale          |locale of question text (optional)                           |
-|sku             |product sku                                                  |
+
 
 ### Example
 {% highlight json %}
 {
-   "first_name":"A shopper",
-   "question":"How is this product?",
-   "locale":"en-GB",
-   "sku":"AIPTPDV5700"
+   "sku": "AIPTPDV5700",
+   "first_name": "Joe",
+   "email": "joe@example.com",
+   "question": "How is this product?",
+   "locale": "en-GB"
 }
 {% endhighlight %}
 

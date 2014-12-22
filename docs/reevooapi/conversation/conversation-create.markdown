@@ -29,11 +29,11 @@ POST /v4/organisations/D10/conversations
 ### JSON Attributes
 
 {: .documentation}
-|sku             |product sku                                                  |
-|first_name      |first name of the person that asked the question (optional)  |
-|email           |email of the person that asked the question                  |
-|question        |the question asked in this conversation                      |
-|locale          |locale of question text (optional)                           |
+|sku             |product sku                                                                     |
+|first_name      |first name of the person that asked the question (optional, default: A shopper) |
+|email           |email of the person that asked the question                                     |
+|question        |the question asked in this conversation                                         |
+|locale          |locale of question text (optional, default: your organisation locale)           |
 
 
 ### Example

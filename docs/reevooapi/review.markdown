@@ -31,23 +31,25 @@ Details for a single review.
 ## Attribute(s)
 
 {: .documentation}
-|id              |identifier for the review                              |
-|overall_score   |default locale for the organisation                    |
-|helpful         |count of users who have flagged this review helpful    |
-|not_helpful     |count of users who have flagged this review not helpful|
-|good_points     |good points text                                       |
-|bad_points      |bad points text                                        |
-|general_comments|general comments text                                  |
-|reviewer        |reviewer object                                        |
-|facets          |facets object                                          |
-|customer_ref    |retailer's customer reference   (enabled only for some organisations) |
-|order_ref       |retailer's order reference      (enabled only for some organisations) |
-|embeddable      |if this review is embeddable for SEO usage|
+|id                     |identifier for the review                              |
+|sort_and_display_date  |review "Published on" date (YYYY-MM-DD)                |
+|overall_score          |default locale for the organisation                    |
+|helpful                |count of users who have flagged this review helpful    |
+|not_helpful            |count of users who have flagged this review not helpful|
+|good_points            |good points text                                       |
+|bad_points             |bad points text                                        |
+|general_comments       |general comments text                                  |
+|reviewer               |reviewer object                                        |
+|facets                 |facets object                                          |
+|customer_ref           |retailer's customer reference   (enabled only for some organisations) |
+|order_ref              |retailer's order reference      (enabled only for some organisations) |
+|embeddable             |if this review is embeddable for SEO usage|
 
 ## JSON Example
 {% highlight json %}
 {
    "id":5996122,
+   "sort_and_display_date":"2014-11-08",
    "overall_score":9,
    "helpful":0,
    "not_helpful":0,

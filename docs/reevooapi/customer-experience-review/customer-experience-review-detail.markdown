@@ -33,7 +33,7 @@ Details for a single customer experience review.
 |id                                       |identifier for a customer experience review|
 |branch_attribution                       |branch name (if applicable)                |
 |publish_date                             |publish date (YYYY-MM-DD)                  |
-|purchase_date                            |path to customer experience reviews        |
+|purchase_date                            |purchase date (YYYY-MM-DD)                 |
 |delivery_date                            |delivery date (YYYY-MM-DD)                 |
 |reviewer                                 |reviewer object                            |
 |responses                                |array of responses                         |

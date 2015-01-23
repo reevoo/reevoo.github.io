@@ -44,6 +44,9 @@ Details for a single review.
 |order_ref                |retailer's order reference      (enabled only for some organisations) |
 |embeddable               |if this review is embeddable for SEO usage|
 |confirmed_purchaser_text |product-specific purchaser type, e.g. "Confirmed holidaymaker" |
+|publish_date    |publish date (YYYY-MM-DD)|
+|purchase_date   |purchase date (YYYY-MM-DD)|
+|delivery_date   |delivery date (YYYY-MM-DD)|
 
 ## JSON Example
 {% highlight json %}
@@ -91,6 +94,9 @@ Details for a single review.
          }
       },
       ...
-   ]
+   ],
+   "publish_date":"2015-01-20",
+   "purchase_date":"2014-11-04",
+   "delivery_date":"2014-11-08"
 }
 {% endhighlight %}

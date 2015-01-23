@@ -32,7 +32,9 @@ Details for a single customer experience review.
 {: .documentation}
 |id                                       |identifier for a customer experience review|
 |branch_attribution                       |branch name (if applicable)                |
-|purchase_date                            |path to customer experience reviews        |
+|publish_date                             |publish date (YYYY-MM-DD)                  |
+|purchase_date                            |purchase date (YYYY-MM-DD)                 |
+|delivery_date                            |delivery date (YYYY-MM-DD)                 |
 |reviewer                                 |reviewer object                            |
 |responses                                |array of responses                         |
 |<span class="indent-1">display_key</span>|                                           |
@@ -45,7 +47,9 @@ Details for a single customer experience review.
 {% highlight json %}
 {
    "branch_attribution":null,
-   "purchase_date":"2014-03-28",
+   "publish_date":"2015-01-20",
+   "purchase_date":"2014-11-04",
+   "delivery_date":"2014-11-08",
    "customer_ref": "12345678",
    "order_ref": "87654321",
    "confirmed_purchaser_text": "Confirmed purchaser",

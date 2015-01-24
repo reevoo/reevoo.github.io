@@ -367,6 +367,7 @@ li { list-style-position: inside; }
   background-color: #fff;
   border: solid 1px #DADADA;
   margin-bottom: 10px;
+  max-width: 100%;
 }
 
 .post .apply-cta, .post .apply-cta a, .post .apply-cta a:hover {

@@ -5,7 +5,7 @@ layout: docs
 group: reevoomark
 navId: docs
 prev: getting-started
-next: retailer-specific-configuration
+next: product-badges
 ---
 
 JavaScript Library
@@ -43,3 +43,23 @@ HTTPS
 {% endhighlight %}
 
 The reason why we ask you to load our JavaScript library this way is that it avoids blocking your page on first load. It also ensures if we are experiencing any issues regarding our services, your pages will not be blocked. It does, however, add some complexity to using the library as you cannot guarantee that our library will be loaded, or when. Thus we provide callbacks (shown on the next page) to allow you to ensure commands are called once our library is loaded onto the page.
+
+
+Retailer specific configuration
+-------------------------------
+
+We assign an unique TRKREF account code that must be used to load a retailer specific configuration settings.
+This is used to load configuration and provides a callback to perform all available actions for that retailer.
+
+The JavaScript to use to load your configuration is as follows:
+
+{% highlight javascript %}
+afterReevooMarkLoaded = [function() {
+  ReevooApi.load('TRKREF', function(retailer) {
+    // retailer.command();
+    retailer.init_badges();
+  });
+}];
+{% endhighlight %}
+
+Following sections explain methods that you can call on the `retailer` object.

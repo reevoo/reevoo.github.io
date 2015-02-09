@@ -69,3 +69,9 @@
         title: upvote answer
       - id: conversation-downvote-answer
         title: downvote answer
+- id: implementationguides
+  title: Implementation Guides
+  url: implementationguides
+  items:
+  - id: seo-boost
+    title: SEO Boost

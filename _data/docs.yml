@@ -6,8 +6,14 @@
     title: Getting started
   - id: javascript-library
     title: JavaScript library
-  - id: retailer-specific-configuration
-    title: Retailer specific configuration
+  - id: product-badges
+    title: Product badges
+  - id: customer-experience-badges
+    title: Customer exp. badges
+  - id: conversation-badges
+    title: Conversation badges
+  - id: tracking
+    title: Tracking
 - id: reevooapi
   title: Reevoo API
   url: reevooapi

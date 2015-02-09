@@ -3,7 +3,7 @@ id: seo-boost
 layout: docs
 title: SEO Boost Implementation Guide
 navId: docs
-group: implementationguides
+group: seoboost
 ---
 
 # Overview

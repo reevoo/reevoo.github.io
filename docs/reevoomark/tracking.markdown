@@ -4,7 +4,7 @@ title: Tracking
 layout: docs
 navId: docs
 group: reevoomark
-prev: conversation-badge
+prev: conversation-badges
 ---
 
 # Tracking

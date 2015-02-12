@@ -1,1 +1,0 @@
-## Part 1: Separation of a domain and application layer

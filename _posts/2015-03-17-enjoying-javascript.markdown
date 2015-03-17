@@ -100,3 +100,5 @@ It's not infallible - [why the use of dollar signs everywhere, seriously?!](http
 JavaScript isn't all bad. It allows you to go very fast very quickly. However, I feel it is important to take a step back and look at what you've written from time to time and ask yourself, *"Can this code be better?"*. I tended to answer this question with "No, it's JavaScript's fault!", but I think I've found enough good bits of JavaScript to say that it isn't JavaScript's fault. 
 
 My excuse is no longer valid. And now you've read this, neither is yours!
+
+*This article was written by Jonny Arnold for Reevoo Engineering. Thanks to Cian Leahy for proof-reading and the entire Engineering Team for tolerating my going-too-fast lightning talk on this subject.*

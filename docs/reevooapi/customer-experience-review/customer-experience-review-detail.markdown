@@ -42,7 +42,7 @@ Details for a single customer experience review.
 |customer_ref                             |retailer's customer reference  (enabled only for some organisations)            |
 |order_ref                                |retailer's order reference     (enabled only for some organisations)            |
 |confirmed_purchaser_text |product-specific purchaser type, e.g. "Confirmed holidaymaker"|
-|fast_responses                           |array of respons                           |
+|fast_responses                           |array of responses                         |
 |<span class="indent-1">response</span>   |                                           |
 |<span class="indent-1">respondent</span> |respondent details                         |
 |<span class="indent-2">custom_name</span>|                                           |

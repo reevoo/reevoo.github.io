@@ -38,7 +38,7 @@ Details for a single review.
 |good_points              |good points text                                       |
 |bad_points               |bad points text                                        |
 |general_comments         |general comments text                                  |
-|fast_responses                           |array of respons                       |
+|fast_responses                           |array of responses                     |
 |<span class="indent-1">response</span>   |                                       |
 |<span class="indent-1">respondent</span> |respondent details                     |
 |<span class="indent-2">custom_name</span>|                                       |

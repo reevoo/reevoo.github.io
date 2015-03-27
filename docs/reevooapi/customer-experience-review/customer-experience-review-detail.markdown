@@ -42,6 +42,17 @@ Details for a single customer experience review.
 |customer_ref                             |retailer's customer reference  (enabled only for some organisations)            |
 |order_ref                                |retailer's order reference     (enabled only for some organisations)            |
 |confirmed_purchaser_text |product-specific purchaser type, e.g. "Confirmed holidaymaker"|
+|fast_responses                           |array of respons                           |
+|<span class="indent-1">response</span>   |                                           |
+|<span class="indent-1">respondent</span> |respondent details                         |
+|<span class="indent-2">custom_name</span>|                                           |
+|<span class="indent-2">first_name</span> |                                           |
+|<span class="indent-2">surname</span>    |                                           |
+|<span class="indent-2">job_title</span>  |                                           |
+|<span class="indent-1">organisation</span>|organisation details                      |
+|<span class="indent-2">trkref</span>     |                                           |
+|<span class="indent-2">name</span>       |                                           |
+|<span class="indent-2">logo</span>       |                                           |
 
 ## JSON Example
 {% highlight json %}
@@ -53,6 +64,22 @@ Details for a single customer experience review.
    "customer_ref": "12345678",
    "order_ref": "87654321",
    "confirmed_purchaser_text": "Confirmed purchaser",
+   "fast_responses": [
+      {
+         "response": "Example response",
+         "respondent": {
+            "custom_name": "Custommer service",
+            "first_name": "John",
+            "surname": "Brown",
+            "job_title": "job title"
+         },
+         "organisation": {
+            "trkref": "TRKREF",
+            "name": "Organisation Name",
+            "logo": "http://images.reevoo.com/retailers/image2.png"
+         }
+      }
+   ],
    "reviewer":{
       "first_name":"Robert",
       "location":"Catford, London",

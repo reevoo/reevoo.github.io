@@ -38,6 +38,17 @@ Details for a single review.
 |good_points              |good points text                                       |
 |bad_points               |bad points text                                        |
 |general_comments         |general comments text                                  |
+|fast_responses                           |array of responses                     |
+|<span class="indent-1">response</span>   |                                       |
+|<span class="indent-1">respondent</span> |respondent details                     |
+|<span class="indent-2">custom_name</span>|                                       |
+|<span class="indent-2">first_name</span> |                                       |
+|<span class="indent-2">surname</span>    |                                       |
+|<span class="indent-2">job_title</span>  |                                       |
+|<span class="indent-1">organisation</span>|organisation details                  |
+|<span class="indent-2">trkref</span>     |                                       |
+|<span class="indent-2">name</span>       |                                       |
+|<span class="indent-2">logo</span>       |                                       |
 |reviewer                 |reviewer object                                        |
 |facets                   |facets object                                          |
 |customer_ref             |retailer's customer reference   (enabled only for some organisations) |
@@ -58,6 +69,22 @@ Details for a single review.
    "good_points":"For the money excellent value.",
    "bad_points":"Still too early for a proper evaluation\r\nNone as yet",
    "general_comments":null,
+   "fast_responses": [
+      {
+         "response": "Example response",
+         "respondent": {
+            "custom_name": "Custommer service",
+            "first_name": "John",
+            "surname": "Brown",
+            "job_title": "job title"
+         },
+         "organisation": {
+            "trkref": "TRKREF",
+            "name": "Organisation Name",
+            "logo": "http://images.reevoo.com/retailers/image2.png"
+         }
+      }
+   ],
    "customer_ref": "12345678",
    "order_ref": "87654321",
    "embeddable": true,

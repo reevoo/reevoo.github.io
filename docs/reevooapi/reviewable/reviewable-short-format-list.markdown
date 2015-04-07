@@ -10,20 +10,23 @@ next: reviewable/reviewable-detail
 
 # Reviewables - Short Format
 If you pass the parameter format=short to the reviewables endpoint you will be provided with
-a short format version of all the reviewables associated to the specified organisation.
+a short format version of reviewables of the specified organisation.
+This endpoint can be used by any organisation when a list of comma separated SKUs is provided.
 
-This functionality is enabled only for some organisations and can be quite large, so is cached
+When no SKUs are specified all reviwables of the organisation are returned.
+This functionality is however enabled only for some organisations. Response is cached on the
 server side and refreshed on a daily basis. The attribute "date_time_created" shows the
 date/time when the list was last generated.
 
 Note: The server will return { status: 406 } if the specified organisation is not supported
-by this endpoint.
+by this endpoint and no SKUs are specified.
 
-## URL Example(s)
-/v4/organisations/D10/reviewables?format=short
+## URL Examples
+`/v4/organisations/D10/reviewables?format=short`
+`/v4/organisations/D10/reviewables?format=short&skus=AS343,B324234,CG9232`
 
 <div class="warning">
-  <strong>This URL: </strong> 
+  <strong>This URL: </strong>
   /v4/organisations;trkref=D10/reviewables?format=short
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
@@ -31,8 +34,9 @@ by this endpoint.
 ## Parameter(s)
 
 {: .documentation}
-|trkref|     |
-|format|short|
+|trkref |                                       |
+|format |short                                  |
+|skus   |(optional) max 80 comma separated SKUs |
 
 ## Attribute(s)
 

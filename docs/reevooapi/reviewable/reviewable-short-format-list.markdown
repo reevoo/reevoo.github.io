@@ -41,13 +41,13 @@ by this endpoint and no SKUs are specified.
 ## Attribute(s)
 
 {: .documentation}
-|summary                                        |                                                              |
-|<span class="indent-1">date_time_created</span>|timestamp when the content was last generated. ISO 8601 format|
-|<span class="indent-1">product_count</span>    |total number of reviewables associated to the organisation    |
-|reviewables                                    |array of all the reviewables associated to the organisation   |
-|<span class="indent-1">sku</span>              |the sku of the reviewable                                     |
-|<span class="indent-1">review_count</span>     |number of published reviews associated to the reviewable      |
-|<span class="indent-1">average_score</span>    |average score associated to this reviewable                   |
+|summary                                        |                                                                                         |
+|<span class="indent-1">date_time_created</span>|timestamp when the content was last generated (only for cached response, ISO 8601 format)|
+|<span class="indent-1">product_count</span>    |total number of reviewables associated to the organisation                               |
+|reviewables                                    |array of all the reviewables associated to the organisation                              |
+|<span class="indent-1">sku</span>              |the sku of the reviewable                                                                |
+|<span class="indent-1">review_count</span>     |number of published reviews associated to the reviewable                                 |
+|<span class="indent-1">average_score</span>    |average score associated to this reviewable                                              |
 
 
 

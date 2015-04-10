@@ -215,6 +215,6 @@ The questionnaire template consists of a number of sections and each section con
 
 By HTTP status:
 
- * 400 Bad Request - Invalid TRKREF supplied {"status": 400, "errors": "Invalid TRKREF supplied"}
- * 401 Unauthorized - Unauthorized {"status": 401, "errors": "Unauthorized"}
- * 404 Not Found - SKU not found {"status": 404, "errors": "SKU not found"}
+ * 400 Bad Request - Invalid TRKREF supplied (`{"status": 400, "errors": "Invalid TRKREF supplied"}`)
+ * 401 Unauthorized - Unauthorized (`{"status": 401, "errors": "Unauthorized"}`)`
+ * 404 Not Found - SKU not found (`{"status": 404, "errors": "SKU not found"}`)`

@@ -4,8 +4,8 @@ layout: docs
 title: Platform API v4 / Customer Experience Reviews
 navId: docs
 group: reevooapi
-next: review/review-detail
-prev: customer-experience-review/customer-experience-review-detail
+next: customer-experience-review/customer-experience-review-detail
+prev: review/review-detail
 ---
 
 # Customer Experience Reviews
@@ -18,7 +18,7 @@ Only published customer experience reviews will be included.
 /v4/organisations/D10/customer_experience_reviews
 
 <div class="warning">
-  <strong>This URL: </strong> 
+  <strong>This URL: </strong>
   /v4/organisations;trkref=D10/customer_experience_reviews
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>

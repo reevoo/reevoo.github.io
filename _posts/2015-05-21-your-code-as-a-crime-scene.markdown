@@ -12,7 +12,7 @@ The promise of the talk was to equip you with tools (plucked from forensic scien
 
 One of the reasons I was captivated by the talk was the sheer simplicity of the concepts described; if you've done any kind of statistical analysis you already know how to analyse your VCS logs.
 
-I don't know if Tornhill was explicitly selling his book with his talk (!), but it worked - I got hold a copy of his book *Your Code as a Crime Scene* as soon as I could, and read it within a few days of receiving it. The book doesn't disappoint: Tornhill's writing style is entertaining, informative and insightful. 
+I don't know if Tornhill was explicitly selling his book with his talk (!), but it worked - I got hold a copy of his book (also titled [*Your Code as a Crime Scene*](http://www.amazon.co.uk/Your-Code-Crime-Scene-Bottlenecks/dp/1680500384/ref=sr_1_1?ie=UTF8&qid=1432283554&sr=8-1&keywords=your+code+as+a+crime+scene)) as soon as I could, and read it within a few days of receiving it. The book doesn't disappoint: Tornhill's writing style is entertaining, informative and insightful. 
 
 A lot of the book focuses around Tornhill's tool [*Code Maat*](https://github.com/adamtornhill/code-maat) which provides an easy way to analyse your own code base. In reality *Your Code as a Crime Scene* could have been a dull instruction manual for the tool, but thankfully Tornhill uses the book instead to explain the theory behind the tool and the implications of the results it provides. As long as you're not afraid of the command line *Code Maat* is easy to install and use.
 
@@ -31,7 +31,7 @@ java -jar code-maat-0.8.6-standalone.jar -l rw.log -c git -a summary > summary.c
 ```
 
 | statistic | value |
-| --------- | ----- |
+| --------- | ----: |
 | number-of-commits | 1519 |
 | number-of-entities | 1558 |
 | number-of-entities-changed | 5455 |
@@ -44,7 +44,7 @@ java -jar code-maat-0.8.6-standalone.jar -l rw.log -c git -a authors  > authors.
 ```
 
 | entity | n-authors |  n-revs |
-|--------|-----------|---------|
+|--------|----------:|--------:|
 | *.../reviews_controller_spec.rb* | *14* | *78* |
 | .../routes.rb    | 14 | 70 |
 | Gemfile.lock    | 14 | 63 |
@@ -65,14 +65,14 @@ We will clear this up soon. Thanks *Code Maat*!
 
 One of my favourite demonstrations Tornhill exhibited was how commits can be used to find coupled code in your system, simply by correlating which files change together. What does it look like for *rw*?
 
-The following table shows the top 10 after removing specs and common Rails coupling such as `Gemfile <-> Gemfile.lock`:
+The following table shows the top 10 (ordered by coupling degree) after removing specs and common Rails coupling such as `Gemfile <-> Gemfile.lock`:
 
 ```
 java -jar code-maat-0.8.6-standalone.jar -l rw.log -c git -a coupling  > coupling.csv
 ```
 
-| Ref | entities | degree | average-revs |
-|-----|----------|--------|--------------|
+| (ref) | entities | degree | average-revs |
+|:-----:|----------|-------:|-------------:|
 | 1 | *.../import_scripts/default_importer_algorithm.rb* <br/> *.../import_scripts/[COMPANY_X]_adapter.rb* | *100* | *5* |
 | 2 | .../mailers/video_review_mailer.rb <br/> .../views/video_review_mailer/fill_out_a_video_review.html.slim | 92 | 7 |
 | 3 | *.../reviewable/product_group.rb* <br/> *.../reviewable/retailer_product.rb* | *90* | *6* |
@@ -83,6 +83,8 @@ java -jar code-maat-0.8.6-standalone.jar -l rw.log -c git -a coupling  > couplin
 | 8 | .../customer_experience_reviews/summary.rb <br/> .../customer_experience_reviews/summary/parent.rb | 54 | 11 |
 | 9 | .../api_models/retailer_review.rb <br/> .../api_models/review.rb| 52 | 12 |
 | 10 | *.../models/api_provider.rb* <br/> *.../models/automotive_aggregation_api_adapter.rb* | *52* | *10* |
+
+*degree* here refers to the percentage of commits where the two files have been changed in the same commit.
 
 On the whole, this looks pretty good: things that change together are very close in naming and directory structure. However, there are some interesting observations:
 
@@ -113,9 +115,9 @@ S[e] = R[e] * U[e]
 
 where:
 
-- `S(e)` is the *scariness factor* for the entity.
-- `R(e)` is the number of revisions for the entity.
-- `U(e)` is the percentage of commits for the entity written by employees who are no longer in the company.
+- `S[e]` is the *scariness factor* for the entity.
+- `R[e]` is the number of revisions for the entity.
+- `U[e]` is the percentage of commits for the entity written by employees who are no longer in the company.
 
 Should we weight these two measures equally? I would suggest that the percentage of 'knowledge gap' commits is *more* important than the number of revisions. I eventually settled on:
 
@@ -123,25 +125,27 @@ Should we weight these two measures equally? I would suggest that the percentage
 S[e] = SQRT(R[e]) * U[e]
 ```
 
-If you've got all that, then good (and well done)! Here are the scores:
+If you've got all that, then good (and well done)! Here are the top 10:
 
 | entity | revs | %unknown | scariness |
-|--------|------|----------|-----------|
+|--------|-----:|---------:|----------:|
 | *.../reviews_controller_spec.rb* | *78*  | *50* | *4.4* |
 | *.../response_builder/organisation.rb* | *40* | *60* | *3.8* |
 | *.../response_builder/customer_experience_review.rb* | *37* | *57* | 3.5 |
 | *.../models_to_delete/review_v4.rb* | *13* | *92* | *3.3* |
 | .../reviewables_controller_spec.rb | 48  | 46 | 3.2 |
-| .../reviews_container_json_builder.rb  | 9   | 100    | 3.0 |
+| *.../reviews_container_json_builder.rb*  | *9*   | *100*    | *3.0* |
 | *.../response_builder/review.rb*   | *53* | *40* | *2.9* |
 | .../reviewables_controller.rb   | 28  | 54 | 2.8 |
-| .../new_categories_controller.rb  | 8   | 100    | 2.8 |
+| *.../new_categories_controller.rb*  | *8*   | *100*    | *2.8* |
 | .../organisations_controller_spec.rb   | 35  | 46 | 2.7 |
 
 So what do we learn here about *rw*?
+
 - We have validated our concern for `reviews_controller_spec.rb`, because here it is again at the top of our list! We *really* need to look at this file.
 - We have a number of knowledge gaps in the response builder. This code uses [a custom transformer](https://github.com/reevoo/responsible) to serialize objects to JSON for our API. This is an important knowledge gap to fill, as we've run into problems before.
 - We have a folder called `models_to_delete`. We should probably delete them, but given it was written by developers who are no longer here, how can we know whether we can delete it? (Trust the tests, perhaps?)
+- There are a number of files we know nothing about.
 
 Plenty of work to do following this analysis. But what do you do with a knowledge gap? One way of fixing it is to delete the unknown code and see what happens. The other is to assign people to 'learn' these areas of the system (and hope they don't leave soon!).
 

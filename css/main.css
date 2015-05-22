@@ -88,10 +88,6 @@ li { list-style-position: inside; }
   margin: auto;
 }
 
-.top-banner .banner-container #recruitment-video {
-  padding-bottom: 73px;
-}
-
 .site-nav {
   float: right;
   line-height: 78px;
@@ -335,8 +331,10 @@ li { list-style-position: inside; }
 }
 
 #recruitment-video {
+  padding-bottom: 73px;
   width: 940px;
   height: 529px;
+  display: block;
 }
 
 /* About page styles */
@@ -640,14 +638,47 @@ p > code {
 /* media queries */
 /* ----------------------------------------------------------*/
 
+@media (max-width: 1024px) {
+  #recruitment-video {
+    width: 700px;
+    height: 394px;
+    margin: auto;
+  }
+  .tile-container .tile {
+    width: 200px;
+    padding: 40px 30px 50px 0;
+  }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #team-photo {
+    width: 650px;
+  }
+
+  #jobs-page-banner {
+    width: 706px;
+  }
+
+  .content-container {
+    max-width: 500px;
+  }
+
+  .site-nav .page-link {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  #recruitment-video {
+    width: 450px;
+    height: 254px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
   #recruitment-video {
     width: 300px;
     height: 169px;
     margin: auto;
-    display: block;
   }
 
   .tile-container .tile {
@@ -687,36 +718,6 @@ p > code {
 
   .post .apply-cta, .post .apply-cta a, .post .apply-cta a:hover {
     bottom: 40px;
-  }
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  #recruitment-video {
-    width: 700px;
-    height: 394px;
-    margin: auto;
-    display: block;
-  }
-  .tile-container .tile {
-    width: 200px;
-    padding: 40px 30px 50px 0;
-  }
-
-  #team-photo {
-    width: 650px;
-  }
-
-  #jobs-page-banner {
-    width: 706px;
-  }
-
-  .content-container {
-    max-width: 500px;
-  }
-
-  .site-nav .page-link {
-    padding: 0 10px;
   }
 }
 

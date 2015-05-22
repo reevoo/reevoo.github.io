@@ -91,7 +91,7 @@ On the whole, this looks pretty good: things that change together are very close
 - A number of the top 10 are just areas of the code that were developed together. For example, it looks like our base import script (#1) isn't as generic as we thought. However this was built from scratch in 2014 and *COMPANY X* was our first customer to use this mechanism, so it makes sense that they changed together. This is the same for #10 as well.
 - The coupling of product group and retailer product (#3) is, on the face of it, more concerning. This is in the response rendering code of our application. Looking at the logs, however, we find that there is no code coupling - it's just a coincidence! (phew)
 
-Looking through, our initial analysis says our coupling was pretty good - in 2014 at least. Obviously we cannot extrapolate and say "the code base is lossely coupled".
+Looking through, our initial analysis says our coupling was pretty good - in 2014 at least. Obviously we cannot extrapolate and say "the code base is loosely coupled".
 
 ### Knowledge Gaps
 

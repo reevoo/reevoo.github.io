@@ -511,6 +511,10 @@ margin: 0;
   margin: 30px 0;
 }
 
+.post-content p {
+  overflow: auto;
+}
+
 .post pre,
 .post code {
   background-color: #f0f0ff;
@@ -526,6 +530,10 @@ margin: 0;
   padding: 1px 5px; 
   display: inline-block;
   vertical-align: bottom;
+}
+
+p > code {
+  white-space: nowrap;
 }
 
 .post pre code {
@@ -557,6 +565,11 @@ margin: 0;
 
 .post td {
   border: 1px solid #eee;
+}
+
+.wide-ele-wrapper {
+  max-width: 100%;
+  overflow: auto;
 }
 
 /* Syntax highlighting styles */

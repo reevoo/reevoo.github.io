@@ -712,6 +712,9 @@ p > code { white-space: nowrap; }
     clear: both;
   }
 
+  #footer-description {
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {

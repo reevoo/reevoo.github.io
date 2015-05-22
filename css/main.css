@@ -513,8 +513,7 @@ margin: 0;
 
 .post pre,
 .post code {
-  border: 1px solid #d5d5e9;
-  background-color: #eef;
+  background-color: #f0f0ff;
   padding: 8px 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -523,15 +522,17 @@ margin: 0;
   overflow: auto;
 }
 
-.post code { padding: 1px 5px; }
+.post code { 
+  padding: 1px 5px; 
+  display: inline-block;
+  vertical-align: bottom;
+}
 
 .post pre code {
   border: 0;
   padding-right: 0;
   padding-left: 0;
 }
-
-p > code { white-space: nowrap; }
 
 /* terminal */
 .post pre.terminal {
@@ -544,6 +545,19 @@ p > code { white-space: nowrap; }
 }
 
 .post pre.terminal code { background-color: #333; }
+
+.post table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.post th, .post td {
+  padding: 0.25em 1em;
+}
+
+.post td {
+  border: 1px solid #eee;
+}
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/

@@ -32,7 +32,7 @@ Proxy.start(:host => "0.0.0.0", :port => 8001, :debug => false) do |conn|
   @start = Time.now
 
   conn.server :production, :host => "127.0.0.1", :port => 80
-  conn.server :shadow, :host => “xxx.xxx.xxx.xxx", :port => 80
+  conn.server :shadow, :host => "xxx.xxx.xxx.xxx", :port => 80
 
   conn.on_data do |data|
     data.gsub!(/\sHTTP\/1\.1/, " HTTP/1.1\r\nConnection: close")

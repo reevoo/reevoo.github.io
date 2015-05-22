@@ -54,7 +54,7 @@ java -jar code-maat-0.8.6-standalone.jar -l rw.log -c git -a summary > summary.c
 ```
 
 <div class="wide-ele-wrapper">
-  <table>
+  <table class="table-one">
     <tr>
       <th>statistic</th><th>value</th>
     </tr>
@@ -81,7 +81,7 @@ java -jar code-maat-0.8.6-standalone.jar -l rw.log -c git -a authors  > authors.
 ```
 
 <div class="wide-ele-wrapper">
-  <table>
+  <table class="table-two">
     <tr>
       <th>entity</th><th>n-authors</th><th>n-revs</th>
     </tr>
@@ -135,7 +135,7 @@ java -jar code-maat-0.8.6-standalone.jar -l rw.log -c git -a coupling  > couplin
 ```
 
 <div class="wide-ele-wrapper">
-  <table>
+  <table class="table-three">
     <tr>
       <th>(ref)</th><th>entities</th><th>degree</th><th>average-revs</th>
     </tr>
@@ -272,7 +272,7 @@ S[e] = SQRT(R[e]) * U[e]
 If you've got all that, then good (and well done)! Here are the top 10:
 
 <div class="wide-ele-wrapper">
-  <table>
+  <table class="table-four">
     <tr>
       <th>entity</th><th>revs</th><th>%unknown</th><th>scariness</th>
     </tr>
@@ -386,3 +386,28 @@ released into the wild.*
 [crime-scene-talk]: http://qconlondon.com/presentation/treat-your-code-crime-scene
 [crime-scene-book]: http://www.amazon.co.uk/Your-Code-Crime-Scene-Bottlenecks/dp/1680500384/ref=sr_1_1?ie=UTF8&qid=1432283554&sr=8-1&keywords=your+code+as+a+crime+scene
 [code-maat]: https://github.com/adamtornhill/code-maat
+
+<style type="text/css" media="screen">
+  .table-one td:nth-child(2) {
+    text-align: right;
+  }
+
+  .table-two td:nth-child(2),
+  .table-two td:nth-child(3) {
+    text-align: right;
+  }
+
+  .table-three td:nth-child(1) {
+    text-align: center;
+  }
+  .table-three td:nth-child(3),
+  .table-three td:nth-child(4) {
+    text-align: right;
+  }
+
+  .table-four td:nth-child(2),
+  .table-four td:nth-child(3),
+  .table-four td:nth-child(4) {
+    text-align: right;
+  }
+</style>

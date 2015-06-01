@@ -51,11 +51,11 @@ this is not possible you can call the tracking code from a click.
 <a class="buy-link" href="/buy_cool_stuff">Buy cool stuff</a>
 
 <script type="text/javascript">
-   document.querySelector('.buy-link').addEventListener('click', function() {
-     ReevooApi.load('TRKREF', function(retailer) {
-       retailer.track_purchase(['SKU1', 'SKU2'], orderValue);
-     });
-   });
+  document.querySelector('.buy-link').addEventListener('click', function() {
+    ReevooApi.load('TRKREF', function(retailer) {
+      retailer.track_purchase(['SKU1', 'SKU2'], orderValue);
+    });
+  });
 </script>
 {% endhighlight %}
 
@@ -69,11 +69,11 @@ this is not possible you can call the tracking code from a click.
 <a class="buy-link" href="/buy_cool_stuff">Buy cool stuff</a>
 
 <script type="text/javascript">
-   $('.buy-link').first().on('click', function() {
-     ReevooApi.load('TRKREF', function(retailer) {
-       retailer.track_purchase(['SKU1', 'SKU2'], orderValue);
-     });
-   });
+  $('.buy-link').first().on('click', function() {
+    ReevooApi.load('TRKREF', function(retailer) {
+      retailer.track_purchase(['SKU1', 'SKU2'], orderValue);
+    });
+  });
 </script>
 {% endhighlight %}
 
@@ -87,11 +87,11 @@ this is not possible you can call the tracking code from a click.
 <a class="buy-link" href="/buy_cool_stuff">Buy cool stuff</a>
 
 <script type="text/javascript">
-   document.querySelector('.buy-link').onclick = function() {
-     ReevooApi.load('TRKREF', function(retailer) {
-       retailer.track_purchase(['SKU1', 'SKU2'], orderValue);
-     });
-   });
+  document.querySelector('.buy-link').onclick = function() {
+    ReevooApi.load('TRKREF', function(retailer) {
+      retailer.track_purchase(['SKU1', 'SKU2'], orderValue);
+    });
+  });
 </script>
 {% endhighlight %}
 
@@ -109,12 +109,12 @@ In order to track a custom event follow these steps:
 
 {% highlight html %}
 <script type="text/javascript">
-   afterReevooMarkLoaded = [function(){
-     ReevooApi.load('TRKREF', function(retailer) {
-       retailer.Tracking.ga_track_event('event category', 'event action', 'event label');
-       retailer.track_exit();
-     });
-   }];
+  afterReevooMarkLoaded = [function(){
+    ReevooApi.load('TRKREF', function(retailer) {
+      retailer.Tracking.ga_track_event('event category', 'event action', 'event label');
+      retailer.track_exit();
+    });
+  }];
 </script>
 {% endhighlight %}
 
@@ -136,12 +136,12 @@ this is not possible you can call the tracking code from a click.
 <a class="book-link" href="/book_test_drive">Book a test drive</a>
 
 <script type="text/javascript">
-   document.querySelector('.book-link').addEventListener('click', function() {
-     ReevooApi.load('TRKREF', function(retailer) {
-       retailer.Tracking.ga_track_event('event category', 'event action', 'event label');
-       retailer.track_exit();
-     });
-   });
+  document.querySelector('.book-link').addEventListener('click', function() {
+    ReevooApi.load('TRKREF', function(retailer) {
+      retailer.Tracking.ga_track_event('event category', 'event action', 'event label');
+      retailer.track_exit();
+    });
+  });
 </script>
 {% endhighlight %}
 
@@ -151,12 +151,12 @@ this is not possible you can call the tracking code from a click.
 <a class="book-link" href="/book_test_drive">Book a test drive</a>
 
 <script type="text/javascript">
-   $('.book-link').first().on('click', function() {
-     ReevooApi.load('TRKREF', function(retailer) {
-       retailer.Tracking.ga_track_event('event category', 'event action', 'event label');
-       retailer.track_exit();
-     });
-   });
+  $('.book-link').first().on('click', function() {
+    ReevooApi.load('TRKREF', function(retailer) {
+      retailer.Tracking.ga_track_event('event category', 'event action', 'event label');
+      retailer.track_exit();
+    });
+  });
 </script>
 {% endhighlight %}
 
@@ -166,11 +166,11 @@ this is not possible you can call the tracking code from a click.
 <a class="book-link" href="/book_test_drive">Book a test drive</a>
 
 <script type="text/javascript">
-   document.querySelector('.book-link').onclick = function() {
-     ReevooApi.load('TRKREF', function(retailer) {
-       retailer.Tracking.ga_track_event('event category', 'event action', 'event label');
-       retailer.track_exit();
-     });
-   });
+  document.querySelector('.book-link').onclick = function() {
+    ReevooApi.load('TRKREF', function(retailer) {
+      retailer.Tracking.ga_track_event('event category', 'event action', 'event label');
+      retailer.track_exit();
+    });
+  });
 </script>
 {% endhighlight %}

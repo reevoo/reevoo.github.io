@@ -12,7 +12,10 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+  min-width: 370px;
+}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -113,10 +116,6 @@ li { list-style-position: inside; }
   background-color: #EFEFEF;
   border-bottom: 2px solid #ff7911;
   color: black;
-}
-
-.docs .left-nav .active {
-    font-weight: bold;
 }
 
 /* Site footer */
@@ -323,7 +322,9 @@ li { list-style-position: inside; }
   color: #3D3D3D;
 }
 
-.post {
+.post,
+.docs-content {
+  box-sizing: border-box;
   font-size: 18px;
   background-color: white;
   padding: 50px;
@@ -392,30 +393,59 @@ li { list-style-position: inside; }
 /* Documentation page styles */
 /* ----------------------------------------------------------*/
 
-.docs-wrap {
+.docs {
   max-width: 950px;
   margin: auto;
 }
 
-.content-container {
+.docs-content {
   max-width: 700px;
   float: right;
 }
 
-.left-nav {
-  max-width: 200px;
-  float: left;
-  margin-top: 40px;
+.docs-nav .active {
+  font-weight: bold;
 }
 
-.left-nav li {
+.docs-nav {
+  max-width: 200px;
+  float: left;
+  padding: 0 10px;
+  padding-top: 20px;
+}
+
+.docs-nav li {
   list-style: none;
   margin-left: 10px;
 }
 
-.left-nav li li {
+.docs-nav li li {
   list-style: none;
   margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .docs-content {
+    max-width: 600px;
+  }
+}
+@media (max-width: 800px) {
+  .docs-content {
+    max-width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .docs-content {
+    display: block;
+    float: none;
+    max-width: 800px
+  }
+  .docs-nav {
+    width: 85%;
+    max-width: 85%;
+    margin: auto;
+    float: none;
+  }
 }
 
 /* Post styles */
@@ -661,10 +691,6 @@ p > code {
     width: 706px;
   }
 
-  .content-container {
-    max-width: 500px;
-  }
-
   .site-nav .page-link {
     padding: 0 10px;
   }
@@ -675,6 +701,9 @@ p > code {
     width: 450px;
     height: 254px;
     margin: auto;
+  }
+  .page-title {
+    padding: 10px;
   }
 }
 
@@ -705,19 +734,6 @@ p > code {
 
   #footer-description {
     bottom: 10px;
-  }
-
-  .content-container {
-    max-width: 320px;
-    word-wrap:break-word;
-  }
-
-  .left-nav {
-    max-width: 300px;
-    margin-left: 40px;
-    padding: 10px 10px 30px 10px;
-    margin-top: 0;
-    background-color: #f0f0f0;
   }
 
   .post .apply-cta, .post .apply-cta a, .post .apply-cta a:hover {

@@ -424,6 +424,14 @@ li { list-style-position: inside; }
   margin-left: 20px;
 }
 
+.docs-prevnext {
+  text-align: center;
+}
+
+.docs-prevnext a {
+  margin: 0 5px;
+}
+
 @media (max-width: 900px) {
   .docs-content {
     max-width: 600px;
@@ -547,8 +555,8 @@ margin: 0;
   overflow: auto;
 }
 
-.post pre,
-.post code {
+pre,
+code {
   background-color: #f0f0ff;
   padding: 8px 12px;
   -webkit-border-radius: 3px;
@@ -558,8 +566,8 @@ margin: 0;
   overflow: auto;
 }
 
-.post code { 
-  padding: 1px 5px; 
+code {
+  padding: 1px 5px;
   display: inline-block;
   vertical-align: bottom;
 }
@@ -568,23 +576,11 @@ p > code {
   white-space: nowrap;
 }
 
-.post pre code {
+pre code {
   border: 0;
   padding-right: 0;
   padding-left: 0;
 }
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.post pre.terminal code { background-color: #333; }
 
 .post table {
   border-collapse: collapse;

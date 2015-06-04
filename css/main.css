@@ -94,13 +94,15 @@ li { list-style-position: inside; }
 .site-nav {
   float: right;
   line-height: 78px;
+  display: relative;
 }
 
 .site-nav .menu-icon { display: none; }
 
 .site-nav .page-link {
+  box-sizing: border-box;
   padding: 0 17px;
-  height: 78px;
+  height: 100%;
   color: #000;
   display: inline-block;
   font-weight: bold;
@@ -792,6 +794,10 @@ pre code {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #e8e8e8;
+  }
+
+  .site-nav .page-link {
+    height: 2em;
   }
 
   .site-nav .menu-icon {

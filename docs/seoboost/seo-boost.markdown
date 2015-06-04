@@ -29,10 +29,10 @@ We provide 4 different versions of the ReevooMark tag library, one for each of t
 
 Reevoo’s tag libraries are open-source and available on GitHub. We welcome contributions to any of our hosted projects on GitHub. Please click on the appropriate link below, according to your  platform's language, to find detailed instructions on how to use our tag library to embed review content in your site.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| **Java/JSP**&nbsp;&nbsp;&nbsp;&nbsp;  |   <a href="https://github.com/reevoo/reevoomark-java-api" target="_blank">https://github.com/reevoo/reevoomark-java-api</a>       |
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| **PHP**&nbsp;&nbsp;&nbsp;&nbsp;   |   <a href="https://github.com/reevoo/reevoomark-php-api" target="_blank">https://github.com/reevoo/reevoomark-php-api</a>         |
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| **ASP/.NET**&nbsp;&nbsp;&nbsp;&nbsp;  |   <a href="https://github.com/reevoo/reevoomark-dotnet-api" target="_blank">https://github.com/reevoo/reevoomark-dotnet-api</a>   |
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| **Ruby**&nbsp;&nbsp;&nbsp;&nbsp;  |   <a href="https://github.com/reevoo/reevoomark-ruby-api" target="_blank">https://github.com/reevoo/reevoomark-ruby-api</a>       |
+* [**Java/JSP**](https://github.com/reevoo/reevoomark-java-api)
+* [**PHP**](https://github.com/reevoo/reevoomark-php-api)
+* [**ASP/.NET**](https://github.com/reevoo/reevoomark-dotnet-api)
+* [**Ruby**](https://github.com/reevoo/reevoomark-ruby-api)
 
 <br/>
 **Note:** We also provide connectors for leading eCommerce platforms IBM WebSphere Commerce, hybris, Demandware and coming soon Magento. Please get in touch with us for more details on these connectors.

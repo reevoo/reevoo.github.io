@@ -24,7 +24,7 @@ For this example you need to replace ```TRKREF``` with the account code provided
 
 {% highlight html %}
 <!-- This will be transformed into a product badge for the given TRKREF and SKU -->
-<a class="reevoomark" href="http://mark.reevoo.com/partner/TRKREF/SKU">Read reviews</a>
+<reevoo-reviewable-badge trkref="TRKREF" sku="SKU"></reevoo-reviewable-badge>
 
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
   (function() {
@@ -34,12 +34,6 @@ For this example you need to replace ```TRKREF``` with the account code provided
     var s = document.getElementById('reevoomark-loader');
     s.parentNode.insertBefore(script, s);
   })();
-
-  afterReevooMarkLoaded = [function() {
-    ReevooApi.load('TRKREF', function(retailer) {
-      retailer.init_badges();
-    });
-  }];
 </script>
 {% endhighlight %}
 

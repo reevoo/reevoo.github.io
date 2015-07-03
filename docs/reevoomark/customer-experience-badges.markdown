@@ -13,24 +13,12 @@ next: conversation-badges
 To display the customer experience badge on your website you have to
 
 1. [include the Reevoomark Javascript library](../javascript-library)
-2. add the HTML link tag with `class="reevoo_reputation"` and `href="http://mark.reevoo.com/retailer/TRKREF"`
-3. call the `init_reevoo_reputation_badges` method of the Javascript library:
-
-{% highlight html %}
-<script type="text/javascript">
-  afterReevooMarkLoaded = [function() {
-    ReevooApi.load('TRKREF', function(retailer) {
-      retailer.init_reevoo_reputation_badges();
-    });
-  }];
-</script>
-{% endhighlight %}
+2. add the `reevoo-customer-experience-badge` tag with `trkref="TRKREF"`
 
 * `TRKREF` should be replaced with your unique account code
 
 Described steps allows you to display badge with Overall Service rating. To display Customer Service rating
-add to the HTML link CSS class `customer_service`. To display Delivery rating add to the HTML link
-CSS class `delivery`.
+set the score attribute to `customer_service`. To display Delivery rating set the score attribute to `delivery`.
 
 ### Examples
 
@@ -39,7 +27,7 @@ CSS class `delivery`.
 ![Overall Service rating badge](/assets/customer-exp-badge.png)
 
 {% highlight html %}
-<a class="reevoo_reputation" href="http://mark.reevoo.com/retailer/TRKREF">Service rating of [client name]</a>
+<reevoo-customer-experience-badge trkref="TRKREF"></reevoo-customer-experience-badge>
 {% endhighlight %}
 
 
@@ -48,7 +36,7 @@ CSS class `delivery`.
 ![Customer Service rating badge](/assets/customer-exp-service-badge.png)
 
 {% highlight html %}
-<a class="reevoo_reputation customer_service" href="http://mark.reevoo.com/retailer/TRKREF">Customer service rating of [client name]</a>
+<reevoo-customer-experience-badge score="customer_service" trkref="TRKREF"></reevoo-customer-experience-badge>
 {% endhighlight %}
 
 
@@ -57,5 +45,13 @@ CSS class `delivery`.
 ![Delivery rating badge](/assets/customer-exp-delivery-badge.png)
 
 {% highlight html %}
-<a class="reevoo_reputation delivery" href="http://mark.reevoo.com/retailer/TRKREF">Delivery rating of [client name]</a>
+<reevoo-customer-experience-badge score="delivery" trkref="TRKREF"></reevoo-customer-experience-badge>
+{% endhighlight %}
+
+*Branch Specific:*
+
+To limit the score to a particular branch set the `branch-code` attribute.
+
+{% highlight html %}
+<reevoo-customer-experience-badge branch_code="BRANCH_CODE" trkref="TRKREF"></reevoo-customer-experience-badge>
 {% endhighlight %}

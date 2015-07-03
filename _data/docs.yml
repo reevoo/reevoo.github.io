@@ -6,6 +6,8 @@
     title: Getting started
   - id: javascript-library
     title: JavaScript library
+  - id: ie8
+    title: IE 8 Support
   - id: product-badges
     title: Product badges
   - id: customer-experience-badges

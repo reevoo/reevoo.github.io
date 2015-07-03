@@ -5,7 +5,7 @@ layout: docs
 group: reevoomark
 navId: docs
 prev: getting-started
-next: product-badges
+next: ie8
 ---
 
 JavaScript Library
@@ -57,7 +57,6 @@ The JavaScript to use to load your configuration is as follows:
 afterReevooMarkLoaded = [function() {
   ReevooApi.load('TRKREF', function(retailer) {
     // retailer.command();
-    retailer.init_badges();
   });
 }];
 {% endhighlight %}

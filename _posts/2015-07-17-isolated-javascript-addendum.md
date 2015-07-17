@@ -8,7 +8,7 @@ author: Jonny Arnold
 github: jonnyarnold
 ---
 
-Last month [I wrote an article](2015-06-15-isolated-javascript) explaining how you can isolate your JavaScript. In this article I want to explain why you should ignore that article completely and how we used ES6 modules to provide the isolation we needed.
+Last month [I wrote an article]({% post_url 2015-06-15-isolated-javascript %}) explaining how you can isolate your JavaScript. In this article I want to explain why you should ignore that article completely and how we used ES6 modules to provide the isolation we needed.
 
 ## What I Said Before Was Wrong
 

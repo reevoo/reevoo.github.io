@@ -36,22 +36,23 @@ module SoapboxCommentLinker
   end
 
   def request_new_content_id
-    response = ::HTTParty.post('http://127.0.0.1:9292/v1/content',
+    response = ::HTTParty.post(config['content_url'],
                   body: {
                           tags: ['development'],
                           url: 'http://reevoo.github.io'
                         }.to_json,
                   headers: {
-                    'Content-Provider' => 'Reevoo Devs Blog',
-                    'Provider-Secret' => 'a7a10c03f642febc28dc774aff8b1378361ab3e44fc0d1d3310535b14a50f7aa',
+                    'Content-Provider' => 'reevoo.github.io',
+                    'Provider-Secret' => config['provider_key'],
                     'Content-Type' => 'application/json',
                   }
     )
 
-    # HTTParty.post('https://widgets.reevoo.com/v1/content',
-    #               body: { tags: [] }
-    # )
     return response['id'] if response.code == 201
+  end
+
+  def config
+    YAML.load_file('soapbox_config.yml')
   end
 
   extend self

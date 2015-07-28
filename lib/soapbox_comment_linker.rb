@@ -1,7 +1,8 @@
-require 'pry'
 require 'httparty'
+require 'yaml'
 
 module SoapboxCommentLinker
+
   def link
     get_all_post_files.each do |file|
       link_soapbox_comments(file)
@@ -11,7 +12,7 @@ module SoapboxCommentLinker
   private
 
   def get_all_post_files
-    Dir["_posts/*.markdown"]
+    Dir["_posts/*.{md,markdown}"]
   end
 
   def link_soapbox_comments(file)

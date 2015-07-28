@@ -2,3 +2,6 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'html-proofer'
+gem 'rake'
+gem 'pry'
+gem 'httparty'

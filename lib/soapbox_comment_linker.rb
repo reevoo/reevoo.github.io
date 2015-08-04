@@ -48,7 +48,8 @@ module SoapboxCommentLinker
                   }
     )
 
-    return response['id'] if response.code == 201
+    fail "Uh oh. Response was #{response.code}" unless response.code == 201
+    response['id']
   end
 
   def config

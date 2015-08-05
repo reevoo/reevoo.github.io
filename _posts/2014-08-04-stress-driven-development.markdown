@@ -1,4 +1,5 @@
 ---
+soapboxContentId: 941c3beb-8ede-4317-934f-fd8884e4cbe7
 layout: post
 title:  "Stress driven development"
 date:   2014-08-04 10:58:44

@@ -1,4 +1,5 @@
 ---
+soapboxContentId: 7581f343-5e42-4852-830b-290cc041f5b0
 layout: post
 title:  "Git Bisect For Great Good"
 date:   2014-07-30 09:44:44

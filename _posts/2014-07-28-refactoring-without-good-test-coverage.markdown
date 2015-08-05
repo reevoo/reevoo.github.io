@@ -1,4 +1,5 @@
 ---
+soapboxContentId: dcd1219f-3377-44e1-9ba1-5b9557ab44ad
 layout: post
 title:  "Refactoring without good test coverage"
 date:   2014-07-28 10:10:10

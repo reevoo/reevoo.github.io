@@ -1,4 +1,5 @@
 ---
+soapboxContentId: b8ab4181-3943-45f5-9295-020a9863b6f0
 layout: post
 title:  "Domain-driven design on Rails - Part 1"
 date:   2014-07-28 15:33:44

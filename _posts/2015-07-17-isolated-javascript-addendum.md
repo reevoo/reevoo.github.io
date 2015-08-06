@@ -1,4 +1,5 @@
 ---
+soapboxContentId: 149da903-d919-42f6-b00e-52b4cf78ae57
 layout: post
 title:  Being Lonely (Reprise)
 date:   2015-07-17 08:00:00

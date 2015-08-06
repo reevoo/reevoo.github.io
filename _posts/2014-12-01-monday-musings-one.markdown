@@ -1,4 +1,5 @@
 ---
+soapboxContentId: 2797cb3e-4903-4a59-8f43-abf4bdee52eb
 layout: post
 title:  Monday Musings #1
 date:   2014-12-01 10:30:00

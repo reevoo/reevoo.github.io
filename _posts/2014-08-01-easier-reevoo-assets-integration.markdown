@@ -1,4 +1,5 @@
 ---
+soapboxContentId: 3147ce0d-5563-495a-846e-7abc12674d5b
 layout: post
 title:  "Easier Reevoo Assets Integration"
 date:   2014-07-28 10:58:44

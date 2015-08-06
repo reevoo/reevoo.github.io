@@ -89,7 +89,7 @@ Use `bundle show [gemname]` to see where a bundled gem is installed.
 Run the Jekyll compiler + server.
 
 ```
-$ bundle exec jekyll serve
+$ bundle exec rake jekyll:serve
 Configuration file: /Users/louis/reevoo/reevoo.github.io/_config.yml
             Source: /Users/louis/reevoo/reevoo.github.io
        Destination: /Users/louis/reevoo/reevoo.github.io/_site
@@ -112,7 +112,7 @@ a filename fitting the pattern of `YEAR-MONTH-DAY-title.md`. For example
 punctuation in the file name.
 
 At the top of this new file, type in the "yaml front matter". The values you'll
-want to change from the example below are the title, and the date. 
+want to change from the example below are the title, and the date.
 
 ```yaml
 ---
@@ -135,7 +135,7 @@ browser.
 ### Getting your post live
 
 Once you are happy with your blog post, go back to the terminal window and stop
-the server by pressing `ctrl-c`.
+the server by pressing `ctrl-c`. Make sure your article has a Soapbox Content ID (you may need to re-run `bundle exec rake jekyll:serve` to get this!)
 
 Then create a new git branch.
 

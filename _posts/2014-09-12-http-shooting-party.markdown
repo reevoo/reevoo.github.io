@@ -1,4 +1,5 @@
 ---
+soapboxContentId: 658baa2e-e92e-4c56-ba31-61915cfa8334
 layout: post
 title:  "HTTP Shooting Party"
 date:   2014-09-12 12:09:17

@@ -1,4 +1,5 @@
 ---
+soapboxContentId: 6adfecf6-be96-437b-94f5-cc23ba5f3973
 layout: post
 title:  Being Lonely - Isolating Widgets on Client Sites
 date:   2015-06-15 08:00:00

@@ -5,6 +5,7 @@ title: Platform API v4 / Conversation / Downvote answer
 navId: docs
 group: reevooapi
 prev: conversation/conversation-upvote-answer
+next: customer-order/customer-order-single-submission
 ---
 
 # Conversation - Downvote answer

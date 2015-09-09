@@ -5,7 +5,7 @@ title: Platform API v4 / Customer Order Single Submission
 navId: docs
 group: reevooapi
 prev: conversation/conversation-downvote-answer
-next: customer-order/customer-order-single-submission
+next: customer-order/customer-order-batch-submission
 ---
 
 # Customer Order Single Submission

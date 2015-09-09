@@ -13,7 +13,7 @@ This endpoint enables the submission of a customer order details.
 
 The customer order data should be provided as a json in the request body as described below.
 
-If the customer order is accepted a 202 response code will be sent back, along with an uuid that uniquely identifies this request.
+If the customer order is accepted a 202 response code will be sent back, along with an UUID that uniquely identifies this request.
 
 ## URL Example(s)
 /v4/organisations/TRKREF/customer_order
@@ -26,6 +26,7 @@ If the customer order is accepted a 202 response code will be sent back, along w
 ## Attribute(s)
 
 {: .documentation}
+|trkref                                           |Tracking reference of the organisation (*mandatory)|
 |order_ref                                        |Unique identifier of order (*mandatory)|
 |order_date                                       |Optional Order date. Format: dd-mm-yyyy|
 |fulfilment_date                                  |Date when the order was fulfilled. Format: dd-mm-yyyy|
@@ -49,6 +50,7 @@ If the customer order is accepted a 202 response code will be sent back, along w
 ## JSON Example
 {% highlight json %}
 {
+  "trkref":"TRKREF123",
   "order_ref": "ABC123",
   "order_date": "10-12-2014",
   "fulfilment_date": "24-12-2014",
@@ -119,7 +121,7 @@ By HTTP status:
 {% highlight json %}
 {
   "status": 202,
-  "id": "uuid",
+  "id": "UUID",
   "message": "Customer order accepted"
 }
 {% endhighlight %}

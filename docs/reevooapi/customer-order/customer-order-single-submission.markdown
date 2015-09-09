@@ -26,26 +26,28 @@ If the customer order is accepted a 202 response code will be sent back, along w
 ## Attribute(s)
 
 {: .documentation}
-|trkref                                           |Tracking reference of the organisation (*mandatory)|
-|order_ref                                        |Unique identifier of order (*mandatory)|
+|trkref *                                         |Tracking reference of the organisation|
+|order_ref *                                      |Unique identifier of order|
 |order_date                                       |Optional Order date. Format: dd-mm-yyyy|
 |fulfilment_date                                  |Date when the order was fulfilled. Format: dd-mm-yyyy|
 |language                                         |Language of the purchaser: Two letter code as per ISO 639-1|
 |locale                                           |The locale associated to the order.The language codes are two-letter lowercase ISO language codes (such as "en") as defined by ISO 639-1. The country codes are two-letter uppercase ISO country codes (such as "GB") as defined by ISO 3166-1. For example "en-GB"|
 |customer                                         ||
-|<span class="indent-1">email</span>              |The email address of the ordering customer (*mandatory)|
+|<span class="indent-1">email *</span>            |The email address of the ordering customer|
 |<span class="indent-1">cutomer_ref</span>        |The unique identifier of the customer|
 |<span class="indent-1">title</span>              |Customer title as in Mr/Ms/Doctor, etc.|
 |<span class="indent-1">first_name</span>         |Customer first name|
 |<span class="indent-1">surname</span>            |Customer surname|
 |<span class="indent-1">postcode</span>           |Customer postcode|
 |<span class="indent-1">country</span>            |Customer Country. Two letter code of the country as per ISO 3166-1.|
-|order_items                                      |Array of items ordered by the customer (*mandatory)|
+|order_items *                                    |Array of items ordered by the customer|
 |<span class="indent-1">sku</span>                |The unique identifier of the product|
 |<span class="indent-1">price</span>              |The price of this order_item. Includes just numbers and a comma to separate the the decimals as in: 1234,99|
 |<span class="indent-1">currency</span>           |The currency in which the price for this order_item is specified. Use the ISO 4217 code.|
 |<span class="indent-1">metadata</span>           |List of any other fields that will be linked to the order_item. Field names can contain only [a-z0-9] characters. There is not limit to the number of metadata items that you can have.|
 |<span class="indent-2">key_with_underscore</span>|Any value you want to send|
+
+Attributes marked with * are mandatory
 
 ## JSON Example
 {% highlight json %}

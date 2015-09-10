@@ -74,3 +74,10 @@
         title: upvote answer
       - id: conversation-downvote-answer
         title: downvote answer
+  - id: customer-order
+    title: Customer Order
+    subitems:
+      - id: customer-order-single-submission
+        title: Single submission
+      - id: customer-order-batch-submission
+        title: Batch submission

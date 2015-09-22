@@ -10,9 +10,8 @@ group: reevooapi
 
 ## Automotive - Additional params for filtering
 
-You can use the following params for request to [reviewables](../reviewable/reviewable-list)
-and [reviews list](../review/review-list) endpoints if you have the review fetcher
-automotive feature enabled.
+Some of our automotive clients can use the following params for request to [reviewables](../reviewable/reviewable-list)
+and [reviews list](../review/review-list) endpoints. If you would like access to these parameters please contact your account manager.
 
 {: .documentation}
 |manufacturer         | *string*  |

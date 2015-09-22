@@ -30,8 +30,8 @@ be included.
 |locale     |        |
 |sku        |        |
 
-If you have the review fetcher for automotive feature enabled you can use
-[additional parameters for filtering](../../review-fetcher).
+For some of our automotive clients, [additional parameters](../../review-fetcher) are available.
+If you would like access to these parameters please contact your account manager.
 
 ## Attribute(s)
 

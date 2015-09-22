@@ -17,7 +17,7 @@ be included.
 /v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700
 
 <div class="warning">
-  <strong>This URL: </strong> 
+  <strong>This URL: </strong>
   /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700/reviews
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
@@ -29,6 +29,9 @@ be included.
 |branch_code|optional|
 |locale     |        |
 |sku        |        |
+
+If you have the review fetcher for automotive feature enabled you can use
+[additional parameters for filtering](../../review-fetcher).
 
 ## Attribute(s)
 

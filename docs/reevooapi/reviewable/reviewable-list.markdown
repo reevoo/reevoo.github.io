@@ -17,7 +17,7 @@ organisation.
 /v4/organisations/D10/reviewables
 
 <div class="warning">
-  <strong>This URL: </strong> 
+  <strong>This URL: </strong>
   /v4/organisations;trkref=D10/reviewables
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
@@ -28,6 +28,9 @@ organisation.
 |trkref     |        |
 |branch_code|optional|
 |format     |optional|
+
+If you have the review fetcher for automotive feature enabled you can use
+[additional parameters for filtering](../../review-fetcher).
 
 ## Attribute(s)
 

@@ -29,8 +29,6 @@ organisation.
 |branch_code|optional|
 |format     |optional|
 
-For some of our automotive clients, [additional parameters](../../review-fetcher) are available. 
-If you would like access to these parameters please contact your account manager.
 
 ## Attribute(s)
 

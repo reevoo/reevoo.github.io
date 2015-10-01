@@ -39,7 +39,7 @@ Ideally, we wanted to have code for turning a data structure into an HTML compon
 
 We started to rewrite our widget using [Rivets](https://github.com/mikeric/rivets). But we quickly realised it wasn't the right choice: it isn't well maintained, its documentation is poor, and like Angular's templates, it gives errors that are hard to debug.
 
-So we had deeper think about what we wanted.
+So we had to think deeper about what we wanted.
 
 ### React and Riot
 
@@ -47,7 +47,7 @@ So we had deeper think about what we wanted.
 
 To compare them, we spent a morning with one person writing the widget in Riot and the other in React. Then we swapped in the afternoon.
 
-Although both were good, we went for React. This was because of its large community, good documentation, and support and use by Facebook. We also liked the fact that React's JSX was just sugar on top of JavaScript, meaning that we could play with real JavaScript to debug template problems.
+Although both were good, we went for React. This was because of its large community, good documentation and support, and use by Facebook. We also liked the fact that React's JSX was just sugar on top of JavaScript, meaning that we could play with real JavaScript to debug template problems.
 
 As we were rewriting the app in React, we found it a pleasure to use. For example, we had a photo uploading component within the widget which had to be displayed in different states depending on whether there were no photos or some photos, whether the photo upload limit had been reached or not, and whether a photo was currently being uploaded or not. We decided to create objects that defined each photo uploader state and then re-render the component every time the state changed. Rewriting the component this way was easy despite the multiple state changes going on. This shows the power of programming state change explicitly and separating logic code from templating code.
 

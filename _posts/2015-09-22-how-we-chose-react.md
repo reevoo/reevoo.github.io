@@ -1,5 +1,5 @@
 ---
-soapboxContentId:
+soapboxContentId: f2212896-aebd-4636-a902-572577f5cc71
 layout: post
 title:  How we chose React
 date:   2015-09-22 17:00
@@ -18,7 +18,7 @@ In a recent project to build a comments widget, we decided to experiment with di
 
 ### Angular
 
-We knew we didn't like Angular from previous experience. Firstly, it took ages to learn - there are lots of unnecessarily confusing parts like the differences between service, factory, and provider or what @, &, and = mean in directives. We also didn't like its templates. Having a special templating language is more to learn, and even worse, it is hard to debug. When you cause an error in your template, you get a stack trace that doesn't include any of your code, making it hard to find the problem. And because it's not JavaScript, you can't put a debugger in to see what's going on. Finally, we found the testing very time consuming. There was a lot of error-prone boilerplate that we had to write in the ```beforeEach``` of every set of tests. Overall it felt like we had to warp our brains into Angular's world, rather than the framework helping us and then getting out of the way.
+We knew we didn't like Angular from previous experience. Firstly, it took ages to learn - there are lots of unnecessarily confusing parts like the differences between service, factory, and provider or what @, &, and = mean in directives. We also didn't like its templates. Having a special templating language is more to learn, and even worse, it is hard to debug. When you cause an error in your template, you get a stack trace that doesn't include any of your code, making it hard to find the problem. And because it's not JavaScript, you can't put a debugger in to see what's going on. Finally, we found the testing time consuming. There was a lot of error-prone boilerplate that we had to write in the `beforeEach` of every set of tests. Overall it felt like we had to warp our brains into Angular's world, rather than the framework helping us and then getting out of the way.
 
 ## Experiments
 
@@ -26,10 +26,10 @@ We knew we didn't like Angular from previous experience. Firstly, it took ages t
 
 When we started the comments widget, our first approach was to write vanilla JavaScript. We aimed to keep the size low and we thought the widget would be simple enough not to need a framework. But as we continued found we were doing a lot of this sort of thing:
 
-```javascript
+{% highlight javascript %}
 response.reportElement = response.element.find('.report-container');
 response.reportElement.onclick = response.showReportConfirm;
-```
+{% endhighlight %}
 
 Our code had lots of verbose DOM manipulation that made it hard to read. And we were having a lot of trouble with state. When your frontend code consists of step by step manipulation of the DOM, the state of your program is stored partly in the DOM. For example, if you show nested comments by removing a hide class, the state of your system has changed. But because that state is stored implicitly in the DOM, rather than explicitly in a data structure in your code, it's easy to write code that assumes the DOM is in one state when it is in a different state. This leads to confusing bugs.
 
@@ -43,13 +43,13 @@ So we had deeper think about what we wanted.
 
 ### React and Riot
 
-[React](https://facebook.github.io/react/) and [Riot](http://riotjs.com/) are very similar and seemed to fit our needs. Both help you to create components that render based on a JavaScript data structure which allows you to separate templating and application logic.
+[React](https://facebook.github.io/react/) and [Riot](http://riotjs.com/) are similar and seemed to fit our needs. Both help you to create components that render based on a JavaScript data structure which allows you to separate templating and application logic.
 
 To compare them, we spent a morning with one person writing the widget in Riot and the other in React. Then we swapped in the afternoon.
 
-Although both were good, we went for React. This was mostly because of its large community, good documentation, and support and use by Facebook. We also liked the fact that React's JSX was just sugar on top of JavaScript, meaning that we could play with real JavaScript to debug template problems.
+Although both were good, we went for React. This was because of its large community, good documentation, and support and use by Facebook. We also liked the fact that React's JSX was just sugar on top of JavaScript, meaning that we could play with real JavaScript to debug template problems.
 
-As we were rewriting the app in React, we found it a pleasure to use. For example, we had a photo uploading component within the widget which had to be displayed in several different states depending on whether there were no photos or some photos, whether the photo upload limit had been reached or not, and whether a photo was currently being uploaded or not. We decided to create objects that defined each photo uploader state and then rerender the component every time the state changed. Rewriting the component this way was extremely easy despite the multiple state changes going on. This shows the power of programming state change explicitly and separating logic code from templating code.
+As we were rewriting the app in React, we found it a pleasure to use. For example, we had a photo uploading component within the widget which had to be displayed in different states depending on whether there were no photos or some photos, whether the photo upload limit had been reached or not, and whether a photo was currently being uploaded or not. We decided to create objects that defined each photo uploader state and then re-render the component every time the state changed. Rewriting the component this way was easy despite the multiple state changes going on. This shows the power of programming state change explicitly and separating logic code from templating code.
 
 ## What we learned
 

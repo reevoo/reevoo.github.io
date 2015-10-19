@@ -45,8 +45,10 @@ very promising, I need to try on some real projects.
 principles to other code quality tools like rubocop.
 - [Semian](https://github.com/Shopify/semian) and [toxiproxy](https://github.com/Shopify/toxiproxy) to improve and test
 system resiliency
-- [Shoes](https://github.com/shoes/shoes4) for geometry computation
+- [Shoes](https://github.com/shoes/shoes4) for cross-platform GUI
 - [Sonic-pi](http://sonic-pi.net/) for music composition
 - [RbNaCl](https://github.com/cryptosphere/rbnacl) for cryptography
 
 ![Be nice](/assets/photo-with-matz.jpg)
+
+Thanks for a great conference, see you next year in Sofia.

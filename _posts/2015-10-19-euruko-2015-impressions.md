@@ -2,7 +2,7 @@
 soapboxContentId: f2212896-aebd-4636-a902-572577f5cc71
 layout: post
 title:  EuRuKo 2015 Impressions
-date:   2015-10-19 17:00
+date:   2015-10-19 12:00
 categories: blog
 navId: blog
 author: David Sevcik

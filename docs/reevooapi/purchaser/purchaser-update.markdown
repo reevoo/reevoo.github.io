@@ -1,17 +1,18 @@
 ---
-id: purchaser-create
+id: purchaser-udpate
 layout: docs
-title: Platform API v4 / Create Purchaser
+title: Platform API v4 / Update Purchaser
 navId: docs
 group: reevooapi
 ---
 
-# Create Purchaser
+# Update Purchaser
 
-The endpoint creates purchaser record.
+The endpoint updates a purchaser resource identified by a customer email.
+
 
 ## Request
-`POST /v4/organisations/:trkref/purchasers`
+`POST /v4/organisations/:trkref/purchasers/:email`
 
 ### JSON body
 
@@ -39,7 +40,7 @@ The endpoint creates purchaser record.
 
 Request:
 
-`POST /v4/organisations/ACME/purchasers`
+`PUT /v4/organisations/ACME/purchasers/jane@example.com`
 
 {% highlight json %}
 {

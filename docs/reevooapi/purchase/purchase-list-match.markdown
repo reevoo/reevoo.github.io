@@ -8,7 +8,7 @@ group: reevooapi
 
 # Match Purchases
 
-The endpoint returns a list of all purchases done by purchaser identified by an email and matching the provided
+Returns a list of all purchases done by purchaser identified by an email and matching the provided
 order references and skus.
 For each purchase it returns the status of the associated review along with the review URL.
 The list contains also the purchases for which we haven't received an order confirmation

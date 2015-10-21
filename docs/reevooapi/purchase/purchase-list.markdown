@@ -8,7 +8,7 @@ group: reevooapi
 
 # Purchases
 
-The endpoint returns a list of all purchases done by purchaser identified by an email.
+Returns a list of all purchases done by purchaser identified by an email.
 For each purchase it returns the status of the associated review along with the review URL.
 
 ## Request

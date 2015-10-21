@@ -81,3 +81,24 @@
         title: Single submission
       - id: customer-order-batch-submission
         title: Batch submission
+  - id: purchaser
+    title: Purchaser
+    subitems:
+      - id: purchaser-detail
+        title: detail
+      - id: purchaser-create
+        title: create
+      - id: purchaser-update
+        title: update
+  - id: purchase
+    title: Purchase
+    subitems:
+      - id: purchase-list
+        title: list
+      - id: purchase-list-match
+        title: match
+  - id: questionnaire
+    title: Questionnaire
+    subitems:
+      - id: questionnaire-detail
+        title: detail

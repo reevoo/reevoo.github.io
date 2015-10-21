@@ -8,7 +8,7 @@ group: reevooapi
 
 # Purchaser
 
-The endpoint returns a purchaser resource identified by a customer email.
+Returns a purchaser resource identified by a customer email.
 
 ## Request
 `GET /v4/organisations/:trkref/purchasers/:email`

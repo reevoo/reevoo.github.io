@@ -1,5 +1,5 @@
 ---
-id: purchaser-udpate
+id: purchaser-update
 layout: docs
 title: Platform API v4 / Update Purchaser
 navId: docs
@@ -8,11 +8,11 @@ group: reevooapi
 
 # Update Purchaser
 
-The endpoint updates a purchaser resource identified by a customer email.
+Updates a purchaser resource identified by a customer email.
 
 
 ## Request
-`POST /v4/organisations/:trkref/purchasers/:email`
+`PUT /v4/organisations/:trkref/purchasers/:email`
 
 ### JSON body
 

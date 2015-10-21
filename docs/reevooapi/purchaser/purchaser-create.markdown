@@ -8,7 +8,7 @@ group: reevooapi
 
 # Create Purchaser
 
-The endpoint creates purchaser record.
+Creates a purchaser record.
 
 ## Request
 `POST /v4/organisations/:trkref/purchasers`

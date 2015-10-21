@@ -53,5 +53,5 @@ set the score attribute to `customer_service`. To display Delivery rating set th
 To limit the score to a particular branch set the `branch-code` attribute.
 
 {% highlight html %}
-<reevoo-customer-experience-badge branch_code="BRANCH_CODE" trkref="TRKREF"></reevoo-customer-experience-badge>
+<reevoo-customer-experience-badge branch-code="BRANCH_CODE" trkref="TRKREF"></reevoo-customer-experience-badge>
 {% endhighlight %}

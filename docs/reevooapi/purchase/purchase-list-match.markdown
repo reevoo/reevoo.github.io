@@ -11,8 +11,8 @@ group: reevooapi
 The endpoint returns a list of all purchases done by purchaser identified by an email and matching the provided
 order references and skus.
 For each purchase it returns the status of the associated review along with the review URL.
-The list will contain also the purchases for which we haven't received an order confirmation
-(typically in a purchaser feed). For those we are able to provide an instant review link, that allow your customers
+The list contains also the purchases for which we haven't received an order confirmation
+(typically in a purchaser feed). For these we are able to provide an instant review URL that allow your customers
 to leave a review straight away.
 
 ## Request

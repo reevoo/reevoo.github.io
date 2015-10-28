@@ -49,7 +49,7 @@ Json array with the list of customer orders data being submitted, as below. Each
     "order_items": [
       {
         "sku": "PROD1",
-        "price": 25,
+        "price": "25",
         "currency": "GBP",
         "metadata": {
           "field_1": "Value 1",
@@ -58,7 +58,7 @@ Json array with the list of customer orders data being submitted, as below. Each
       },
       {
         "sku": "PROD2",
-        "price": 10,
+        "price": "33",
         "currency": "GBP",
         "metadata": {
           "field_1": "Value 1",

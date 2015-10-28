@@ -42,7 +42,7 @@ If the customer order is accepted a 202 response code will be sent back, along w
 |<span class="indent-1">country</span>            |Customer Country. Two letter code of the country as per ISO 3166-1.|
 |order_items *                                    |Array of items ordered by the customer|
 |<span class="indent-1">sku</span>                |The unique identifier of the product|
-|<span class="indent-1">price</span>              |The price of this order_item. Includes just numbers and a comma to separate the the decimals as in: 1234,99|
+|<span class="indent-1">price</span>              |The price of this order item. A string containing just digits and a comma to separate the decimals.|
 |<span class="indent-1">currency</span>           |The currency in which the price for this order_item is specified. Use the ISO 4217 code.|
 |<span class="indent-1">metadata</span>           |List of any other fields that will be linked to the order_item. Field names can contain only [a-z0-9] characters. There is not limit to the number of metadata items that you can have.|
 |<span class="indent-2">key_with_underscore</span>|Any value you want to send|
@@ -70,7 +70,7 @@ Attributes marked with * are mandatory
   "order_items": [
     {
       "sku": "PROD1",
-      "price": 25,
+      "price": "55,99",
       "currency": "GBP",
       "metadata": {
         "field_1": "Value 1",

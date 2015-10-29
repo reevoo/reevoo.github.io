@@ -4,7 +4,7 @@
 
 ## Contributing
 
-1. Fork it ( https://github.com/reevoo/reevoo.github.io/fork )
+1. Clone the repository
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -33,26 +33,10 @@ Ask the devs for help if you need it.
 
 ### Installing the website locally
 
-Create your own copy of the project by forking the
-[reevoo/reevoo.github.io](https://github.com/reevoo/reevoo.github.io)
-repository by clicking the "Fork" button on the top right of the page.
-
-Open a new terminal window, and navigate to the desktop by entering the
-following command.
-
-Lines starting with `$` are ones for you to type, those without are the
-expected response from the terminal. *Don't copy the $ at the beginning into
-the terminal*.
+Open a new terminal window, and [clone the repository](https://help.github.com/articles/cloning-a-repository/) so you can edit it.
 
 ```
-$ cd ~/Desktop
-```
-
-[Clone your fork](https://help.github.com/articles/cloning-a-repository/) to
-the desktop so you can edit it.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/reevoo/reevoo.github.io.git
 Cloning into `Spoon-Knife`...
 remote: Counting objects: 10, done.
 remote: Compressing objects: 100% (8/8), done.
@@ -153,7 +137,7 @@ $ git commit -m "New post about Louis' birthday"
  1 file changed, 110 insertions(+), 2 deletions(-)
 ```
 
-And push the new commit to your fork
+And push the new commit
 
 ```
 $ git push origin HEAD

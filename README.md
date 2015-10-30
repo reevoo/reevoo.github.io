@@ -33,9 +33,19 @@ Ask the devs for help if you need it.
 
 ### Installing the website locally
 
-Open a new terminal window, and [clone the repository](https://help.github.com/articles/cloning-a-repository/) so you can edit it.
+Create your own copy of the project by forking the [reevoo/reevoo.github.io](https://github.com/reevoo/reevoo.github.io) repository by clicking the "Fork" button on the top right of the page.
 
+Open a new terminal window, and navigate to the desktop by entering the following command.
+
+Lines starting with `$` are ones for you to type, those without are the expected response from the terminal. *Don't copy the $ at the beginning into the terminal*.
+
+```bash
+$ cd ~/Desktop
 ```
+
+[Clone the repository](https://help.github.com/articles/cloning-a-repository/) to the desktop so you can edit it.
+
+```bash
 $ git clone https://github.com/reevoo/reevoo.github.io.git
 Cloning into `Spoon-Knife`...
 remote: Counting objects: 10, done.

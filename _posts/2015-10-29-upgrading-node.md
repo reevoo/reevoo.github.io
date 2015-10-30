@@ -11,7 +11,7 @@ github: irikuo
 
 # Upgrading to Node.js 4
 
-Nowadays there are lots of projects using tools like npm, grunt, gulp, webpack, jspm, karma, mocha, jasmine... All of this tools run by using Node.js (Node). By the beginning of September, [Node was upgraded to version 4](https://nodejs.org/en/blog/release/v4.0.0/) from version 0.12, including tons of useful features and fixing a big community fracture.
+Nowadays there are lots of projects using tools like npm, grunt, gulp, webpack, jspm, karma, mocha, jasmine... All of these tools run by using Node.js (Node). At the beginning of September, [Node was upgraded to version 4](https://nodejs.org/en/blog/release/v4.0.0/) from version 0.12, including tons of useful features and fixing a big community fracture.
 
 ## A short Node history lesson.
 
@@ -21,7 +21,7 @@ So we have Node, an open source library with a large community who wants it to m
 
 Node always followed a versioning system where they had a 0.x version. Odd numbers were used for development versions and even numbers for production versions. The developers of io.js decided to follow [semantic versioning](http://semver.org/). As they introduced breaking changes on the API they kept upgrading the major version, getting to 3.0.
 
-At this point there was a big problem, the Node community was fractured between developers using Node and developers using io.js.
+At this point there was a big problem: the Node community was fractured between developers using Node and developers using io.js.
 
 Luckily the world is still not crazy enough as to keep with the madness of maintaining basically two versions of the same thing, and the two projects decided to merge under a new umbrella: the [Node.js Foundation](https://nodejs.org/en/foundation/). This new entity decided to use io.js as the base code for the official Node version, and when the merge was ready they released it as Node.js version 4, because io.js was already in version 3.
 

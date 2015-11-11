@@ -1,3 +1,15 @@
+- title: Gem miner
+  url: gem-miner
+  summary: Find out which repos you're using your gems in
+- title: Pact messages
+  url: pact-messages
+  summary: Asynchronous message support for pact contract testing
+- title: Samuel
+  url: samuel
+  summary: A bot that posts guidelines on your pull requests and shouts at you if you merge without code review
+- title: Tabauth
+  url: tabauth
+  summary: Wrapper for Tableau trusted authentication to allow for basic auth
 - title: Stratocumulus
   url: stratocumulus
   summary: Backup Databases to Cloud Storage

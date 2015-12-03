@@ -1,30 +1,75 @@
-- title: Gem miner
+- title: reevoo.github.io
+  url: reevoo.github.io
+  summary: This website is open source!
+
+- title: Gem Miner
   url: gem-miner
-  summary: Find out which repos you're using your gems in
-- title: Pact messages
+  summary: Gem Miner looks through all of the repositories of a GitHub user and shows where a gem is being used by extracting information from Gemfiles and Gemspecs.
+
+- title: Pact Messages
   url: pact-messages
-  summary: Asynchronous message support for pact contract testing
-- title: Samuel
-  url: samuel
-  summary: A bot that posts guidelines on your pull requests and shouts at you if you merge without code review
+  summary: Pact Messages allows you to define a non-HTTP Pact Contract for an asynchronous messaging service (e.g. RabbitMQ).
+
 - title: Tabauth
   url: tabauth
-  summary: Wrapper for Tableau trusted authentication to allow for basic auth
+  summary: Allows Tableau authentication using BasicAuth over HTTPS.
+
+- title: Samuel
+  url: samuel
+  summary: Samuel is a GitHub bot that makes sure Pull Request guidelines are being followed. All with the personality of Samuel L. Jackson.
+
+- title: anon
+  url: anon
+  summary: anon replaces personal e-mail addresses with fake ones in text or CSV files.
+
+- title: CI Game
+  url: ci_game
+  summary: E-mail based encouragement for consecutive passing builds on Jenkins.
+
 - title: Stratocumulus
   url: stratocumulus
-  summary: Backup Databases to Cloud Storage
+  summary: Backup databases to cloud storage.
+
+- title: EmailCenter API
+  url: email_center_api
+  summary: A Ruby wrapper around EmailCenter's maxemail JSON API.
+
+- title: Langtastic
+  url: langtastic
+  summary: A Ruby wrapper around iana.org's language data registry.
+
 - title: coreos-rabbitmq
   url: coreos_rabbitmq
-  summary: RabbitMQ Cluster For CoreOS
+  summary: A RabbitMQ cluster For CoreOS.
+
+- title: Build Monitor
+  url: build-monitor
+  summary: A very simple build monitor for Jenkins.
+
+- title: RSpec Mail Matchers
+  url: rspec-mail-matchers
+  summary: RSpec matchers for Ruby's Mail gem.
+
+- title: DBEnvy
+  url: dbenvy
+  summary: Loads database information from your environment.
+
+- title: Magento Connect
+  url: magento_connect
+  summary: A ReevooMark integration library for Magento.
+
 - title: ReevooMark Java API
-  url: reevoomark_java_api
-  summary: Java tag library for ReevooMark
+  url: reevoomark-java-api
+  summary: A Java tag library for ReevooMark customers who want to quickly and easily integrate Reevoo content into their sites server-side.
+
 - title: ReevooMark Dotnet API
   url: reevoomark_dotnet_api
-  summary: .NET tag library for ReevooMark
+  summary: A .NET tag library for ReevooMark customers who want to quickly and easily integrate Reevoo content into their sites server-side.
+
 - title: ReevooMark Ruby API
   url: reevoomark_ruby_api
-  summary: Ruby gem for ReevooMark
+  summary: A Ruby tag library for ReevooMark customers who want to quickly and easily integrate Reevoo content into their sites server-side.
+
 - title: ReevooMark PHP API
   url: reevoomark_php_api
-  summary: PHP tag library for ReevooMark
+  summary: A PHP tag library for ReevooMark customers who want to quickly and easily integrate Reevoo content into their sites server-side.

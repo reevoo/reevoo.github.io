@@ -13,7 +13,7 @@ next: conversation-badges
 To display the customer experience badge on your website you have to
 
 1. [include the Reevoomark Javascript library](../javascript-library)
-2. add the HTML link tag with `class="reevoo_reputation"` and `href="http://mark.reevoo.com/partner/TRKREF"`
+2. add the HTML link tag with `class="reevoo_reputation"` and `href="http://mark.reevoo.com/retailer/TRKREF"`
 3. call the `init_reevoo_reputation_badges` method of the Javascript library:
 
 {% highlight html %}

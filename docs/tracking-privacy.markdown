@@ -42,9 +42,9 @@ When you first visit a website, Reevoo and Google Analytics will set [cookies](h
 
 **We want to give users the information they want easily.** In order to do this, we need to understand how users behave when using Reevoo's services. To do this, we track information on what users do and don't use. This involves tracking clicks on Reevoo content.
 
-Every user has a different way of using our customers' websites. **We want to make sure that users can use Reevoo's services**, irrespective of their browser or device. To do this, we test out new features on a representative sample of devices and browsers. To determine what a "representative sample" is, we track information on what browsers and devices our users are using. We also track error messages, so we can investigate the issue and fix it for the future.
+Every user has a different way of using our customers' websites. **We want to make sure that users can use Reevoo's services**, irrespective of their browser or device. We test out new features on a representative sample of devices and browsers to ensure compatibility. To determine what a "representative sample" is, we track information on what browsers and devices our users are using. We also track error messages, so we can investigate the issue and fix it for the future.
 
-**We need to prove to our customers that we are valuable to them.** They usually have asked for Reevoo's services in order to improve sales or spend longer on their website. In order to prove that we do this, we track information on how long users spend reading reviews. We also track when users read reviews and then go on to purchase the product.
+**We need to prove to our customers that we are valuable to them.** They usually have asked for Reevoo's services in order to increase sales or the time spent on their website. In order to prove that we do this, we track information on how long users spend reading reviews. We also track when users read reviews and then go on to purchase the product.
 
 **We want to make sure our services are being used honestly**. Trust is fundamental to Reevoo's business, and if companies are hiding bad reviews or changing scores we need to do something about it. To ensure our services are being used correctly, we track information on requests for badges and reviews.
 

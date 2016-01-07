@@ -24,47 +24,51 @@ navId: docs
 
 <script type="text/javascript">
   $(function () {
-    if(window.SwaggerTranslator) {
-      window.SwaggerTranslator.translate();
-    }
-    window.swaggerUi = new SwaggerUi({
-      url: "http://localhost:9393/api/v1/swagger_doc",
-      dom_id: "swagger-ui-container",
-      supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
-      onComplete: function(swaggerApi, swaggerUi){
-        if(typeof initOAuth == "function") {
-          initOAuth({
-            clientId: "your-client-id",
-            clientSecret: "your-client-secret-if-required",
-            realm: "your-realms",
-            appName: "your-app-name",
-            scopeSeparator: ",",
-            additionalQueryStringParams: {}
+    // if(window.SwaggerTranslator) {
+    //   window.SwaggerTranslator.translate();
+    // }
+    function initSwaggerUI() {
+      window.swaggerUi = new SwaggerUi({
+        url: $('#api-url-input')[0].value + '/swagger_doc',
+        dom_id: "swagger-ui-container",
+        supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
+        onComplete: function(swaggerApi, swaggerUi){
+          // if(typeof initOAuth == "function") {
+          //   initOAuth({
+          //     clientId: "your-client-id",
+          //     clientSecret: "your-client-secret-if-required",
+          //     realm: "your-realms",
+          //     appName: "your-app-name",
+          //     scopeSeparator: ",",
+          //     additionalQueryStringParams: {}
+          //   });
+          // }
+
+          // if(window.SwaggerTranslator) {
+          //   window.SwaggerTranslator.translate();
+          // }
+
+          $('pre code').each(function(i, e) {
+            hljs.highlightBlock(e)
           });
-        }
 
-        if(window.SwaggerTranslator) {
-          window.SwaggerTranslator.translate();
-        }
+          addApiKeyAuthorization();
+        },
+        onFailure: function(data) {
+          log("Unable to Load SwaggerUI");
+        },
+        docExpansion: "none",
+        jsonEditor: false,
+        apisSorter: "alpha",
+        defaultModelRendering: 'schema',
+        showRequestHeaders: true
+      });
 
-        $('pre code').each(function(i, e) {
-          hljs.highlightBlock(e)
-        });
+      window.swaggerUi.load();
+    }
 
-        addApiKeyAuthorization();
-      },
-      onFailure: function(data) {
-        log("Unable to Load SwaggerUI");
-      },
-      docExpansion: "none",
-      jsonEditor: false,
-      apisSorter: "alpha",
-      defaultModelRendering: 'schema',
-      showRequestHeaders: false
-    });
-
-    function addApiKeyAuthorization(){
-      var key = encodeURIComponent($('#input_apiKey')[0].value);
+    function addApiKeyAuthorization() {
+      var key = encodeURIComponent($('#access-token-input')[0].value);
       if(key && key.trim() != "") {
           var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("Authorization", key, "header");
           window.swaggerUi.api.clientAuthorizations.add("Authorization", apiKeyAuth);
@@ -72,7 +76,15 @@ navId: docs
       }
     }
 
-    $('#input_apiKey').change(addApiKeyAuthorization);
+    function log() {
+      if ('console' in window) {
+        console.log.apply(console, arguments);
+      }
+    }
+
+    $('#api-url-input').change(initSwaggerUI);
+    $('#access-token-input').change(addApiKeyAuthorization);
+    initSwaggerUI();
 
     // if you have an apiKey you would like to pre-populate on the page for demonstration purposes...
     /*
@@ -80,13 +92,6 @@ navId: docs
       $('#input_apiKey').val(apiKey);
     */
 
-    window.swaggerUi.load();
-
-    function log() {
-      if ('console' in window) {
-        console.log.apply(console, arguments);
-      }
-    }
 });
 </script>
 
@@ -104,8 +109,12 @@ navId: docs
       <h1>myReevoo API endpoints</h1>
       <form>
         <p>
-          <label for="input_apiKey">Access Token:</label>
-          <input type="text" name="input_apiKey" id="input_apiKey" value="">
+          <label for="api-url-input">API root URL:</label>
+          <input type="text" name="api-url-input" id="api-url-input" value="https://cp-api-staging.reevoocloud.com/api/v1" size="50">
+        </p>
+        <p>
+          <label for="access-token-input">Access Token:</label>
+          <input type="text" name="access-token-input" id="access-token-input" value="" size="50">
         </p>
         <small>Needed to access most of the endpoints. You can retrieve new token from <em>POST /api/v1/api_session</em> endpoint.</small>
       </form>

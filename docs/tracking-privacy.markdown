@@ -66,7 +66,7 @@ We *do not* use tracking information to filter what you see from our services.
 
 If you do not wish for your information to be used, you can take the following measures:
 
-- If you have an ad blocker in your browser, add `t.mark.reevoo.com` to your ad-blocking blacklist. This is our dedicated tracking URL, and all other features of ReevooMark will still work.
+- If you have an ad blocker in your browser, add `t.mark.reevoo.com` and `skynet.reevoo.com` (we hope you enjoy the reference!) to your ad-blocking blacklist. This is our dedicated tracking URL, and all other features of ReevooMark will still work.
 - To disable all Google Analytics traffic (not just Reevoo's), add `google-analytics.com` to your ad-blocking blacklist or download the [Google Analytics Opt-Out Browser Add-On](https://tools.google.com/dlpage/gaoptout/).
 - You may want to [disable cookies](http://files.investis.com/info/disabling-cookies.html), although some non-tracking functionality may stop working if you do this.
 

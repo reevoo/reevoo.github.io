@@ -76,3 +76,4 @@ If you do not wish for your information to be used, you can take the following m
 - [The Good and Bad of Online Tracking](http://blog.thepitagroup.com/2012/the-good-and-bad-of-online-tracking/) from The Pita Group, a marketing agency.
 - Google Analytics has been explained by [Wikipedia](https://en.wikipedia.org/wiki/Google_Analytics), [The Guardian](http://www.theguardian.com/technology/2012/apr/23/google-tracking-trackers-cookies-web-monitoring) and many others. It is bound by [Google's Privacy Policy](https://www.google.com/policies/privacy/).
 - Our instructions to implementors for the tracking features of ReevooMark is [on this website](/docs/reevoomark/tracking/).
+- Our tracking JavaScript library is open source! [Check it out here!](https://github.com/reevoo/reevoo-ping.js)

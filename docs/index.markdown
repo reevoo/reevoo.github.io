@@ -5,18 +5,14 @@ layout: docs
 navId: docs
 ---
 
-[ReevooMark](reevoomark/index.html)
-==========
+## Reevoo's Implementation Tools
 
-These guides provide technical advice on how to implement the Reevoo solution on a website using just JavaScript on the clients pages. The core idea around this library is to simplify the time to live for clients, requiring as little configuration and implementation from the client as possible.
+There are a number of ways to interact with Reevoo's services. Click a link to be taken to the technical documentation.
 
-[Reevoo API](reevooapi/index.html)
-==========
+- [ReevooMark](reevoomark/index.html) is a JavaScript library that provides a simple-to-implement way of accessing Reevoo's services on your website.
+- The [Reevoo API](reevooapi/index.html) provides an HTTP-based way of reading and writing data for use with Reevoo's services.
+- [SEO Boost](seoboost/index.html) is a server-side solution to integrating Reevoo's services with your website.
 
-The Reevoo Platform API is a simple read only API that returns product scores and published reviews as json. It can be used to power a clients own ratings and review solution, or power analysis of customer ratings.
+## Other Documents
 
-
-[SEO Boost](seoboost/index.html)
-==========
-
-This section provides with handy guides to help Reevoo's customers integrate our solution.
+- [Tracking and Your Privacy](tracking-privacy): an article outlining what information we track, how we use it and why we do it.

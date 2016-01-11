@@ -57,7 +57,7 @@ The information that we collect is stored in our database or in Google Analytics
 
 This information is used within Reevoo for the reasons described in the sections above. Our customers also have access to this information for their own analysis.
 
-**Reevoo does not sell tracking information to anyone,** and we do not give your information to advertisers. 
+**Reevoo does not sell tracking information to anyone.** We may share your information with the owner of the website you visited.
 
 We *do not* use tracking information to filter what you see from our services.
 

@@ -6,6 +6,7 @@
 /* Base */
 /* ----------------------------------------------------------*/
 @import url("/css/documentation.css");
+@import url("/css/about.css");
 
 * {
   margin: 0;

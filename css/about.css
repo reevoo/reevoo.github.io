@@ -1,0 +1,13 @@
+hr {
+  clear: both;
+}
+
+.profile-pic {
+  width: 200px;
+  padding: 0 0 0 20px;
+  float: right;
+}
+
+.central {
+  width: 100%;
+}

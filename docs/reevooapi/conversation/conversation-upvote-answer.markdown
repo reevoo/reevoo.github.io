@@ -17,15 +17,16 @@ Increments the helpful attribute of the answer by 1.
 </div>
 
 ## URL Format
-POST /v4/conversation_anwers/{answer_id}/increment_helpful
+POST /v4/conversation_anwers/{answer_id}/increment_helpful?trkref={TRKREF}
 
 ### Example
-POST /v4/conversation_anwers/38373/increment_helpful
+POST /v4/conversation_anwers/38373/increment_helpful?trkref=D10
 
 ### Parameters
 
 {: .documentation}
-|answer_id     |id of the conversation answer        |
+|trkref        |                              |
+|answer_id     |id of the conversation answer |
 
 ## Possible responses
 

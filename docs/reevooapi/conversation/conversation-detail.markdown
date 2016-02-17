@@ -13,14 +13,15 @@ next: conversation/conversation-create
 Returns details for a single conversation.
 
 ## URL Format
-GET /v4/conversations/{id}
+GET /v4/conversations/{id}?trkref={TRKREF}
 
 ## URL Example
-GET /v4/conversations/223049
+GET /v4/conversations/223049?trkref=D10
 
 ## Parameters
 
 {: .documentation}
+|trkref     |               |
 |id         |conversation id|
 
 

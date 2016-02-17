@@ -17,14 +17,15 @@ Increments the unhelpful attribute of the answer by 1.
 </div>
 
 ## URL Format
-POST /v4/conversation_anwers/{answer_id}/increment_unhelpful
+POST /v4/conversation_anwers/{answer_id}/increment_unhelpful?trkref={TRKREF}
 
 ### Example
-POST /v4/conversation_anwers/38373/increment_unhelpful
+POST /v4/conversation_anwers/38373/increment_unhelpful?trkref=D10
 
 ### Parameters
 
 {: .documentation}
+|trkref        |                                     |
 |answer_id     |id of the conversation answer        |
 
 ## Possible responses

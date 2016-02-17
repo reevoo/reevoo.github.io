@@ -46,9 +46,18 @@ These reviews are dis-aggregated from the ReevooMark network so that only review
 The user will be able to read the rest of reviews associated to the product by clicking on the "Reed more reviews" link, which will open open the standard ReevooMark lightbox.
 <br/><br/><br/>
 <img alt="embedded product reviews" src="/images/seo/seo_2.png" width="600px" />
+<br/><br/>
 In the paginated configuration, all reviews are embedded in the retailer site. Pagination links and sorting and filtering are present in the embedded content allowing the user to navigate through all the reviews in the same way they would do in the standard ReevooMark lightbox.
 <br/><br/>
 <img alt="embedded product reviews" src="/images/seo/seo_3.png" width="600px" />
+
+#### Embedded Conversations
+
+Product conversations can also be embedded, both in standard and paginated modes. See example below.
+
+<br/>
+<img alt="embedded conversations" src="/images/seo/seo_5.png" width="600px" />
+<br/><br/><br/>
 
 #### Embedded Customer Experience Reviews
 
@@ -56,7 +65,7 @@ As well as product reviews we also provide embedded customer experience review c
 
 <br/>
 <img alt="embedded customer experience reviews" src="/images/seo/seo_4.png" width="600px" />
-<br/><br/>
+<br/><br/><br/>
 
 ## Tag Library Example
 

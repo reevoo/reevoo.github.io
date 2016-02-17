@@ -17,15 +17,16 @@ Increments the helpful attribute of the question by 1.
 </div>
 
 ## URL Format
-POST /v4/conversations/{question_id}/increment_helpful
+POST /v4/conversations/{question_id}/increment_helpful?trkref={TRKREF}
 
 ### Example
-POST /v4/conversations/38373/increment_helpful
+POST /v4/conversations/38373/increment_helpful?trkref=D10
 
 ### Parameters
 
 {: .documentation}
-|question_id     |id of the conversation question        |
+|trkref          |                                |
+|question_id     |id of the conversation question |
 
 ## Possible responses
 

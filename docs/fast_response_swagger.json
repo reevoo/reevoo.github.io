@@ -1,0 +1,493 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "myReevoo Fast Response API",
+        "description": "",
+        "version": "1.0.0"
+    },
+    "host": "fr-api.reevoo.com",
+    "basePath": "/api/v1",
+    "tags": [
+        {
+            "name": "search",
+            "description": "Search the reviews and conversations"
+        },
+        {
+            "name": "responses",
+            "description": "Respond to reviews and questions"
+        }
+    ],
+    "schemes": [
+        "https"
+    ],
+    "paths": {
+        "/search/product_reviews": {
+            "post": {
+                "tags": [
+                    "search"
+                ],
+                "summary": "Search product reviews",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Search"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List of reviews",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ProductReview"
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        },
+        "/search/customer_experience_reviews": {
+            "post": {
+                "tags": [
+                    "search"
+                ],
+                "summary": "Search product reviews",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Search"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List of reviews",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/CustomerExperienceReview"
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
+            }
+        }
+    },
+    "securityDefinitions": {
+        "api_key": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    },
+    "definitions": {
+        "Search": {
+            "type": "object",
+            "properties": {
+                "query_string": {
+                    "type": "string",
+                    "description": "Query string in Lucene query format"
+                },
+                "filters": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/SearchFilter"
+                    }
+                },
+                "page": {
+                    "type": "integer",
+                    "default": 1
+                },
+                "per_page": {
+                    "type": "integer",
+                    "default": 20
+                },
+                "sort": {
+                    "type": "string",
+                    "default": "_score",
+                    "enum": [
+                        "_score",
+                        "branch.code",
+                        "branch.name",
+                        "customer_ref",
+                        "delivered_at",
+                        "display_date",
+                        "has_content",
+                        "helpful",
+                        "id",
+                        "legacy_response_status",
+                        "locale",
+                        "metadata",
+                        "not_helpful",
+                        "order_ref",
+                        "overall_score",
+                        "product.category.id",
+                        "product.category.name",
+                        "product.description",
+                        "product.image_url",
+                        "product.model",
+                        "product.name",
+                        "product.sku",
+                        "published_at",
+                        "purchased_at",
+                        "removed_from_queue",
+                        "response_status",
+                        "retailer.friendly_name",
+                        "retailer.name",
+                        "retailer.trkref",
+                        "retailer_review_id",
+                        "review_content.bad_points",
+                        "review_content.general_comments",
+                        "review_content.good_points",
+                        "review_tags",
+                        "review_type",
+                        "reviewer.facebook_avatar_ur",
+                        "reviewer.facebook_user",
+                        "reviewer.first_name",
+                        "reviewer.ip_address",
+                        "reviewer.location",
+                        "reviewer.segment",
+                        "status",
+                        "usefulnes"
+                    ]
+                }
+            }
+        },
+        "SearchFilter": {
+            "type": "object",
+            "maxProperties": 2,
+            "required": [
+                "field"
+            ],
+            "properties": {
+                "field": {
+                    "type": "string",
+                    "description": "Filter based on this field",
+                    "enum": [
+                        "branch.code",
+                        "branch.name",
+                        "customer_ref",
+                        "delivered_at",
+                        "display_date",
+                        "has_content",
+                        "helpful",
+                        "id",
+                        "legacy_response_status",
+                        "locale",
+                        "metadata",
+                        "not_helpful",
+                        "order_ref",
+                        "overall_score",
+                        "product.category.id",
+                        "product.category.name",
+                        "product.description",
+                        "product.image_url",
+                        "product.model",
+                        "product.name",
+                        "product.sku",
+                        "published_at",
+                        "purchased_at",
+                        "removed_from_queue",
+                        "response_status",
+                        "retailer.friendly_name",
+                        "retailer.name",
+                        "retailer.trkref",
+                        "retailer_review_id",
+                        "review_content.bad_points",
+                        "review_content.general_comments",
+                        "review_content.good_points",
+                        "review_tags",
+                        "review_type",
+                        "reviewer.facebook_avatar_ur",
+                        "reviewer.facebook_user",
+                        "reviewer.first_name",
+                        "reviewer.ip_address",
+                        "reviewer.location",
+                        "reviewer.segment",
+                        "status",
+                        "usefulnes"
+                    ]
+                },
+                "match": {
+                    "type": "string",
+                    "description": "Phrase to search in field"
+                },
+                "include": {
+                    "type": "array",
+                    "description": "Array of values that field can contain",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "range": {
+                    "type": "array",
+                    "description": "Array of ranges",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "Review": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "published",
+                        "rejected"
+                    ]
+                },
+                "locale": {
+                    "type": "string"
+                },
+                "review_type": {
+                    "type": "string",
+                    "enum": [
+                        "good_bad_points",
+                        "general_comments"
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "product_reviews",
+                        "customer_experience_reviews"
+                    ]
+                },
+                "has_content": {
+                    "type": "boolean"
+                },
+                "purchased_at": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "published_at": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "delivered_at": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "customer_ref": {
+                    "type": "string"
+                },
+                "order_ref": {
+                    "type": "string"
+                },
+                "helpful": {
+                    "type": "integer"
+                },
+                "not_helpful": {
+                    "type": "integer"
+                },
+                "usefulness": {
+                    "type": "integer"
+                },
+                "branch": {
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "review_tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "review_content": {
+                    "type": "object",
+                    "properties": {
+                        "good_points": {
+                            "type": "string"
+                        },
+                        "bad_points": {
+                            "type": "string"
+                        },
+                        "general_comments": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "metadata": {
+                    "type": "object"
+                },
+                "response_status": {
+                    "type": "string",
+                    "enum": [
+                        "no_response",
+                        "response_draft",
+                        "response_pending",
+                        "response_published",
+                        "response_rejected"
+                    ]
+                },
+                "reviewer": {
+                    "type": "object",
+                    "properties": {
+                        "first_name": {
+                            "type": "string"
+                        },
+                        "location": {
+                            "type": "string"
+                        },
+                        "segment": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "product": {
+                    "type": "object",
+                    "properties": {
+                        "category": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "model": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "sku": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "retailer": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "friendly_name": {
+                            "type": "string"
+                        },
+                        "trkref": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "draft_company_responses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Response"
+                    }
+                },
+                "company_responses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Response"
+                    }
+                },
+                "customer_responses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Response"
+                    }
+                }
+            }
+        },
+        "ProductReview": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/Review"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "overall_score": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            ]
+        },
+        "CustomerExperienceReview": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/Review"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "happy_with_customer_service": {
+                            "type": "boolean"
+                        },
+                        "happy_with_delivery": {
+                            "type": "boolean"
+                        },
+                        "would_buy_again": {
+                            "type": "boolean"
+                        },
+                        "nps": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            ]
+        },
+        "Response": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                }
+            }
+        }
+    }
+}

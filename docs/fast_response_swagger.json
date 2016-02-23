@@ -372,7 +372,6 @@
         },
         "SearchFilter": {
             "type": "object",
-            "maxProperties": 2,
             "required": [
                 "field"
             ],
@@ -425,19 +424,13 @@
                         "usefulnes"
                     ]
                 },
-                "match": {
-                    "type": "string",
-                    "description": "Phrase to search in field"
-                },
                 "include": {
-                    "type": "array",
                     "description": "Array of values that field can contain",
                     "items": {
                         "type": "string"
                     }
                 },
                 "range": {
-                    "type": "array",
                     "description": "Array of ranges",
                     "items": {
                         "type": "array",

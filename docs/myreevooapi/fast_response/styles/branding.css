@@ -4,6 +4,34 @@
  * or extends Swagger Editor styling.
 */
 
-main {
+main, main .stretch {
   position: static;
+}
+
+h1 {
+  margin: 0 !important;
+}
+header img {
+  vertical-align: baseline;
+}
+
+h3.section-header {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 30px;
+}
+
+main .preview-wrapper {
+  margin: 0 !important;
+}
+
+main .post {
+  padding: 0 !important;
+}
+
+header *, .page-title {
+  box-sizing: content-box;
+}
+
+.post td {
+  border: none !important;
 }

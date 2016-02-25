@@ -1,1 +1,39 @@
-<!doctype html><meta charset="utf-8"><title>Swagger Editor</title><meta name="description" content="Swagger Editor"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16"><link rel="stylesheet" href="styles/main.css"><link rel="stylesheet" href="styles/branding.css"><div class="total-wrapper" ui-view></div><script src="scripts/vendor.js"></script><script src="scripts/scripts.js"></script><script src="scripts/branding.js"></script>
+---
+id: my-reevoo-api
+title: myReevoo API
+navId: docs
+---
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="styles/main.css">
+{% include head.html %}
+<link rel="stylesheet" href="styles/branding.css">
+
+<body>
+
+{% include header.html %}
+<div class="page-title">
+  <div class="wrap">
+    <h1>{{ page.title }}</h1>
+  </div>
+</div>
+<div class="page-content">
+  <div class="docs">
+    <article class="docs-content post-content swagger-section">
+      <div class="total-wrapper" ui-view></div>
+    </article>
+
+    <nav class="docs-nav">
+      {% include nav_docs.html %}
+    </nav>
+  </div>
+</div>
+
+<script src="scripts/vendor.js"></script>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/branding.js"></script>
+{% include footer.html %}
+
+</body>
+</html>

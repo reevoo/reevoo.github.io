@@ -1,7 +1,10 @@
 swagger: '2.0'
 info:
   title: myReevoo Fast Response API
-  description: ''
+  description: |
+    The Fast Response API allows you to search for any piece of content created by your customers including product reviews, customer experience reviews and conversation questions. When you find the content you can respond to it or update or delete already existing responses.
+
+    To try out the API operations you need to retrieve an access token from [api_session endpoint](http://reevoo.github.io/docs/myreevooapi/#!/api_session/POST_api_version_api_session_json) of myReevoo Admin API.
   version: 1.0.0
 host: fr-api.reevoo.com
 basePath: /api/v1

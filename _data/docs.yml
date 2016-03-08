@@ -52,6 +52,10 @@
         title: list
       - id: review-detail
         title: detail
+      - id: upvote-review
+        title: upvote review
+      - id: downvote-review
+        title: downvote review
   - id: customer-experience-review
     title: Customer Exp. Review
     subitems:

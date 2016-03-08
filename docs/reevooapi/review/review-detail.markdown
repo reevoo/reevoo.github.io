@@ -5,7 +5,7 @@ title: Platform API v4 / Review
 navId: docs
 group: reevooapi
 prev: review/review-list
-next: customer-experience-review/customer-experience-review-list
+next: review/upvote-review
 ---
 
 # Review
@@ -15,7 +15,7 @@ Details for a single review.
 /v4/reviews/310946?trkref=D10
 
 <div class="warning">
-  <strong>This URL: </strong> 
+  <strong>This URL: </strong>
   /v4/organisations;trkref=D10/reviews/5996122
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>

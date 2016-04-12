@@ -6,34 +6,34 @@ navId: blog
 
 <div class="blog-summary">
   <div class="tile-container">
-  <ul class="posts">
-    {% for post in site.categories.blog %}
-    <li>
-      <div class="post">
-        <header class="post-header">
-          <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
-          <p class="meta">{{ post.date | date: "%b %-d, %Y" }}
-            {% if post.author %}
-              -
-              {% if post.github %}
-                <a target="_blank" href="//github.com/{{ post.github }}">
+    <ul class="posts">
+      {% for post in site.categories.blog %}
+      <li>
+        <div class="post">
+          <header class="post-header">
+            <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+            <p class="meta">{{ post.date | date: "%b %-d, %Y" }}
+              {% if post.author %}
+                -
+                {% if post.github %}
+                  <a target="_blank" href="//github.com/{{ post.github }}">
+                    {{ post.author }}
+                  </a>
+                {% else %}
                   {{ post.author }}
-                </a>
-              {% else %}
-                {{ post.author }}
+                {% endif %}
               {% endif %}
-            {% endif %}
-          </p>
-        </header>
+            </p>
+          </header>
 
-        <article class="post-content">
-          {{ post.content | strip_html | truncatewords:75}}<br/>
-        </article>
-        <a class="read-more" href="{{ post.url }}">read more...</a>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>
+          <article class="post-content">
+            {{ post.content | strip_html | truncatewords:75}}<br/>
+          </article>
+          <a class="read-more" href="{{ post.url }}">read more...</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
 </div>

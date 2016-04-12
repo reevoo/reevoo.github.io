@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  From Node module to CLI
-date:   2016-04-12 10:00
+date:   2016-04-12 09:00
 categories: blog
 navId: blog
 author: Victor Vila

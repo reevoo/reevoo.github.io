@@ -23,9 +23,11 @@ layout: default
   {{ content }}
   </article>
 
+  {% if page.soapboxContentId %}
   <reevoo-comments-widget content-id='{{ page.soapboxContentId }}'></reevoo-comments-widget>
 
   <link type='text/css' rel='stylesheet' href='https://comments.reevoo.com/css/widgets.css' />
   <script type='text/javascript' src='https://comments.reevoo.com/js/widgets.js'></script>
+  {% endif %}
 
 </div>

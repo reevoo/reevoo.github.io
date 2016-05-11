@@ -38,6 +38,10 @@ Details for a single review.
 |good_points              |good points text                                       |
 |bad_points               |bad points text                                        |
 |general_comments         |general comments text                                  |
+|product                  |product informations                                   |
+|<span class="indent-1">id</span>         |                                       |
+|<span class="indent-1">name</span>       |                                       |
+|<span class="indent-1">image_url</span>  |                                       |
 |fast_responses                           |array of responses                     |
 |<span class="indent-1">response</span>   |                                       |
 |<span class="indent-1">respondent</span> |respondent details                     |
@@ -69,6 +73,11 @@ Details for a single review.
    "good_points":"For the money excellent value.",
    "bad_points":"Still too early for a proper evaluation\r\nNone as yet",
    "general_comments":null,
+   "product": {
+      "id": 1462,
+      "name": "PlayStation 4",
+      "image_url": "//images.reevoo.com/retailer_products/1462/10207581/37x37.jpg?timestamp=1439805440"
+   },
    "fast_responses": [
       {
          "response": "Example response",

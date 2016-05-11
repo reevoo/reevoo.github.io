@@ -45,7 +45,7 @@ If you would like access to these parameters please contact your account manager
 |<span class="indent-2">per_page</span>                  |                                                                |
 |<span class="indent-2">previous_page</span>             |                                                                |
 |<span class="indent-2">next_page</span>                 |                                                                |
-|reviews                                                 |array of review objects                                         |
+|reviews                                                 |array of review objects (attributes described in [review detail doc](../review-detail)) |
 
 ## JSON Example
 {% highlight json %}
@@ -132,6 +132,27 @@ If you would like access to these parameters please contact your account manager
          "good_points":"For the money excellent value.",
          "bad_points":"Still too early for a proper evaluation\r\nNone as yet",
          "general_comments":null,
+         "product": {
+            "id": 1462,
+            "name": "PlayStation 4",
+            "image_url": "//images.reevoo.com/retailer_products/1462/10207581/37x37.jpg?timestamp=1439805440"
+         },
+         "fast_responses": [
+            {
+               "response": "Example response",
+               "respondent": {
+                  "custom_name": "Custommer service",
+                  "first_name": "John",
+                  "surname": "Brown",
+                  "job_title": "job title"
+               },
+               "organisation": {
+                  "trkref": "TRKREF",
+                  "name": "Organisation Name",
+                  "logo": "http://images.reevoo.com/retailers/image2.png"
+               }
+            }
+         ],
          "customer_ref": "12345678",
          "order_ref": "87654321",
          "embeddable": false,

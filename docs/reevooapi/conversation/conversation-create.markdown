@@ -33,7 +33,6 @@ POST /v4/organisations/D10/conversations
 |first_name      |first name of the person that asked the question (optional, default: A shopper) |
 |email           |email of the person that asked the question                                     |
 |question        |the question asked in this conversation                                         |
-|locale          |locale of question text (optional, default: your organisation locale)           |
 
 
 ### Example
@@ -42,8 +41,7 @@ POST /v4/organisations/D10/conversations
    "sku": "AIPTPDV5700",
    "first_name": "Joe",
    "email": "joe@example.com",
-   "question": "How is this product?",
-   "locale": "en-GB"
+   "question": "How is this product?"
 }
 {% endhighlight %}
 

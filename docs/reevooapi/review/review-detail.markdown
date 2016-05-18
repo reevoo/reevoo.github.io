@@ -45,10 +45,11 @@ Details for a single review.
 |fast_responses                           |array of responses                     |
 |<span class="indent-1">response</span>   |                                       |
 |<span class="indent-1">respondent</span> |respondent details                     |
-|<span class="indent-2">custom_name</span>|                                       |
-|<span class="indent-2">first_name</span> |                                       |
-|<span class="indent-2">surname</span>    |                                       |
-|<span class="indent-2">job_title</span>  |                                       |
+|<span class="indent-2">custom_name</span>| If the retailer is using our old fast response tool, the custom name is the respondent's name, and is guaranteed to be populated. Otherwise, if the retailer is using our new fast response tool, then this property is only populated if the respondent provided a "custom title" when sending the response, otherwise the value of this field will be null. |
+|<span class="indent-2">first_name</span> | If the retailer is using our old fast response tool, then this property will always be null. Otherwise, if the retailer is using our new fast response tool, then this property is only populated if the respondent provided a "first name" when sending the response, otherwise the value of this field will be null. |
+|<span class="indent-2">surname</span>    | If the retailer is using our old fast response tool, then this property will always be null. Otherwise, if the retailer is using our new fast response tool, then this property is only populated if the respondent provided a "surname" when sending the response, otherwise the value of this field will be null. |
+|<span class="indent-2">job_title</span>  | This property will only be populated if the respondent provided a "job title" when sending the response, otherwise it will be null. |
+|<span class="indent-2">display_name</span>| If the retailer is using our old fast response tool, the display name is the concatenation of the respondent's name and respondent's job title separated by a comma (or only the name if there is no job title available). Otherwise, if the retailer is using our new fast response tool, the display name will have the same value as the "You are responding as:" field that we use in the response form (which can be a combination of first_name or first_name + job_title or first_name + surname + job_title, or the custom title).
 |<span class="indent-1">organisation</span>|organisation details                  |
 |<span class="indent-2">trkref</span>     |                                       |
 |<span class="indent-2">name</span>       |                                       |
@@ -85,7 +86,8 @@ Details for a single review.
             "custom_name": "Custommer service",
             "first_name": "John",
             "surname": "Brown",
-            "job_title": "job title"
+            "job_title": "job title",
+            "display_name": "Customer service"
          },
          "organisation": {
             "trkref": "TRKREF",

@@ -144,7 +144,8 @@ If you would like access to these parameters please contact your account manager
                   "custom_name": "Custommer service",
                   "first_name": "John",
                   "surname": "Brown",
-                  "job_title": "job title"
+                  "job_title": "job title",
+                  "display_name": "Customer service"
                },
                "organisation": {
                   "trkref": "TRKREF",

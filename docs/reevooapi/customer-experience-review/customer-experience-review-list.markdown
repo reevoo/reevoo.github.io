@@ -32,7 +32,7 @@ Only published customer experience reviews will be included.
 ## Attribute(s)
 
 {: .documentation}
-|customer_experience_reviews|array of customer experience objects|
+|customer_experience_reviews|array of customer experience objects (attributes described in [customer experience review detail doc](../customer-experience-review-detail))|
 
 ## JSON Example
 {% highlight json %}
@@ -40,7 +40,8 @@ Only published customer experience reviews will be included.
    "customer_experience_reviews":[
       {
          "branch_attribution":null,
-         "purchase_date":"2014-03-28",
+         "confirmed_purchaser_text": "Confirmed purchaser",
+         "fast_responses": [],
          "reviewer":{
             "first_name":"Robert",
             "location":"Catford, London",
@@ -72,7 +73,13 @@ Only published customer experience reviews will be included.
                "display_key":"happy_with_customer_service",
                "answer":null
             }
-         ]
+         ],
+         "publish_date": "2016-05-23",
+         "purchase_date": "2016-05-23",
+         "delivery_date": "2016-05-23",
+         "nps_score": 7,
+         "customer_ref": null,
+         "order_ref": "TEST 230516:1536"
       },
       ...
    ]

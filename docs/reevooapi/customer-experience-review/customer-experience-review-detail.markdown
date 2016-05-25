@@ -15,8 +15,8 @@ Details for a single customer experience review.
 /v4/customer_experience_reviews/2774063?trkref=D10
 
 <div class="warning">
-  <strong>This URL: </strong> 
-  /v4/organisations;trkref=D10/customer_experience_reviews/2774063 
+  <strong>This URL: </strong>
+  /v4/organisations;trkref=D10/customer_experience_reviews/2774063
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
@@ -35,6 +35,7 @@ Details for a single customer experience review.
 |publish_date                             |publish date (YYYY-MM-DD)                  |
 |purchase_date                            |purchase date (YYYY-MM-DD)                 |
 |delivery_date                            |delivery date (YYYY-MM-DD)                 |
+|nps_score                                |An integer from 0 to 10 representing the Net Promoter Score given by the reviewer |
 |reviewer                                 |reviewer object                            |
 |responses                                |array of responses                         |
 |<span class="indent-1">display_key</span>|                                           |
@@ -62,6 +63,7 @@ Details for a single customer experience review.
    "publish_date":"2015-01-20",
    "purchase_date":"2014-11-04",
    "delivery_date":"2014-11-08",
+   "nps_score": 7,
    "customer_ref": "12345678",
    "order_ref": "87654321",
    "confirmed_purchaser_text": "Confirmed purchaser",

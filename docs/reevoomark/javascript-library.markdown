@@ -16,13 +16,11 @@ The code below imports our library, but without any client specific configuratio
 {% highlight html %}
 <!-- protocol-relative URL -->
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
-  (function() {
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//cdn.mark.reevoo.com/assets/reevoo_mark.js';
-    var s = document.getElementById('reevoomark-loader');
-    s.parentNode.insertBefore(script, s);
-  })();
+  (function(w,d,u,i,f,s,l) {
+    s = d.createElement('script');s.type = 'text/javascript';s.src = u;
+    l = d.getElementById(i);l.parentNode.insertBefore(s,l);w['ReevooMarkHandlerName'] = f;
+    w[f] = function() { (w[f].q = w[f].q || []).push(arguments) }
+  })(window, document, '//cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
 </script>
 {% endhighlight %}
 
@@ -32,33 +30,16 @@ HTTP
 ----
 
 {% highlight javascript %}
-    script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
+  ...
+  })(window, document, 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
 {% endhighlight %}
 
 HTTPS
 -----
 
 {% highlight javascript %}
-    script.src = 'https://cdn.mark.reevoo.com/assets/reevoo_mark.js';
+  ...
+  })(window, document, 'https://cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
 {% endhighlight %}
 
 The reason why we ask you to load our JavaScript library this way is that it avoids blocking your page on first load. It also ensures if we are experiencing any issues regarding our services, your pages will not be blocked. It does, however, add some complexity to using the library as you cannot guarantee that our library will be loaded, or when. Thus we provide callbacks (shown on the next page) to allow you to ensure commands are called once our library is loaded onto the page.
-
-
-Retailer specific configuration
--------------------------------
-
-We assign an unique TRKREF account code that must be used to load a retailer specific configuration settings.
-This is used to load configuration and provides a callback to perform all available actions for that retailer.
-
-The JavaScript to use to load your configuration is as follows:
-
-{% highlight javascript %}
-afterReevooMarkLoaded = [function() {
-  ReevooApi.load('TRKREF', function(retailer) {
-    // retailer.command();
-  });
-}];
-{% endhighlight %}
-
-Following sections explain methods that you can call on the `retailer` object.

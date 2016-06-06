@@ -134,8 +134,16 @@ In order to track a custom badge display follow these steps:
 </script>
 {% endhighlight %}
 
-* `TRKREF` should be replaced with your unique account code
-* `SKU` should be replaced with the product SKU
+#### Attributes
+
+* `TRKREF` (required)
+* `sku` or `reviewableContext` to identify reviewable (required unless it's customer experience badge)
+* `contentType` with values: reviewable (default), customer_experience or conversations
+* `hitType` with values: impression (badge is visible, default), non_impression (badge is not visible as there are not
+  enough reviews), miss (reviewable not found)
+* `ctaPageUse` identifies type of page where the badge is displayed, possible values: product_primary (default),
+  product_secondary, category, search, homepage, basket, checkout, confirmation, reevoo
+* `ctaStyle` for optional further identification of badge
 
 
 ### Custom badge click
@@ -174,5 +182,11 @@ In order to track clicks on custom badge follow these steps:
 </script>
 {% endhighlight %}
 
-* `TRKREF` should be replaced with your unique account code
-* `SKU` should be replaced with the product SKU
+#### Attributes
+
+* `TRKREF` (required)
+* `sku` or `reviewableContext` to identify reviewable (required unless it's customer experience badge)
+* `contentType` with values: reviewable (default), customer_experience or conversations
+* `ctaPageUse` identifies type of page where the badge is displayed, possible values: product_primary (default),
+  product_secondary, category, search, homepage, basket, checkout, confirmation, reevoo
+* `ctaStyle` for optional further identification of badge

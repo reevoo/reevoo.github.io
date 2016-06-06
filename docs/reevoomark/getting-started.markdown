@@ -28,9 +28,9 @@ For this example you need to replace ```TRKREF``` with the account code provided
 
 <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
   (function(w,d,u,i,f,s,l) {
-    s = d.createElement('script');s.type = 'text/javascript';s.src = u;
-    l = d.getElementById(i);l.parentNode.insertBefore(s,l);w['ReevooMarkHandlerName'] = f;
-    w[f] = function() { (w[f].q = w[f].q || []).push(arguments) }
+    s=d.createElement('script');s.type='text/javascript';s.src=u;
+    l=d.getElementById(i);l.parentNode.insertBefore(s,l);w['ReevooMarkHandlerName']=f;
+    w[f]=function(){(w[f].q=w[f].q||[]).push(arguments)}
   })(window, document, '//cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
 </script>
 {% endhighlight %}

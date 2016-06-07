@@ -326,6 +326,9 @@ li { margin-left: 25px; }
   background-color: white;
   padding: 30px 50px;
 }
+.docs-content h2 {
+  margin-top: 50px;
+}
 
 .go-to-blog {
   text-align: center;

@@ -16,9 +16,10 @@ ReevooMark javascript library tracks automatically four different events related
 * **non_impression** when badge is not displayed because of no reviews for particular product
 * **click** when badge is clicked
 
-Apart from automatic tracking you can manually track purchases and events on custom badges and general custom events.
-Before implementing the custom tracing call please check that you use the latest version of [reevoomark-loader JS
-snippet](../javascript-library).
+Apart from automatic tracking you can manually track conversions and events on own custom badges.
+Before implementing the tracing call please check that you use the latest version of [reevoomark-loader JS
+snippet](../javascript-library). Also keep an eye on browser console. We generally don't throw exceptions
+in tracking code but log an error message if you pass wrong arguments to `reevooMark` function.
 
 
 ## Purchase tracking
@@ -34,6 +35,8 @@ In order to track a purchase follow these steps:
   reevooMark('trackPurchase', 'TRKREF', { skus: ['SKU1', 'SKU2'], basketValue: '123 GBP' });
 </script>
 {% endhighlight %}
+
+#### Attributes
 
 * `TRKREF` should be replaced with your unique account code
 * `SKU1, SKU2` should be dynamically replaced with the product SKUs
@@ -80,6 +83,8 @@ this is not possible you can call the tracking code from a click.
 </script>
 {% endhighlight %}
 
+#### Attributes
+
 * `TRKREF` should be replaced with your unique account code
 * `SKU1, SKU2` should be dynamically replaced with the product SKUs
 * `basketValue` is an optional order value
@@ -96,20 +101,24 @@ In order to track propensity to buy follow these steps:
 
 {% highlight html %}
 <script type="text/javascript">
-  reevooMark('trackPropensityToBuy', 'TRKREF', { reviewableContext: { manufacturer: 'Ford', model: 'Focus' } });
+  // for reviewable identified by SKU:
+  reevooMark('trackPropensityToBuy', 'TRKREF', { sku: 'SKU' });
+
+  // for reviewable identified by context (e.g. cars):
+  reevooMark('trackPropensityToBuy', 'TRKREF', { reviewableContext: { manufacturer: 'MAKE', model: 'MODEL' } });
 </script>
 {% endhighlight %}
 
-* `TRKREF` should be replaced with your unique account code
-* `reviewableContext` should be dynamically replaced with context of your product
+#### Attributes
 
-You can use `sku` instead of `reviewableContext` if your product is identified by SKU.
+* `TRKREF` should be replaced with your unique account code
+* `sku` or `reviewableContext` to identify reviewable
 
 
 
 ## Custom badge tracking
 
-Please use our manual custom badge tracking if you display your own custom badges.
+Please use this manual tracking if you implement your own custom badges.
 
 ### Custom badge display
 
@@ -124,13 +133,13 @@ In order to track a custom badge display follow these steps:
   reevooMark('trackBadgeDisplay', 'TRKREF', { sku: 'SKU' });
 
   // for badge of reviewable identified by context (e.g. cars):
-  reevooMark('trackBadgeDisplay', 'TRKREF', { reviewableContext: { manufacturer: 'Ford', model: 'Focus' } });
+  reevooMark('trackBadgeDisplay', 'TRKREF', { reviewableContext: { manufacturer: 'MAKE', model: 'MODEL' } });
 
   // for customer experience badge:
-  reevooMark('trackBadgeDisplay', 'TRKREF', { contentType: 'customer_experience' });
+  reevooMark('trackBadgeDisplay', 'TRKREF', { contentType: 'customer_experience', badgeType: 'overall' });
 
   // for conversations badge:
-  reevooMark('trackBadgeDisplay', 'TRKREF', { sku: 'SKU', contentType: 'conversations' });
+  reevooMark('trackBadgeDisplay', 'TRKREF', { contentType: 'conversations', sku: 'SKU' });
 </script>
 {% endhighlight %}
 
@@ -144,6 +153,7 @@ In order to track a custom badge display follow these steps:
 * `ctaPageUse` identifies type of page where the badge is displayed, possible values: product_primary (default),
   product_secondary, category, search, homepage, basket, checkout, confirmation, reevoo
 * `ctaStyle` for optional further identification of badge
+* `badgeType` to further specify type of customer experience badge, possible values: overall (default), customer_service, delivery
 
 
 ### Custom badge click
@@ -167,17 +177,17 @@ In order to track clicks on custom badge follow these steps:
 
   // for badge of reviewable identified by context (e.g. cars):
   document.querySelector('.custom-reviewable-context-badge').addEventListener('click', function() {
-    reevooMark('trackBadgeClick', 'TRKREF', { reviewableContext: { manufacturer: 'Ford', model: 'Focus' } });
+    reevooMark('trackBadgeClick', 'TRKREF', { reviewableContext: { manufacturer: 'MAKE', model: 'MODEL' } });
   });
 
   // for customer experience badge:
   document.querySelector('.custom-cx-badge').addEventListener('click', function() {
-    reevooMark('trackBadgeClick', 'TRKREF', { contentType: 'customer_experience' });
+    reevooMark('trackBadgeClick', 'TRKREF', { contentType: 'customer_experience', badgeType: 'overall' });
   });
 
   // for conversations badge:
   document.querySelector('.custom-conversations-badge').addEventListener('click', function() {
-    reevooMark('trackBadgeClick', 'TRKREF', { sku: 'SKU', contentType: 'conversations' });
+    reevooMark('trackBadgeClick', 'TRKREF', { contentType: 'conversations', sku: 'SKU' });
   });
 </script>
 {% endhighlight %}
@@ -190,3 +200,4 @@ In order to track clicks on custom badge follow these steps:
 * `ctaPageUse` identifies type of page where the badge is displayed, possible values: product_primary (default),
   product_secondary, category, search, homepage, basket, checkout, confirmation, reevoo
 * `ctaStyle` for optional further identification of badge
+* `badgeType` to further specify type of customer experience badge, possible values: overall (default), customer_service, delivery

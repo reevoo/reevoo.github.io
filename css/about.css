@@ -28,3 +28,8 @@ hr {
   padding: 0;
   margin: 0;
 }
+
+.alumni-list img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}

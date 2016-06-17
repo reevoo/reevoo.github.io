@@ -6,6 +6,13 @@ navId: docs
 group: seoboost
 ---
 
+<b>Note</b>:  This guide explains how to implement our server side SEO boost embedded reviews and conversations solution (using one of our server side client libraries: Java/JSP, PHP, ASP/.NET or Ruby). Since search engines now crawl javascript, we also offer as an alternative a full client side implementation for our embedded content. If you prefer to implement SEO Boost using our full client side solution, you can find instructions in the following links:
+<br/><br/>
+* [Full client side implementation of SEO Product Reviews](/docs/reevoomark/embedded-product-reviews/)<br/>
+* [Full client side implementation of SEO Customer Experience Reviews](/docs/reevoomark/embedded-customer-experience-reviews/)<br/>
+* [Full client side implementation of SEO Conversations](/docs/reevoomark/embedded-conversations/)<br/>
+
+
 # Overview
 Fresh, crawl-able, and frequently updated reviews can provide great content for search engines to discover and index. The ReevooMark in-line SEO module allows merchants to embed reviews on product pages, or customer experience reviews on any page, easily and efficiently with seamless integration with the standard ReevooMark product.
 

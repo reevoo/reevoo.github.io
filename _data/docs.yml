@@ -14,6 +14,12 @@
     title: Customer exp. badges
   - id: conversation-badges
     title: Conversation badges
+  - id: embedded-product-reviews
+    title: SEO Product reviews
+  - id: embedded-customer-experience-reviews
+    title: SEO Experience reviews
+  - id: embedded-conversations
+    title: SEO Conversations
   - id: tracking
     title: Tracking
 - id: seoboost

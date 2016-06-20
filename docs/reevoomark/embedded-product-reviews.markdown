@@ -13,8 +13,15 @@ next: embedded-customer-experience-reviews
 
 To display embedded product reviews in your website you have to
 
-1. [include the Reevoomark Javascript library](../javascript-library)
-2. add the `reevoo-embedded-product-reviews` tag with `trkref="TRKREF"` and `sku="SKU"` and `per_page="PER_PAGE"` and optionally, `locale="LOCALE"` attributes
+1\. [include the Reevoomark Javascript library](../javascript-library)
+
+
+2\. Include our embedded reviews CSS in your HTML header, using the HTML link below:
+{% highlight html %}
+  <link rel="stylesheet" href="//mark.reevoo.com/stylesheets/reevoomark/embedded_reviews.css" type="text/css" />
+{% endhighlight %}
+
+3\. add the `reevoo-embedded-product-reviews` tag with `trkref="TRKREF"` and `sku="SKU"` and `per_page="PER_PAGE"` and optionally, `locale="LOCALE"` attributes
 
 * `TRKREF` should be replaced with your unique account code
 * `SKU` needs to be dynamically replaced with the corresponding product SKU

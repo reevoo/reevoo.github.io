@@ -12,8 +12,16 @@ next: embedded-conversations
 
 To display embedded customer experience reviews in your website you have to
 
-1. [include the Reevoomark Javascript library](../javascript-library)
-2. add the `reevoo-embedded-customer-experience-reviews` tag with `trkref="TRKREF"` and `per_page="PER_PAGE"` and optionally, `locale="LOCALE"` attributes
+1\. [include the Reevoomark Javascript library](../javascript-library)
+
+
+2\. Include our embedded reviews CSS in your HTML header, using the HTML link below:
+{% highlight html %}
+  <link rel="stylesheet" href="//mark.reevoo.com/stylesheets/reevoomark/embedded_reviews.css" type="text/css" />
+{% endhighlight %}
+
+
+3\. add the `reevoo-embedded-customer-experience-reviews` tag with `trkref="TRKREF"` and `per_page="PER_PAGE"` and optionally, `locale="LOCALE"` attributes
 
 * `TRKREF` should be replaced with your unique account code
 * `PER_PAGE` needs to be replaced by the number of reviews to display per page, as the reviews will be paginated.

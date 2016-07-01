@@ -58,7 +58,7 @@ If you want to see all the videos, you can find them ordered in YouTube playlist
 
 [Talks playlist for Day one](https://www.youtube.com/playlist?list=PLCC436JpVnK09bZeayg-KeLuHfHgc-tDa)
 
-[Talks playlist for Day one](https://www.youtube.com/playlist?list=PLCC436JpVnK0LTDKW3O_BGTZnrZ8dBAof)
+[Talks playlist for Day two](https://www.youtube.com/playlist?list=PLCC436JpVnK0LTDKW3O_BGTZnrZ8dBAof)
 
 [Q&A with React core members](https://www.youtube.com/watch?v=5pMDd1t2thc)
 

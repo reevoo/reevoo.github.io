@@ -1,0 +1,112 @@
+---
+id: aslan-api
+title: Aslan API
+navId: docs
+---
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+<link href="{{ "/css/swagger.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+
+<script src="{{ "/js/jquery-1.8.0.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/jquery.slideto.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/jquery.wiggle.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/jquery.ba-bbq.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/handlebars-2.0.0.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/underscore-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/backbone-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/swagger-ui.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/highlight.7.3.pack.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/jsoneditor.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/js/marked.js" type="text/javascript" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/swagger-oauth.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $(function () {
+      function initSwaggerUI() {
+      window.swaggerUi = new SwaggerUi({
+        url: 'https://aslan.reevoo.com/api/swagger_doc',
+        dom_id: "swagger-ui-container",
+        supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
+        onComplete: function(swaggerApi, swaggerUi){
+
+          $('pre code').each(function(i, e) {
+            hljs.highlightBlock(e)
+          });
+
+          addApiKeyAuthorization();
+        },
+        onFailure: function(data) {
+          log("Unable to Load SwaggerUI");
+        },
+        docExpansion: "none",
+        jsonEditor: false,
+        apisSorter: "alpha",
+        defaultModelRendering: 'schema',
+        showRequestHeaders: true
+      });
+
+      window.swaggerUi.load();
+    }
+
+    function addApiKeyAuthorization() {
+      var username = $('#username-input').val();
+      var password = $('#password-input').val();
+
+      if(username && username.trim() != "") {
+          var auth = new SwaggerClient.PasswordAuthorization(username, password)
+          window.swaggerUi.api.clientAuthorizations.add("Authorization", auth);
+      }
+    }
+
+    function log() {
+      if ('console' in window) {
+        console.log.apply(console, arguments);
+      }
+    }
+
+    $('#username-input, #password-input').change(addApiKeyAuthorization);
+    initSwaggerUI();
+});
+</script>
+
+<body>
+
+{% include header.html %}
+<div class="page-title">
+  <div class="wrap">
+    <h1>{{ page.title }}</h1>
+  </div>
+</div>
+<div class="page-content">
+  <div class="docs">
+    <article class="docs-content post-content swagger-section">
+      <h1>Aslan API</h1>
+      <form>
+        <p>
+          <label for="access-token-input">username</label>
+          <input type="text" name="username-input" id="username-input" value="" size="50">
+        </p>
+        <p>
+          <label for="access-token-input">password</label>
+          <input type="text" name="password-input" id="password-input" value="" size="50">
+        </p>
+        <small>You don't need access token for the public endpoints.</small>
+      </form>
+
+      <h2>Endpoints</h2>
+      <div id="message-bar" class="swagger-ui-wrap"></div>
+      <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+    </article>
+
+    <nav class="docs-nav">
+      {% include nav_docs.html %}
+    </nav>
+  </div>
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>

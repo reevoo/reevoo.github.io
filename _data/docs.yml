@@ -27,6 +27,11 @@
   items:
   - id: seo-boost
     title: Implementation guide
+- id: experiences
+  title: Experiences
+  items:
+  - id: experiences-getting-started
+    title: Getting started
 - id: reevooapi
   title: Reevoo API
   url: reevooapi

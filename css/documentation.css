@@ -19,3 +19,35 @@ table.documentation span.indent-2 { margin-left: 40px; }
 strong {
     font-weight: bold;
 }
+
+table.documentation-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.documentation-table tr {
+  border-top: 1px solid #ccc;
+}
+
+table.documentation-table tr code {
+  background-color: #ffffff;
+}
+
+table.documentation-table tr:nth-child(2n) {
+  background-color: #f0f0ff;
+}
+
+table.documentation-table tr:nth-child(2n) code {
+  background-color: #f0f0ff;
+}
+
+table.documentation-table th {
+  font-weight: bold;
+}
+
+table.documentation-table th,
+table.documentation-table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}

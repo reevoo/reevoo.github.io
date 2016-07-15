@@ -17,7 +17,7 @@ table.documentation span.indent-2 { margin-left: 40px; }
 }
 
 strong {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 table.documentation-table {
@@ -43,7 +43,7 @@ table.documentation-table tr:nth-child(2n) code {
 }
 
 table.documentation-table th {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 table.documentation-table th,

@@ -32,6 +32,11 @@
   items:
   - id: experiences-getting-started
     title: Getting started
+- id: conversations
+  title: Conversations
+  items:
+  - id: conversations-widget-getting-started
+    title: Getting started
 - id: reevooapi
   title: Reevoo API
   url: reevooapi

@@ -109,8 +109,8 @@ Replace *CONTENT_ID*  by the id value you obtained when you requested the creati
 Also, at the end of your page, just before the closing of your html \</body\> tag, add the following css and javascript links, these are needed for the widget to function properly and to have the correct css styling:
 
 ```html
-<link type='text/css' rel='stylesheet' href='http://comments.reevoo.com/css/comments.css' />
-<script type='text/javascript' src='http://comments.reevoo.com/js/comments.js'></script>
+<link type='text/css' rel='stylesheet' href='https://comments.reevoo.com/css/widgets.css' />
+<script type='text/javascript' src='https://comments.reevoo.com/js/widgets.js'></script>
 ```
 
 That's all you need. If you reload your page, you should be able to see the conversations widget in your page.

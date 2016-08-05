@@ -102,10 +102,10 @@ In order to track propensity to buy follow these steps:
 {% highlight html %}
 <script type="text/javascript">
   // for reviewable identified by SKU:
-  reevooMark('trackPropensityToBuy', 'TRKREF', { sku: 'SKU' });
+  reevooMark('trackPropensityToBuy', 'TRKREF', { sku: 'SKU', cta: 'Call to action' });
 
   // for reviewable identified by context (e.g. cars):
-  reevooMark('trackPropensityToBuy', 'TRKREF', { reviewableContext: { manufacturer: 'MAKE', model: 'MODEL' } });
+  reevooMark('trackPropensityToBuy', 'TRKREF', { reviewableContext: { manufacturer: 'MAKE', model: 'MODEL' }, cta: 'Call to action' });
 </script>
 {% endhighlight %}
 
@@ -113,6 +113,7 @@ In order to track propensity to buy follow these steps:
 
 * `TRKREF` should be replaced with your unique account code
 * `sku` or `reviewableContext` to identify reviewable
+* `cta` - call to action like Download Brochure, Book a Test Drive etc (optional)
 
 
 

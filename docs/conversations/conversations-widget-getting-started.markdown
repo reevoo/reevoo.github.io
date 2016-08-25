@@ -19,12 +19,12 @@ Features include:
 
 ## Setting you up as an Content Provider
 
-To be able to use Reevoo's Conversations Widget you will need to get in contact with us so we can set you up as a content provider in our system. 
+To be able to use Reevoo's Conversations Widget you will need to get in contact with us so we can set you up as a content provider in our system.
 
 The information we will need from you in order to set you up is the following:
 
 - **Organisation Name**: This name will be used as an identifier for your organisation in our side, and you will need to use it as part of the api calls made in order to create content ids and user profiles. More about this in following sections below.
-- **Url of the login page in the the website where you will be using our conversations widget**: Once the widget is in your page, for users to be able to comment, they will need to be logged in. The widget will display a link to a login page. The link will redirect the user to the login page url that you provide to us. In your login page, once the user logs in, you will need to set up a special cookie that will allow the widget to identify the user as a logged in user. More details on this in following sections. 
+- **Url of the login page in the the website where you will be using our conversations widget**: Once the widget is in your page, for users to be able to comment, they will need to be logged in. The widget will display a link to a login page. The link will redirect the user to the login page url that you provide to us. In your login page, once the user logs in, you will need to set up a special cookie that will allow the widget to identify the user as a logged in user. More details on this in following sections.
 - **Url of your organisation's logo image to include in email notifications**: When users post comments, other users that contributed to the same conversation, or whose comments are being replied to, will get email notifications. The email templates are configurable to include your organisation's logo in the email header, if you provide us with one.
 
 Once we set you up in our system, we will provide you with the following two pieces of very important information:
@@ -48,7 +48,7 @@ Method: POST
 URL: https://comments-api.reevoo.com/v1/content
 Headers:
   Content-Provider: PROVIDER_NAME
-  Provider-Secret: PROVIDER_SECRET 
+  Provider-Secret: PROVIDER_SECRET
   Content-Type: application/json
 Body:
   {
@@ -58,16 +58,16 @@ Body:
     // Required: types of threads shown on the Widget.
     "thread_types": ["tip", "question"],
 
-    // Optional: A list of tags that will be linked to the content in our side, 
+    // Optional: A list of tags that will be linked to the content in our side,
     // so we can identify what the content is about.
     // This will be used when selecting experts to be notified by email about user's questions.
     "tags": ["carpentry", "garden"]
   }
 ```
 
-*PROVIDER_NAME*, in the Content-Provider header above, should be replaced by the *Organisation Name* that you provided to us when we set you up as a content provider. See section **Setting you up as an Content Provider** above. 
+*PROVIDER_NAME*, in the Content-Provider header above, should be replaced by the *Organisation Name* that you provided to us when we set you up as a content provider. See section **Setting you up as an Content Provider** above.
 
-*PROVIDER_SECRET*, in the Provider-Secret header above, should be replaced by the *Provider Secret* that we gave to you after setting you up as a content provider. See section **Setting you up as an Content Provider** above. 
+*PROVIDER_SECRET*, in the Provider-Secret header above, should be replaced by the *Provider Secret* that we gave to you after setting you up as a content provider. See section **Setting you up as an Content Provider** above.
 
 As for the rest of the parameters in the body section of the api call above, their description is as follow:
 
@@ -85,7 +85,7 @@ The reponse to this API call will be as below:
 {
   "id": "f46bdb24-cacb-49fc-a049-6876b10cc783",
   "threads": [
-    
+
   ],
   "more_available": false,
   "login_url_template": "http://my-site.com/login?returnurl=redirect_url"
@@ -115,9 +115,29 @@ Also, at the end of your page, just before the closing of your html \</body\> ta
 
 That's all you need. If you reload your page, you should be able to see the conversations widget in your page.
 
+
+## Localisation
+To change the default language (English) of the conversations widget add the following script before the `widgets.js` script tag, making sure to change `LOCALE_REF` for one of the supported locale references listed below:
+
+```js
+<script>
+  window.reevoo = window.reevoo || {};
+  window.reevoo.locale = 'LOCALE_REF'
+</script>
+```
+
+Supported locales:
+
+- Spanish: `es_ES`
+- German: `de_DE`
+- French: `fr_FR`
+
+The default/fallback locale is `en_GB` so ignore this section if the language you require is English.
+
+
 ## Creating User Profiles.
 
-In order for users to be able to post comments in the conversations widget, they need to have a profile in Reevoo's system. 
+In order for users to be able to post comments in the conversations widget, they need to have a profile in Reevoo's system.
 
 The creation of profiles is your responsability. We provide a user profile endpoint in our API that you need to call when you want to create a new user profile, or update an existing user profile.
 
@@ -142,9 +162,9 @@ Body:
   }
 ```
 
-*PROVIDER_NAME*, in the Content-Provider header above, should be replaced by the *Organisation Name* that you provided to us when we set you up as a content provider. See section **Setting you up as an Content Provider** above. 
+*PROVIDER_NAME*, in the Content-Provider header above, should be replaced by the *Organisation Name* that you provided to us when we set you up as a content provider. See section **Setting you up as an Content Provider** above.
 
-*PROVIDER_SECRET*, in the Provider-Secret header above, should be replaced by the *Provider Secret* that we gave to you after setting you up as a content provider. See section **Setting you up as an Content Provider** above. 
+*PROVIDER_SECRET*, in the Provider-Secret header above, should be replaced by the *Provider Secret* that we gave to you after setting you up as a content provider. See section **Setting you up as an Content Provider** above.
 
 *external_user_id*, is a unique identifier for the user in your system. Make sure to replace "EXTERNAL_USER_ID" in the API call url by the specific unique identifier of the user for which you are creating or updating a profile.
 
@@ -177,32 +197,32 @@ As for the rest of the parameters in the body section of the api call above, the
 | `USER_SECRET` |  This is the *User Secret* that we gave to you after setting you up as a content provider. See section **Setting you up as an Content Provider** above. |
 
 *  Once you have the previous 4 pieces of information, you need to generate a signature with them. To generate the signature, just concatenate those 4 values in the same order given above, and apply to the concatenated string the SHA256 hashing algorithm. The signature will be the resulting hash. See below an example of how you would generate this signature in ruby:
- 
+
 ```ruby
  require 'digest'
- 
+
  SESSION_ID = '20150101120000'
  EXTERNAL_USER_ID = 'john.smith.2016'
  PROVIDER_NAME = 'Hotels 4 You'
  USER_SECRET = '42c86d677b902eb29662e6bdeed79d1c4c36809a590cd8f2e90'
- 
+
  SIGNATURE = Digest::SHA256.hexdigest("#{SESSION_ID}#{EXTERNAL_USER_ID}#{PROVIDER_NAME}#{USER_SECRET}")
 
 ```
- 
+
 * Once you have generated the signature. You need to set a cookie with name **reevoo.auth**. Make sure the cookie is set in the same domain as the domain where the conversations widget is placed. This is important, as if you set the cookie with a different domain than the one where the widget is placed, authentication will not work. The value of the cookie needs to be the concatenation of the following 4 pieces of information separated by forward slash: SESSIONS_ID, EXTERNAL_USER_ID, PROVIDER_NAME and the signature you generated in the previous step. See example below of how these four pieces of information need to be concatenated:
 
 
 ```ruby
 
     cookie_value = SESSION_ID/EXTERNAL_USER_ID/PROVIDER_NAME/SIGNATURE                 
-    
+
 ```
 
 * Finally, after setting the cookie, redirect the user back to the page where the conversations widget is placed. The widget will identify the user as a logged in user, and will allow them to post comments.
- 
- 
-## Troubleshooting 
+
+
+## Troubleshooting
 
 ### My widgets don't appear!
 

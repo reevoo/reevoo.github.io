@@ -127,10 +127,18 @@ To change the default language (English) of the conversations widget add the fol
 ```
 
 Supported locales:
-
-- Spanish: `es_ES`
-- German: `de_DE`
-- French: `fr_FR`
+- Danish `da_DA`
+- Dutch `nl_NL`
+- Finnish `sv_FI`
+- French `fr_FR`
+- German `de_DE`
+- Greek `el_EL`
+- Hungarian `hu_HU`
+- Italian `it_IT`
+- Polish `pl_PL`
+- Slovakian `sk_SK`
+- Spanish `es_ES`
+- Swedish `sv_SE`
 
 The default/fallback locale is `en_GB` so ignore this section if the language you require is English.
 

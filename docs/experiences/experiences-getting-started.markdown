@@ -81,15 +81,17 @@ Example:
 
 ## Teaser
 
-To include a Teaser in your page, place this tag wherever you want it to show:
+To include a Teaser in your page, you have 2 options. You can request a specific teaser by its ID or you can generate a teaser dynamically from provided tags, title and dock title.
+
+**1) Request a specific teaser by its ID**
+
+You need to provide a JSON config object in the `data-config` attribute of the widget tag.
 
 ```html
 <div class="reevoo-widget-teaser" data-config='{"id": "TEASER_ID"}'></div>
 ```
 
 ### Config values
-
-You need to provide a JSON config object in the `data-config` attribute of the widget tag.
 
 This is a list of the available properties for the Teaser:
 
@@ -98,16 +100,35 @@ This is a list of the available properties for the Teaser:
 |------|----------------|----------|---------------|--------------|
 | `id` | uuid | true | N/A | `'TEASER_ID'` should be replaced with a valid teaser id provided by Reevoo. |
 
-An example JSON might look like this:
 
-```json
-{
-  "id": "<TEASER_ID>"
-}
-```
 
-You pass it to the widget as a string like this:
+**2) Generate a teaser dynamically from tags, title and dock title**
+
+You need to provide a JSON config object in the `data-config` attribute of the widget tag.
+
+**Notice: The teaser is not displayed in the case that we can't find enough cards to fill the teaser. At this time it is 5 cards.**
 
 ```html
-<div class="reevoo-widget-teaser" data-config='{"id": "<TEASER_ID>"}'></div>
+<div class="reevoo-widget-teaser"
+  data-config='{
+    "tags": ["location1:scotland", "general:walking_tips"],
+    "title": "Walking tips for walking in Scotland",
+    "dockTitle": "We asked our customers to share their walking tips"
+  }'>
+</div>
 ```
+
+### Config values
+
+This is a list of the available properties for the Teaser:
+
+{: .documentation-table}
+| Name | Allowed values | Required | Default value | What it does |
+|------|----------------|----------|---------------|--------------|
+| `tags` | array | true | N/A | Select cards with given tags. Each tag has to be provided in format `namespace:tag_key`. Both `namespace` and `tag_key` has to be **downcased** and **underscored**. |
+| `title` | String | false | N/A | Define a teaser title |
+| `dockTitle` | String | false | We asked real people | Define a dock title |
+
+### Teaser sketch
+
+[![Teaser sketch](/images/teaser_sketch.svg)](/images/teaser_sketch.svg)

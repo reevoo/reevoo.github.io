@@ -128,6 +128,8 @@ This is a list of the available properties for the Teaser:
 | `tags` | array | true | N/A | Select cards with given tags. Each tag has to be provided in format `namespace:tag_key`. Both `namespace` and `tag_key` has to be **downcased** and **underscored**. |
 | `title` | String | false | N/A | Define a teaser title |
 | `dockTitle` | String | false | We asked real people | Define a dock title |
+| `desktopLayout` | String | false | desktop-default | Define desktop layout. ex: 1rows-4columns |
+| `mobileLayout` | String | false | mobile-default | Define mobile layout. ex: 1rows-4columns |
 
 ### Teaser sketch
 

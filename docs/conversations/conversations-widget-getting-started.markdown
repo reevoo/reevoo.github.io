@@ -135,7 +135,9 @@ Supported locales:
 - Greek `el_EL`
 - Hungarian `hu_HU`
 - Italian `it_IT`
+- Norwegian `no_NO`
 - Polish `pl_PL`
+- Portuguese `pt_PT`
 - Slovakian `sk_SK`
 - Spanish `es_ES`
 - Swedish `sv_SE`
@@ -223,7 +225,7 @@ As for the rest of the parameters in the body section of the api call above, the
 
 ```ruby
 
-    cookie_value = SESSION_ID/EXTERNAL_USER_ID/PROVIDER_NAME/SIGNATURE                 
+    cookie_value = SESSION_ID/EXTERNAL_USER_ID/PROVIDER_NAME/SIGNATURE
 
 ```
 

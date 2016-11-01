@@ -31,18 +31,41 @@ the endpoint returns all reviewables available for specified `trkref`. We curren
 *model* fields to be part of query.
 
 
-### Example
+### Examples
 `POST /v4/organisations/D10/reviewables`
 
 With JSON body:
 {% highlight json %}
 {
   "query": {
-    "manufacturer": "audi",
+    "manufacturer": "Audi",
     "model": "A1"
   }
 }
 {% endhighlight %}
+to return just Audi A1 model.
+
+Or
+{% highlight json %}
+{
+  "query": {
+    "manufacturer": "Audi",
+    "model": ["A1", "A3", "A4"]
+  }
+}
+{% endhighlight %}
+to return models A1, A3 and A4.
+
+Or
+{% highlight json %}
+{
+  "query": {
+    "manufacturer": "Audi"
+  }
+}
+{% endhighlight %}
+to return all available Audi models.
+
 
 ## Response
 

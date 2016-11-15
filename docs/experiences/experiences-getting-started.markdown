@@ -99,8 +99,7 @@ This is a list of the available properties for the Teaser:
 | Name | Allowed values | Required | Default value | What it does |
 |------|----------------|----------|---------------|--------------|
 | `id` | uuid | true | N/A | `'TEASER_ID'` should be replaced with a valid teaser id provided by Reevoo. |
-
-
+| `showTeaserCardsText` | Boolean | false | true | `false` value will hide text on teaser cards and keep just user name and location |
 
 **2) Generate a teaser dynamically from tags, title and dock title**
 
@@ -130,6 +129,7 @@ This is a list of the available properties for the Teaser:
 | `dockTitle` | String | false | We asked real people | Define a dock title |
 | `desktopLayout` | String | false | desktop-default | Define desktop layout. ex: 1rows-4columns |
 | `mobileLayout` | String | false | mobile-default | Define mobile layout. ex: 1rows-4columns |
+| `showTeaserCardsText` | Boolean | false | true | `false` value will hide text on teaser cards and keep just user name and location |
 
 ### Teaser sketch
 

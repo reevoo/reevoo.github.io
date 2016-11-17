@@ -100,6 +100,7 @@ This is a list of the available properties for the Teaser:
 |------|----------------|----------|---------------|--------------|
 | `id` | uuid | true | N/A | `'TEASER_ID'` should be replaced with a valid teaser id provided by Reevoo. |
 | `showTeaserCardsText` | Boolean | false | true | `false` value will hide text on teaser cards and keep just user name and location |
+| `showTeaserCardsDriver` | Boolean | false | false | `true` will display driver at the bottom of teaser box |
 
 **2) Generate a teaser dynamically from tags, title and dock title**
 
@@ -112,7 +113,9 @@ You need to provide a JSON config object in the `data-config` attribute of the w
   data-config='{
     "tags": ["location1:scotland", "general:walking_tips"],
     "title": "Walking tips for walking in Scotland",
-    "dockTitle": "We asked our customers to share their walking tips"
+    "dockTitle": "We asked our customers to share their walking tips",
+    "showTeaserCardsText": true,
+    "showTeaserCardsDriver": true
   }'>
 </div>
 ```
@@ -130,6 +133,7 @@ This is a list of the available properties for the Teaser:
 | `desktopLayout` | String | false | desktop-default | Define desktop layout. ex: 1rows-4columns |
 | `mobileLayout` | String | false | mobile-default | Define mobile layout. ex: 1rows-4columns |
 | `showTeaserCardsText` | Boolean | false | true | `false` value will hide text on teaser cards and keep just user name and location |
+| `showTeaserCardsDriver` | Boolean | false | false | `true` will display driver at the bottom of teaser box |
 
 ### Teaser sketch
 

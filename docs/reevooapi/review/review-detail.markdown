@@ -42,6 +42,9 @@ Details for a single review.
 |<span class="indent-1">id</span>         |                                       |
 |<span class="indent-1">name</span>       |                                       |
 |<span class="indent-1">image_url</span>  |                                       |
+|retailer_product         |retailer product informations                          |
+|<span class="indent-1">sku</span>        |The SKU of the product as provided by retailer |
+|<span class="indent-1">name</span>       |The name of the product as provided by retailer|
 |fast_responses                           |array of responses                     |
 |<span class="indent-1">response</span>   |                                       |
 |<span class="indent-1">respondent</span> |respondent details                     |
@@ -78,6 +81,10 @@ Details for a single review.
       "id": 1462,
       "name": "PlayStation 4",
       "image_url": "//images.reevoo.com/retailer_products/1462/10207581/37x37.jpg?timestamp=1439805440"
+   },
+   "retailer_product": {
+      "name": "Example retailer product",
+      "sku": "EXAMPLE_SKU"
    },
    "fast_responses": [
       {

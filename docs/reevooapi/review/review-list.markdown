@@ -137,6 +137,10 @@ If you would like access to these parameters please contact your account manager
             "name": "PlayStation 4",
             "image_url": "//images.reevoo.com/retailer_products/1462/10207581/37x37.jpg?timestamp=1439805440"
          },
+         "retailer_product": {
+            "name": "Retailer product example",
+            "sku": "SKU example"
+         },
          "fast_responses": [
             {
                "response": "Example response",

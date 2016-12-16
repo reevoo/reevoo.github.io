@@ -58,3 +58,29 @@ use with new branch codes if this is the case.
 {% endhighlight %}
 
 * `branch_code` needs to be replaced with the branch code you supplied to Reevoo
+
+
+
+## Product Badges for Automotive Partners
+
+Our automotive partners which have been enabled to use Automotive Aggregation, can display the product badges based on automotive metadata instead of a "sku".
+
+The automotive metadata includes attributes like `manufacturer`, `model`, `model-year`, and many other ones. Contact us if you need to get the full list of attributes available.
+ 
+To display product badges based on automotive metadata, add the `reevoo-reviewable-badge` tag with attributes `trkref="TRKREF`, and then any combination of automotive metadata attributes. See some examples below.
+
+### Examples
+
+{% highlight html %}
+<reevoo-reviewable-badge trkref="TRKREF" manufacturer="ford"></reevoo-reviewable-badge>
+{% endhighlight %}
+
+
+{% highlight html %}
+<reevoo-reviewable-badge trkref="TRKREF" manufacturer="ford" model="fiesta"></reevoo-reviewable-badge>
+{% endhighlight %}
+
+
+{% highlight html %}
+<reevoo-reviewable-badge trkref="TRKREF" manufacturer="ford" model="fiesta" model-year="2016"></reevoo-reviewable-badge>
+{% endhighlight %}

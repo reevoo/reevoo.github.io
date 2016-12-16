@@ -38,3 +38,30 @@ To display embedded product reviews in your website you have to
 {% highlight html %}
 <reevoo-embedded-product-reviews  trkref="TRKREF" sku="SKU" per-page="10" locale="en-GB"></reevoo-embedded-product-reviews>
 {% endhighlight %}
+
+
+
+Embedded Product Reviews for Automotive Partners
+------------------------------------------------
+
+Our automotive partners which have been enabled to use Automotive Aggregation, can display the embedded product reviews based on automotive metadata instead of a "sku".
+
+The automotive metadata includes attributes like `manufacturer`, `model`, `model-year`, and many other ones. Contact us if you need to get the full list of attributes available.
+ 
+To display embedded product reviews based on automotive metadata, implement steps 1 and 2 as detailed in the section above, and then add the `reevoo-embedded-product-reviews` tag with attributes `trkref="TRKREF"`, `per_page="PER_PAGE"`, optionally `locale="LOCALE"`, and then any combination of automotive metadata attributes. See some examples below.
+
+### Examples
+
+{% highlight html %}
+<reevoo-embedded-product-reviews  trkref="TRKREF" per-page="10" locale="en-GB" manufacturer="ford"></reevoo-embedded-product-reviews>
+{% endhighlight %}
+
+
+{% highlight html %}
+<reevoo-embedded-product-reviews  trkref="TRKREF" per-page="10" locale="en-GB" manufacturer="ford" model="fiesta"></reevoo-embedded-product-reviews>
+{% endhighlight %}
+
+
+{% highlight html %}
+<reevoo-embedded-product-reviews  trkref="TRKREF" per-page="10" locale="en-GB" manufacturer="ford" model="fiesta" model-year="2016"></reevoo-embedded-product-reviews>
+{% endhighlight %}

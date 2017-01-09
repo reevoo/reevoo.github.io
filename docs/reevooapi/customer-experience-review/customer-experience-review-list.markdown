@@ -28,6 +28,7 @@ Only published customer experience reviews will be included.
 {: .documentation}
 |trkref     |        |
 |branch_code|optional|
+|older_reviews|optional. If this parameter is not included, this endpoint will only return the recent reviews which fall within the retailer's moving window. If this parameter is included with a value of true, then "all" reviews will be returned |
 
 ## Attribute(s)
 

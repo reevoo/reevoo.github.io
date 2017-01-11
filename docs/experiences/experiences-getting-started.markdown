@@ -135,6 +135,21 @@ This is a list of the available properties for the Teaser:
 | `showTeaserCardsText` | Boolean | false | true | `false` value will hide text on teaser cards and keep just user name and location |
 | `showTeaserCardsDriver` | Boolean | false | false | `true` will display driver at the bottom of teaser box |
 
+In the case, that you have an issue with JSON configuration, we added a possibility to configure component by prodividing data attribute for each option.
+In such case, the component definition look like this:
+
+```html
+<div class="reevoo-widget-teaser"
+    data-tags="location1:scotland,general:walking_tips"
+    data-title="Walking tips for walking in Scotland"
+    data-dockTitle="We asked our customers to share their walking tips"
+    data-desktopLayout="desktop-default"
+    data-mobileLayout="mobile-default"
+    data-showTeaserCardsText="true"
+    data-showTeaserCardsDriver="true">
+</div>
+```
+
 ### Teaser sketch
 
 [![Teaser sketch](/images/teaser_sketch.svg)](/images/teaser_sketch.svg)

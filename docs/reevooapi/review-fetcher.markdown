@@ -16,7 +16,7 @@ and [reviews list](../review/review-list) endpoints. If you would like access to
 {: .documentation}
 |manufacturer         | *string*  |
 |model                | *string*  |
-|engine_size          | *string*  |  
+|engine_size          | *string*  |
 |used                 | *boolean* |
 |doors                | *integer* |
 |axle                 | *string*  |
@@ -28,6 +28,7 @@ and [reviews list](../review/review-list) endpoints. If you would like access to
 |model_to_month       | *integer* |
 |model_to_year        | *integer* |
 |model_variant        | *string*  |
+|model_year           | *integer* |
 
 ### URL Example
 

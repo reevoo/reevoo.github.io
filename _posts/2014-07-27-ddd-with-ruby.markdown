@@ -19,14 +19,14 @@ But first a little introduction to the topic.
 
 Domain-driven design (DDD) is a set of techniques that can help us to analyse complex business domain and design the software that is good representation of such domain. This approach was popularised by Eric Evans in his book [Domain-driven Design: Tackling Complexity in the Heart of Software](http://www.amazon.co.uk/Domain-driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=pd_bxgy_b_img_y). Concepts like design pattern have origin in previous books and articles, but DDD tries to apply them not only on a code level but also as a communication tool and for high level design.
 
-I don't plan to go deeper to explanation of all concepts of DDD as there are several articled and books dedicated to this topic. For a good thorough overview I recommend ebook [Domain-driven Design Quickly](http://www.infoq.com/minibooks/domain-driven-design-quickly). 
+I don't plan to go deeper to explanation of all concepts of DDD as there are several articled and books dedicated to this topic. For a good thorough overview I recommend ebook [Domain-driven Design Quickly](http://www.infoq.com/minibooks/domain-driven-design-quickly).
 
 
 ## DDD and Ruby on Rails
 
 To be able to apply DDD you also need a programming framework that supports such approach i.e. that allows you to represent  a business domain logic in code freely. Most of the books about DDD explaining this process on examples written in Java or C# language. DDD is less known in Ruby on Rails community mainly because Ruby on Rails aimed in the beginning on simple problem domains and rapid prototyping.  Problems appeared when Ruby on Rails became used for complex business domains. The main question is how to develop applications that are easy to prototype at the beginning but also sustainable in a long run. I believe that DDD can help solve this problem.
 
-There are couple of blog post on this topic. Victor Savkin in his [series of articles](http://victorsavkin.com/ddd) identified problematic parts of Ruby on Rails framework that violate DDD guidelines. Those are:
+There are couple of blog post on this topic. Victor Savkin in his [series of articles](http://victorsavkin.com) identified problematic parts of Ruby on Rails framework that violate DDD guidelines. Those are:
 
 1. no clear separation between application, domain and infrastructure layers
 2. no explicit way of implementing Value objects

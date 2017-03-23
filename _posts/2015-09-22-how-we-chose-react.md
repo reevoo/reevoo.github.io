@@ -59,4 +59,4 @@ We also learned more about how to design front-end apps. We found that manipulat
 
 ## Further reading
 
-Take a look at James Shore's reviews of [Angular](http://www.letscodejavascript.com/v3/blog/2015/01/Angular_review) and [React](http://www.letscodejavascript.com/v3/blog/2014/09/react_review) for a deeper look at both.
+Take a look at James Shore's reviews of [Angular](http://www.letscodejavascript.com/v3/blog/2015/01/angular_review) and [React](http://www.letscodejavascript.com/v3/blog/2014/09/react_review) for a deeper look at both.

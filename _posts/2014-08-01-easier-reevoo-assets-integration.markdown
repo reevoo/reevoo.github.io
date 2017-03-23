@@ -5,7 +5,7 @@ title:  "Easier Reevoo Assets Integration"
 date:   2014-07-28 10:58:44
 categories: blog
 author: Jesus Lara
-github: jesuslarareevoo
+github: jelamo
 ---
 
 Adding Reevoo content into customer sites (badges, embedded reviews and purchase tracking), can sometimes become challenging for the less technical customers, which can result in delay of integration and increased support time devoted by the development team to help troubleshoot this integration.
@@ -23,7 +23,7 @@ As an example, looking at the current technical documentation being handed to cu
     var s = document.getElementById('reevoomark-loader');
     s.parentNode.insertBefore(script, s);
   })();
-  
+
   afterReevooMarkLoaded = [function() {
     ReevooApi.load('TRKREF', function(retailer) {
    	  retailer.init_badges();
@@ -43,7 +43,7 @@ As an example, looking at the current technical documentation being handed to cu
     var s = document.getElementById('reevoomark-loader');
     s.parentNode.insertBefore(script, s);
   })();
-  
+
   afterReevooMarkLoaded = [function(){
     ReevooApi.load('TRKREF', function(retailer){
       retailer.track_purchase(["SKU1", "SKU2"], orderValue);
@@ -65,14 +65,14 @@ What they should have included in the page in this instance if they wanted both 
     var s = document.getElementById('reevoomark-loader');
     s.parentNode.insertBefore(script, s);
   })();
-  
+
   afterReevooMarkLoaded = [
     function() {
       ReevooApi.load('TRKREF', function(retailer) {
         retailer.init_badges();
       });
     },
-    
+
     function(){
       ReevooApi.load('TRKREF', function(retailer){
         retailer.track_purchase(["SKU1", "SKU2"], orderValue);

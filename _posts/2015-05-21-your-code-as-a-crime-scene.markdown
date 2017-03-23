@@ -384,7 +384,6 @@ lot of headache in the future.
 Reevoo Engineering Team for reading and commenting on the article before it was
 released into the wild.*
 
-[crime-scene-talk]: http://qconlondon.com/presentation/treat-your-code-crime-scene
 [crime-scene-book]: http://www.amazon.co.uk/Your-Code-Crime-Scene-Bottlenecks/dp/1680500384/ref=sr_1_1?ie=UTF8&qid=1432283554&sr=8-1&keywords=your+code+as+a+crime+scene
 [code-maat]: https://github.com/adamtornhill/code-maat
 

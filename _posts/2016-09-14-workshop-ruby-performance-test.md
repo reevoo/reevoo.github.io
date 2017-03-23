@@ -9,11 +9,11 @@ github: amalkov
 ---
 
 The goal of this workshop is to highlight how you can archive better performance of your Ruby applications.
-We can choose different ways of writing code, but which one works faster? 
+We can choose different ways of writing code, but which one works faster?
 
 I did some benchmarks the other day, so just want to share results with you.
- 
- 
+
+
 ## Don't create unnecessary objects, use merge!
 
 {% highlight ruby %}
@@ -45,9 +45,9 @@ merge!       0.010000   0.000000   0.010000 (  0.007616)
 merge       18.380000   0.740000  19.120000 ( 19.143505)
 {% endhighlight %}
 
- 
+
 ## Be careful with calculation within iterators
-Try to avoid nested methods. In ```n_func``` we do only one iteration over an array without any hard calculation within the iterator 
+Try to avoid nested methods. In ```n_func``` we do only one iteration over an array without any hard calculation within the iterator
 
 {% highlight ruby %}
 require 'benchmark'
@@ -130,7 +130,7 @@ DateTime:  4.980000   0.020000   5.000000 (  5.063963)
 Time:      0.330000   0.000000   0.330000 (  0.335913)
 {% endhighlight %}
 
-Nowadays it is faster... 
+Nowadays it is faster...
 
 RESULT (ruby 2.3.0):
 
@@ -154,7 +154,7 @@ DateTime parse: 25.490000   0.100000  25.590000 ( 25.613761)
 Time:    parse:110.320000   0.260000 110.580000 (110.743532)
 {% endhighlight %}
 
-## Avoid using += to concatenate strings in favor of << method 
+## Avoid using += to concatenate strings in favor of \<\< method
 
 {% highlight ruby %}
 require 'benchmark'
@@ -208,7 +208,7 @@ interpolation     0.780000   0.900000   1.680000 (  1.677559)
 
 
 
-## class_eval  
+## class_eval
 
 Try to avoid this, but if you can not, this section for you.
 class_eval works slower but it’s preferred since methods generated, as generated methods work faster.
@@ -419,4 +419,4 @@ git checkout git@github.com:amalkov/ruby-performance-tests.git
 Big thanks to [Ruby Performance Tricks](http://greyblake.com/blog/2012/09/02/ruby-perfomance-tricks/) and
 [Array argument vs splat arguments](https://github.com/JuanitoFatas/fast-ruby/blob/master/code/general/array-argument-vs-splat-arguments.rb)
 
-Basically I decided to create some tests and rerun some other tests from those articles on newest ruby versions. 
+Basically I decided to create some tests and rerun some other tests from those articles on newest ruby versions.

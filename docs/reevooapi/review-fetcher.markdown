@@ -30,6 +30,7 @@ and [reviews list](../review/review-list) endpoints. If you would like access to
 |model_variant        | *string*  |
 |model_year           | *integer* |
 
+
 ### URL Example
 
 `https://api.reevoocloud.com/v4/organisations/GMFU-HYC-U/reviews?manufacturer=ford&model=b-max&doors=5&used=true&locale=en-GB`

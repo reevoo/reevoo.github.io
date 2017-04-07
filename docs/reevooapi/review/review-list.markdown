@@ -29,6 +29,7 @@ be included.
 |branch_code|optional|
 |locale     |        |
 |sku        |        |
+|region     |        |
 
 For some of our automotive clients, [additional parameters](../../review-fetcher) are available.
 If you would like access to these parameters please contact your account manager.
@@ -45,7 +46,20 @@ If you would like access to these parameters please contact your account manager
 |<span class="indent-2">per_page</span>                  |                                                                |
 |<span class="indent-2">previous_page</span>             |                                                                |
 |<span class="indent-2">next_page</span>                 |                                                                |
+|<span class="indent-1">regions</span>                   |                                                                |
+|<span class="indent-2">default</span>                   |default region selection                                        |
+|<span class="indent-2">current</span>                   |current region selection                                        |
+|<span class="indent-2">available</span>                 |array of regions from which is possible to select.              |
 |reviews                                                 |array of review objects (attributes described in [review detail doc](../review-detail)) |
+
+## Possible region parameter values
+
+{: .documentation}
+|my-locale                                               | Return all reviews having same locale as locale parameter             |
+|my-country                                              | Return all reviews having same country code as locale parameter       |
+|my-languages                                            | Return all reviews having same language code as locale parameter      |
+|multi-country                                           | Return all reviews having locale in same region as locale parameter   |
+
 
 ## JSON Example
 {% highlight json %}
@@ -121,6 +135,24 @@ If you would like access to these parameters please contact your account manager
          "per_page":15,
          "previous_page":null,
          "next_page":2
+      },
+      "regions": {
+         "default": "my-country",
+         "current": "my-country",
+         "available": [
+            {
+               "key": "my-country",
+               "translation_key": "reviews_tab.automotive_regions.my-country",
+               "number_of_reviews": 6633,
+               "in_native_language": true
+            },
+            {
+               "key": "multi-country",
+               "translation_key": "reviews_tab.automotive_regions.multi-country",
+               "number_of_reviews": 6906,
+               "in_native_language": false
+            }
+         ]
       }
    },
    "reviews":[

@@ -59,6 +59,15 @@ use with new branch codes if this is the case.
 
 * `branch_code` needs to be replaced with the branch code you supplied to Reevoo
 
+## Product Badges for product groups
+
+Instead of using SKU of a particular product you can use product group identifier
+
+{% highlight html %}
+<reevoo-reviewable-badge trkref="TRKREF" sku="series:group_identifier"></reevoo-reviewable-badge>
+{% endhighlight %}
+
+* `group_identifier` needs to be replaced with the product group identifier
 
 
 ## Product Badges for Automotive Partners
@@ -66,7 +75,7 @@ use with new branch codes if this is the case.
 Our automotive partners which have been enabled to use Automotive Aggregation, can display the product badges based on automotive metadata instead of a "sku".
 
 The automotive metadata includes attributes like `manufacturer`, `model`, `model-year`, and many other ones. Contact us if you need to get the full list of attributes available.
- 
+
 To display product badges based on automotive metadata, add the `reevoo-reviewable-badge` tag with attributes `trkref="TRKREF`, and then any combination of automotive metadata attributes. See some examples below.
 
 ### Examples

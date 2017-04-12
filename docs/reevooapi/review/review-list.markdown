@@ -30,6 +30,8 @@ be included.
 |locale     |        |
 |sku        |        |
 |region     |        |
+|page       |optional|
+|per_page   |optional| (default: 15, max: 30)
 
 For some of our automotive clients, [additional parameters](../../review-fetcher) are available.
 If you would like access to these parameters please contact your account manager.

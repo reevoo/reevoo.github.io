@@ -16,11 +16,11 @@ has international aggregation turned on, reviews will be returned for all locale
 reviews will only be returned for the organisation's locale.
 
 ## URL Example(s)
-/v4/organisations/D10/reviewable?locale=en-GB&sku=AIPTPDV5700
+`/v4/organisations/D10/reviewable?locale=en-GB&sku=AIPTPDV5700`
 
 <div class="warning">
-  <strong>This URL: </strong> 
-  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700 
+  <strong>This URL: </strong>
+  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
@@ -44,7 +44,7 @@ reviews will only be returned for the organisation's locale.
 |finder_options                |parameters used to find the reviewable object                 |
 |reviews_path                  |path to reviews                                               |
 |organisation_url              |link to this reviewable on the organisation's website         |
-|organisation_url_with_reviews |link to open reviews in a lightbox on the organisation’s website| 
+|organisation_url_with_reviews |link to open reviews in a lightbox on the organisation’s website|
 
 ## JSON Example
 {% highlight json %}

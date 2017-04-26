@@ -9,20 +9,22 @@ next: review/review-detail
 ---
 
 # Reviews
-A reviewable will have a number of reviews associated with it.We aggregate reviews so reviews
-that have been collected for other organisations may be included.Only published reviews will
-be included.
 
-## URL Example(s)
-/v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700
+Reviews are aggregated, so the ones that have been collected for other organisations may be included.
+<br /> Only published reviews are included.
+
+## Request
+
+### URL example
+`/v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700`
 
 <div class="warning">
   <strong>This URL: </strong>
   /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700/reviews
-  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
+  <strong> is deprecated. <br />Please switch to the current URL above.</strong><br/>
 </div>
 
-## Parameter(s)
+### Parameters
 
 {: .documentation}
 |trkref     |        |
@@ -36,7 +38,26 @@ be included.
 For some of our automotive clients, [additional parameters](../../review-fetcher) are available.
 If you would like access to these parameters please contact your account manager.
 
-## Attribute(s)
+### Possible region parameter values for non-automotive reviews
+
+{: .documentation}
+|my-locale                                               | Return all reviews having same locale as locale parameter             |
+|my-country                                              | Return all reviews having same country code as locale parameter       |
+|my-languages                                            | Return all reviews having same language code as locale parameter      |
+|english                                                 | |
+|worldwide                                               | |
+
+### Possible region parameter values for automotive reviews
+
+{: .documentation}
+|my-locale                                               | Return all reviews having same locale as locale parameter             |
+|my-country                                              | Return all reviews having same country code as locale parameter       |
+|my-languages                                            | Return all reviews having same language code as locale parameter      |
+|multi-country                                           | Return all reviews having locale in same region as locale parameter   |
+
+## Response
+
+### Attributes
 
 {: .documentation}
 |summary                                                 |                                                                |
@@ -54,16 +75,8 @@ If you would like access to these parameters please contact your account manager
 |<span class="indent-2">available</span>                 |array of regions from which is possible to select.              |
 |reviews                                                 |array of review objects (attributes described in [review detail doc](../review-detail)) |
 
-## Possible region parameter values
 
-{: .documentation}
-|my-locale                                               | Return all reviews having same locale as locale parameter             |
-|my-country                                              | Return all reviews having same country code as locale parameter       |
-|my-languages                                            | Return all reviews having same language code as locale parameter      |
-|multi-country                                           | Return all reviews having locale in same region as locale parameter   |
-
-
-## JSON Example
+### JSON Example
 {% highlight json %}
 {
    "summary":{

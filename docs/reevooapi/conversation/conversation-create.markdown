@@ -12,23 +12,22 @@ next: conversation/conversation-upvote-question
 
 Creates new conversation question.
 
+## **Request**
 
-## URL Format
-POST /v4/organisations/{trkref}/conversations
-
-### Example
-POST /v4/organisations/D10/conversations
+`POST /v4/organisations/:trkref/conversations`
 
 ### Parameters
 
-{: .documentation}
-|trkref     |retailer identifier         |
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | mandatory   |retailer identifier|
 
-## Request Body
+### JSON Body
 
-### JSON Attributes
-
-{: .documentation}
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |sku             |product sku                                                                     |
 |first_name      |first name of the person that asked the question (optional, default: A shopper) |
 |email           |email of the person that asked the question                                     |
@@ -36,6 +35,9 @@ POST /v4/organisations/D10/conversations
 
 
 ### Example
+
+`POST /v4/organisations/D10/conversations`
+
 {% highlight json %}
 {
    "sku": "AIPTPDV5700",
@@ -45,7 +47,7 @@ POST /v4/organisations/D10/conversations
 }
 {% endhighlight %}
 
-## Possible responses
+## **Response**
 
 By HTTP status:
 

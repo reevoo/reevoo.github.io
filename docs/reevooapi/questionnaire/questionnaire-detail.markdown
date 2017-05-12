@@ -10,26 +10,32 @@ group: reevooapi
 
 Returns a questionnaire state and url or redirects to the questionnaire.
 
-## Request
+## **Request**
 
 `GET /v4/organisations/:trkref/questionnaire?email=:email&first_name=:first_name&order_ref=:order_ref&sku=:sku`
 
 ### Parameters
 
-{: .documentation}
-|trkref       |organisation trkref                                                                               |
-|email        |email of purchaser                                                                                |
-|first_name   |first name of purchaser (optional)                                                                |
-|order_ref    |order reference                                                                                   |
-|sku          |sku of product                                                                                    |
-|redirect     |if passed with a true value you will be redirected to the actual questionnaire/review (optional)  |
+{: .documentation-table}
+| Parameter | Requirement   | Description |
+|-----------|---------------|-------------|
+|trkref     | mandatory     | organisation trkref |
+|email      | mandatory     | email of purchaser |
+|sku        | mandatory     | sku of product|
+|order_ref  | mandatory     | order reference|
+|first_name | optional      | first name of purchaser |
+|redirect   | optional      | if passed 'true', it redirects to the actual questionnaire/review|
 
 
-## Response
+## **Response**
 
-{: .documentation}
-|state     |status of the review                                                                          |
-|url       |the url where the customer can leave or edit the review or see the review if it was published |
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
+|state      |status of the review (see below)                                                              |
+|url        |the url where the customer can leave or edit the review or see the review if it was published |
 
 ### Review state options
 
@@ -39,7 +45,7 @@ Returns a questionnaire state and url or redirects to the questionnaire.
 - **pending_moderation** - review submitted and waiting for moderation
 - **pending_publication** - review accepted and waiting to be published
 - **not_reviewed** - no review submitted yet
-- **undefined** - is not possible to determine the review state
+- **undefined** - it is not possible to determine the review state
 
 
 ## Example
@@ -47,6 +53,7 @@ Returns a questionnaire state and url or redirects to the questionnaire.
 Request:
 
 `GET /v4/organisations/D10/questionnaire?email=jane@example.com&order_ref=FA78623&sku=A1002`
+
 Response:
 
 {% highlight json %}

@@ -37,6 +37,11 @@
   items:
   - id: conversations-widget-getting-started
     title: Getting started
+- id: feeds
+  title: Feeds
+  items:
+  - id: feeds-automotive-product-fields
+    title: Automotive Product Fields
 - id: reevooapi
   title: Reevoo API
   url: reevooapi

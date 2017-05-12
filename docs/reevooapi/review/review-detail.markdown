@@ -11,8 +11,9 @@ next: review/upvote-review
 # Review
 Details for a single review.
 
-## URL Example(s)
-/v4/reviews/310946?trkref=D10
+## **Request**
+
+`GET /v4/reviews/:id?trkref=:trkref`
 
 <div class="warning">
   <strong>This URL: </strong>
@@ -20,17 +21,24 @@ Details for a single review.
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
-## Parameter(s)
+### Parameters
 
-{: .documentation}
-|trkref     |         |
-|branch_code|optional |
-|locale     |         |
-|id         |review id|
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | mandatory   |             |
+|id         | mandatory   | id of a review |
+|branch_code| optional    |             |
+|locale     | optional    |             |
 
-## Attribute(s)
 
-{: .documentation}
+## **Response**
+
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description   |
+|-----------|---------------|
 |id                       |identifier for the review                              |
 |overall_score            |the score (out of 10) given by the reviewer for the product|
 |helpful                  |count of users who have flagged this review helpful    |
@@ -67,7 +75,10 @@ Details for a single review.
 |purchase_date   |purchase date (YYYY-MM-DD)|
 |delivery_date   |delivery date (YYYY-MM-DD)|
 
-## JSON Example
+## Example
+
+`GET /v4/reviews/5996122?trkref=D10`
+
 {% highlight json %}
 {
    "id":5996122,

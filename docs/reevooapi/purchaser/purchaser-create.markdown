@@ -10,23 +10,36 @@ group: reevooapi
 
 Creates a purchaser record.
 
-## Request
+## **Request**
 `POST /v4/organisations/:trkref/purchasers`
+
+### Parameters
+
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | mandatory   | organisation trkref |
 
 ### JSON body
 
-{: .documentation}
-|email                                      |customer email (mandatory)                      |
-|title                                      |customer title                                  |
-|first_name                                 |customer first name                             |
-|surname                                    |customer surname                                |
-|country                                    |customer country by ISO3166 alpha2 code         |
-|postcode                                   |customer postcode                               |
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|email      | mandatory   |customer email|
+|title      | optional    |customer title|
+|first_name | optional    |customer first name|
+|surname    | optional    |customer surname|
+|country    | optional    |customer country by ISO3166 alpha2 code|
+|postcode   | optional    |customer postcode|
 
 
-## Response
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |title                                      |customer title                                                         |
 |first_name                                 |customer first name                                                    |
 |surname                                    |customer surname                                                       |

@@ -8,40 +8,48 @@ group: reevooapi
 
 # Match Purchases
 
-Returns a list of all purchases done by purchaser identified by an email and matching the provided
+Returns a list of all purchases done by a purchaser. The purchaser is identified by an email and matching the provided
 order references and skus.
 For each purchase it returns the status of the associated review along with the review URL.
 The list contains also the purchases for which we haven't received an order confirmation
 (typically in a purchaser feed). For these we are able to provide an instant review URL that allow your customers
 to leave a review straight away.
 
-## Request
+## **Request**
 
 `POST /v4/organisations/:trkref/purchasers/:email/purchases/match`
 
 ### Parameters
 
-{: .documentation}
-|trkref     |organisation trkref        |
-|email      |email of purchaser         |
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | true        | organisation trkref |
+|email      | true        | email of purchaser |
 
 ### JSON body
 
-{: .documentation}
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |purchases                                  |list of purchases (Array)                       |
 |<span class="indent-1">order_ref</span>    |order reference                                 |
 |<span class="indent-1">sku</span>          |sku of the ordered product                      |
 
 
-## Response
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |purchase_date    |date of purchase                                                                              |
 |created_at       |date when the purchase record was created                                                     |
-|contacted_at     |date when the review invitation was send                                                      |
+|contacted_at     |date when the review invitation was sent                                                      |
 |order_ref        |order reference from the purchaser feed                                                       |
 |sku              |pruduct sku                                                                                   |
-|review_state     |status of the review                                                                          |
+|review_state     |status of the review (see below)                                                              |
 |review_url       |the url where the customer can leave or edit the review or see the review if it was published |
 
 ### Review state options
@@ -52,7 +60,7 @@ to leave a review straight away.
 - **pending_moderation** - review submitted and waiting for moderation
 - **pending_publication** - review accepted and waiting to be published
 - **not_reviewed** - no review submitted yet
-- **undefined** - is not possible to determine the review state
+- **undefined** - it is not possible to determine the review state
 
 
 ## Example

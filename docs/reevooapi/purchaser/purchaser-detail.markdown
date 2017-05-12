@@ -10,25 +10,31 @@ group: reevooapi
 
 Returns a purchaser resource identified by a customer email.
 
-## Request
+## **Request**
 `GET /v4/organisations/:trkref/purchasers/:email`
 
-### Parameter(s)
+### Parameters
 
-{: .documentation}
-|trkref           |organisation trkref        |
-|email            |email of purchaser         |
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | mandatory   |organisation trkref |
+|email      | mandatory   |email of purchaser |
 
 
-## Response
+## **Response**
 
-{: .documentation}
-|title                                      |customer title                                                         |
-|first_name                                 |customer first name                                                    |
-|surname                                    |customer surname                                                       |
-|country                                    |customer country by ISO3166 alpha2 code                                |
-|postcode                                   |customer postcode                                                      |
-|created_at                                 |date and time when of record creation                                  |
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
+|title      |customer title                          |
+|first_name |customer first name                     |
+|surname    |customer surname                        |
+|country    |customer country by ISO3166 alpha2 code |
+|postcode   |customer postcode                       |
+|created_at |date and time when of record creation   |
 
 ## Example
 

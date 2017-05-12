@@ -6,6 +6,8 @@ table.documentation tr td             {
 }
 table.documentation tr td:first-child { text-align: left; }
 
+table.documentation tr:nth-child(2n) { background-color: #f0f0ff; }
+
 table.documentation span.indent-1 { margin-left: 20px; }
 table.documentation span.indent-2 { margin-left: 40px; }
 
@@ -25,6 +27,9 @@ table.documentation-table {
   border-collapse: collapse;
   width: 100%;
 }
+
+table.documentation-table span.indent-1 { margin-left: 20px; }
+table.documentation-table span.indent-2 { margin-left: 40px; }
 
 table.documentation-table tr {
   border-top: 1px solid #ccc;
@@ -50,4 +55,8 @@ table.documentation-table th,
 table.documentation-table td {
   padding: 6px 13px;
   border: 1px solid #ddd;
+}
+
+table.documentation-table tr td:first-child {
+  font-weight: 600;
 }

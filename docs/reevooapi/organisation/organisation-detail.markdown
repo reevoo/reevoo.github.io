@@ -9,27 +9,34 @@ next: reviewable/reviewable-list
 ---
 
 # Organisation
-Allow a user to retrieve information for a specific organisation.Users are only allow to
-retrieve information for organisations that their API key is assigned to.
+Allows a user to retrieve information for a specific organisation. Users are only allowed to
+retrieve information for organisations assigned to their API key.
 
-## URL Example(s)
-/v4/organisations/D10
+## **Request**
+
+`GET /v4/organisations/:trkref`
 
 <div class="warning">
-  <strong>This URL: </strong> 
+  <strong>This URL: </strong>
   /v4/organisations;trkref=D10
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
-## Parameter(s)
+### Parameters
 
-{: .documentation}
-|trkref     |        |
-|branch_code|optional|
+{: .documentation-table}
+| Parameter | Requirement |
+|-----------|-------------|
+|trkref     |mandatory    |
+|branch_code|optional     |
 
-## Attribute(s)
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description   |
+|-----------|---------------|
 |trkref                                                              |identifier for the organisation    |
 |locale                                                              |default locale for the organisation|
 |name                                                                |                                   |
@@ -44,7 +51,10 @@ retrieve information for organisations that their API key is assigned to.
 |<span class="indent-1">percentage_happy_with_customer_service</span>|                                   |
 |<span class="indent-1">number_of_retailer_service_reviews</span>    |                                   |
 
-## JSON Example
+## Example
+
+`GET /v4/organisations/D10`
+
 {% highlight json %}
 {
    "trkref":"D10",

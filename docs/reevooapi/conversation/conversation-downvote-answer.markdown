@@ -16,19 +16,23 @@ Increments the unhelpful attribute of the answer by 1.
   It is your responsibility to restrict users of your website from sending multiple requests for the same answer.
 </div>
 
-## URL Format
-POST /v4/conversation_answers/{answer_id}/increment_unhelpful?trkref={TRKREF}
+## **Request**
 
-### Example
-POST /v4/conversation_answers/38373/increment_unhelpful?trkref=D10
+`POST /v4/conversation_answers/:answer_id/increment_unhelpful?trkref=:trkref`
 
 ### Parameters
 
-{: .documentation}
-|trkref        |                                     |
-|answer_id     |id of the conversation answer        |
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | mandatory   |             |
+|answer_id  | mandatory   |id of the conversation answer |
 
-## Possible responses
+### Example
+
+`POST /v4/conversation_answers/38373/increment_unhelpful?trkref=D10`
+
+## **Response**
 
 By HTTP status:
 

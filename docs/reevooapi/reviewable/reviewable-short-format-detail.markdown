@@ -12,8 +12,9 @@ next: review/review-list
 If you pass the parameter format=short to the reviewable endpoint you will be provided with
 a short set of key values for the reviewable, including the review count and average score.
 
-## URL Example(s)
-`/v4/organisations/D10/reviewable?locale=en-GB&sku=AIPTPDV5700&format=short`
+## **Request**
+
+`GET /v4/organisations/:trkref/reviewable?locale=:locale&sku=:sku&format=:format`
 
 <div class="warning">
   <strong>This URL: </strong>
@@ -21,23 +22,32 @@ a short set of key values for the reviewable, including the review count and ave
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
-## Parameter(s)
+## Parameters
 
-{: .documentation}
-|trkref     |        |
-|branch_code|optional|
-|locale     |        |
-|sku        |        |
-|format     |short   |
+{: .documentation-table}
+| Parameter | Requirement | Description    |
+|-----------|-------------|----------------|
+|trkref     |mandatory    |                |
+|branch_code|optional     |                |
+|locale     |optional     |                |
+|sku        |optional     |                |
+|format     |optional     | Allowed values: short |
 
-## Attribute(s)
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute   | Description   |
+|-------------|---------------|
 |sku          |the sku of the reviewable                               |
 |review_count |number of published reviews associated to the reviewable|
 |average_score|average score associated to this reviewable             |
 
-## JSON Example
+### Example
+
+`GET /v4/organisations/D10/reviewable?locale=en-GB&sku=AIPTPDV5700&format=short`
+
 {% highlight json %}
 {
    "sku":"AIPTPDV5700",

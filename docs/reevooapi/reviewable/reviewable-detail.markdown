@@ -15,8 +15,9 @@ for a group of reviewables and a number of organisations. If the organisation ma
 has international aggregation turned on, reviews will be returned for all locales, otherwise
 reviews will only be returned for the organisation's locale.
 
-## URL Example(s)
-`/v4/organisations/D10/reviewable?locale=en-GB&sku=AIPTPDV5700`
+## **Request**
+
+`GET /v4/organisations/:trkref/reviewable?locale=:locale&sku=:sku`
 
 <div class="warning">
   <strong>This URL: </strong>
@@ -24,19 +25,24 @@ reviews will only be returned for the organisation's locale.
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
-## Parameter(s)
+### Parameters
 
-{: .documentation}
-|trkref     |        |
-|branch_code|optional|
-|locale     |        |
-|sku        |        |
-|format     |optional|
+{: .documentation-table}
+| Parameter | Requirement | Description    |
+|-----------|-------------|----------------|
+|trkref     |mandatory    |                |
+|branch_code|optional     |                |
+|locale     |optional     |                |
+|sku        |optional     |                |
+|format     |optional     | Allowed values: short |
 
+## **Response**
 
-## Attribute(s)
+### Attributes
 
-{: .documentation}
+{: .documentation-table}
+| Attribute | Description   |
+|-----------|---------------|
 |name                          |identifier for the organisation                               |
 |has_reviews                   |flag for presence of reviews for organisation and reviewable  |
 |has_image                     |flag for presence of image url for organisation and reviewable|
@@ -46,7 +52,10 @@ reviews will only be returned for the organisation's locale.
 |organisation_url              |link to this reviewable on the organisation's website         |
 |organisation_url_with_reviews |link to open reviews in a lightbox on the organisation’s website|
 
-## JSON Example
+## Example
+
+`GET /v4/organisations/D10/reviewable?locale=en-GB&sku=AIPTPDV5700`
+
 {% highlight json %}
 {
    "name":"Toshiba DT01ACA0100 1TB",

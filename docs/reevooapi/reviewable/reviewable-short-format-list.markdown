@@ -13,7 +13,7 @@ If you pass the parameter format=short to the reviewables endpoint you will be p
 a short format version of reviewables of the specified organisation.
 This endpoint can be used by any organisation when a list of comma separated SKUs is provided.
 
-When no SKUs are specified all reviwables of the organisation are returned.
+When no SKUs are specified all reviewables of the organisation are returned.
 This functionality is however enabled only for some organisations. Response is cached on the
 server side and refreshed on a daily basis. The attribute "date_time_created" shows the
 date/time when the list was last generated.
@@ -21,9 +21,9 @@ date/time when the list was last generated.
 Note: The server will return { status: 406 } if the specified organisation is not supported
 by this endpoint and no SKUs are specified.
 
-## URL Examples
-`/v4/organisations/D10/reviewables?format=short`
-`/v4/organisations/D10/reviewables?format=short&skus=AS343,B324234,CG9232`
+## **Request**
+
+`GET /v4/organisations/:trkref/reviewables?format=:format&skus=:skus`
 
 <div class="warning">
   <strong>This URL: </strong>
@@ -33,14 +33,20 @@ by this endpoint and no SKUs are specified.
 
 ## Parameter(s)
 
-{: .documentation}
-|trkref |                                       |
-|format |short                                  |
-|skus   |(optional) max 80 comma separated SKUs |
+{: .documentation-table}
+| Parameter | Requirement | Description    |
+|-----------|-------------|----------------|
+|trkref     | mandatory   |                |
+|format     | optional    | Allowed values: short       |
+|skus       | optional    | max 80 comma separated SKUs |
 
-## Attribute(s)
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description   |
+|-----------|---------------|
 |summary                                        |                                                                                         |
 |<span class="indent-1">date_time_created</span>|timestamp when the content was last generated (only for cached response, ISO 8601 format)|
 |<span class="indent-1">product_count</span>    |total number of reviewables associated to the organisation                               |
@@ -49,9 +55,10 @@ by this endpoint and no SKUs are specified.
 |<span class="indent-1">review_count</span>     |number of published reviews associated to the reviewable                                 |
 |<span class="indent-1">average_score</span>    |average score associated to this reviewable                                              |
 
+### Example
 
+`/v4/organisations/D10/reviewables?format=short&skus=000016,000025,000033`
 
-## JSON Example
 {% highlight json %}
 {
    "summary":{

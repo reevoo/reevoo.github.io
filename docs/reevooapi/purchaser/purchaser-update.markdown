@@ -11,29 +11,43 @@ group: reevooapi
 Updates a purchaser resource identified by a customer email.
 
 
-## Request
+## **Request**
 `PUT /v4/organisations/:trkref/purchasers/:email`
+
+### Parameters
+
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | mandatory   | organisation trkref |
+|email      | mandatory   | email of purchaser |
 
 ### JSON body
 
-{: .documentation}
-|email                                      |customer email (mandatory)                      |
-|title                                      |customer title                                  |
-|first_name                                 |customer first name                             |
-|surname                                    |customer surname                                |
-|country                                    |customer country by ISO3166 alpha2 code         |
-|postcode                                   |customer postcode                               |
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|email      | mandatory   |customer email (mandatory)                      |
+|title      | optional    |customer title                                  |
+|first_name | optional    |customer first name                             |
+|surname    | optional    |customer surname                                |
+|country    | optional    |customer country by ISO3166 alpha2 code         |
+|postcode   | optional    |customer postcode                               |
 
 
-## Response
+## **Response**
 
-{: .documentation}
-|title                                      |customer title                                                         |
-|first_name                                 |customer first name                                                    |
-|surname                                    |customer surname                                                       |
-|country                                    |customer country by ISO3166 alpha2 code                                |
-|postcode                                   |customer postcode                                                      |
-|created_at                                 |date and time when of record creation                                  |
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
+|title      |customer title                          |
+|first_name |customer first name                     |
+|surname    |customer surname                        |
+|country    |customer country by ISO3166 alpha2 code |
+|postcode   |customer postcode                       |
+|created_at |date and time when of record creation   |
 
 
 ## Example

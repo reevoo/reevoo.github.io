@@ -16,19 +16,24 @@ Increments the not_helpful attribute of the review by 1.
   It is your responsibility to restrict users of your website from sending multiple requests for the same review.
 </div>
 
-## URL Format
-POST /v4/reviews/{review_id}/increment_unhelpful?trkref={TRKREF}
+## **Request**
 
-## URL Example
-POST /v4/reviews/882783/increment_unhelpful?trkref=D10
+`POST /v4/reviews/:id/increment_unhelpful?trkref=:trkref`
 
-## Parameter
 
-{: .documentation}
-|trkref          |your organisation's identifier  |
-|review_id       |id of the review                |
+### Parameter
 
-## Possible Responses
+{: .documentation-table}
+| Parameter      | Requirement    |   Description |
+|----------------|----------------|---------------|
+|id              | mandatory      |id of the review                |
+|trkref          | optional       |your organisation's identifier  |
+
+### Example
+
+`POST /v4/reviews/882783/increment_unhelpful?trkref=D10`
+
+## **Response**
 
 By HTTP status:
 

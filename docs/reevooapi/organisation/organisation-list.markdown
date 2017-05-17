@@ -9,17 +9,21 @@ next: organisation/organisation-detail
 ---
 
 # Organisations
-Allow a user to retrieve information for all organisations associated with their API key.
+Allows a user to retrieve information for all organisations associated with their API key.
 
-## URL Example(s)
-/v4/organisations
+## **Request**
+`GET /v4/organisations`
 
-## Parameter(s)
+### Parameters
 N / A
 
-## Attribute(s)
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |summary                                    |                             |
 |<span class="indent-1">pagination</span>   |                             |
 |<span class="indent-2">total_entries</span>|total number of organisations|
@@ -30,7 +34,10 @@ N / A
 |<span class="indent-2">next_page</span>    |                             |
 |organisations                              |array of organisation objects|
 
-## JSON Example
+### Example
+
+`GET /v4/organisations`
+
 {% highlight json %}
 {
    "summary":{

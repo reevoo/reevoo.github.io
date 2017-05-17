@@ -12,10 +12,11 @@ This endpoint enables the submission of a batch of customer orders data. Not all
 The batch of customer orders data should be provided as a json in the request body as described below.
 If the batch is accepted a 202 response code will be sent back, along with an UUID that uniquely identifies this request.
 
-## URL Example(s)
-/v4/customer_orders
+## **Request**
 
-## Parameter(s)
+`POST /v4/customer_orders`
+
+### Parameters
 
 {: .documentation}
 Json array with the list of customer orders data being submitted, as below. Each element in the array should follow the same json model as for [Single submission](/docs/reevooapi/customer-order/customer-order-single-submission/#attributes)
@@ -27,7 +28,7 @@ Json array with the list of customer orders data being submitted, as below. Each
 ]
 {% endhighlight %}
 
-## JSON Example
+### JSON Example
 {% highlight json %}
 [
   {
@@ -71,14 +72,14 @@ Json array with the list of customer orders data being submitted, as below. Each
 ]
 {% endhighlight %}
 
-## Possible responses
+## **Response**
 
 By HTTP status:
 
 * 401 Unauthorized
 {% highlight json %}
 {
-  "status": 401, 
+  "status": 401,
   "errors": "Unauthorized"
 }
 {% endhighlight %}
@@ -89,11 +90,11 @@ By HTTP status:
   "status": 422,
   "id": "UUID",
   "message": "Batch is invalid",
-  "summary": 
-    { 
+  "summary":
+    {
       "accepted": "number of accepted customer orders",
       "rejected": "number of rejected customer orders"
-    }, 
+    },
   "errors": []
 }
 {% endhighlight %}
@@ -104,8 +105,8 @@ By HTTP status:
   "status": 206,
   "id": "UUID",
   "message": "Batch partially accepted",
-  "summary": 
-    { 
+  "summary":
+    {
       "accepted": "number of accepted customer orders",
       "rejected": "number of rejected customer orders"
     },
@@ -119,8 +120,8 @@ By HTTP status:
   "status": 202,
   "id": "UUID",
   "message": "Batch Accepted",
-  "summary": 
-    { 
+  "summary":
+    {
       "accepted": "number of accepted customer orders",
       "rejected": "number of rejected customer orders"
     }

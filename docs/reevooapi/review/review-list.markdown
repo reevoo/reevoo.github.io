@@ -13,10 +13,9 @@ next: review/review-detail
 Reviews are aggregated, so the ones that have been collected for other organisations may be included.
 <br /> Only published reviews are included.
 
-## Request
+## **Request**
 
-### URL example
-`/v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700`
+`GET /v4/organisations/:trkref/reviews?locale=:locale&sku=:sku`
 
 <div class="warning">
   <strong>This URL: </strong>
@@ -26,40 +25,48 @@ Reviews are aggregated, so the ones that have been collected for other organisat
 
 ### Parameters
 
-{: .documentation}
-|trkref     |        |
-|branch_code|optional|
-|locale     |        |
-|sku        |        |
-|region     |        |
-|page       |optional|
-|per_page   |optional| (default: 15, max: 30)
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     |mandatory    |             |
+|locale     |mandatory    |             |
+|branch_code|optional     |             |
+|sku        |optional     |             |
+|region     |optional     | see below   |
+|page       |optional     |             |
+|per_page   |optional     | default: 15, max: 30 |
 
-For some of our automotive clients, [additional parameters](../../review-fetcher) are available.
-If you would like access to these parameters please contact your account manager.
+[**Additional parameters**](../../../feeds/feeds-automotive-product-fields) are available for some of our automotive clients.
+Please contact your account manager if you would like to access these parameters.
 
-### Possible region parameter values for non-automotive reviews
+### Possible **region** parameter values for non-automotive reviews
 
-{: .documentation}
+{: .documentation-table}
+| Value     | Description   |
+|-----------|---------------|
 |my-locale                                               | Return all reviews having same locale as locale parameter             |
 |my-country                                              | Return all reviews having same country code as locale parameter       |
 |my-languages                                            | Return all reviews having same language code as locale parameter      |
 |english                                                 | |
 |worldwide                                               | |
 
-### Possible region parameter values for automotive reviews
+### Possible **region** parameter values for automotive reviews
 
-{: .documentation}
+{: .documentation-table}
+| Value     | Description   |
+|-----------|---------------|
 |my-locale                                               | Return all reviews having same locale as locale parameter             |
 |my-country                                              | Return all reviews having same country code as locale parameter       |
 |my-languages                                            | Return all reviews having same language code as locale parameter      |
 |multi-country                                           | Return all reviews having locale in same region as locale parameter   |
 
-## Response
+## **Response**
 
 ### Attributes
 
-{: .documentation}
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |summary                                                 |                                                                |
 |<span class="indent-1">pagination</span>                |                                                                |
 |<span class="indent-2">total_entries</span>             |total number of reviews                                     |
@@ -76,7 +83,10 @@ If you would like access to these parameters please contact your account manager
 |reviews                                                 |array of review objects (attributes described in [review detail doc](../review-detail)) |
 
 
-### JSON Example
+### Example
+
+`GET /v4/organisations/D10/reviews?locale=en-GB&sku=AIPTPDV5700`
+
 {% highlight json %}
 {
    "summary":{

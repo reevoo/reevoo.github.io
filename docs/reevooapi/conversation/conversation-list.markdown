@@ -12,29 +12,36 @@ next: conversation/conversation-detail
 
 Returns all the conversations that are associated with a specific product.
 
-## URL Format
-GET v4/organisations/{trkref}/conversations?locale={locale}&sku={sku}
+## **Request**
 
-## URL Example
-GET v4/organisations/D10/conversations?locale=en-GB&sku=AIPTPDV5700
+`GET v4/organisations/:trkref/conversations?locale=:locale&sku=:sku`
 
+### Parameters
 
-## Parameters
+{: .documentation-table}
+| Parameter | Requirement |
+|-----------|-------------|
+|trkref     |  mandatory  |
+|locale     |  optional   |
+|sku        |  optional   |
 
-{: .documentation}
-|trkref     |         |
-|locale     |optional |
-|sku        |         |
+### Example
 
+`GET v4/organisations/D10/conversations?locale=en-GB&sku=AIPTPDV5700`
 
-## Attributes
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |summary                                                 |                                                                |
 |<span class="indent-1">question_count</span>            |total number of questions with at least one vetted answer       |
 |conversations                                           |array of conversations objects                                  |
 
-## JSON Example
+### Example
+
 {% highlight json %}
 {
   "summary": {

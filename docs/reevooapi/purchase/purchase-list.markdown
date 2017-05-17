@@ -11,26 +11,32 @@ group: reevooapi
 Returns a list of all purchases done by purchaser identified by an email.
 For each purchase it returns the status of the associated review along with the review URL.
 
-## Request
+## **Request**
 
 `GET /v4/organisations/:trkref/purchasers/:email/purchases`
 
 
-## Parameter(s)
+### Parameters
 
-{: .documentation}
-|trkref     |organisation trkref        |
-|email      |email of purchaser         |
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | mandatory   |organisation trkref |
+|email      | mandatory   |email of purchaser  |
 
-## Purchases Attributes
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |purchase_date    |date of purchase                                                                              |
 |created_at       |date when the purchase record was created                                                     |
-|contacted_at     |date when the review invotation was send                                                      |
+|contacted_at     |date when the review invitation was sent                                                      |
 |order_ref        |order reference from the purchaser feed                                                       |
 |sku              |pruduct sku                                                                                   |
-|review_state     |status of the review                                                                          |
+|review_state     |status of the review (see below)                                                              |
 |review_url       |the url where the customer can leave or edit the review or see the review if it was published |
 
 ### Review state options
@@ -41,7 +47,7 @@ For each purchase it returns the status of the associated review along with the 
 - **pending_moderation** - review submitted and waiting for moderation
 - **pending_publication** - review accepted and waiting to be published
 - **not_reviewed** - no review submitted yet
-- **undefined** - is not possible to determine the review state
+- **undefined** - it is not possible to determine the review state
 
 
 ## Example

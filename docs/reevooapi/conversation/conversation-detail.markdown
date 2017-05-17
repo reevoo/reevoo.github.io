@@ -12,22 +12,30 @@ next: conversation/conversation-create
 
 Returns details for a single conversation.
 
-## URL Format
-GET /v4/conversations/{id}?trkref={TRKREF}
+## **Request**
 
-## URL Example
-GET /v4/conversations/223049?trkref=D10
+`GET /v4/conversations/:id?trkref=:trkref`
 
-## Parameters
+### Parameters
 
-{: .documentation}
-|trkref     |               |
-|id         |conversation id|
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | mandatory   |             |
+|id         | mandatory   | id of a conversation|
+
+### Example
+
+`GET /v4/conversations/223049?trkref=D10`
 
 
-## Attributes
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |id              |identifier for the conversation                              |
 |first_name      |name of the person that asked the question                   |
 |question        |the question asked in this conversation                      |
@@ -38,7 +46,7 @@ GET /v4/conversations/223049?trkref=D10
 |retailer_locale |the locale of the retailer                                   |
 |answers         |an array of answers to the question|
 
-## JSON Example
+### Example
 {% highlight json %}
 {
   "id": 223049,

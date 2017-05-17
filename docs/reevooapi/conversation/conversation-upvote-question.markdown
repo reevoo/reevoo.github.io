@@ -16,19 +16,23 @@ Increments the helpful attribute of the question by 1.
   It is your responsibility to restrict users of your website from sending multiple requests for the same question.
 </div>
 
-## URL Format
-POST /v4/conversations/{question_id}/increment_helpful?trkref={TRKREF}
+## **Request**
 
-### Example
-POST /v4/conversations/38373/increment_helpful?trkref=D10
+`POST /v4/conversations/:question_id/increment_helpful?trkref=:trkref`
 
 ### Parameters
 
-{: .documentation}
-|trkref          |                                |
-|question_id     |id of the conversation question |
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|trkref     | mandatory   |             |
+|question_id| mandatory   |id of the conversation question |
 
-## Possible responses
+### Example
+
+`POST /v4/conversations/38373/increment_helpful?trkref=D10`
+
+## **Response**
 
 By HTTP status:
 

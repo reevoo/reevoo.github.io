@@ -10,11 +10,12 @@ next: reviewable/reviewable-short-format-list
 
 # Reviewables
 An organisation will have a number of reviewables associated with it. Reviewables returned
-from this end point will all relate directly to products and services supplied by the
+from this endpoint will all relate directly to products and services supplied by the
 organisation.
 
-## URL Example(s)
-`/v4/organisations/D10/reviewables`
+## **Request**
+
+`GET /v4/organisations/:trkref/reviewables`
 
 <div class="warning">
   <strong>This URL: </strong>
@@ -22,17 +23,22 @@ organisation.
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
-## Parameter(s)
+### Parameters
 
-{: .documentation}
-|trkref     |        |
-|branch_code|optional|
-|format     |optional|
+{: .documentation-table}
+| Parameter | Requirement |
+|-----------|-------------|
+|trkref     | mandatory   |
+|branch_code| optional    |
+|format     | optional    |
 
+## **Response**
 
-## Attribute(s)
+### Attributes
 
-{: .documentation}
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |summary                                    |                           |
 |<span class="indent-1">pagination</span>   |                           |
 |<span class="indent-2">total_entries</span>|total number of reviewables|
@@ -43,7 +49,10 @@ organisation.
 |<span class="indent-2">next_page</span>    |                           |
 |reviewables                                |array of reviewable objects|
 
-## JSON Example
+### Example
+
+`GET /v4/organisations/D10/reviewables`
+
 {% highlight json %}
 {
    "summary":{

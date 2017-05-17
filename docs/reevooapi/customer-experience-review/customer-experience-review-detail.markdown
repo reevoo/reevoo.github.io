@@ -11,8 +11,9 @@ next: conversation/conversation-list
 # Customer Experience Review
 Details for a single customer experience review.
 
-## URL Example(s)
-/v4/customer_experience_reviews/2774063?trkref=D10
+## **Request**
+
+`GET /v4/customer_experience_reviews/:id?trkref=:trkref`
 
 <div class="warning">
   <strong>This URL: </strong>
@@ -20,16 +21,22 @@ Details for a single customer experience review.
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
-## Parameter(s)
+### Parameters
 
-{: .documentation}
-|trkref     |                             |
-|branch_code|optional                     |
-|id         |customer experience review id|
+{: .documentation-table}
+| Parameter | Requirement | Description |
+|-----------|-------------|-------------|
+|id         | mandatory   | customer experience review id|
+|trkref     | optional    |             |
+|branch_code| optional    |             |
 
-## Attribute(s)
+## **Response**
 
-{: .documentation}
+### Attributes
+
+{: .documentation-table}
+| Attribute | Description |
+|-----------|-------------|
 |id                                       |identifier for a customer experience review|
 |branch_attribution                       |branch name (if applicable)                |
 |publish_date                             |publish date (YYYY-MM-DD)                  |
@@ -56,7 +63,7 @@ Details for a single customer experience review.
 |<span class="indent-2">name</span>       |                                           |
 |<span class="indent-2">logo</span>       |                                           |
 
-## JSON Example
+### Example
 {% highlight json %}
 {
    "branch_attribution":null,

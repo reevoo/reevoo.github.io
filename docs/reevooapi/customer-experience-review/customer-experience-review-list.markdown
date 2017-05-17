@@ -13,9 +13,9 @@ An organisation will have a number of customer experience reviews associated wit
 Only published customer experience reviews will be included.
 
 
+## **Request**
 
-## URL Example(s)
-/v4/organisations/D10/customer_experience_reviews
+`GET /v4/organisations/:trkref/customer_experience_reviews`
 
 <div class="warning">
   <strong>This URL: </strong>
@@ -23,19 +23,25 @@ Only published customer experience reviews will be included.
   <strong> is deprecated. Please switch to the current URL above.</strong><br/>
 </div>
 
-## Parameter(s)
+### Parameters
 
-{: .documentation}
-|trkref     |        |
-|branch_code|optional|
-|older_reviews|optional. If this parameter is not included, this endpoint will only return the recent reviews which fall within the retailer's moving window. If this parameter is included with a value of true, then "all" reviews will be returned |
+{: .documentation-table}
+| Parameter    | Requirement | Description |
+|--------------|-------------|-------------|
+|trkref        | mandatory   |             |
+|branch_code   | optional    |             |
+|older_reviews | optional    | if not included or false, will only return the recent reviews which fall within the retailer's moving window; if true, then all reviews will be returned |
 
-## Attribute(s)
+## **Response**
 
-{: .documentation}
-|customer_experience_reviews|array of customer experience objects (attributes described in [customer experience review detail doc](../customer-experience-review-detail))|
+### Attributes
 
-## JSON Example
+{: .documentation-table}
+| Attribute                 | Description |
+|---------------------------|-------------|
+|customer_experience_reviews| array of customer experience objects (attributes described in [customer experience review detail doc](../customer-experience-review-detail))|
+
+### Example
 {% highlight json %}
 {
    "customer_experience_reviews":[

@@ -42,6 +42,10 @@
   items:
   - id: feeds-automotive-product-fields
     title: Automotive Product Fields
+  - id: feeds-purchaser-fields
+    title: Purchaser Fields
+  - id: feeds-dealer-fields
+    title: Dealer Fields
 - id: reevooapi
   title: Reevoo API
   url: reevooapi

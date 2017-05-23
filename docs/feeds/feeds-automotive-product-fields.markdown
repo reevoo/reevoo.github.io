@@ -29,9 +29,9 @@ It is important to provide as many recommended (optional) columns as possible. T
 |[doors](#doors)                                 | mandatory   | integer | 1          |
 |[used](#used)                                   | mandatory   | boolean | 1          |
 |[vehicle_type](#vehicle_type)                   | mandatory   | text    | 40         |
+|[fuel_type](#fuel_type)                         | mandatory   | text    | 40         |
 |[transmission](#transmission)                   | optional    | text    | 40         |
 |[engine_size_in_liters](#engine_size_in_liters) | optional    | float   | 6          |
-|[fuel_type](#fuel_type)                         | optional    | text    | 40         |
 |[model_display](#model_display)                 | optional    | text    | 40         |
 |[spec_description](#spec_description)           | optional    | text    | 191        |
 
@@ -264,6 +264,31 @@ It is important to provide as many recommended (optional) columns as possible. T
   + motorcycle
 
 
+## **fuel_type**
+----------
+
+### Definition
+  Fuel type is a type of motor fuel that provides power to motor vehicles
+
+### Usage
+   Fuel Type is used to aggregate, search and populate relevant reviews on the website.
+
+  This will ensure the reviews displaying on the website are aggregated from vehicles of the specified fuel_type only. This aggregation will also filter on other attributes such as manufacturer, model, model_variant, doors and others
+
+  We may reject a feed if it contains a fuel_type we do not recognise.
+
+  This will be also displayed as additional review detail on our reviews display solutions (alongside each review displaying in review lightbox).
+
+### Constraints
+  + No break space or special characters
+  + Allowed fuel types: petrol / diesel / hybrid / lpg / electric / hydrogen
+
+### Examples
+  + petrol
+  + diesel
+  + electric
+
+
 ## **transmission**
 ----------
 
@@ -313,31 +338,6 @@ It is important to provide as many recommended (optional) columns as possible. T
   + 2.0
   + 1.0
   + 0.5
-
-## **fuel_type**
-----------
-
-### Definition
-  Fuel type is a type of motor fuel that provides power to motor vehicles
-
-### Usage
-  This will be displayed as additional review detail on our reviews display solutions (alongside each review displaying in review lightbox).
-
-  This could also be used for displaying relevant reviews on the website on specific, very granular model pages.
-
-  This will ensure the reviews displaying on the website are aggregated from vehicles of the specified fuel_type only. This aggregation will also filter on other attributes such as manufacturer, model, model_variant, body_type and others
-
-  We may reject a feed if it contains a fuel_type we do not recognize.
-
-### Constraints
-  + No break space or special characters
-  + This attribute is required if displaying reviews by fuel type
-  + Allowed fuel types: petrol / diesel / lpg / electric / hydrogen
-
-### Examples
-  + petrol
-  + diesel
-  + electric
 
 
 ## **model_display**

@@ -1,14 +1,14 @@
 ---
-id: feeds-purchaser-fields
+id: feeds-automotive-purchaser-fields
 layout: docs
-title: Purchaser fields
+title: Automotive Purchaser Fields
 navId: docs
 group: feeds
 ---
 
 # Feeds
 
-## Purchaser Fields
+## Automotive Purchaser Fields
 
 ### Summary
 
@@ -22,9 +22,9 @@ group: feeds
 |[customer_ref](#customer_ref)                   | mandatory   | text    | 64         |
 |[order_ref](#order_ref)                         | mandatory   | text    | 64         |
 |[delivery_date](#delivery_date)                 | mandatory   | date    | n/a        |
-|[dealer_code](#dealer_code)                     | mandatory   | text    | 191        |
-|[google_place_id](#google_place_id)             | optional    | text    | 40         |
-|[autotrader_dealer_id](#autotrader_dealer_id)   | optional    | number  | 15         |
+|[dealer_code](#dealer_code)                     | mandatory*  | text    | 191        |
+|[google_place_id](#google_place_id)             | mandatory*  | text    | 40         |
+|[autotrader_dealer_id](#autotrader_dealer_id)   | mandatory*  | number  | 15         |
 |[title](#title)                                 | optional    | text    | 24         |
 |[surname](#surname)                             | optional    | text    | 40         |
 |[postcode](#postcode)                           | optional    | text    | 10         |
@@ -185,8 +185,9 @@ group: feeds
 
   This will be also displayed as additional review detail on our reviews display solutions (alongside each review displaying in review lightbox).
 
+  \* This is required if displaying individual dealership reviews on the website that can be filtered by dealer_code.
+
 ### Constraints
-  + This is required if displaying individual dealership reviews on the website that can be filtered by dealer_code
   + URL friendly
   + Alphanumeric only
   + No break space
@@ -204,8 +205,9 @@ group: feeds
 ### Usage
   More information can be accessed via link here: https://developers.google.com/places/place-id
 
+  \* This is required for sending reviews to Google My Business.
+
 ### Constraints
-  + Note: This is required for sending reviews to Google My Business.
 
 ### Examples
   + ChIJF6Kftcm23fcr-Jib130oiHo
@@ -217,10 +219,11 @@ group: feeds
 ### Definition
   Auto Trader Dealer IDs uniquely identify a dealer on Auto Trader platform.
 
+
 ### Usage
+  \* This is required for displaying CX reviews on Auto Trader.
 
 ### Constraints
-  + Note: This is required for displaying CX reviews on Auto Trader.
 
 ### Examples
   + 20380
@@ -334,8 +337,9 @@ group: feeds
 ### Usage
   Vehicle registration number can be used for reporting purposes.
 
+  \* This attribute is required for clients who would like to run reports on this value
+
 ### Constraints
-  + This attribute is required for clients who would like to run reports on this value
 
 ### Examples
   + XY1234Z
@@ -350,8 +354,9 @@ group: feeds
 ### Usage
   VIN number can be used for reporting purposes.
 
+  \* This attribute is required for clients who would like to run reports on VIN
+
 ### Constraints
-  + This attribute is required for clients who would like to run reports on VIN
 
 ### Examples
   + JLAKJF123456778
@@ -368,8 +373,9 @@ group: feeds
 ### Usage
   Salesexec can be used for reporting purposes.
 
+  \* This attribute is required for clients who would like to run reports on sales executive
+
 ### Constraints
-  + This attribute is required for clients who would like to run reports on sales executive
 
 ### Examples
   + SP9654

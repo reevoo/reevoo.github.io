@@ -151,7 +151,8 @@ To include experiences embedded in your page, make sure the page has been setup 
     trkref="ABC123"
     pagination
     styles-brand-color="red"
-    show-card-driver />
+    show-card-driver
+    spotlight-action-button-title="SEE MORE" />
 ```
 
 Find below a description of each of the attributes in the web component:
@@ -166,4 +167,4 @@ Find below a description of each of the attributes in the web component:
 | styles-brand-color | false | #2fcb59 | This color affects titles, button backgrounds and some links. You can provide any colour name or hex value supported as a CSS colour. |
 | pagination | false | N/A | This attribute does not have a value. If the attribute is present, the embedded cards container will display classic numbered pagination links by which users can browse the full content. If this attribute is not present, there will be a "More" button at the botton of the container, through which the user can load the next page worth of cards in an infinite scrolling style.|
 | <nobr>show-card-driver</nobr> | false | N/A | This attribute does not have a value. If the attribute is present, every card in the embedded container will display a driver link to the associated product. Otherwise the driver link will not be available. |
-
+| <nobr>spotlight-action-button-title</nobr> | false | MORE | When you click on a card in the embedded container, the card will open in spotlight view. The spotlight view includes a button to visit the product page associated to the card. You can use this property to configure the label of the button. |

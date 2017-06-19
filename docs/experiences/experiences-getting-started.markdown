@@ -152,7 +152,7 @@ To include experiences embedded in your page, make sure the page has been setup 
     pagination
     styles-brand-color="red"
     show-card-driver
-    spotlight-action-button-title="SEE MORE" />
+    spotlight-action-button-title="VIEW COTTAGE" />
 ```
 
 Find below a description of each of the attributes in the web component:

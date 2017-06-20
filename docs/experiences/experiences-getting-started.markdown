@@ -90,6 +90,7 @@ anywhere in your page by adding the following web component html (with your own 
     styles-brand-color="red"
     show-teaser-cards-driver
     show-teaser-cards-text
+    show-overlay-cards-driver
     target-url="https://www.reevoo.com" />
 ```
 
@@ -107,6 +108,7 @@ Find below a description of each of the attributes in the web component:
 | styles-brand-color | false | #2fcb59 | This color affects titles, button backgrounds and some links. You can provide any colour name or hex value supported as a CSS colour. |
 | <nobr>show&#45;teaser&#45;cards&#45;driver</nobr> | false | N/A | This attribute does not have a value. If the attribute is present, every card in the teaser will display a driver link to the associated product. Otherwise the driver link will not be available. |
 | show-teaser-cards-text | false | N/A | This attribute does not have a value. If the attribute is present, caption text will be hidden on the teaser cards, which will only display user name, location, and image. Otherwise, caption text will be displayed along. |
+| <nobr>show&#45;overlay&#45;cards&#45;driver</nobr> | false | N/A | This attribute does not have a value. If the attribute is present, every card in the overlay collection will display a driver link to the associated product. Otherwise the driver link will not be available. |
 | target-url | false | N/A | As default, click on teaser will open overlay collection. But there can be the case where you want to redirect user to specific url. In this case pass the url as a value of *target-url* attribute |
 
 **2) Request a specific teaser by its ID**

@@ -91,7 +91,7 @@ anywhere in your page by adding the following web component html (with your own 
     show-teaser-cards-driver
     show-teaser-cards-text
     show-overlay-cards-driver
-    target-url="https://www.reevoo.com" />
+    target-url="http://www.abc123.com/scotland/walking" />
 ```
 
 Find below a description of each of the attributes in the web component:

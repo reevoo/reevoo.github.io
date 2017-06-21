@@ -46,22 +46,33 @@ Embedded Product Reviews for Automotive Partners
 
 Our automotive partners which have been enabled to use Automotive Aggregation, can display the embedded product reviews based on automotive metadata instead of a "sku".
 
-The automotive metadata includes attributes like `manufacturer`, `model`, `model-year`, and many other ones. Contact us if you need to get the full list of attributes available.
- 
-To display embedded product reviews based on automotive metadata, implement steps 1 and 2 as detailed in the section above, and then add the `reevoo-embedded-product-reviews` tag with attributes `trkref="TRKREF"`, `per_page="PER_PAGE"`, optionally `locale="LOCALE"`, and then any combination of automotive metadata attributes. See some examples below.
+The automotive metadata includes attributes like `manufacturer`, `model`, `model-year`, and many others. The full list of available attributes correspond to the values in [our automotive product feed specification](../../feeds/feeds-automotive-product-fields).
+
+To display embedded product reviews based on automotive metadata, add the `reevoo-embedded-product-reviews` tag with attributes `trkref="TRKREF"`, `per-page="PER_PAGE"`, optionally `locale="LOCALE"`, and then any combination of automotive metadata attributes. See some examples below.
+
+**NOTE**: The attributes in our Feed and API implementations use underscore (`_`) separators, such as `model_year`. However, please be aware that in our badge and embedded reviews implementations, we use a hyphen (`-`) separator, so the HTML attribute will be `model-year`. This can be seen in the examples below.
 
 ### Examples
 
+Minimal required attributes are `trkref`, `per-page`, `manufacturer` and `model`:
+
 {% highlight html %}
-<reevoo-embedded-product-reviews  trkref="TRKREF" per-page="10" locale="en-GB" manufacturer="ford"></reevoo-embedded-product-reviews>
+<reevoo-embedded-product-reviews  trkref="TRKREF" per-page="10" manufacturer="ford" model="fiesta"></reevoo-embedded-product-reviews>
 {% endhighlight %}
 
+We strongly recommend using more specific parameters such as `model-year`, `body-type`, etc to get more relevant scores. Speak with your account manager for more info on this. A more complex example could be:
 
 {% highlight html %}
-<reevoo-embedded-product-reviews  trkref="TRKREF" per-page="10" locale="en-GB" manufacturer="ford" model="fiesta"></reevoo-embedded-product-reviews>
-{% endhighlight %}
-
-
-{% highlight html %}
-<reevoo-embedded-product-reviews  trkref="TRKREF" per-page="10" locale="en-GB" manufacturer="ford" model="fiesta" model-year="2016"></reevoo-embedded-product-reviews>
+<reevoo-embedded-product-reviews
+    trkref="TRKREF"
+    per-page="10"
+    locale="en-GB"
+    manufacturer="ford"
+    model="fiesta"
+    model-variant="SE"
+    model-year="2016"
+    body-type="hatchback"
+    used="0"
+    engine-type="diesel"
+ ></reevoo-embedded-product-reviews>
 {% endhighlight %}

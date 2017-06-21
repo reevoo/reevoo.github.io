@@ -74,22 +74,31 @@ Instead of using SKU of a particular product you can use product group identifie
 
 Our automotive partners which have been enabled to use Automotive Aggregation, can display the product badges based on automotive metadata instead of a "sku".
 
-The automotive metadata includes attributes like `manufacturer`, `model`, `model-year`, and many other ones. Contact us if you need to get the full list of attributes available.
+The automotive metadata includes attributes like `manufacturer`, `model`, `model-year`, and many others. The full list of available attributes correspond to the values in [our automotive product feed specification](../../feeds/feeds-automotive-product-fields).
 
 To display product badges based on automotive metadata, add the `reevoo-reviewable-badge` tag with attributes `trkref="TRKREF`, and then any combination of automotive metadata attributes. See some examples below.
 
+**NOTE**: The attributes in our Feed and API implementations use underscore (`_`) separators, such as `model_year`. However, please be aware that in our badge and embedded reviews implementations, we use a hyphen (`-`) separator, so the HTML attribute will be `model-year`. This can be seen in the examples below.
+
 ### Examples
 
-{% highlight html %}
-<reevoo-reviewable-badge trkref="TRKREF" manufacturer="ford"></reevoo-reviewable-badge>
-{% endhighlight %}
-
+Minimal required attributes are `trkref`, `manufacturer` and `model`:
 
 {% highlight html %}
 <reevoo-reviewable-badge trkref="TRKREF" manufacturer="ford" model="fiesta"></reevoo-reviewable-badge>
 {% endhighlight %}
 
+We strongly recommend using more specific parameters such as `model-year`, `body-type`, etc to get more relevant scores. Speak with your account manager for more info on this. A more complex example could be:
 
 {% highlight html %}
-<reevoo-reviewable-badge trkref="TRKREF" manufacturer="ford" model="fiesta" model-year="2016"></reevoo-reviewable-badge>
+<reevoo-reviewable-badge
+    trkref="TRKREF"
+    manufacturer="ford"
+    model="fiesta"
+    model-variant="SE"
+    model-year="2016"
+    body-type="hatchback"
+    used="0"
+    engine-type="diesel"
+  ></reevoo-reviewable-badge>
 {% endhighlight %}

@@ -1,0 +1,5 @@
+platforms:
+  Rubygems:
+    colored:
+      tests:
+        unmaintained: skip

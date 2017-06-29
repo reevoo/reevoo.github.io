@@ -128,6 +128,55 @@ paths:
           description: Not authorized to create a response
       security:
         - access_token: []
+  /responses/find_by_trkref:
+    get:
+      tags:
+        - responses
+      summary: Return responses for provided trkref and content_type
+      # consumes:
+      #   - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: trkref
+          in: query
+          required: true
+          description: Trkref
+          type: string
+        - in: query
+          name: content_type
+          required: true
+          description: Content type
+          type: string
+        - in: query
+          name: locale
+          required: false
+          description: Return all responses for specified locale
+          type: string
+        - in: query
+          name: updated_since
+          required: false
+          description: Return all responses created or updated after provided time
+          type: string
+        - in: query
+          name: page_index
+          required: false
+          description: Speficy page number. Default is 1
+          type: integer
+        - in: query
+          name: page_size
+          required: false
+          description: Speficy amound of responses returned in one page. Default is 20.
+          type: integer
+      responses:
+        '200':
+          description: Created response
+          schema:
+            $ref: '#/definitions/ResponseFilteredByTrkref'
+        '404':
+          description: Not authorized to read responses
+      security:
+        - access_token: []
   '/responses/{id}':
     put:
       tags:
@@ -640,3 +689,31 @@ definitions:
       note:
         type: string
         description: Note for internal client purpose
+  ResponseFilteredByTrkref:
+    type: object
+    properties:
+      summary:
+        type: object
+        $ref: '#/definitions/PaginationResponse'
+      responses:
+        type: array
+        items:
+          $ref: '#/definitions/Response'
+  PaginationResponse:
+        type: object
+        properties:
+          pagination:
+            type: object
+            properties:
+              total_entries:
+                type: integer
+              total_pages:
+                type: integer
+              current_page:
+                type: integer
+              per_page:
+                type: integer
+              previous_page:
+                type: integer
+              next_page:
+                type: integer

@@ -133,8 +133,6 @@ paths:
       tags:
         - responses
       summary: Return responses for provided trkref and content_type
-      # consumes:
-      #   - application/json
       produces:
         - application/json
       parameters:
@@ -146,12 +144,12 @@ paths:
         - in: query
           name: content_type
           required: true
-          description: Content type
+          description: Content type. Currently it can be one of "product_review", "customer_experience_review", "conversation_question"
           type: string
         - in: query
           name: locale
           required: false
-          description: Return all responses for specified locale
+          description: Return all responses for specified locale. Locale has to be in format en-GB
           type: string
         - in: query
           name: updated_since
@@ -166,7 +164,7 @@ paths:
         - in: query
           name: page_size
           required: false
-          description: Speficy amound of responses returned in one page. Default is 20.
+          description: Speficy amount of responses returned in one page. Default is 20.
           type: integer
       responses:
         '200':
@@ -693,27 +691,26 @@ definitions:
     type: object
     properties:
       summary:
-        type: object
         $ref: '#/definitions/PaginationResponse'
       responses:
         type: array
         items:
           $ref: '#/definitions/Response'
   PaginationResponse:
+    type: object
+    properties:
+      pagination:
         type: object
         properties:
-          pagination:
-            type: object
-            properties:
-              total_entries:
-                type: integer
-              total_pages:
-                type: integer
-              current_page:
-                type: integer
-              per_page:
-                type: integer
-              previous_page:
-                type: integer
-              next_page:
-                type: integer
+          total_entries:
+            type: integer
+          total_pages:
+            type: integer
+          current_page:
+            type: integer
+          per_page:
+            type: integer
+          previous_page:
+            type: integer
+          next_page:
+            type: integer

@@ -91,7 +91,8 @@ anywhere in your page by adding the following web component html (with your own 
     show-teaser-cards-driver
     show-teaser-cards-text
     show-overlay-cards-driver
-    target-url="http://www.abc123.com/scotland/walking" />
+    target-url="http://www.abc123.com/scotland/walking"
+    driver-purchase-description="Holiday booked" />
 ```
 
 Find below a description of each of the attributes in the web component:
@@ -109,7 +110,8 @@ Find below a description of each of the attributes in the web component:
 | <nobr>show&#45;teaser&#45;cards&#45;driver</nobr> | false | N/A | This attribute does not have a value. If the attribute is present, every card in the teaser will display a driver link to the associated product. Otherwise the driver link will not be available. |
 | show-teaser-cards-text | false | N/A | This attribute does not have a value. If the attribute is present, caption text will be hidden on the teaser cards, which will only display user name, location, and image. Otherwise, caption text will be displayed along. |
 | <nobr>show&#45;overlay&#45;cards&#45;driver</nobr> | false | N/A | This attribute does not have a value. If the attribute is present, every card in the overlay collection will display a driver link to the associated product. Otherwise the driver link will not be available. |
-| target-url | false | N/A | As default, click on teaser will open overlay collection. But there can be the case where you want to redirect user to specific url. In this case pass the url as a value of *target-url* attribute |
+| <nobr>target&#45;url</nobr>  | false | N/A | As default, click on teaser will open overlay collection. But there can be the case where you want to redirect user to specific url. In this case pass the url as a value of *target-url* attribute |
+| <nobr>driver&#45;purchase&#45;description</nobr>  | false | Defined by Reevoo | Overwrite purchase description text on product link. If no value is provided, description is taken from Reevoo configuration, which is different for each client. |
 
 **2) Request a specific teaser by its ID**
 
@@ -154,7 +156,9 @@ To include experiences embedded in your page, make sure the page has been setup 
     pagination
     styles-brand-color="red"
     show-card-driver
-    spotlight-action-button-title="VIEW COTTAGE" />
+    spotlight-action-button-title="VIEW COTTAGE"
+    cards-per-page="10"
+    driver-purchase-description="Holiday booked" />
 ```
 
 Find below a description of each of the attributes in the web component:
@@ -170,3 +174,5 @@ Find below a description of each of the attributes in the web component:
 | pagination | false | N/A | This attribute does not have a value. If the attribute is present, the embedded cards container will display classic numbered pagination links by which users can browse the full content. If this attribute is not present, there will be a "More" button at the botton of the container, through which the user can load the next page worth of cards in an infinite scrolling style. Pagination is **disabled for mobile** devices and replaced by "More" button.|
 | <nobr>show-card-driver</nobr> | false | N/A | This attribute does not have a value. If the attribute is present, every card in the embedded container will display a driver link to the associated product. Otherwise the driver link will not be available. |
 | <nobr>spotlight-action-button-title</nobr> | false | MORE | When you click on a card in the embedded container, the card will open in spotlight view. The spotlight view includes a button to visit the product page associated to the card. You can use this property to configure the label of the button. |
+| <nobr>cards&#45;per&#45;page</nobr>  | false | 20 | Define how many cards will be loaded when user switch the page or click on "More" button |
+| <nobr>driver&#45;purchase&#45;description</nobr>  | false | Defined by Reevoo | Overwrite purchase description text on product link. If no value is provided, description is taken from Reevoo configuration, which is different for each client. |

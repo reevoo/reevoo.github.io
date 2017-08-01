@@ -32,6 +32,11 @@
   items:
   - id: experiences-getting-started
     title: Getting started
+  - id: experiences-public-api
+    title: Experiences Public API
+    subitems:
+      - id: experiences-public-api-cards
+        title: cards
 - id: conversations
   title: Conversations
   items:

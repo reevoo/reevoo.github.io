@@ -92,7 +92,7 @@ anywhere in your page by adding the following web component html (with your own 
     show-teaser-cards-text
     show-overlay-cards-driver
     target-url="http://www.abc123.com/scotland/walking"
-    driver-purchase-description="Holiday booked" />
+    driver-purchase-description="Holiday booked" ></reevoo-experiences-teaser>
 ```
 
 Find below a description of each of the attributes in the web component:
@@ -124,7 +124,7 @@ anywhere in your page by adding the following web component html (with your own 
     trkref='ABC123'
     styles-brand-color="red"
     show-teaser-cards-driver
-    show-teaser-cards-text />
+    show-teaser-cards-text ></reevoo-experiences-teaser>
 ```
 
 Find below a description of each of the attributes in the web component:
@@ -158,7 +158,7 @@ To include experiences embedded in your page, make sure the page has been setup 
     show-card-driver
     spotlight-action-button-title="VIEW COTTAGE"
     cards-per-page="10"
-    driver-purchase-description="Holiday booked" />
+    driver-purchase-description="Holiday booked" ></reevoo-experiences-embedded>
 ```
 
 Find below a description of each of the attributes in the web component:

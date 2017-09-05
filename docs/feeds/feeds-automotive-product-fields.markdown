@@ -281,7 +281,7 @@ It is important to provide as many recommended (optional) columns as possible. T
 
 ### Constraints
   + No break space or special characters
-  + Allowed fuel types: petrol / diesel / hybrid / lpg / electric / hydrogen
+  + Allowed fuel types: petrol / diesel / hybrid / plug-in_hybrid / lpg / electric / hydrogen
 
 ### Examples
   + petrol

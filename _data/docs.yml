@@ -27,6 +27,8 @@
   items:
   - id: seo-boost
     title: Implementation guide
+  - id: google-rich-snippets
+    title: Google Rich Snippets
 - id: experiences
   title: Experiences
   items:

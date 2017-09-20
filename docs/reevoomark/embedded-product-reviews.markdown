@@ -50,7 +50,7 @@ The automotive metadata includes attributes like `manufacturer`, `model`, `model
 
 To display embedded product reviews based on automotive metadata, add the `reevoo-embedded-product-reviews` tag with attributes `trkref="TRKREF"`, `per-page="PER_PAGE"`, optionally `locale="LOCALE"`, and then any combination of automotive metadata attributes. See some examples below.
 
-**NOTE**: The attributes in our Feed and API implementations use underscore (`_`) separators, such as `model_year`. However, please be aware that in our badge and embedded reviews implementations, we use a hyphen (`-`) separator, so the HTML attribute will be `model-year`. This can be seen in the examples below.
+**NOTE**: Please use hyphen ('-') separator for each HTML attribute to stick with HTML conventions, for example `model-year`. This can be seen in the examples below.
 
 ### Examples
 

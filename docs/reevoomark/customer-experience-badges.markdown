@@ -55,3 +55,30 @@ To limit the score to a particular branch set the `branch-code` attribute.
 {% highlight html %}
 <reevoo-customer-experience-badge branch-code="BRANCH_CODE" trkref="TRKREF"></reevoo-customer-experience-badge>
 {% endhighlight %}
+
+
+## Custom click action
+
+Normally are click actions on badges defined by Reevoo administrators. As a default we open a lightbox when user clicks on the badge.
+
+* `reevoo-click-action` attribute gives you posibility to control the behaviour and overwrite default setting.
+
+Available options are `open_lightbox`, `open_window`, `no_action`.
+
+{% highlight html %}
+<reevoo-customer-experience-badge trkref="TRKREF" reevoo-click-action="open_lightbox"></reevoo-customer-experience-badge>
+{% endhighlight %}
+
+## Custom click callback
+
+In cases when you need to implement your own logic around click action, we give you ability to define your custom javascript function. This function will be evaluated when user click on the badge, but **after** standard click action is executed. That means after lightbox is opened. You can use `on-click` callback together with `reevoo-click-action` setting.
+
+* `on-click` attribute accept javascript function definition
+
+{% highlight html %}
+<reevoo-customer-experience-badge
+    trkref="TRKREF"
+    on-click="function(){ alert('badge clicked') }"
+    reevoo-click-action="no_action"
+  ></reevoo-customer-experience-badge>
+{% endhighlight %}

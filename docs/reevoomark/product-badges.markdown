@@ -102,3 +102,30 @@ We strongly recommend using more specific parameters such as `model-year`, `body
     engine-type="diesel"
   ></reevoo-reviewable-badge>
 {% endhighlight %}
+
+## Custom click action
+
+Normally are click actions on badges defined by Reevoo administrators. As a default we open a lightbox when user clicks on the badge.
+
+* `reevoo-click-action` attribute gives you posibility to control the behaviour and overwrite default setting.
+
+Available options are `open_lightbox`, `open_window`, `no_action`.
+
+{% highlight html %}
+<reevoo-reviewable-badge trkref="TRKREF" sku="SKU" reevoo-click-action="open_lightbox"></reevoo-reviewable-badge>
+{% endhighlight %}
+
+## Custom click callback
+
+In cases when you need to implement your own logic around click action, we give you ability to define your custom javascript function. This function will be evaluated when user click on the badge, but **after** standard click action is executed. That means after lightbox is opened. You can use `on-click` callback together with `reevoo-click-action` setting.
+
+* `on-click` attribute accept javascript function definition
+
+{% highlight html %}
+<reevoo-reviewable-badge
+    trkref="TRKREF"
+    sku="SKU"
+    on-click="function(){ alert('badge clicked') }"
+    reevoo-click-action="no_action"
+  ></reevoo-reviewable-badge>
+{% endhighlight %}

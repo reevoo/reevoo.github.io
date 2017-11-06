@@ -191,7 +191,7 @@ It is important to provide as many recommended (optional) columns as possible. T
 
 ### Constraints
   + No break space or special characters
-  + Allowed body types: hatchback / fastback / saloon / sedan / estate / suv / mid-size suv / compact suv / crossover / convertible / coupe / mpv
+  + Allowed body types: hatchback / fastback / saloon / sedan / estate / suv / mid-size suv / compact suv / crossover / convertible / coupe / mpv / sportswagon
 
 ### Examples
   + hatchback

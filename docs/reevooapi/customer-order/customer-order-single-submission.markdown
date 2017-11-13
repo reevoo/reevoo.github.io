@@ -15,6 +15,8 @@ The customer order data should be provided as a json in the request body as desc
 
 If the customer order is accepted a 202 response code will be sent back, along with a UUID that uniquely identifies this request.
 
+**This functionality is enabled only for some organisations. Please contact support if you need to enable it.**
+
 ## **Request**
 
 `POST /v4/organisations/:trkref/customer_order`

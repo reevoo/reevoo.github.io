@@ -11,6 +11,7 @@ prev: customer-order/customer-order-single-submission
 This endpoint enables the submission of a batch of customer orders data. Not all customer orders in the batch need to be associated to the same organisation TRKREF.
 The batch of customer orders data should be provided as a json in the request body as described below.
 If the batch is accepted a 202 response code will be sent back, along with an UUID that uniquely identifies this request.
+**This functionality is enabled only for some organisations. Please contact support if you need to enable it.**
 
 ## **Request**
 

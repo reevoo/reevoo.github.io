@@ -71,6 +71,7 @@ Details for a single review.
 |order_ref                |retailer's order reference      (enabled only for some organisations) |
 |embeddable               |if this review is embeddable for SEO usage|
 |confirmed_purchaser_text |product-specific purchaser type, e.g. "Confirmed holidaymaker" |
+|came_from_reevoo_launch  | Identify review left by selected user at Reevoo Launch process |
 |publish_date    |publish date (YYYY-MM-DD)|
 |purchase_date   |purchase date (YYYY-MM-DD)|
 |delivery_date   |delivery date (YYYY-MM-DD)|
@@ -118,6 +119,7 @@ Details for a single review.
    "order_ref": "87654321",
    "embeddable": true,
    "confirmed_purchaser_text": "Confirmed purchaser",
+   "came_from_reevoo_launch": false,
    "reviewer":{
       "first_name":"Robert",
       "location":"Catford, London",

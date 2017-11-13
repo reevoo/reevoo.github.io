@@ -107,10 +107,20 @@ By HTTP status:
 {% endhighlight %}
 
 * 401 Unauthorized
+* You have provided wrong HTTP Basic Auth credentials
 {% highlight json %}
 {
   "status": 401,
   "message": "Unauthorized"
+}
+{% endhighlight %}
+
+* 403 Unauthorized
+* Please contact support as your API key seems to not have permission to access this API endpoint
+{% highlight json %}
+{
+  "status": 403,
+  "error": "Access denied"
 }
 {% endhighlight %}
 

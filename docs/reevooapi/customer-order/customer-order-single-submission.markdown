@@ -131,7 +131,7 @@ By HTTP status:
 {
   "status": 422,
   "message": "No data provided",
-  "errors": []
+  "errors": ["locale cannot be blank", "invalid locale"]
 }
 {% endhighlight %}
 

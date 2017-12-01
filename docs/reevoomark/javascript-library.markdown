@@ -42,4 +42,17 @@ HTTPS
   })(window, document, 'https://cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
 {% endhighlight %}
 
-The reason why we ask you to load our JavaScript library this way is that it avoids blocking your page on first load. It also ensures if we are experiencing any issues regarding our services, your pages will not be blocked. It does, however, add some complexity to using the library as you cannot guarantee that our library will be loaded, or when. Thus we provide callbacks (shown on the next page) to allow you to ensure commands are called once our library is loaded onto the page.
+The reason why we ask you to load our JavaScript library this way is that it avoids blocking your page on first load. It also ensures if we are experiencing any issues regarding our services, your pages will not be blocked. It does, however, add some complexity to using the library as you cannot guarantee that our library will be loaded, or when. Thus we provide callbacks (shown in the next section) to allow you to ensure commands are called once our library is loaded onto the page.
+
+Reevoo JS library callbacks
+----
+
+Reevoo JS library allows you to register callbacks that will be executed after the library has been loaded. The following example shows how to register callbacks.
+
+{% highlight html %}
+<script type="text/javascript">
+  if (typeof window.afterReevooMarkLoaded === 'undefined') { window.afterReevooMarkLoaded = []; }
+  window.afterReevooMarkLoaded.push( function () { alert('Reevoo JS library loaded'); },
+</script>
+{% endhighlight %}
+

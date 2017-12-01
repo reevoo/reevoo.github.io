@@ -18,6 +18,8 @@ This functionality is however enabled only for some organisations. Response is c
 server side and refreshed on a daily basis. The attribute "date_time_created" shows the
 date/time when the list was last generated.
 
+Note: This API endpoint is not available for the Automotive vertical.
+
 Note: The server will return { status: 406 } if the specified organisation is not supported
 by this endpoint and no SKUs are specified.
 

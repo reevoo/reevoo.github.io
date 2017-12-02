@@ -106,7 +106,24 @@ By HTTP status:
       "accepted": "number of accepted customer orders",
       "rejected": "number of rejected customer orders"
     },
-  "errors": []
+  "errors": [
+    {
+        "customer_order":
+         {
+           "trkref":"TRKREF123",
+           "order_ref": "ABC123",
+           "order_date": "10-12-2014",
+           "fulfilment_date": "24-12-2014",
+           "language": "en",
+           "locale": "en-GB",
+           ...
+         },
+        "errors": [
+            "order_ref cannot be blank",
+            "invalid locale"
+        ]
+    }
+  ]
 }
 {% endhighlight %}
 

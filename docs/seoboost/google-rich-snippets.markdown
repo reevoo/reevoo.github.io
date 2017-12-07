@@ -18,7 +18,7 @@ their search results. See an example below of how this JSON-LD snippet looks lik
  {
     "@context": "http://schema.org",
     "@type": "Product",
-    "@id": "/reviewable/sku/100A#this",
+    "@id": "#reviewable_sku_100A",
     "name": "KIA RIO",
     "sku": "100A",
     "aggregateRating": {
@@ -73,11 +73,11 @@ If you want to include your own product JSON-LD to the page but still want Googl
 
 <b>1\. Include in your JSON-LD snippet the same @id attribute that Reevoo is using in the JSON-LD snippet included with the embedded reviews.</b>
 
-This "@id" attribute is always set by Reevoo with the value "/reviewable/sku/SKU#this". Where the capitalized SKU must be replaced by the sku of the product.
+This "@id" attribute is always set by Reevoo with the value "#reviewable_sku_SKU". Where the capitalized SKU must be replaced by the sku of the product.
 For example if the sku of the product is "100A", the the @id attribute will be as below:
 
 {% highlight html %}
-  "@id": "/reviewable/sku/100A#this"
+  "@id": "#reviewable_sku_100A"
 {% endhighlight %}
 
 <b>2\. Make sure that your JSON-LD snippet does not include the "aggregateRating" property, this must only be present in the JSON-LD snippet provided by Reevoo.</b>

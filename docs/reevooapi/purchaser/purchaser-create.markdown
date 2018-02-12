@@ -28,9 +28,7 @@ Creates a purchaser record.
 |email      | mandatory   |customer email|
 |title      | optional    |customer title|
 |first_name | optional    |customer first name|
-|surname    | optional    |customer surname|
 |country    | optional    |customer country by ISO3166 alpha2 code|
-|postcode   | optional    |customer postcode|
 
 
 ## **Response**
@@ -42,9 +40,7 @@ Creates a purchaser record.
 |-----------|-------------|
 |title                                      |customer title                                                         |
 |first_name                                 |customer first name                                                    |
-|surname                                    |customer surname                                                       |
 |country                                    |customer country by ISO3166 alpha2 code                                |
-|postcode                                   |customer postcode                                                      |
 |created_at                                 |date and time when of record creation                                  |
 
 
@@ -69,9 +65,7 @@ Response:
 {
   "title": "Ms",
   "first_name": "Jane",
-  "surname": null,
   "country": "UK",
-  "postcode": nil,
   "created_at": "2014-10-15T13:27:25Z"
 }
 {% endhighlight %}

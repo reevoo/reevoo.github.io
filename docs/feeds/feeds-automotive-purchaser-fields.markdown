@@ -26,8 +26,6 @@ group: feeds
 |[google_place_id](#google_place_id)             | mandatory*  | text    | 40         |
 |[autotrader_dealer_id](#autotrader_dealer_id)   | mandatory*  | number  | 15         |
 |[title](#title)                                 | optional    | text    | 24         |
-|[surname](#surname)                             | optional    | text    | 40         |
-|[postcode](#postcode)                           | optional    | text    | 10         |
 |[country](#country)                             | optional    | text    | 40         |
 |[price](#price)                                 | optional    | float   | 191        |
 |[currency](#currency)                           | optional    | text    | 3          |
@@ -244,39 +242,6 @@ group: feeds
 
 ### Examples
   + Mr
-
-
-## **surname**
-----------
-
-### Definition
-  Customer's surname
-
-### Usage
-  Customer's surname is used together with customer's title in email and questionnaires send to customers when
-  customer's first name was not selected as option to refer to customer in the email.
-
-### Constraints
-  + Do not include consumer's first name.
-
-### Examples
-  + Smith
-
-
-## **postcode**
-----------
-
-### Definition
-  Postcode where customer lives
-
-### Usage
-  Postcode can be used for reporting purposes.
-
-### Constraints
-  + No special characters
-
-### Examples
-  + AB12 34CD
 
 
 ## **country**

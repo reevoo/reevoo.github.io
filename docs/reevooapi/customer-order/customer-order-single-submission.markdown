@@ -44,8 +44,6 @@ If the customer order is accepted a 202 response code will be sent back, along w
 |<span class="indent-1">customer_ref</span>|      | The unique identifier of the customer|
 |<span class="indent-1">title</span>       |      | Customer title as in Mr/Ms/Doctor, etc.|
 |<span class="indent-1">first_name</span>  |      | Customer first name|
-|<span class="indent-1">surname</span>     |      | Customer surname|
-|<span class="indent-1">postcode</span>    |      | Customer postcode|
 |<span class="indent-1">country</span>     |      | Customer Country. Two letter code of the country as per ISO 3166-1.|
 |order_items                               | mandatory | Array of items ordered by the customer|
 |<span class="indent-1">sku</span>         | mandatory | The unique identifier of the product|
@@ -69,8 +67,6 @@ If the customer order is accepted a 202 response code will be sent back, along w
     "cutomer_ref": "1122",
     "title": "MR",
     "first_name": "John",
-    "surname": "Brown",
-    "postcode": "1122",
     "country": "GB"
   },
   "order_items": [

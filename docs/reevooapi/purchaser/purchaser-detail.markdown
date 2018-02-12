@@ -31,9 +31,7 @@ Returns a purchaser resource identified by a customer email.
 |-----------|-------------|
 |title      |customer title                          |
 |first_name |customer first name                     |
-|surname    |customer surname                        |
 |country    |customer country by ISO3166 alpha2 code |
-|postcode   |customer postcode                       |
 |created_at |date and time when of record creation   |
 
 ## Example
@@ -48,9 +46,7 @@ Response:
 {
   "title": "Ms",
   "first_name": "Jane",
-  "surname": null,
   "country": "UK",
-  "postcode": "10800",
   "created_at": "2014-10-15T13:27:25Z"
 }
 {% endhighlight %}

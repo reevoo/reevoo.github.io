@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Workshop - Ruby Performance Test
-date:   2016-09-14 11:00
+date:   2016-09-06 11:00
 categories: blog
 navId: blog
 author: Alex Malkov

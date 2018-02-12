@@ -44,8 +44,6 @@ Json array with the list of customer orders data being submitted, as below. Each
       "cutomer_ref": "1122",
       "title": "MR",
       "first_name": "John",
-      "surname": "Brown",
-      "postcode": "1122",
       "country": "GB"
     },
     "order_items": [

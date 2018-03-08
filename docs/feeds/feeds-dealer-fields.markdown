@@ -17,6 +17,7 @@ group: feeds
 |------------------------------------------------|-------------|---------|------------|
 |[code](#code)                                   | mandatory   | text    | 191        |
 |[name](#name)                                   | mandatory   | text    | 191        |
+|[google_place_id](#google_place_id)             | optional    | text    | 255        |
 
 ## **code**
 ----------
@@ -52,3 +53,20 @@ group: feeds
 
 ### Examples
   + Grand Bristol Motors
+
+## **google_place_id**
+----------
+
+### Definition
+  Google Place ID uniquely identify a place in the Google Places database and on Google Maps.
+
+### Usage
+  This field is required only when we want to enable Google Business Reviews on the branch.
+  When provided, the value should be the unique Google Place Id for the branch.
+  
+  More information can be found in the following link: [https://developers.google.com/places/place-id](https://developers.google.com/places/place-id)
+### Constraints
+
+### Examples
+  + ChIJF6Kftcm23fcr-Jib130oiHo
+

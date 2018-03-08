@@ -23,7 +23,6 @@ group: feeds
 |[order_ref](#order_ref)                         | mandatory   | text    | 64         |
 |[delivery_date](#delivery_date)                 | mandatory   | date    | n/a        |
 |[dealer_code](#dealer_code)                     | mandatory*  | text    | 191        |
-|[google_place_id](#google_place_id)             | mandatory*  | text    | 40         |
 |[autotrader_dealer_id](#autotrader_dealer_id)   | mandatory*  | number  | 15         |
 |[title](#title)                                 | optional    | text    | 24         |
 |[country](#country)                             | optional    | text    | 40         |
@@ -192,24 +191,6 @@ group: feeds
 
 ### Examples
   + D1234
-
-
-## **google_place_id**
-----------
-
-### Definition
-  Google Place IDs uniquely identify a place in the Google Places database and on Google Maps
-
-### Usage
-  More information can be accessed via link here: https://developers.google.com/places/place-id
-
-  \* This is required for sending reviews to Google My Business.
-
-### Constraints
-
-### Examples
-  + ChIJF6Kftcm23fcr-Jib130oiHo
-
 
 ## **autotrader_dealer_id**
 ----------

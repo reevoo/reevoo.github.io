@@ -172,15 +172,15 @@ GEM
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
     method_source (0.8.2)
-    mini_portile2 (2.2.0)
+    mini_portile2 (2.3.0)
     minima (2.1.1)
       jekyll (~> 3.3)
     minitest (5.10.2)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
     net-dns (0.8.0)
-    nokogiri (1.8.0)
-      mini_portile2 (~> 2.2.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     parallel (1.11.2)
@@ -223,4 +223,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   1.13.7
+   1.16.1

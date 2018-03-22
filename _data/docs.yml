@@ -22,10 +22,10 @@
     title: Emb. Conversations
   - id: tracking
     title: Tracking
-- id: seoboost
-  title: SEO Boost
+- id: embedded-content
+  title: Embedded Content
   items:
-  - id: seo-boost
+  - id: embedded-content
     title: Implementation guide
   - id: google-rich-snippets
     title: Google Rich Snippets

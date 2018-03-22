@@ -3,7 +3,7 @@ id: google-rich-snippets
 layout: docs
 title: Google Rich Snippets
 navId: docs
-group: seoboost
+group: embedded-content
 ---
 
 # Google Rich Snippets

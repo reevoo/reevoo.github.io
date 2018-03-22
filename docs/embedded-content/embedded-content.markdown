@@ -1,16 +1,16 @@
 ---
-id: seo-boost
+id: embedded-content
 layout: docs
-title: SEO Boost Implementation Guide
+title: Embedded Content Implementation Guide
 navId: docs
-group: seoboost
+group: embedded-content
 ---
 
-<b>Note</b>:  This guide explains how to implement our server side SEO boost embedded reviews and conversations solution (using one of our server side client libraries: Java/JSP, PHP, ASP/.NET or Ruby). Since search engines now crawl javascript, we also offer as an alternative a full client side implementation for our embedded content. If you prefer to implement SEO Boost using our full client side solution, you can find instructions in the following links:
+<b>Note</b>:  This guide explains how to implement our server side embedded reviews and conversations solution (using one of our server side client libraries: Java/JSP, PHP, ASP/.NET or Ruby). Since search engines now crawl javascript, we also offer as an alternative a full client side implementation for our embedded content. If you prefer to implement using our full client side solution, you can find instructions in the following links:
 <br/><br/>
-* [Full client side implementation of SEO Product Reviews](/docs/reevoomark/embedded-product-reviews/)<br/>
-* [Full client side implementation of SEO Customer Experience Reviews](/docs/reevoomark/embedded-customer-experience-reviews/)<br/>
-* [Full client side implementation of SEO Conversations](/docs/reevoomark/embedded-conversations/)<br/>
+* [Full client side implementation of embedded Product Reviews](/docs/reevoomark/embedded-product-reviews/)<br/>
+* [Full client side implementation of embedded Customer Experience Reviews](/docs/reevoomark/embedded-customer-experience-reviews/)<br/>
+* [Full client side implementation of embedded Conversations](/docs/reevoomark/embedded-conversations/)<br/>
 
 
 # Overview
@@ -34,7 +34,7 @@ The ReevooMark in-line SEO module comes in the shape of platform-specific tag li
 
 We provide 4 different versions of the ReevooMark tag library, one for each of the major platforms we support: PHP, Java/JSP, ASP/.NET and Ruby. Each of the different tag libraries take advantage of the different caching infrastructure available to them from the enclosing framework to ensure that content is appropriately cached and available to the calling page with a low overhead. It has been successfully deployed within very high volume sites such as the Telegraph Online and a myriad of publishers, retailers and manufacturers.
 
-Reevoo’s tag libraries are open-source and available on GitHub. We welcome contributions to any of our hosted projects on GitHub. Please click on the appropriate link below, according to your  platform's language, to find detailed instructions on how to use our tag library to embed review content in your site.
+Reevoo’s tag libraries are open-source and available on GitHub. We welcome contributions to any of our hosted projects on GitHub. Please click on the appropriate link below, according to your platform's language, to find detailed instructions on how to use our tag library to embed review content in your site.
 
 * [**Java/JSP**](https://github.com/reevoo/reevoomark-java-api)
 * [**PHP**](https://github.com/reevoo/reevoomark-php-api)
@@ -60,7 +60,7 @@ In the paginated configuration, all reviews are embedded in the retailer site. P
 
 #### Embedded Conversations
 
-Product conversations can also be embedded, both in standard and paginated modes. See example below.
+Peer-to-peer conversations can also be embedded, both in standard and paginated modes. See example below.
 
 <br/>
 <img alt="embedded conversations" src="/images/seo/seo_5.png" width="600px" />

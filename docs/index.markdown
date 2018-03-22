@@ -11,7 +11,7 @@ There are a number of ways to interact with Reevoo's services. Click a link to b
 
 - [ReevooMark](reevoomark/index.html) is a JavaScript library that provides a simple-to-implement way of accessing Reevoo's services on your website.
 - The [Reevoo API](reevooapi/index.html) provides an HTTP-based way of reading and writing data for use with Reevoo's services.
-- [SEO Boost](seoboost/index.html) is a server-side solution to integrating Reevoo's services with your website.
+- [Embedded Content](embedded-content/index.html) is a server-side solution to integrating Reevoo's services with your website.
 
 ## Other Documents
 

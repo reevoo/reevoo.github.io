@@ -5,7 +5,7 @@ layout: docs
 group: reevoomark
 navId: docs
 prev: getting-started
-next: ie8
+next: product-badges
 ---
 
 JavaScript Library

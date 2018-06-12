@@ -18,6 +18,8 @@
     title: Emb. Experience reviews
   - id: embedded-conversations
     title: Emb. Conversations
+  - id: embedded-tabbed
+    title: Emb. Tabbed reviews
   - id: tracking
     title: Tracking
 - id: embedded-content

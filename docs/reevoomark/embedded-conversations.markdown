@@ -5,7 +5,7 @@ layout: docs
 navId: docs
 group: reevoomark
 prev: embedded-customer-experience-reviews
-next: tracking
+next: embedded-tabbed
 ---
 
 # Embedded Conversations
@@ -47,7 +47,7 @@ Embedded Conversations for Automotive Partners
 Our automotive partners which have been enabled to use Automotive Aggregation, can display the embedded conversations based on automotive metadata instead of a "sku".
 
 The automotive metadata includes attributes like `manufacturer`, `model`, `model-year`, and many other ones. Contact us if you need to get the full list of attributes available.
- 
+
 To display embedded conversations based on automotive metadata, implement steps 1 and 2 as detailed in the section above, and then add the `reevoo-embedded-conversations` tag with attributes `trkref="TRKREF"`, `per_page="PER_PAGE"`, optionally `locale="LOCALE"`, and then any combination of automotive metadata attributes. See some examples below.
 
 ### Examples

@@ -11,6 +11,7 @@ group: embedded-content
 * [Full client side implementation of embedded Product Reviews](/docs/reevoomark/embedded-product-reviews/)<br/>
 * [Full client side implementation of embedded Customer Experience Reviews](/docs/reevoomark/embedded-customer-experience-reviews/)<br/>
 * [Full client side implementation of embedded Conversations](/docs/reevoomark/embedded-conversations/)<br/>
+* [Full client side implementation of embedded Tabbed Reviews](/docs/reevoomark/embedded-tabbed/)<br/>
 
 
 # Overview

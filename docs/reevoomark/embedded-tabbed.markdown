@@ -11,6 +11,12 @@ next: tracking
 
 # Embedded Tabbed Reviews
 
+Emebedded Tabbed Reviews is a composite tabbed interface containing tabs for the Product Reviews, Ask an Owner and Customer Experiences Reviews (or the subset of those items that you are using). Embedded Tabbed Reviews is only available in the updated display release and not in the older styling.
+
+<img alt="embedded tabbed reviews" src="/images/embedded-tabbed-reviews.png" width="100%" />
+
+
+
 To display embedded tabbed reviews in your website you have to
 
 1\. [include the Reevoomark Javascript library](../javascript-library)

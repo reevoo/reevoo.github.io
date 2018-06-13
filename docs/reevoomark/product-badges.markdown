@@ -4,7 +4,7 @@ title: Product badges
 layout: docs
 navId: docs
 group: reevoomark
-prev: ie8
+prev: javascript-library
 next: customer-experience-badges
 ---
 

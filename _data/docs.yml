@@ -6,8 +6,6 @@
     title: Getting started
   - id: javascript-library
     title: JavaScript library
-  - id: ie8
-    title: IE 8 Support
   - id: product-badges
     title: Product badges
   - id: customer-experience-badges
@@ -20,6 +18,8 @@
     title: Emb. Experience reviews
   - id: embedded-conversations
     title: Emb. Conversations
+  - id: embedded-tabbed
+    title: Emb. Tabbed reviews
   - id: tracking
     title: Tracking
 - id: embedded-content

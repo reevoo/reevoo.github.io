@@ -86,7 +86,6 @@ On Ubuntu these dependencies can be installed with `sudo apt-get install libcurl
 ## Further Reading
 
 * [ruby HTTP client performance shootout redux](http://bibwild.wordpress.com/2012/04/30/ruby-http-performance-shootout-redux/)
-* [Ruby HTTP clients comparison](http://bit.ly/RubyHTTPClients)
 
 ### Image attribution
 

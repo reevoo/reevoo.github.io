@@ -20,7 +20,7 @@ If the batch is accepted a 202 response code will be sent back, along with an UU
 ### Parameters
 
 {: .documentation}
-Json array with the list of customer orders data being submitted, as below. Each element in the array should follow the same json model as for [Single submission](/docs/reevooapi/customer-order/customer-order-single-submission/#attributes)
+Json array with the list of customer orders data being submitted, as below. Each element in the array should follow the same json model as for [Single submission](/docs/reevooapi/customer-order/customer-order-single-submission/)
 {% highlight json %}
 [
   {...},

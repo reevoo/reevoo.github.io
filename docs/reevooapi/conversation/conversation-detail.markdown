@@ -44,7 +44,8 @@ Returns details for a single conversation.
 |unhelpful       |count of users who have flagged this question not helpful    |
 |embeddable      |if this conversation is embeddable for SEO usage|
 |retailer_locale |the locale of the retailer                                   |
-|answers         |an array of answers to the question|
+|answers         |an array of customers answers to the question                |
+|fast_responses  |an array of retailer answers to the question                 |
 
 ### Example
 {% highlight json %}

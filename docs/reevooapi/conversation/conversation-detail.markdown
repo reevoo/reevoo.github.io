@@ -74,6 +74,23 @@ Returns details for a single conversation.
     "response_type": "owner",
     "retailer_name": null,
     "retailer_image_url": null
-  }]
+  }],
+  "fast_responses": [
+   {
+     "response": "Hi Thanks for your query",
+     "respondent": {
+       "custom_name": "Customer Care",
+       "first_name": null,
+       "surname": null,
+       "job_title": null,
+       "display_name": "Customer Care"
+     },
+     "organisation": {
+       "trkref": "TEST",
+       "name": "organisation",
+       "logo": null
+     },
+     "created_at": "2018-03-21T09:12:57.749+00:00"
+   }]
 }
 {% endhighlight %}

@@ -16,7 +16,7 @@ Returns all the conversations that are associated with a specific product.
 
 `GET v4/organisations/:trkref/conversations?locale=:locale&sku=:sku`
 
-### Parameters
+### Parameters for non-automotive
 
 {: .documentation-table}
 | Parameter | Requirement |
@@ -28,6 +28,21 @@ Returns all the conversations that are associated with a specific product.
 ### Example
 
 `GET v4/organisations/D10/conversations?locale=en-GB&sku=AIPTPDV5700`
+
+### Parameters for automotive
+
+{: .documentation-table}
+|       Parameter       |  Requirement |      Constraints     |                      Examples                          |
+|-----------------------|------------- |-------------------------------------------------------------------------------|
+| trkref                | mandatory    |                      |                                                        |
+| manufacturer          | mandatory    |                      |                                                        |
+| model                 | mandatory    |                      |                                                        |
+| locale                | optional     |                      |                                                        |
+| model_variant         | optional     |                      | GT                                                     |
+
+### Example
+
+`GET v4/organisations/D10/conversations?locale=en-GB&manufacturer=test&model=test`
 
 ## **Response**
 

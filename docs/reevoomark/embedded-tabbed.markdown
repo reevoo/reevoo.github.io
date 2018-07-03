@@ -24,7 +24,7 @@ To display embedded tabbed reviews in your website you have to
 
 2\. Include our embedded reviews CSS in your HTML header, using the HTML link below:
 {% highlight html %}
-  <link rel="stylesheet" href="//cdn.mark.reevoo.com/stylesheets/reevoomark/embedded_reviews.css" type="text/css" />
+  <link rel="stylesheet" href="//cdn.mark.reevoo.com/assets/embedded_reviews.css" type="text/css" />
 {% endhighlight %}
 
 3\. Add the `reevoo-embedded-tabbed` tag with attributes. The attributes should be the same as for [Embedded Product Reviews](../embedded-product-reviews) including the optional attributes for Automotive Partners.

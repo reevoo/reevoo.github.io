@@ -135,11 +135,6 @@
         title: list
       - id: purchase-list-match
         title: match
-  - id: questionnaire
-    title: Questionnaire
-    subitems:
-      - id: questionnaire-detail
-        title: detail
   - id: tracking-and-API
     title: API & Tracking Implementation
     subitems:

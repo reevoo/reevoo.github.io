@@ -25,14 +25,41 @@ Creates new conversation question.
 
 ### JSON Body
 
+Conversation question can be created using product sku or automotive attributes.
+
 {: .documentation-table}
 | Attribute | Description |
 |-----------|-------------|
-|sku             |product sku                                                                     |
-|first_name      |first name of the person that asked the question (optional, default: A shopper) |
-|email           |email of the person that asked the question                                     |
-|question        |the question asked in this conversation                                         |
+|sku        |product sku                                                                     |
+|first_name |first name of the person that asked the question (optional, default: A shopper) |
+|email      |email of the person that asked the question                                     |
+|question   |the question asked in this conversation                                         |
 
+#### Automotive attributes
+
+If not using sku for creating a question, manufacturer and model are mandatory attributes.
+
+{: .documentation-table}
+| Attribute            | Requirement |
+|----------------------|-------------|
+|manufacturer          | mandatory   |
+|model                 | mandatory   |
+|axle                  | optional    |
+|body_type             | optional    |
+|doors                 | optional    |
+|engine_size           | optional    |
+|engine_size_in_liters | optional    |
+|fuel_type             | optional    |
+|model_display         | optional    |
+|model_variant         | optional    |
+|model_from_month      | optional    |
+|model_from_year       | optional    |
+|model_to_month        | optional    |
+|model_to_year         | optional    |
+|model_year            | optional    |
+|transmission          | optional    |
+|used                  | optional    |
+|vehicle_type          | optional    |
 
 ### Example
 

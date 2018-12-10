@@ -44,26 +44,26 @@ In order to include in your page the structured data needed by Google for displa
 **4) Include the following javascript link in your page** (but make sure to replace the capitalized **TRKREF** and **SKU** by your own values for this parameters as explained in point 2 above). The link **should be included in the <HEAD> section** in your html and **before any other javascript** links you might have in the page.
 
 ```
-<script async src="//cdn.makr.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=TRKRF&sku=SKU"></script>
+<script async src="//mark.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=TRKRF&sku=SKU"></script>
 ```
 EXAMPLES:
   ```
-  <script async src="//cdn.makr.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=CYS&sku=22091143"></script>
-  <script async src="//cdn.makr.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=PIU&sku=series:414"></script>
-  <script async src="//cdn.makr.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=BEV&sku=NEAAC80001"></script>
+  <script async src="//mark.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=CYS&sku=22091143"></script>
+  <script async src="//mark.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=PIU&sku=series:414"></script>
+  <script async src="//mark.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=BEV&sku=NEAAC80001"></script>
   ```
 
 
 or if you use automotive metadata instead of skus the link to include would look like below (also replace the capitalize MODEL and MANUFACTURER by the specific vehicle values):
 
 ```
-<script async src="//cdn.makr.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=TRKRF&manufacturer=MANUFACTURER&model=MODEL"></script>
+<script async src="//mark.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=TRKRF&manufacturer=MANUFACTURER&model=MODEL"></script>
 ```
 EXAMPLES:
   ```
-  <script async src="//cdn.makr.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=MAZ&manufacturer=mazda&model=mazda3"></script>
-  <script async src="//cdn.makr.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=VOL&manufacturer=volvo&model=xc90&model_variant=Inscription"></script>
-  <script async src="//cdn.makr.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=VOL&manufacturer=volvo&model=xc90&model_variant=Inscription&model_year=2018"></script>
+  <script async src="//mark.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=MAZ&manufacturer=mazda&model=mazda3"></script>
+  <script async src="//mark.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=VOL&manufacturer=volvo&model=xc90&model_variant=Inscription"></script>
+  <script async src="//mark.reevoo.com/reevoomark/product_reviews_rich_snippets.js?trkref=VOL&manufacturer=volvo&model=xc90&model_variant=Inscription&model_year=2018"></script>
   ```
 
 **5) Do not include the structured data for the same product in more than one page**. Google has clamped down on which sites/pages get stars in their rich snippets. Even if you do everything properly, you still may not see stars on every (or any) of the pages you want them on. The best bet, though, is to try to keep your implementation as above board as possible by also following these rules:
@@ -173,13 +173,13 @@ In order to include in your page the structured data needed by Google for displa
 **6) Finally, and most importantly, include the javascript link shown below in your page** (but make sure to replace the capitalized **TRKREF** by your own value). The link **should be included in the <HEAD> section** in your html and **before any other javascript** links you might have in the page.
 
 ```
-<script async src="//cdn.makr.reevoo.com/reevoomark/cx_reviews_rich_snippets.js?trkref=TRKRF"></script>
+<script async src="//mark.reevoo.com/reevoomark/cx_reviews_rich_snippets.js?trkref=TRKRF"></script>
 ```
 EXAMPLES:
   ```
-  <script async src="//cdn.makr.reevoo.com/reevoomark/cx_reviews_rich_snippets.js?trkref=CYS"></script>
-  <script async src="//cdn.makr.reevoo.com/reevoomark/cx_reviews_rich_snippets.js?trkref=PIU"></script>
-  <script async src="//cdn.makr.reevoo.com/reevoomark/cx_reviews_rich_snippets.js?trkref=BEV"></script>
+  <script async src="//mark.reevoo.com/reevoomark/cx_reviews_rich_snippets.js?trkref=CYS"></script>
+  <script async src="//mark.reevoo.com/reevoomark/cx_reviews_rich_snippets.js?trkref=PIU"></script>
+  <script async src="//mark.reevoo.com/reevoomark/cx_reviews_rich_snippets.js?trkref=BEV"></script>
   ```
 
 ### What does the the customer experience reviews structured data look like  

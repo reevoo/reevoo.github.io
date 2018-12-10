@@ -17,12 +17,6 @@ Only published customer experience reviews will be included.
 
 `GET /v4/organisations/:trkref/customer_experience_reviews`
 
-<div class="warning">
-  <strong>This URL: </strong>
-  /v4/organisations;trkref=D10/customer_experience_reviews
-  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
-</div>
-
 ### Parameters
 
 {: .documentation-table}

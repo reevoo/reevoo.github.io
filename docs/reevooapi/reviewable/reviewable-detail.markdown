@@ -19,12 +19,6 @@ reviews will only be returned for the organisation's locale.
 
 `GET /v4/organisations/:trkref/reviewable?locale=:locale&sku=:sku`
 
-<div class="warning">
-  <strong>This URL: </strong>
-  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700
-  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
-</div>
-
 ### Parameters
 
 {: .documentation-table}

@@ -16,12 +16,6 @@ a short set of key values for the reviewable, including the review count and ave
 
 `GET /v4/organisations/:trkref/reviewable?locale=:locale&sku=:sku&format=:format`
 
-<div class="warning">
-  <strong>This URL: </strong>
-  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700?format=short
-  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
-</div>
-
 ## Parameters
 
 {: .documentation-table}

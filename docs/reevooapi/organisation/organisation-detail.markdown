@@ -16,12 +16,6 @@ retrieve information for organisations assigned to their API key.
 
 `GET /v4/organisations/:trkref`
 
-<div class="warning">
-  <strong>This URL: </strong>
-  /v4/organisations;trkref=D10
-  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
-</div>
-
 ### Parameters
 
 {: .documentation-table}

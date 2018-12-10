@@ -15,12 +15,6 @@ Details for a single review.
 
 `GET /v4/reviews/:id?trkref=:trkref`
 
-<div class="warning">
-  <strong>This URL: </strong>
-  /v4/organisations;trkref=D10/reviews/5996122
-  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
-</div>
-
 ### Parameters
 
 {: .documentation-table}

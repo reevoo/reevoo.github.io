@@ -17,12 +17,6 @@ Reviews are aggregated, so the ones that have been collected for other organisat
 
 `GET /v4/organisations/:trkref/reviews?locale=:locale&sku=:sku`
 
-<div class="warning">
-  <strong>This URL: </strong>
-  /v4/organisations;trkref=D10/reviewables;locale=en-GB;sku=AIPTPDV5700/reviews
-  <strong> is deprecated. <br />Please switch to the current URL above.</strong><br/>
-</div>
-
 ### Parameters for non-automotive reviews
 
 {: .documentation-table}

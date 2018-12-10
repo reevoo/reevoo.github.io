@@ -20,7 +20,7 @@ The code below imports our library, but without any client specific configuratio
     s=d.createElement('script');s.type='text/javascript';s.src=u;
     l=d.getElementById(i);l.parentNode.insertBefore(s,l);w['ReevooMarkHandlerName']=f;
     w[f]=function(){(w[f].q=w[f].q||[]).push(arguments)}
-  })(window, document, '//cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
+  })(window, document, '//mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
 </script>
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ HTTP
 
 {% highlight javascript %}
   ...
-  })(window, document, 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
+  })(window, document, 'http://mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
 {% endhighlight %}
 
 HTTPS
@@ -39,7 +39,7 @@ HTTPS
 
 {% highlight javascript %}
   ...
-  })(window, document, 'https://cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
+  })(window, document, 'https://mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
 {% endhighlight %}
 
 The reason why we ask you to load our JavaScript library this way is that it avoids blocking your page on first load. It also ensures if we are experiencing any issues regarding our services, your pages will not be blocked. It does, however, add some complexity to using the library as you cannot guarantee that our library will be loaded, or when. Thus we provide callbacks (shown in the next section) to allow you to ensure commands are called once our library is loaded onto the page.

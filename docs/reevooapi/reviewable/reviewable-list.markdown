@@ -17,12 +17,6 @@ organisation.
 
 `GET /v4/organisations/:trkref/reviewables`
 
-<div class="warning">
-  <strong>This URL: </strong>
-  /v4/organisations;trkref=D10/reviewables
-  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
-</div>
-
 ### Parameters
 
 {: .documentation-table}

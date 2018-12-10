@@ -27,12 +27,6 @@ by this endpoint and no SKUs are specified.
 
 `GET /v4/organisations/:trkref/reviewables?format=:format&skus=:skus`
 
-<div class="warning">
-  <strong>This URL: </strong>
-  /v4/organisations;trkref=D10/reviewables?format=short
-  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
-</div>
-
 ## Parameter(s)
 
 {: .documentation-table}

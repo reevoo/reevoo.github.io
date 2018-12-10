@@ -31,7 +31,7 @@ For this example you need to replace ```TRKREF``` with the account code provided
     s=d.createElement('script');s.type='text/javascript';s.src=u;
     l=d.getElementById(i);l.parentNode.insertBefore(s,l);w['ReevooMarkHandlerName']=f;
     w[f]=function(){(w[f].q=w[f].q||[]).push(arguments)}
-  })(window, document, '//cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
+  })(window, document, '//mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
 </script>
 {% endhighlight %}
 

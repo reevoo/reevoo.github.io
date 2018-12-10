@@ -19,7 +19,7 @@ As an example, looking at the current technical documentation being handed to cu
   (function() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
+    script.src = 'https://mark.reevoo.com/assets/reevoo_mark.js';
     var s = document.getElementById('reevoomark-loader');
     s.parentNode.insertBefore(script, s);
   })();
@@ -39,7 +39,7 @@ As an example, looking at the current technical documentation being handed to cu
   (function() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
+    script.src = 'https://mark.reevoo.com/assets/reevoo_mark.js';
     var s = document.getElementById('reevoomark-loader');
     s.parentNode.insertBefore(script, s);
   })();
@@ -61,7 +61,7 @@ What they should have included in the page in this instance if they wanted both 
   (function() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'http://cdn.mark.reevoo.com/assets/reevoo_mark.js';
+    script.src = 'https://mark.reevoo.com/assets/reevoo_mark.js';
     var s = document.getElementById('reevoomark-loader');
     s.parentNode.insertBefore(script, s);
   })();

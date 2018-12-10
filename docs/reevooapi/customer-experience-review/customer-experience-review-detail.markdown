@@ -15,12 +15,6 @@ Details for a single customer experience review.
 
 `GET /v4/customer_experience_reviews/:id?trkref=:trkref`
 
-<div class="warning">
-  <strong>This URL: </strong>
-  /v4/organisations;trkref=D10/customer_experience_reviews/2774063
-  <strong> is deprecated. Please switch to the current URL above.</strong><br/>
-</div>
-
 ### Parameters
 
 {: .documentation-table}

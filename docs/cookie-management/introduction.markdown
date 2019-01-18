@@ -8,9 +8,9 @@ group: cookie-management
 
 # Cookie Management
 
-If you integrate Reevoo's Javascript library on your website, the library will drop 3 cookies (listed below) in client's browser.
+If you integrate Reevoo's JavaScript library on your website, the library will drop 3 cookies (listed below) in the client's browser.
 Those cookies are required for full functionality of Reevoo components, but it is possible to disable their usage.
-Reevoo's Javascript library supports [Optanon cookie integration](https://www.cookielaw.org/) which enables you or users to control which
+Reevoo's JavaScript library supports [Optanon cookie integration](https://www.cookielaw.org/) which enables you or users to control which
 cookie is dropped in the browser.
 
 **List of used Optanon cookie groups and its explanation**
@@ -25,7 +25,7 @@ cookie is dropped in the browser.
 **List of cookies and its functionality**
 
 {: .documentation-table}
-| Name | Usage  | Expiration | Optanon Group ID |
+| Name | Expiration | Usage | Optanon Group ID |
 |------------------|---------------|-------------|
 | ReevooStoredVotes | 1&nbsp;hour | Enable review helpfulness voting | 3 |
 | reevoo_sp_id | 2&nbsp;years | Tracking cookie which persists information about a user's activity on the domain between sessions. It contains the following information: <br/> <br/> &bull; An ID for the user based on a hash of various browser attributes <br/> &bull; How many times the user has visited the domain <br/> &bull; The timestamp of the user's first visit <br/> &bull; The timestamp of the current visit <br/> &bull; The timestamp of the last visit <br/> &bull; The ID of the current session | 2 |
@@ -34,8 +34,11 @@ cookie is dropped in the browser.
 
 ## How to enable/disable cookie
 
-As mentioned above, Reevoo javascript library supports [Optanon cookie integration](https://www.cookielaw.org/).
-The logic behind is quite simple. When javascript library loads, it checks if `OptanonConsent` cookie is present. In case it is, then it reads its configuration for enabled and disabled groups and change initialization strategy regarding to it.
+As mentioned above, Reevoo's JavaScript library supports [Optanon cookie integration](https://www.cookielaw.org/).
+The logic behind this is quite simple. When the JavaScript library loads, it checks if `OptanonConsent` cookie is present. If so, it reads its configuration for enabled and disabled groups and changes the initialization strategy regarding to it.
+
+**Note: Disabling tracking cookie does not stop user to be tracked! Tracking functionality just anonymizes the user and every page load is treated as a visit of a new person.**
+
 
 #### Examples of OptanonConsent cookie setting.
 
@@ -58,5 +61,3 @@ document.cookie = "OptanonConsent=groups=3:0,2:0"
 ```javascript
 document.cookie = "OptanonConsent=groups=3:1,2:1"
 ```
-
-**Note: Disabling tracking cookie does not stop user to be tracked!** Tracking functionality just anonymize user and every page load is treated as visit of new person.

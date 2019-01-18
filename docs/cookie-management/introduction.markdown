@@ -13,14 +13,23 @@ Those cookies are required for full functionality of Reevoo components, but it i
 Reevoo javascript supports [Optanon cookie integration](https://www.cookielaw.org/) which enables you or users to control which
 cookie is dropped to the browser.
 
-List of cookies and its functionality
+**List of used Optanon cookie groups and its explanation**
+
+{: .documentation-table}
+| ID | Name  | Description |
+|------------------|---------------|-------------|
+| 2 | Performance Cookies | Measure which pages are visited by the consumers. E.g. Google Analytics |
+| 3 | Functional Cookies | Enable the site to provide enhanced functionality and personalization. E.g. Sitecore Personilisation |
+
+
+**List of Reevoo cookies and its functionality**
 
 {: .documentation-table}
 | Name | Usage  | Expiration | Optanon Group ID |
 |------------------|---------------|-------------|
-| ReevooStoredVotes | 1&nbsp;hour | Enable review helpfulness voting | 2 |
-| reevoo_sp_id | 2&nbsp;years | Tracking cookie which persists information about a user's activity on the domain between sessions. It contains the following information: <br/> <br/> &bull; An ID for the user based on a hash of various browser attributes <br/> &bull; How many times the user has visited the domain <br/> &bull; The timestamp of the user's first visit <br/> &bull; The timestamp of the current visit <br/> &bull; The timestamp of the last visit <br/> &bull; The ID of the current session | 3 |
-| reevoo_sp_ses | 30&nbsp;min | Tracking cookie. Its only purpose is to differentiate between different visits. | 3 |
+| ReevooStoredVotes | 1&nbsp;hour | Enable review helpfulness voting | 3 |
+| reevoo_sp_id | 2&nbsp;years | Tracking cookie which persists information about a user's activity on the domain between sessions. It contains the following information: <br/> <br/> &bull; An ID for the user based on a hash of various browser attributes <br/> &bull; How many times the user has visited the domain <br/> &bull; The timestamp of the user's first visit <br/> &bull; The timestamp of the current visit <br/> &bull; The timestamp of the last visit <br/> &bull; The ID of the current session | 2 |
+| reevoo_sp_ses | 30&nbsp;min | Tracking cookie. Its only purpose is to differentiate between different visits. | 2 |
 
 
 ## How to enable/disable cookie

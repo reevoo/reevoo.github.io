@@ -8,10 +8,10 @@ group: cookie-management
 
 # Cookie Management
 
-If you integrate Reevoo javascript library to your website, the library will drop 3 cookies (listed below) to clients browser.
-Those cookies are required for full functionality of Reevoo components, but it is possible to disable its usage.
-Reevoo javascript supports [Optanon cookie integration](https://www.cookielaw.org/) which enables you or users to control which
-cookie is dropped to the browser.
+If you integrate Reevoo's Javascript library on your website, the library will drop 3 cookies (listed below) in client's browser.
+Those cookies are required for full functionality of Reevoo components, but it is possible to disable their usage.
+Reevoo's Javascript library supports [Optanon cookie integration](https://www.cookielaw.org/) which enables you or users to control which
+cookie is dropped in the browser.
 
 **List of used Optanon cookie groups and its explanation**
 
@@ -22,7 +22,7 @@ cookie is dropped to the browser.
 | 3 | Functional Cookies | Enable the site to provide enhanced functionality and personalization. E.g. Sitecore Personilisation |
 
 
-**List of Reevoo cookies and its functionality**
+**List of cookies and its functionality**
 
 {: .documentation-table}
 | Name | Usage  | Expiration | Optanon Group ID |

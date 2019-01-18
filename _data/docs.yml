@@ -22,6 +22,11 @@
     title: Emb. Tabbed reviews
   - id: tracking
     title: Tracking
+- id: cookie-management
+  title: Cookie Managent
+  items:
+  - id: introduction
+    title: Introduction
 - id: embedded-content
   title: Embedded Content
   items:

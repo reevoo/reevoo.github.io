@@ -28,7 +28,7 @@ Another option is to control cookie via script tag HTML attributes. See examples
 {: .documentation-table}
 | Name | Expiration | Usage | Optanon Group ID |
 |------------------|---------------|-------------|
-| ReevooStoredVotes | 1&nbsp;hour | Enable review helpfulness voting | 3 |
+| reevoo_stored_votes | 1&nbsp;hour | Enable review helpfulness voting | 3 |
 | reevoo_sp_id | 2&nbsp;years | Tracking cookie which persists information about a user's activity on the domain between sessions. It contains the following information: <br/> <br/> &bull; An ID for the user based on a hash of various browser attributes <br/> &bull; How many times the user has visited the domain <br/> &bull; The timestamp of the user's first visit <br/> &bull; The timestamp of the current visit <br/> &bull; The timestamp of the last visit <br/> &bull; The ID of the current session | 2 |
 | reevoo_sp_ses | 30&nbsp;min | Tracking cookie. Its only purpose is to differentiate between different visits. | 2 |
 

@@ -44,11 +44,6 @@
     subitems:
       - id: experiences-public-api-cards
         title: cards
-- id: conversations
-  title: Conversations
-  items:
-  - id: conversations-widget-getting-started
-    title: Getting started
 - id: feeds
   title: Feeds
   items:
